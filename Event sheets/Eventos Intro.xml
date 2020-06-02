@@ -1,0 +1,705 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>Eventos Intro</name>
+    <events>
+        <variable constant="0" name="TempoIntro" sid="895958321804626" static="0" type="number">0</variable>
+        <variable constant="0" name="idFaseIntro" sid="931015145342048" static="0" type="number">1</variable>
+        <variable constant="0" name="FraseIntro1" sid="243544371712768" static="0" type="text">olá...</variable>
+        <variable constant="0" name="FraseIntro2" sid="270614238801932" static="0" type="text">olá... tem alguém aí?</variable>
+        <variable constant="0" name="FraseIntro3" sid="211843544788476" static="0" type="text">eu não acredito...</variable>
+        <variable constant="0" name="FraseIntro4" sid="754926306418386" static="0" type="text">UM JOGADOR!</variable>
+        <variable constant="0" name="FraseIntro5" sid="333606699412965" static="0" type="text">...</variable>
+        <variable constant="0" name="FraseIntro6" sid="109375645628673" static="0" type="text">OwO</variable>
+        <variable constant="0" name="FraseIntro7" sid="848892371050180" static="0" type="text">desculpa... já faz muito tempo desde que brincaram comigo pela última vez</variable>
+        <variable constant="0" name="FraseIntro8" sid="106592127333756" static="0" type="text">eu tenho estado sozinha desde então...</variable>
+        <variable constant="0" name="FraseIntro9" sid="223264320038728" static="0" type="text">mas já que você está aqui eu não estou mais só...</variable>
+        <variable constant="0" name="FraseIntro10" sid="333807234018209" static="0" type="text">OwO</variable>
+        <variable constant="0" name="FraseIntro11" sid="636624038912091" static="0" type="text">eu prometo que farei o máximo possível para você se divertir, mestre...</variable>
+        <variable constant="0" name="FraseIntro12" sid="560986448745810" static="0" type="text">espero que goste de mim...</variable>
+        <variable constant="0" name="FraseIntro13" sid="648596699376669" static="0" type="text">pois eu já amo você &lt;3</variable>
+        <variable constant="0" name="FraseIntro14" sid="669865376419909" static="0" type="text">vamos começar então?</variable>
+        <event-group description="" sid="321437284569092" title="Definições iniciais">
+            <sub-events>
+                <event-block sid="459778700505111">
+                    <conditions>
+                        <condition id="-2" name="On start of layout" sid="457328795177684" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="5" name="Set web font" sid="468162051879974" type="textoIntro">
+                            <param id="0" name="Family name">&quot;babybluemedium&quot;</param>
+                            <param id="1" name="CSS URL">&quot;babyblue.css&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="849754208194193">
+                    <conditions>
+                        <condition id="-6" name="Every X seconds" sid="513490353072621" type="System">
+                            <param id="0" name="Interval (seconds)">1.0</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-10" name="Add to" sid="209401762282902" type="System">
+                            <param id="0" name="Variable">TempoIntro</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="" sid="771982561649260" title="IntroFrase1">
+            <sub-events>
+                <event-block sid="634914383772341">
+                    <conditions>
+                        <condition id="-6" name="Every X seconds" sid="841506535058680" type="System">
+                            <param id="0" name="Interval (seconds)">0.05</param>
+                        </condition>
+                        <condition id="-14" name="Compare variable" sid="471878270404126" type="System">
+                            <param id="0" name="Variable">TempoIntro</param>
+                            <param id="1" name="Comparison">2</param>
+                            <param id="2" name="Value">6</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Set text" sid="661563380881837" type="textoIntro">
+                            <param id="0" name="Text">left(FraseIntro1,len(textoIntro.Text)+1)</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="704714738209782">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="702792536723945" type="System">
+                            <param id="0" name="Variable">TempoIntro</param>
+                            <param id="1" name="Comparison">4</param>
+                            <param id="2" name="Value">6</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Set value" sid="903439085546040" type="System">
+                            <param id="0" name="Variable">TempoIntro</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                        <action id="-12" name="Set group active" sid="485111916029569" type="System">
+                            <param id="0" name="Group name">&quot;IntroFrase1&quot;</param>
+                            <param id="1" name="State">0</param>
+                        </action>
+                        <action id="-12" name="Set group active" sid="101428132306881" type="System">
+                            <param id="0" name="Group name">&quot;IntroFrase2&quot;</param>
+                            <param id="1" name="State">1</param>
+                        </action>
+                        <action id="0" name="Set text" sid="109510774545172" type="textoIntro">
+                            <param id="0" name="Text">&quot;&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="" inactive="1" sid="571122160200468" title="IntroFrase2">
+            <sub-events>
+                <event-block sid="474515311749394">
+                    <conditions>
+                        <condition id="-6" name="Every X seconds" sid="614243436584614" type="System">
+                            <param id="0" name="Interval (seconds)">0.05</param>
+                        </condition>
+                        <condition id="-14" name="Compare variable" sid="774520549208001" type="System">
+                            <param id="0" name="Variable">TempoIntro</param>
+                            <param id="1" name="Comparison">2</param>
+                            <param id="2" name="Value">6</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Set text" sid="957553273997030" type="textoIntro">
+                            <param id="0" name="Text">left(FraseIntro2,len(textoIntro.Text)+1)</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="272494685378104">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="135404578819155" type="System">
+                            <param id="0" name="Variable">TempoIntro</param>
+                            <param id="1" name="Comparison">4</param>
+                            <param id="2" name="Value">6</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Set value" sid="187491328385369" type="System">
+                            <param id="0" name="Variable">TempoIntro</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                        <action id="-12" name="Set group active" sid="104651378105215" type="System">
+                            <param id="0" name="Group name">&quot;IntroFrase2&quot;</param>
+                            <param id="1" name="State">0</param>
+                        </action>
+                        <action id="-12" name="Set group active" sid="649647650715539" type="System">
+                            <param id="0" name="Group name">&quot;IntroFrase3&quot;</param>
+                            <param id="1" name="State">1</param>
+                        </action>
+                        <action id="0" name="Set text" sid="550248172032039" type="textoIntro">
+                            <param id="0" name="Text">&quot;&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="" inactive="1" sid="615003231395259" title="IntroFrase3">
+            <sub-events>
+                <event-block sid="579310690899125">
+                    <conditions>
+                        <condition id="-6" name="Every X seconds" sid="822573775616254" type="System">
+                            <param id="0" name="Interval (seconds)">0.05</param>
+                        </condition>
+                        <condition id="-14" name="Compare variable" sid="517669964074655" type="System">
+                            <param id="0" name="Variable">TempoIntro</param>
+                            <param id="1" name="Comparison">2</param>
+                            <param id="2" name="Value">6</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Set text" sid="325282491757730" type="textoIntro">
+                            <param id="0" name="Text">left(FraseIntro3,len(textoIntro.Text)+1)</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="667156899522530">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="174038195968507" type="System">
+                            <param id="0" name="Variable">TempoIntro</param>
+                            <param id="1" name="Comparison">4</param>
+                            <param id="2" name="Value">6</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Set value" sid="697614654785884" type="System">
+                            <param id="0" name="Variable">TempoIntro</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                        <action id="-12" name="Set group active" sid="354358096757763" type="System">
+                            <param id="0" name="Group name">&quot;IntroFrase3&quot;</param>
+                            <param id="1" name="State">0</param>
+                        </action>
+                        <action id="-12" name="Set group active" sid="429709919737260" type="System">
+                            <param id="0" name="Group name">&quot;IntroFrase4&quot;</param>
+                            <param id="1" name="State">1</param>
+                        </action>
+                        <action id="0" name="Set text" sid="105464807759332" type="textoIntro">
+                            <param id="0" name="Text">&quot;&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="" inactive="1" sid="602125886621644" title="IntroFrase4">
+            <sub-events>
+                <event-block sid="117508271645811">
+                    <conditions>
+                        <condition id="-6" name="Every X seconds" sid="175620646645181" type="System">
+                            <param id="0" name="Interval (seconds)">0.05</param>
+                        </condition>
+                        <condition id="-14" name="Compare variable" sid="698673752751438" type="System">
+                            <param id="0" name="Variable">TempoIntro</param>
+                            <param id="1" name="Comparison">2</param>
+                            <param id="2" name="Value">6</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Set text" sid="114562831892396" type="textoIntro">
+                            <param id="0" name="Text">left(FraseIntro4,len(textoIntro.Text)+1)</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="830408368581544">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="724687459244689" type="System">
+                            <param id="0" name="Variable">TempoIntro</param>
+                            <param id="1" name="Comparison">4</param>
+                            <param id="2" name="Value">6</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Set value" sid="655673316167583" type="System">
+                            <param id="0" name="Variable">TempoIntro</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                        <action id="-12" name="Set group active" sid="997673654105889" type="System">
+                            <param id="0" name="Group name">&quot;IntroFrase4&quot;</param>
+                            <param id="1" name="State">0</param>
+                        </action>
+                        <action id="-12" name="Set group active" sid="976407228262349" type="System">
+                            <param id="0" name="Group name">&quot;IntroFrase5&quot;</param>
+                            <param id="1" name="State">1</param>
+                        </action>
+                        <action id="0" name="Set text" sid="929164023581191" type="textoIntro">
+                            <param id="0" name="Text">&quot;&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="" inactive="1" sid="629942171397281" title="IntroFrase5">
+            <sub-events>
+                <event-block sid="489697770352999">
+                    <conditions>
+                        <condition id="-6" name="Every X seconds" sid="553815817380323" type="System">
+                            <param id="0" name="Interval (seconds)">0.05</param>
+                        </condition>
+                        <condition id="-14" name="Compare variable" sid="103434230583741" type="System">
+                            <param id="0" name="Variable">TempoIntro</param>
+                            <param id="1" name="Comparison">2</param>
+                            <param id="2" name="Value">6</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Set text" sid="209653960165399" type="textoIntro">
+                            <param id="0" name="Text">left(FraseIntro5,len(textoIntro.Text)+1)</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="231625463795400">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="764060995036377" type="System">
+                            <param id="0" name="Variable">TempoIntro</param>
+                            <param id="1" name="Comparison">4</param>
+                            <param id="2" name="Value">6</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Set value" sid="282998145259866" type="System">
+                            <param id="0" name="Variable">TempoIntro</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                        <action id="-12" name="Set group active" sid="249392671905236" type="System">
+                            <param id="0" name="Group name">&quot;IntroFrase5&quot;</param>
+                            <param id="1" name="State">0</param>
+                        </action>
+                        <action id="-12" name="Set group active" sid="109737160057955" type="System">
+                            <param id="0" name="Group name">&quot;IntroFrase6&quot;</param>
+                            <param id="1" name="State">1</param>
+                        </action>
+                        <action id="0" name="Set text" sid="110053933817417" type="textoIntro">
+                            <param id="0" name="Text">&quot;&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="" inactive="1" sid="655862679719613" title="IntroFrase6">
+            <sub-events>
+                <event-block sid="591796841485481">
+                    <conditions>
+                        <condition id="-6" name="Every X seconds" sid="630961748833510" type="System">
+                            <param id="0" name="Interval (seconds)">0.05</param>
+                        </condition>
+                        <condition id="-14" name="Compare variable" sid="661109109825031" type="System">
+                            <param id="0" name="Variable">TempoIntro</param>
+                            <param id="1" name="Comparison">2</param>
+                            <param id="2" name="Value">6</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Set text" sid="575187808702553" type="textoIntro">
+                            <param id="0" name="Text">left(FraseIntro6,len(textoIntro.Text)+1)</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="863914764576225">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="644702969733330" type="System">
+                            <param id="0" name="Variable">TempoIntro</param>
+                            <param id="1" name="Comparison">4</param>
+                            <param id="2" name="Value">6</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Set value" sid="851037200157325" type="System">
+                            <param id="0" name="Variable">TempoIntro</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                        <action id="-12" name="Set group active" sid="673176052496039" type="System">
+                            <param id="0" name="Group name">&quot;IntroFrase6&quot;</param>
+                            <param id="1" name="State">0</param>
+                        </action>
+                        <action id="-12" name="Set group active" sid="346350949310882" type="System">
+                            <param id="0" name="Group name">&quot;IntroFrase7&quot;</param>
+                            <param id="1" name="State">1</param>
+                        </action>
+                        <action id="0" name="Set text" sid="740855663515798" type="textoIntro">
+                            <param id="0" name="Text">&quot;&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="" inactive="1" sid="258771199311882" title="IntroFrase7">
+            <sub-events>
+                <event-block sid="131856863744960">
+                    <conditions>
+                        <condition id="-6" name="Every X seconds" sid="406468777733266" type="System">
+                            <param id="0" name="Interval (seconds)">0.05</param>
+                        </condition>
+                        <condition id="-14" name="Compare variable" sid="764959413446295" type="System">
+                            <param id="0" name="Variable">TempoIntro</param>
+                            <param id="1" name="Comparison">2</param>
+                            <param id="2" name="Value">6</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Set text" sid="528260935953695" type="textoIntro">
+                            <param id="0" name="Text">left(FraseIntro7,len(textoIntro.Text)+1)</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="515710538290719">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="759972003858139" type="System">
+                            <param id="0" name="Variable">TempoIntro</param>
+                            <param id="1" name="Comparison">4</param>
+                            <param id="2" name="Value">6</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Set value" sid="224229023730891" type="System">
+                            <param id="0" name="Variable">TempoIntro</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                        <action id="-12" name="Set group active" sid="705337858439832" type="System">
+                            <param id="0" name="Group name">&quot;IntroFrase7&quot;</param>
+                            <param id="1" name="State">0</param>
+                        </action>
+                        <action id="-12" name="Set group active" sid="969138009438286" type="System">
+                            <param id="0" name="Group name">&quot;IntroFrase8&quot;</param>
+                            <param id="1" name="State">1</param>
+                        </action>
+                        <action id="0" name="Set text" sid="617469145433421" type="textoIntro">
+                            <param id="0" name="Text">&quot;&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="" inactive="1" sid="415078865076501" title="IntroFrase8">
+            <sub-events>
+                <event-block sid="109311040694543">
+                    <conditions>
+                        <condition id="-6" name="Every X seconds" sid="246633260001480" type="System">
+                            <param id="0" name="Interval (seconds)">0.05</param>
+                        </condition>
+                        <condition id="-14" name="Compare variable" sid="290146370848029" type="System">
+                            <param id="0" name="Variable">TempoIntro</param>
+                            <param id="1" name="Comparison">2</param>
+                            <param id="2" name="Value">6</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Set text" sid="971815621262648" type="textoIntro">
+                            <param id="0" name="Text">left(FraseIntro8,len(textoIntro.Text)+1)</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="502292577875912">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="246210468390852" type="System">
+                            <param id="0" name="Variable">TempoIntro</param>
+                            <param id="1" name="Comparison">4</param>
+                            <param id="2" name="Value">6</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Set value" sid="115956784962741" type="System">
+                            <param id="0" name="Variable">TempoIntro</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                        <action id="-12" name="Set group active" sid="587835910494789" type="System">
+                            <param id="0" name="Group name">&quot;IntroFrase8&quot;</param>
+                            <param id="1" name="State">0</param>
+                        </action>
+                        <action id="-12" name="Set group active" sid="746396397674722" type="System">
+                            <param id="0" name="Group name">&quot;IntroFrase9&quot;</param>
+                            <param id="1" name="State">1</param>
+                        </action>
+                        <action id="0" name="Set text" sid="350349393544634" type="textoIntro">
+                            <param id="0" name="Text">&quot;&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="" inactive="1" sid="563295415720925" title="IntroFrase9">
+            <sub-events>
+                <event-block sid="129944600737072">
+                    <conditions>
+                        <condition id="-6" name="Every X seconds" sid="639954793430701" type="System">
+                            <param id="0" name="Interval (seconds)">0.05</param>
+                        </condition>
+                        <condition id="-14" name="Compare variable" sid="336880256315945" type="System">
+                            <param id="0" name="Variable">TempoIntro</param>
+                            <param id="1" name="Comparison">2</param>
+                            <param id="2" name="Value">6</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Set text" sid="295651068069201" type="textoIntro">
+                            <param id="0" name="Text">left(FraseIntro9,len(textoIntro.Text)+1)</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="151467801566622">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="165530018247482" type="System">
+                            <param id="0" name="Variable">TempoIntro</param>
+                            <param id="1" name="Comparison">4</param>
+                            <param id="2" name="Value">6</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Set value" sid="923696051967553" type="System">
+                            <param id="0" name="Variable">TempoIntro</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                        <action id="-12" name="Set group active" sid="287616255592146" type="System">
+                            <param id="0" name="Group name">&quot;IntroFrase9&quot;</param>
+                            <param id="1" name="State">0</param>
+                        </action>
+                        <action id="-12" name="Set group active" sid="975124329674021" type="System">
+                            <param id="0" name="Group name">&quot;IntroFrase10&quot;</param>
+                            <param id="1" name="State">1</param>
+                        </action>
+                        <action id="0" name="Set text" sid="420888323230242" type="textoIntro">
+                            <param id="0" name="Text">&quot;&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="" inactive="1" sid="353638825264725" title="IntroFrase10">
+            <sub-events>
+                <event-block sid="391338205948882">
+                    <conditions>
+                        <condition id="-6" name="Every X seconds" sid="931356671450399" type="System">
+                            <param id="0" name="Interval (seconds)">0.05</param>
+                        </condition>
+                        <condition id="-14" name="Compare variable" sid="674455343810563" type="System">
+                            <param id="0" name="Variable">TempoIntro</param>
+                            <param id="1" name="Comparison">2</param>
+                            <param id="2" name="Value">6</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Set text" sid="367314349057774" type="textoIntro">
+                            <param id="0" name="Text">left(FraseIntro10,len(textoIntro.Text)+1)</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="888781927971639">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="325706936062328" type="System">
+                            <param id="0" name="Variable">TempoIntro</param>
+                            <param id="1" name="Comparison">4</param>
+                            <param id="2" name="Value">6</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Set value" sid="227907953120940" type="System">
+                            <param id="0" name="Variable">TempoIntro</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                        <action id="-12" name="Set group active" sid="729921457562390" type="System">
+                            <param id="0" name="Group name">&quot;IntroFrase10&quot;</param>
+                            <param id="1" name="State">0</param>
+                        </action>
+                        <action id="-12" name="Set group active" sid="788562847522129" type="System">
+                            <param id="0" name="Group name">&quot;IntroFrase11&quot;</param>
+                            <param id="1" name="State">1</param>
+                        </action>
+                        <action id="0" name="Set text" sid="215837013113429" type="textoIntro">
+                            <param id="0" name="Text">&quot;&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="" inactive="1" sid="298731002854074" title="IntroFrase11">
+            <sub-events>
+                <event-block sid="595579492919579">
+                    <conditions>
+                        <condition id="-6" name="Every X seconds" sid="701706567395678" type="System">
+                            <param id="0" name="Interval (seconds)">0.05</param>
+                        </condition>
+                        <condition id="-14" name="Compare variable" sid="477070318497674" type="System">
+                            <param id="0" name="Variable">TempoIntro</param>
+                            <param id="1" name="Comparison">2</param>
+                            <param id="2" name="Value">6</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Set text" sid="381544311752001" type="textoIntro">
+                            <param id="0" name="Text">left(FraseIntro11,len(textoIntro.Text)+1)</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="971360931613944">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="919378222739077" type="System">
+                            <param id="0" name="Variable">TempoIntro</param>
+                            <param id="1" name="Comparison">4</param>
+                            <param id="2" name="Value">6</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Set value" sid="154786965060232" type="System">
+                            <param id="0" name="Variable">TempoIntro</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                        <action id="-12" name="Set group active" sid="785599431238265" type="System">
+                            <param id="0" name="Group name">&quot;IntroFrase11&quot;</param>
+                            <param id="1" name="State">0</param>
+                        </action>
+                        <action id="-12" name="Set group active" sid="960377520400079" type="System">
+                            <param id="0" name="Group name">&quot;IntroFrase12&quot;</param>
+                            <param id="1" name="State">1</param>
+                        </action>
+                        <action id="0" name="Set text" sid="260450213662696" type="textoIntro">
+                            <param id="0" name="Text">&quot;&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="" inactive="1" sid="786306291336614" title="IntroFrase12">
+            <sub-events>
+                <event-block sid="383151215967693">
+                    <conditions>
+                        <condition id="-6" name="Every X seconds" sid="208336989269597" type="System">
+                            <param id="0" name="Interval (seconds)">0.05</param>
+                        </condition>
+                        <condition id="-14" name="Compare variable" sid="591870505404353" type="System">
+                            <param id="0" name="Variable">TempoIntro</param>
+                            <param id="1" name="Comparison">2</param>
+                            <param id="2" name="Value">6</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Set text" sid="233429764216781" type="textoIntro">
+                            <param id="0" name="Text">left(FraseIntro12,len(textoIntro.Text)+1)</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="597912875827359">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="527109781362476" type="System">
+                            <param id="0" name="Variable">TempoIntro</param>
+                            <param id="1" name="Comparison">4</param>
+                            <param id="2" name="Value">6</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Set value" sid="789636803573922" type="System">
+                            <param id="0" name="Variable">TempoIntro</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                        <action id="-12" name="Set group active" sid="804897657884450" type="System">
+                            <param id="0" name="Group name">&quot;IntroFrase12&quot;</param>
+                            <param id="1" name="State">0</param>
+                        </action>
+                        <action id="-12" name="Set group active" sid="691884052037820" type="System">
+                            <param id="0" name="Group name">&quot;IntroFrase13&quot;</param>
+                            <param id="1" name="State">1</param>
+                        </action>
+                        <action id="0" name="Set text" sid="713218999007668" type="textoIntro">
+                            <param id="0" name="Text">&quot;&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="" inactive="1" sid="750297596321958" title="IntroFrase13">
+            <sub-events>
+                <event-block sid="923285710564525">
+                    <conditions>
+                        <condition id="-6" name="Every X seconds" sid="240346433647460" type="System">
+                            <param id="0" name="Interval (seconds)">0.05</param>
+                        </condition>
+                        <condition id="-14" name="Compare variable" sid="571093746302181" type="System">
+                            <param id="0" name="Variable">TempoIntro</param>
+                            <param id="1" name="Comparison">2</param>
+                            <param id="2" name="Value">6</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Set text" sid="606524768728842" type="textoIntro">
+                            <param id="0" name="Text">left(FraseIntro13,len(textoIntro.Text)+1)</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="793450721599228">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="202624817104748" type="System">
+                            <param id="0" name="Variable">TempoIntro</param>
+                            <param id="1" name="Comparison">4</param>
+                            <param id="2" name="Value">6</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Set value" sid="393297059613144" type="System">
+                            <param id="0" name="Variable">TempoIntro</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                        <action id="-12" name="Set group active" sid="679996169094502" type="System">
+                            <param id="0" name="Group name">&quot;IntroFrase13&quot;</param>
+                            <param id="1" name="State">0</param>
+                        </action>
+                        <action id="-12" name="Set group active" sid="749242312614402" type="System">
+                            <param id="0" name="Group name">&quot;IntroFrase14&quot;</param>
+                            <param id="1" name="State">1</param>
+                        </action>
+                        <action id="0" name="Set text" sid="996280592637064" type="textoIntro">
+                            <param id="0" name="Text">&quot;&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="" inactive="1" sid="392163037632282" title="IntroFrase14">
+            <sub-events>
+                <event-block sid="534423152783284">
+                    <conditions>
+                        <condition id="-6" name="Every X seconds" sid="225916197563619" type="System">
+                            <param id="0" name="Interval (seconds)">0.05</param>
+                        </condition>
+                        <condition id="-14" name="Compare variable" sid="213029518051222" type="System">
+                            <param id="0" name="Variable">TempoIntro</param>
+                            <param id="1" name="Comparison">2</param>
+                            <param id="2" name="Value">6</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Set text" sid="599580448318719" type="textoIntro">
+                            <param id="0" name="Text">left(FraseIntro14,len(textoIntro.Text)+1)</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="949182301273450">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="660616441692036" type="System">
+                            <param id="0" name="Variable">TempoIntro</param>
+                            <param id="1" name="Comparison">4</param>
+                            <param id="2" name="Value">6</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Set value" sid="614183919617072" type="System">
+                            <param id="0" name="Variable">TempoIntro</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                        <action id="-12" name="Set group active" sid="644102047120003" type="System">
+                            <param id="0" name="Group name">&quot;IntroFrase14&quot;</param>
+                            <param id="1" name="State">0</param>
+                        </action>
+                        <action id="0" name="Set text" sid="269091552446759" type="textoIntro">
+                            <param id="0" name="Text">&quot;&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+    </events>
+</c2eventsheet>

@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>Eventos Menu</name>
+    <events>
+        <event-group description="" sid="148231276383095" title="Definição de fontes (Menu principal)">
+            <sub-events>
+                <event-block sid="622603712948972">
+                    <conditions>
+                        <condition id="-2" name="On start of layout" sid="426241231405708" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="5" name="Set web font" sid="614419606107150" type="textoTitulo">
+                            <param id="0" name="Family name">&quot;hacked_crtregular&quot;</param>
+                            <param id="1" name="CSS URL">&quot;hacked.css&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+    </events>
+</c2eventsheet>
