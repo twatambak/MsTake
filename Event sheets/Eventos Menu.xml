@@ -3,17 +3,35 @@
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>Eventos Menu</name>
     <events>
-        <variable constant="0" name="Noise" sid="127613580919951" static="0" type="number">20</variable>
-        <event-group description="" sid="148231276383095" title="ConfigInicial">
+        <variable constant="0" name="TituloPassou" sid="992242019100491" static="0" type="number">0</variable>
+        <variable constant="0" name="Titulo" sid="136093149238283" static="0" type="text">Ms. Taken</variable>
+        <variable constant="0" name="FraseMenu1" sid="944698076806410" static="0" type="text">Olá mestre.</variable>
+        <variable constant="0" name="FraseMenu2" sid="372195449766843" static="0" type="text">Para jogar escolha um dos mini-games.</variable>
+        <event-group description="" sid="148231276383095" title="Config Inicial (Menu)">
             <sub-events>
                 <event-block sid="622603712948972">
                     <conditions>
                         <condition id="-2" name="On start of layout" sid="426241231405708" type="System" />
                     </conditions>
                     <actions>
+                        <action id="5" name="Set web font" sid="558689991247833" type="textoOpcoesMenu">
+                            <param id="0" name="Family name">&quot;&apos;digitaldiscomedium&apos;;&quot;</param>
+                            <param id="1" name="CSS URL">&quot;digitald.css&quot;</param>
+                        </action>
                         <action id="5" name="Set web font" sid="614419606107150" type="textoTitulo">
                             <param id="0" name="Family name">&quot;hacked_crtregular&quot;</param>
                             <param id="1" name="CSS URL">&quot;hacked.css&quot;</param>
+                        </action>
+                        <action id="5" name="Set web font" sid="852584478714092" type="textoFala">
+                            <param id="0" name="Family name">&quot;babybluemedium&quot;</param>
+                            <param id="1" name="CSS URL">&quot;babyblue.css&quot;</param>
+                        </action>
+                        <action id="-16" name="Wait" sid="346937095584873" type="System">
+                            <param id="0" name="Seconds">1.0</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="417527737034065" type="System">
+                            <param id="0" name="Variable">TituloPassou</param>
+                            <param id="1" name="Value">1</param>
                         </action>
                     </actions>
                 </event-block>
@@ -21,6 +39,18 @@
         </event-group>
         <event-group description="" sid="654879360390734" title="Alterações no título">
             <sub-events>
+                <event-block sid="866811616330455">
+                    <conditions>
+                        <condition id="-6" name="Every X seconds" sid="581167638011756" type="System">
+                            <param id="0" name="Interval (seconds)">0.3</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Set text" sid="408925634549514" type="textoTitulo">
+                            <param id="0" name="Text">left(Titulo,len(textoTitulo.Text)+1)</param>
+                        </action>
+                    </actions>
+                </event-block>
                 <event-block sid="325864054981987">
                     <conditions>
                         <condition id="-6" name="Every X seconds" sid="429353882856979" type="System">

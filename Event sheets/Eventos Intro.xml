@@ -3,8 +3,9 @@
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>Eventos Intro</name>
     <events>
+        <comment>Controle de tempo de tela de cada frase.</comment>
         <variable constant="0" name="TempoIntro" sid="895958321804626" static="0" type="number">0</variable>
-        <variable constant="0" name="idFaseIntro" sid="931015145342048" static="0" type="number">1</variable>
+        <comment>Variáveis globais que contém as frases ditas por Take na intro.</comment>
         <variable constant="0" name="FraseIntro1" sid="243544371712768" static="0" type="text">olá...</variable>
         <variable constant="0" name="FraseIntro2" sid="270614238801932" static="0" type="text">olá... tem alguém aí?</variable>
         <variable constant="0" name="FraseIntro3" sid="211843544788476" static="0" type="text">eu não acredito...</variable>
@@ -19,7 +20,7 @@
         <variable constant="0" name="FraseIntro12" sid="560986448745810" static="0" type="text">espero que goste de mim...</variable>
         <variable constant="0" name="FraseIntro13" sid="648596699376669" static="0" type="text">pois eu já amo você &lt;3</variable>
         <variable constant="0" name="FraseIntro14" sid="669865376419909" static="0" type="text">vamos começar então?</variable>
-        <event-group description="" sid="321437284569092" title="Definições iniciais">
+        <event-group description="" sid="321437284569092" title="Config Inicial (Intro)">
             <sub-events>
                 <event-block sid="459778700505111">
                     <conditions>

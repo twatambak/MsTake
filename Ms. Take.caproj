@@ -33,6 +33,7 @@
     </window-size>
     <pixel-rounding>0</pixel-rounding>
     <preview-effects>1</preview-effects>
+    <first-layout>Intro</first-layout>
     <use-loader-layout>0</use-loader-layout>
     <configuration-settings>
         <prop name="Clear background">Yes</prop>
@@ -61,7 +62,7 @@
                 <plugin id="TiledBg" />
                 <texture />
             </object-type>
-            <object-type name="bordasTitulo" sid="767504468392773">
+            <object-type name="bordasOpcoes" sid="767504468392773">
                 <plugin id="TiledBg" />
                 <texture />
             </object-type>
@@ -78,10 +79,16 @@
                     </behavior-type>
                 </behaviors>
             </object-type>
+            <object-type name="textoIntro" sid="531671139977006">
+                <plugin id="Text" />
+            </object-type>
+            <object-type name="textoFala" sid="193745308791331">
+                <plugin id="Text" />
+            </object-type>
+            <object-type name="textoOpcoesMenu" sid="843696096578024">
+                <plugin id="Text" />
+            </object-type>
         </object-folder>
-        <object-type name="textoIntro" sid="531671139977006">
-            <plugin id="Text" />
-        </object-type>
     </object-folder>
     <families />
     <layout-folder>
@@ -110,5 +117,8 @@
         <file name="babyblue.css" />
         <file name="babyblue-webfont.woff" />
         <file name="babyblue-webfont.woff2" />
+        <file name="digitald.css" />
+        <file name="digitaldisco-webfont.woff" />
+        <file name="digitaldisco-webfont.woff2" />
     </files-folder>
 </c2project>
