@@ -13,7 +13,10 @@
         <plugin author="Scirra" id="Text" version="1">Text</plugin>
         <plugin author="Scirra" id="TiledBg" version="1">Tiled Background</plugin>
     </used-plugins>
-    <used-behaviors />
+    <used-behaviors>
+        <behavior author="Scirra" id="Flash" version="1">Flash</behavior>
+        <behavior author="Scirra" id="Sin" version="1">Sine</behavior>
+    </used-behaviors>
     <used-effects>
         <effect author="Brad Larson" id="bulge">Bulge</effect>
         <effect author="Scirra" id="glowhorizontal">Glow Horizontal</effect>
@@ -66,6 +69,14 @@
         <object-folder name="Textos">
             <object-type name="textoTitulo" sid="508135092038371">
                 <plugin id="Text" />
+                <behaviors>
+                    <behavior-type name="Sine" sid="764241405903604">
+                        <behavior id="Sin" />
+                    </behavior-type>
+                    <behavior-type name="Flash" sid="387038374840425">
+                        <behavior id="Flash" />
+                    </behavior-type>
+                </behaviors>
             </object-type>
         </object-folder>
         <object-type name="textoIntro" sid="531671139977006">

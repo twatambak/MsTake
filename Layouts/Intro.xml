@@ -169,10 +169,10 @@
             <instances>
                 <instance type="textoIntro" uid="15">
                     <properties>
-                        <text>mas já que você está aqui, eu prometo que vamos nos divertir muito UwU</text>
+                        <text></text>
                         <initial-visibility>Visible</initial-visibility>
                         <font>Arial,-48,400,0</font>
-                        <color>146,255,0</color>
+                        <color>251,0,239</color>
                         <horizontal-alignment>Center</horizontal-alignment>
                         <vertical-alignment>Center</vertical-alignment>
                         <hotspot>Top-left</hotspot>

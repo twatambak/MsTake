@@ -3,7 +3,8 @@
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>Eventos Menu</name>
     <events>
-        <event-group description="" sid="148231276383095" title="Definição de fontes (Menu principal)">
+        <variable constant="0" name="Noise" sid="127613580919951" static="0" type="number">20</variable>
+        <event-group description="" sid="148231276383095" title="ConfigInicial">
             <sub-events>
                 <event-block sid="622603712948972">
                     <conditions>
@@ -13,6 +14,42 @@
                         <action id="5" name="Set web font" sid="614419606107150" type="textoTitulo">
                             <param id="0" name="Family name">&quot;hacked_crtregular&quot;</param>
                             <param id="1" name="CSS URL">&quot;hacked.css&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="" sid="654879360390734" title="Alterações no título">
+            <sub-events>
+                <event-block sid="325864054981987">
+                    <conditions>
+                        <condition id="-6" name="Every X seconds" sid="429353882856979" type="System">
+                            <param id="0" name="Interval (seconds)">random(1,10)</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action behavior="Flash" id="0" name="Flash" sid="317097930087236" type="textoTitulo">
+                            <param id="0" name="&apos;On&apos; time">random(0.1, 0.5)</param>
+                            <param id="1" name="&apos;Off&apos; time">random(0.1, 0.5)</param>
+                            <param id="2" name="Duration">random(0.5, 1)</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="263360296790120">
+                    <conditions>
+                        <condition id="-6" name="Every X seconds" sid="527494623628248" type="System">
+                            <param id="0" name="Interval (seconds)">random(0.5,10)</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set font color" sid="999885418053689" type="textoTitulo">
+                            <param id="0" name="Color">rgb(random(0,255), random(0,255), random(0,255))</param>
+                        </action>
+                        <action id="-16" name="Wait" sid="445032523051662" type="System">
+                            <param id="0" name="Seconds">random(0.1, 1)</param>
+                        </action>
+                        <action id="4" name="Set font color" sid="246045162841638" type="textoTitulo">
+                            <param id="0" name="Color">rgb(159, 246, 25)</param>
                         </action>
                     </actions>
                 </event-block>

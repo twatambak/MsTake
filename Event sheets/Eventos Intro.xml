@@ -52,7 +52,7 @@
                 <event-block sid="634914383772341">
                     <conditions>
                         <condition id="-6" name="Every X seconds" sid="841506535058680" type="System">
-                            <param id="0" name="Interval (seconds)">0.05</param>
+                            <param id="0" name="Interval (seconds)">0.2</param>
                         </condition>
                         <condition id="-14" name="Compare variable" sid="471878270404126" type="System">
                             <param id="0" name="Variable">TempoIntro</param>
@@ -63,6 +63,9 @@
                     <actions>
                         <action id="0" name="Set text" sid="661563380881837" type="textoIntro">
                             <param id="0" name="Text">left(FraseIntro1,len(textoIntro.Text)+1)</param>
+                        </action>
+                        <action id="4" name="Set font color" sid="665278641009058" type="textoIntro">
+                            <param id="0" name="Color">rgb(146, 255, 20)</param>
                         </action>
                     </actions>
                 </event-block>
@@ -99,7 +102,7 @@
                 <event-block sid="474515311749394">
                     <conditions>
                         <condition id="-6" name="Every X seconds" sid="614243436584614" type="System">
-                            <param id="0" name="Interval (seconds)">0.05</param>
+                            <param id="0" name="Interval (seconds)">0.1</param>
                         </condition>
                         <condition id="-14" name="Compare variable" sid="774520549208001" type="System">
                             <param id="0" name="Variable">TempoIntro</param>
@@ -110,6 +113,9 @@
                     <actions>
                         <action id="0" name="Set text" sid="957553273997030" type="textoIntro">
                             <param id="0" name="Text">left(FraseIntro2,len(textoIntro.Text)+1)</param>
+                        </action>
+                        <action id="4" name="Set font color" sid="956312079679822" type="textoIntro">
+                            <param id="0" name="Color">rgb(146, 255, 20)</param>
                         </action>
                     </actions>
                 </event-block>
@@ -146,7 +152,7 @@
                 <event-block sid="579310690899125">
                     <conditions>
                         <condition id="-6" name="Every X seconds" sid="822573775616254" type="System">
-                            <param id="0" name="Interval (seconds)">0.05</param>
+                            <param id="0" name="Interval (seconds)">0.1</param>
                         </condition>
                         <condition id="-14" name="Compare variable" sid="517669964074655" type="System">
                             <param id="0" name="Variable">TempoIntro</param>
@@ -157,6 +163,9 @@
                     <actions>
                         <action id="0" name="Set text" sid="325282491757730" type="textoIntro">
                             <param id="0" name="Text">left(FraseIntro3,len(textoIntro.Text)+1)</param>
+                        </action>
+                        <action id="4" name="Set font color" sid="429304019884895" type="textoIntro">
+                            <param id="0" name="Color">rgb(146, 255, 20)</param>
                         </action>
                     </actions>
                 </event-block>
@@ -193,7 +202,7 @@
                 <event-block sid="117508271645811">
                     <conditions>
                         <condition id="-6" name="Every X seconds" sid="175620646645181" type="System">
-                            <param id="0" name="Interval (seconds)">0.05</param>
+                            <param id="0" name="Interval (seconds)">0.1</param>
                         </condition>
                         <condition id="-14" name="Compare variable" sid="698673752751438" type="System">
                             <param id="0" name="Variable">TempoIntro</param>
@@ -204,6 +213,9 @@
                     <actions>
                         <action id="0" name="Set text" sid="114562831892396" type="textoIntro">
                             <param id="0" name="Text">left(FraseIntro4,len(textoIntro.Text)+1)</param>
+                        </action>
+                        <action id="4" name="Set font color" sid="455040096533233" type="textoIntro">
+                            <param id="0" name="Color">rgb(146, 255, 20)</param>
                         </action>
                     </actions>
                 </event-block>
@@ -240,7 +252,7 @@
                 <event-block sid="489697770352999">
                     <conditions>
                         <condition id="-6" name="Every X seconds" sid="553815817380323" type="System">
-                            <param id="0" name="Interval (seconds)">0.05</param>
+                            <param id="0" name="Interval (seconds)">0.1</param>
                         </condition>
                         <condition id="-14" name="Compare variable" sid="103434230583741" type="System">
                             <param id="0" name="Variable">TempoIntro</param>
@@ -251,6 +263,9 @@
                     <actions>
                         <action id="0" name="Set text" sid="209653960165399" type="textoIntro">
                             <param id="0" name="Text">left(FraseIntro5,len(textoIntro.Text)+1)</param>
+                        </action>
+                        <action id="4" name="Set font color" sid="948298211208082" type="textoIntro">
+                            <param id="0" name="Color">rgb(146, 255, 20)</param>
                         </action>
                     </actions>
                 </event-block>
@@ -287,7 +302,7 @@
                 <event-block sid="591796841485481">
                     <conditions>
                         <condition id="-6" name="Every X seconds" sid="630961748833510" type="System">
-                            <param id="0" name="Interval (seconds)">0.05</param>
+                            <param id="0" name="Interval (seconds)">0.2</param>
                         </condition>
                         <condition id="-14" name="Compare variable" sid="661109109825031" type="System">
                             <param id="0" name="Variable">TempoIntro</param>
@@ -298,6 +313,9 @@
                     <actions>
                         <action id="0" name="Set text" sid="575187808702553" type="textoIntro">
                             <param id="0" name="Text">left(FraseIntro6,len(textoIntro.Text)+1)</param>
+                        </action>
+                        <action id="4" name="Set font color" sid="823008067625759" type="textoIntro">
+                            <param id="0" name="Color">rgb(251, 0, 239)</param>
                         </action>
                     </actions>
                 </event-block>
@@ -334,17 +352,20 @@
                 <event-block sid="131856863744960">
                     <conditions>
                         <condition id="-6" name="Every X seconds" sid="406468777733266" type="System">
-                            <param id="0" name="Interval (seconds)">0.05</param>
+                            <param id="0" name="Interval (seconds)">0.1</param>
                         </condition>
                         <condition id="-14" name="Compare variable" sid="764959413446295" type="System">
                             <param id="0" name="Variable">TempoIntro</param>
                             <param id="1" name="Comparison">2</param>
-                            <param id="2" name="Value">6</param>
+                            <param id="2" name="Value">8</param>
                         </condition>
                     </conditions>
                     <actions>
                         <action id="0" name="Set text" sid="528260935953695" type="textoIntro">
                             <param id="0" name="Text">left(FraseIntro7,len(textoIntro.Text)+1)</param>
+                        </action>
+                        <action id="4" name="Set font color" sid="243953527678409" type="textoIntro">
+                            <param id="0" name="Color">rgb(146, 255, 20)</param>
                         </action>
                     </actions>
                 </event-block>
@@ -353,7 +374,7 @@
                         <condition id="-14" name="Compare variable" sid="759972003858139" type="System">
                             <param id="0" name="Variable">TempoIntro</param>
                             <param id="1" name="Comparison">4</param>
-                            <param id="2" name="Value">6</param>
+                            <param id="2" name="Value">8</param>
                         </condition>
                     </conditions>
                     <actions>
@@ -381,7 +402,7 @@
                 <event-block sid="109311040694543">
                     <conditions>
                         <condition id="-6" name="Every X seconds" sid="246633260001480" type="System">
-                            <param id="0" name="Interval (seconds)">0.05</param>
+                            <param id="0" name="Interval (seconds)">0.1</param>
                         </condition>
                         <condition id="-14" name="Compare variable" sid="290146370848029" type="System">
                             <param id="0" name="Variable">TempoIntro</param>
@@ -392,6 +413,9 @@
                     <actions>
                         <action id="0" name="Set text" sid="971815621262648" type="textoIntro">
                             <param id="0" name="Text">left(FraseIntro8,len(textoIntro.Text)+1)</param>
+                        </action>
+                        <action id="4" name="Set font color" sid="310302650627780" type="textoIntro">
+                            <param id="0" name="Color">rgb(146, 255, 20)</param>
                         </action>
                     </actions>
                 </event-block>
@@ -428,7 +452,7 @@
                 <event-block sid="129944600737072">
                     <conditions>
                         <condition id="-6" name="Every X seconds" sid="639954793430701" type="System">
-                            <param id="0" name="Interval (seconds)">0.05</param>
+                            <param id="0" name="Interval (seconds)">0.1</param>
                         </condition>
                         <condition id="-14" name="Compare variable" sid="336880256315945" type="System">
                             <param id="0" name="Variable">TempoIntro</param>
@@ -439,6 +463,9 @@
                     <actions>
                         <action id="0" name="Set text" sid="295651068069201" type="textoIntro">
                             <param id="0" name="Text">left(FraseIntro9,len(textoIntro.Text)+1)</param>
+                        </action>
+                        <action id="4" name="Set font color" sid="152238582234807" type="textoIntro">
+                            <param id="0" name="Color">rgb(146, 255, 20)</param>
                         </action>
                     </actions>
                 </event-block>
@@ -475,7 +502,7 @@
                 <event-block sid="391338205948882">
                     <conditions>
                         <condition id="-6" name="Every X seconds" sid="931356671450399" type="System">
-                            <param id="0" name="Interval (seconds)">0.05</param>
+                            <param id="0" name="Interval (seconds)">0.2</param>
                         </condition>
                         <condition id="-14" name="Compare variable" sid="674455343810563" type="System">
                             <param id="0" name="Variable">TempoIntro</param>
@@ -486,6 +513,9 @@
                     <actions>
                         <action id="0" name="Set text" sid="367314349057774" type="textoIntro">
                             <param id="0" name="Text">left(FraseIntro10,len(textoIntro.Text)+1)</param>
+                        </action>
+                        <action id="4" name="Set font color" sid="783649927457851" type="textoIntro">
+                            <param id="0" name="Color">rgb(251, 0, 239)</param>
                         </action>
                     </actions>
                 </event-block>
@@ -522,7 +552,7 @@
                 <event-block sid="595579492919579">
                     <conditions>
                         <condition id="-6" name="Every X seconds" sid="701706567395678" type="System">
-                            <param id="0" name="Interval (seconds)">0.05</param>
+                            <param id="0" name="Interval (seconds)">0.1</param>
                         </condition>
                         <condition id="-14" name="Compare variable" sid="477070318497674" type="System">
                             <param id="0" name="Variable">TempoIntro</param>
@@ -533,6 +563,9 @@
                     <actions>
                         <action id="0" name="Set text" sid="381544311752001" type="textoIntro">
                             <param id="0" name="Text">left(FraseIntro11,len(textoIntro.Text)+1)</param>
+                        </action>
+                        <action id="4" name="Set font color" sid="147449600564893" type="textoIntro">
+                            <param id="0" name="Color">rgb(146, 255, 20)</param>
                         </action>
                     </actions>
                 </event-block>
@@ -569,7 +602,7 @@
                 <event-block sid="383151215967693">
                     <conditions>
                         <condition id="-6" name="Every X seconds" sid="208336989269597" type="System">
-                            <param id="0" name="Interval (seconds)">0.05</param>
+                            <param id="0" name="Interval (seconds)">0.1</param>
                         </condition>
                         <condition id="-14" name="Compare variable" sid="591870505404353" type="System">
                             <param id="0" name="Variable">TempoIntro</param>
@@ -580,6 +613,9 @@
                     <actions>
                         <action id="0" name="Set text" sid="233429764216781" type="textoIntro">
                             <param id="0" name="Text">left(FraseIntro12,len(textoIntro.Text)+1)</param>
+                        </action>
+                        <action id="4" name="Set font color" sid="381322513108108" type="textoIntro">
+                            <param id="0" name="Color">rgb(146, 255, 20)</param>
                         </action>
                     </actions>
                 </event-block>
@@ -616,17 +652,20 @@
                 <event-block sid="923285710564525">
                     <conditions>
                         <condition id="-6" name="Every X seconds" sid="240346433647460" type="System">
-                            <param id="0" name="Interval (seconds)">0.05</param>
+                            <param id="0" name="Interval (seconds)">0.2</param>
                         </condition>
                         <condition id="-14" name="Compare variable" sid="571093746302181" type="System">
                             <param id="0" name="Variable">TempoIntro</param>
                             <param id="1" name="Comparison">2</param>
-                            <param id="2" name="Value">6</param>
+                            <param id="2" name="Value">8</param>
                         </condition>
                     </conditions>
                     <actions>
                         <action id="0" name="Set text" sid="606524768728842" type="textoIntro">
                             <param id="0" name="Text">left(FraseIntro13,len(textoIntro.Text)+1)</param>
+                        </action>
+                        <action id="4" name="Set font color" sid="781322886606177" type="textoIntro">
+                            <param id="0" name="Color">rgb(255, 0, 0)</param>
                         </action>
                     </actions>
                 </event-block>
@@ -635,7 +674,7 @@
                         <condition id="-14" name="Compare variable" sid="202624817104748" type="System">
                             <param id="0" name="Variable">TempoIntro</param>
                             <param id="1" name="Comparison">4</param>
-                            <param id="2" name="Value">6</param>
+                            <param id="2" name="Value">8</param>
                         </condition>
                     </conditions>
                     <actions>
@@ -663,7 +702,7 @@
                 <event-block sid="534423152783284">
                     <conditions>
                         <condition id="-6" name="Every X seconds" sid="225916197563619" type="System">
-                            <param id="0" name="Interval (seconds)">0.05</param>
+                            <param id="0" name="Interval (seconds)">0.1</param>
                         </condition>
                         <condition id="-14" name="Compare variable" sid="213029518051222" type="System">
                             <param id="0" name="Variable">TempoIntro</param>
@@ -674,6 +713,9 @@
                     <actions>
                         <action id="0" name="Set text" sid="599580448318719" type="textoIntro">
                             <param id="0" name="Text">left(FraseIntro14,len(textoIntro.Text)+1)</param>
+                        </action>
+                        <action id="4" name="Set font color" sid="475811784990854" type="textoIntro">
+                            <param id="0" name="Color">rgb(146, 255, 20)</param>
                         </action>
                     </actions>
                 </event-block>
@@ -696,6 +738,9 @@
                         </action>
                         <action id="0" name="Set text" sid="269091552446759" type="textoIntro">
                             <param id="0" name="Text">&quot;&quot;</param>
+                        </action>
+                        <action id="-2" name="Go to layout" sid="358772818675651" type="System">
+                            <param id="0" name="Layout">Menu</param>
                         </action>
                     </actions>
                 </event-block>
