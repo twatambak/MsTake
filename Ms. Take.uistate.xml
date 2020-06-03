@@ -14,7 +14,7 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <layout order="2">Intro</layout>
         <event-sheet order="1">Eventos Menu</event-sheet>
         <event-sheet order="3">Eventos Intro</event-sheet>
-        <event-sheet order="4">Definição das frases</event-sheet>
+        <event-sheet order="4">Inserção das frases</event-sheet>
         <event-sheet order="5">Config</event-sheet>
     </open-tabs>
     <properties>
@@ -29,6 +29,8 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="1" path="object-folder/Background/" />
         <folder expanded="1" path="object-folder/Bordas/" />
         <folder expanded="1" path="object-folder/Textos/" />
+        <folder expanded="1" path="object-folder/Arrays textos/" />
+        <folder expanded="1" path="object-folder/Controles/" />
         <folder expanded="1" path="layout-folder/" />
         <folder expanded="1" path="event-folder/" />
         <folder expanded="1" path="file-folder/" />

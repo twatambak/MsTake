@@ -3,7 +3,7 @@
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>Eventos Intro</name>
     <events>
-        <include>Definição das frases</include>
+        <include>Inserção das frases</include>
         <comment>Controle de tempo de tela de cada frase.</comment>
         <variable constant="0" name="TempoIntro" sid="895958321804626" static="0" type="number">0</variable>
         <comment>Variável que recebe as frases de Ms. Take.</comment>
@@ -52,7 +52,7 @@
                     <actions>
                         <action id="-9" name="Set value" sid="112563360894457" type="System">
                             <param id="0" name="Variable">FraseIntro</param>
-                            <param id="1" name="Value">frasesIntro.At(1)</param>
+                            <param id="1" name="Value">arrayFrasesIntro.At(1)</param>
                         </action>
                         <action id="0" name="Set text" sid="661563380881837" type="textoIntro">
                             <param id="0" name="Text">left(FraseIntro,len(textoIntro.Text)+1)</param>
@@ -106,7 +106,7 @@
                     <actions>
                         <action id="-9" name="Set value" sid="970391087256260" type="System">
                             <param id="0" name="Variable">FraseIntro</param>
-                            <param id="1" name="Value">frasesIntro.At(2)</param>
+                            <param id="1" name="Value">arrayFrasesIntro.At(2)</param>
                         </action>
                         <action id="0" name="Set text" sid="875276787359166" type="textoIntro">
                             <param id="0" name="Text">left(FraseIntro,len(textoIntro.Text)+1)</param>
@@ -160,7 +160,7 @@
                     <actions>
                         <action id="-9" name="Set value" sid="922633916989341" type="System">
                             <param id="0" name="Variable">FraseIntro</param>
-                            <param id="1" name="Value">frasesIntro.At(3)</param>
+                            <param id="1" name="Value">arrayFrasesIntro.At(3)</param>
                         </action>
                         <action id="0" name="Set text" sid="294134165183832" type="textoIntro">
                             <param id="0" name="Text">left(FraseIntro,len(textoIntro.Text)+1)</param>
@@ -214,7 +214,7 @@
                     <actions>
                         <action id="-9" name="Set value" sid="671035064477630" type="System">
                             <param id="0" name="Variable">FraseIntro</param>
-                            <param id="1" name="Value">frasesIntro.At(4)</param>
+                            <param id="1" name="Value">arrayFrasesIntro.At(4)</param>
                         </action>
                         <action id="0" name="Set text" sid="972343866048345" type="textoIntro">
                             <param id="0" name="Text">left(FraseIntro,len(textoIntro.Text)+1)</param>
@@ -268,7 +268,7 @@
                     <actions>
                         <action id="-9" name="Set value" sid="923513687325890" type="System">
                             <param id="0" name="Variable">FraseIntro</param>
-                            <param id="1" name="Value">frasesIntro.At(5)</param>
+                            <param id="1" name="Value">arrayFrasesIntro.At(5)</param>
                         </action>
                         <action id="0" name="Set text" sid="840225667080420" type="textoIntro">
                             <param id="0" name="Text">left(FraseIntro,len(textoIntro.Text)+1)</param>
@@ -322,7 +322,7 @@
                     <actions>
                         <action id="-9" name="Set value" sid="970919661598206" type="System">
                             <param id="0" name="Variable">FraseIntro</param>
-                            <param id="1" name="Value">frasesIntro.At(6)</param>
+                            <param id="1" name="Value">arrayFrasesIntro.At(6)</param>
                         </action>
                         <action id="0" name="Set text" sid="890149635740106" type="textoIntro">
                             <param id="0" name="Text">left(FraseIntro,len(textoIntro.Text)+1)</param>
@@ -376,7 +376,7 @@
                     <actions>
                         <action id="-9" name="Set value" sid="779135167380450" type="System">
                             <param id="0" name="Variable">FraseIntro</param>
-                            <param id="1" name="Value">frasesIntro.At(7)</param>
+                            <param id="1" name="Value">arrayFrasesIntro.At(7)</param>
                         </action>
                         <action id="0" name="Set text" sid="809146629604236" type="textoIntro">
                             <param id="0" name="Text">left(FraseIntro,len(textoIntro.Text)+1)</param>
@@ -430,7 +430,7 @@
                     <actions>
                         <action id="-9" name="Set value" sid="522893735040867" type="System">
                             <param id="0" name="Variable">FraseIntro</param>
-                            <param id="1" name="Value">frasesIntro.At(8)</param>
+                            <param id="1" name="Value">arrayFrasesIntro.At(8)</param>
                         </action>
                         <action id="0" name="Set text" sid="892579641869149" type="textoIntro">
                             <param id="0" name="Text">left(FraseIntro,len(textoIntro.Text)+1)</param>
@@ -484,7 +484,7 @@
                     <actions>
                         <action id="-9" name="Set value" sid="533103954964370" type="System">
                             <param id="0" name="Variable">FraseIntro</param>
-                            <param id="1" name="Value">frasesIntro.At(9)</param>
+                            <param id="1" name="Value">arrayFrasesIntro.At(9)</param>
                         </action>
                         <action id="0" name="Set text" sid="347315447101972" type="textoIntro">
                             <param id="0" name="Text">left(FraseIntro,len(textoIntro.Text)+1)</param>
@@ -538,7 +538,7 @@
                     <actions>
                         <action id="-9" name="Set value" sid="373434736217185" type="System">
                             <param id="0" name="Variable">FraseIntro</param>
-                            <param id="1" name="Value">frasesIntro.At(10)</param>
+                            <param id="1" name="Value">arrayFrasesIntro.At(10)</param>
                         </action>
                         <action id="0" name="Set text" sid="764053071625769" type="textoIntro">
                             <param id="0" name="Text">left(FraseIntro,len(textoIntro.Text)+1)</param>
@@ -592,7 +592,7 @@
                     <actions>
                         <action id="-9" name="Set value" sid="860650210099409" type="System">
                             <param id="0" name="Variable">FraseIntro</param>
-                            <param id="1" name="Value">frasesIntro.At(11)</param>
+                            <param id="1" name="Value">arrayFrasesIntro.At(11)</param>
                         </action>
                         <action id="0" name="Set text" sid="614926284333614" type="textoIntro">
                             <param id="0" name="Text">left(FraseIntro,len(textoIntro.Text)+1)</param>
@@ -646,7 +646,7 @@
                     <actions>
                         <action id="-9" name="Set value" sid="961064082473343" type="System">
                             <param id="0" name="Variable">FraseIntro</param>
-                            <param id="1" name="Value">frasesIntro.At(12)</param>
+                            <param id="1" name="Value">arrayFrasesIntro.At(12)</param>
                         </action>
                         <action id="0" name="Set text" sid="200932612749827" type="textoIntro">
                             <param id="0" name="Text">left(FraseIntro,len(textoIntro.Text)+1)</param>
@@ -700,7 +700,7 @@
                     <actions>
                         <action id="-9" name="Set value" sid="907740449214169" type="System">
                             <param id="0" name="Variable">FraseIntro</param>
-                            <param id="1" name="Value">frasesIntro.At(13)</param>
+                            <param id="1" name="Value">arrayFrasesIntro.At(13)</param>
                         </action>
                         <action id="0" name="Set text" sid="609978937186108" type="textoIntro">
                             <param id="0" name="Text">left(FraseIntro,len(textoIntro.Text)+1)</param>
@@ -754,7 +754,7 @@
                     <actions>
                         <action id="-9" name="Set value" sid="102787918772920" type="System">
                             <param id="0" name="Variable">FraseIntro</param>
-                            <param id="1" name="Value">frasesIntro.At(14)</param>
+                            <param id="1" name="Value">arrayFrasesIntro.At(14)</param>
                         </action>
                         <action id="0" name="Set text" sid="990466778528656" type="textoIntro">
                             <param id="0" name="Text">left(FraseIntro,len(textoIntro.Text)+1)</param>

@@ -1115,7 +1115,7 @@
             <instances>
                 <instance type="textoOpcoesMenu" uid="7">
                     <properties>
-                        <text>Pong</text>
+                        <text>Game</text>
                         <initial-visibility>Visible</initial-visibility>
                         <font>Arial,-37.6,400,0</font>
                         <color>255,255,255</color>
@@ -1154,7 +1154,7 @@
                 </instance>
                 <instance type="textoOpcoesMenu" uid="22">
                     <properties>
-                        <text>Tetris</text>
+                        <text>Game</text>
                         <initial-visibility>Visible</initial-visibility>
                         <font>Arial,-37.6,400,0</font>
                         <color>178,255,0</color>
@@ -1193,7 +1193,7 @@
                 </instance>
                 <instance type="textoOpcoesMenu" uid="27">
                     <properties>
-                        <text>Plataforma</text>
+                        <text>Game</text>
                         <initial-visibility>Visible</initial-visibility>
                         <font>Arial,-37.6,400,0</font>
                         <color>178,255,0</color>
@@ -1232,7 +1232,7 @@
                 </instance>
                 <instance type="textoOpcoesMenu" uid="36">
                     <properties>
-                        <text>Opções</text>
+                        <text>Game</text>
                         <initial-visibility>Visible</initial-visibility>
                         <font>Arial,-37.6,400,0</font>
                         <color>178,255,0</color>
@@ -1271,7 +1271,7 @@
                 </instance>
                 <instance type="textoOpcoesMenu" uid="41">
                     <properties>
-                        <text>Tiro</text>
+                        <text>Game</text>
                         <initial-visibility>Visible</initial-visibility>
                         <font>Arial,-37.6,400,0</font>
                         <color>178,255,0</color>
@@ -1310,7 +1310,7 @@
                 </instance>
                 <instance type="textoOpcoesMenu" uid="42">
                     <properties>
-                        <text>Labirinto</text>
+                        <text>Game</text>
                         <initial-visibility>Visible</initial-visibility>
                         <font>Arial,-37.6,400,0</font>
                         <color>178,255,0</color>
@@ -1369,7 +1369,14 @@
         </layer>
     </layers>
     <nonworld-instances>
-        <instance type="frasesIntro" uid="43">
+        <instance type="arrayFrasesIntro" uid="43">
+            <properties>
+                <width>10</width>
+                <height>1</height>
+                <depth>1</depth>
+            </properties>
+        </instance>
+        <instance type="arrayOpcoesMenu" uid="45">
             <properties>
                 <width>10</width>
                 <height>1</height>

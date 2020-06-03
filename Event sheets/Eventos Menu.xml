@@ -3,6 +3,7 @@
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>Eventos Menu</name>
     <events>
+        <include>Inserção das frases</include>
         <variable comment="Variável que armazena qual a opção do menu principal está selecionada." constant="0" name="OpcaoMenu" sid="108793603966217" static="0" type="number">1</variable>
         <variable constant="0" name="TituloPassou" sid="992242019100491" static="0" type="number">0</variable>
         <variable constant="0" name="Titulo" sid="136093149238283" static="0" type="text">Ms. Take</variable>
@@ -26,7 +27,7 @@
                             <param id="1" name="CSS URL">&quot;babyblue.css&quot;</param>
                         </action>
                         <action id="-16" name="Wait" sid="346937095584873" type="System">
-                            <param id="0" name="Seconds">1.0</param>
+                            <param id="0" name="Seconds">3</param>
                         </action>
                         <action id="-9" name="Set value" sid="417527737034065" type="System">
                             <param id="0" name="Variable">TituloPassou</param>
@@ -84,7 +85,50 @@
                 </event-block>
             </sub-events>
         </event-group>
-        <event-group description="" sid="927843141013116" title="(MENU PRINCIPAL) Aparição das opções" />
+        <event-group description="" sid="927843141013116" title="(MENU PRINCIPAL) Aparição das opções">
+            <sub-events>
+                <event-block sid="776963274266775">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="739018811396592" type="System">
+                            <param id="0" name="Variable">TituloPassou</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">0</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-16" name="Set opacity" sid="223966604057356" type="bordasOpcoes">
+                            <param id="0" name="Opacity">0</param>
+                        </action>
+                        <action id="-16" name="Set opacity" sid="468777095967353" type="textoOpcoesMenu">
+                            <param id="0" name="Opacity">0</param>
+                        </action>
+                        <action id="-16" name="Set opacity" sid="434395758186220" type="textoFala">
+                            <param id="0" name="Opacity">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="748677567883970">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="235656659572430" type="System">
+                            <param id="0" name="Variable">TituloPassou</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-16" name="Set opacity" sid="199764130816150" type="bordasOpcoes">
+                            <param id="0" name="Opacity">100</param>
+                        </action>
+                        <action id="-16" name="Set opacity" sid="661441501652930" type="textoOpcoesMenu">
+                            <param id="0" name="Opacity">100</param>
+                        </action>
+                        <action id="-16" name="Set opacity" sid="557207802629175" type="textoFala">
+                            <param id="0" name="Opacity">100</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
         <event-group description="" sid="507900006820353" title="(MENU PRINCIPAL) Escolha das opções">
             <sub-events>
                 <event-block sid="532976769118608">
@@ -232,6 +276,102 @@
                                     <param id="0" name="Effect">&quot;SetColor&quot;</param>
                                     <param id="1" name="Parameter index">2</param>
                                     <param id="2" name="Value">0</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="" sid="954441657945746" title="(MENU PRINCIPAL) Definição dos textos das opções">
+            <sub-events>
+                <event-block sid="806390517493419">
+                    <conditions>
+                        <condition id="-2" name="On start of layout" sid="573817312126266" type="System" />
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="169623839596024">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="575359496410047" type="textoOpcoesMenu">
+                                    <param id="0" name="Instance variable">ID</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">1</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Set text" sid="347741960204730" type="textoOpcoesMenu">
+                                    <param id="0" name="Text">arrayOpcoesMenu.At(1)</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="221800249663305">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="723726696951945" type="textoOpcoesMenu">
+                                    <param id="0" name="Instance variable">ID</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">2</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Set text" sid="401605208443012" type="textoOpcoesMenu">
+                                    <param id="0" name="Text">arrayOpcoesMenu.At(2)</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="279499924744401">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="840781921170932" type="textoOpcoesMenu">
+                                    <param id="0" name="Instance variable">ID</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">3</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Set text" sid="821805180374081" type="textoOpcoesMenu">
+                                    <param id="0" name="Text">arrayOpcoesMenu.At(3)</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="782217977495478">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="127905595528680" type="textoOpcoesMenu">
+                                    <param id="0" name="Instance variable">ID</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">4</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Set text" sid="134309512413024" type="textoOpcoesMenu">
+                                    <param id="0" name="Text">arrayOpcoesMenu.At(4)</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="720479678529900">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="357225780544750" type="textoOpcoesMenu">
+                                    <param id="0" name="Instance variable">ID</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">5</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Set text" sid="255822211872098" type="textoOpcoesMenu">
+                                    <param id="0" name="Text">arrayOpcoesMenu.At(5)</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="919919015422179">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="902165400134512" type="textoOpcoesMenu">
+                                    <param id="0" name="Instance variable">ID</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">6</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Set text" sid="321839071085970" type="textoOpcoesMenu">
+                                    <param id="0" name="Text">arrayOpcoesMenu.At(6)</param>
                                 </action>
                             </actions>
                         </event-block>

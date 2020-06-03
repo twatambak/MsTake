@@ -108,12 +108,19 @@
                 </effects>
             </object-type>
         </object-folder>
-        <object-type global="1" name="frasesIntro" sid="469679065278458">
-            <plugin id="Arr" />
-        </object-type>
-        <object-type name="Keyboard" sid="758708323480731">
-            <plugin id="Keyboard" />
-        </object-type>
+        <object-folder name="Arrays textos">
+            <object-type global="1" name="arrayFrasesIntro" sid="469679065278458">
+                <plugin id="Arr" />
+            </object-type>
+            <object-type global="1" name="arrayOpcoesMenu" sid="242862960478756">
+                <plugin id="Arr" />
+            </object-type>
+        </object-folder>
+        <object-folder name="Controles">
+            <object-type name="Keyboard" sid="758708323480731">
+                <plugin id="Keyboard" />
+            </object-type>
+        </object-folder>
     </object-folder>
     <families />
     <layout-folder>
@@ -123,7 +130,7 @@
     <event-folder>
         <event-sheet>Eventos Menu.xml</event-sheet>
         <event-sheet>Eventos Intro.xml</event-sheet>
-        <event-sheet>Definição das frases.xml</event-sheet>
+        <event-sheet>Inserção das frases.xml</event-sheet>
         <event-sheet>Config.xml</event-sheet>
     </event-folder>
     <global-instances>

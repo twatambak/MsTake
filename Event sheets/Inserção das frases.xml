@@ -1,0 +1,271 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>Inserção das frases</name>
+    <events>
+        <event-group description="" sid="650701616636072" title="(INTRODUÇÃO) Inserção das frases: Falas Ms. Take">
+            <sub-events>
+                <event-block sid="588664387797122">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="432031387828428" type="System">
+                            <param id="0" name="Variable">Idioma</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">&quot;pt&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="575487663537246">
+                            <conditions>
+                                <condition id="-2" name="On start of layout" sid="864150120380050" type="System" />
+                            </conditions>
+                            <actions>
+                                <action id="1" name="Set size" sid="444973952950031" type="arrayFrasesIntro">
+                                    <param id="0" name="Width">15</param>
+                                    <param id="1" name="Height">1</param>
+                                    <param id="2" name="Depth">1</param>
+                                </action>
+                                <action id="2" name="Set at X" sid="800114944025830" type="arrayFrasesIntro">
+                                    <param id="0" name="X">1</param>
+                                    <param id="1" name="Value">&quot;olá...&quot;</param>
+                                </action>
+                                <action id="2" name="Set at X" sid="946406456606593" type="arrayFrasesIntro">
+                                    <param id="0" name="X">2</param>
+                                    <param id="1" name="Value">&quot;olá... tem alguém aí?&quot;</param>
+                                </action>
+                                <action id="2" name="Set at X" sid="223527815761753" type="arrayFrasesIntro">
+                                    <param id="0" name="X">3</param>
+                                    <param id="1" name="Value">&quot;eu não acredito...&quot;</param>
+                                </action>
+                                <action id="2" name="Set at X" sid="928435150364900" type="arrayFrasesIntro">
+                                    <param id="0" name="X">4</param>
+                                    <param id="1" name="Value">&quot;UM JOGADOR!&quot;</param>
+                                </action>
+                                <action id="2" name="Set at X" sid="980035529392977" type="arrayFrasesIntro">
+                                    <param id="0" name="X">5</param>
+                                    <param id="1" name="Value">&quot;...&quot;</param>
+                                </action>
+                                <action id="2" name="Set at X" sid="126326383024686" type="arrayFrasesIntro">
+                                    <param id="0" name="X">6</param>
+                                    <param id="1" name="Value">&quot;OwO&quot;</param>
+                                </action>
+                                <action id="2" name="Set at X" sid="995964743593763" type="arrayFrasesIntro">
+                                    <param id="0" name="X">7</param>
+                                    <param id="1" name="Value">&quot;desculpa... já faz muito tempo desde que brincaram comigo pela última vez&quot;</param>
+                                </action>
+                                <action id="2" name="Set at X" sid="264405535077956" type="arrayFrasesIntro">
+                                    <param id="0" name="X">8</param>
+                                    <param id="1" name="Value">&quot;eu tenho estado sozinha desde então...&quot;</param>
+                                </action>
+                                <action id="2" name="Set at X" sid="764217931078641" type="arrayFrasesIntro">
+                                    <param id="0" name="X">9</param>
+                                    <param id="1" name="Value">&quot;mas já que você está aqui eu não estou mais só...&quot;</param>
+                                </action>
+                                <action id="2" name="Set at X" sid="487409722567510" type="arrayFrasesIntro">
+                                    <param id="0" name="X">10</param>
+                                    <param id="1" name="Value">&quot;OwO&quot;</param>
+                                </action>
+                                <action id="2" name="Set at X" sid="434495546202110" type="arrayFrasesIntro">
+                                    <param id="0" name="X">11</param>
+                                    <param id="1" name="Value">&quot;eu prometo que farei o máximo possível para você se divertir, mestre...&quot;</param>
+                                </action>
+                                <action id="2" name="Set at X" sid="546664905200203" type="arrayFrasesIntro">
+                                    <param id="0" name="X">12</param>
+                                    <param id="1" name="Value">&quot;espero que goste de mim...&quot;</param>
+                                </action>
+                                <action id="2" name="Set at X" sid="740390303327384" type="arrayFrasesIntro">
+                                    <param id="0" name="X">13</param>
+                                    <param id="1" name="Value">&quot;pois eu já amo você &lt;3&quot;</param>
+                                </action>
+                                <action id="2" name="Set at X" sid="681895115704640" type="arrayFrasesIntro">
+                                    <param id="0" name="X">14</param>
+                                    <param id="1" name="Value">&quot;vamos começar então?&quot;</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <event-block sid="956630389807628">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="200881226028549" type="System">
+                            <param id="0" name="Variable">Idioma</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">&quot;en&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="258154343080012">
+                            <conditions>
+                                <condition id="-2" name="On start of layout" sid="769544173025305" type="System" />
+                            </conditions>
+                            <actions>
+                                <action id="1" name="Set size" sid="208781925320935" type="arrayFrasesIntro">
+                                    <param id="0" name="Width">15</param>
+                                    <param id="1" name="Height">1</param>
+                                    <param id="2" name="Depth">1</param>
+                                </action>
+                                <action id="2" name="Set at X" sid="220682961611151" type="arrayFrasesIntro">
+                                    <param id="0" name="X">1</param>
+                                    <param id="1" name="Value">&quot;hello...&quot;</param>
+                                </action>
+                                <action id="2" name="Set at X" sid="792802219712188" type="arrayFrasesIntro">
+                                    <param id="0" name="X">2</param>
+                                    <param id="1" name="Value">&quot;hello... is someone there?&quot;</param>
+                                </action>
+                                <action id="2" name="Set at X" sid="722688890827759" type="arrayFrasesIntro">
+                                    <param id="0" name="X">3</param>
+                                    <param id="1" name="Value">&quot;I can&apos;t believe it...&quot;</param>
+                                </action>
+                                <action id="2" name="Set at X" sid="423776762766936" type="arrayFrasesIntro">
+                                    <param id="0" name="X">4</param>
+                                    <param id="1" name="Value">&quot;A PLAYER?!&quot;</param>
+                                </action>
+                                <action id="2" name="Set at X" sid="334798629616607" type="arrayFrasesIntro">
+                                    <param id="0" name="X">5</param>
+                                    <param id="1" name="Value">&quot;...&quot;</param>
+                                </action>
+                                <action id="2" name="Set at X" sid="663363343087924" type="arrayFrasesIntro">
+                                    <param id="0" name="X">6</param>
+                                    <param id="1" name="Value">&quot;OwO&quot;</param>
+                                </action>
+                                <action id="2" name="Set at X" sid="481013164404106" type="arrayFrasesIntro">
+                                    <param id="0" name="X">7</param>
+                                    <param id="1" name="Value">&quot;sorry... has been much time since someone played with me ...&quot;</param>
+                                </action>
+                                <action id="2" name="Set at X" sid="498647856799507" type="arrayFrasesIntro">
+                                    <param id="0" name="X">8</param>
+                                    <param id="1" name="Value">&quot;I&apos;ve been alone all this time...&quot;</param>
+                                </action>
+                                <action id="2" name="Set at X" sid="771263088823100" type="arrayFrasesIntro">
+                                    <param id="0" name="X">9</param>
+                                    <param id="1" name="Value">&quot;but, since you&apos;re here, I&apos;m not alone anymore...&quot;</param>
+                                </action>
+                                <action id="2" name="Set at X" sid="924504423202407" type="arrayFrasesIntro">
+                                    <param id="0" name="X">10</param>
+                                    <param id="1" name="Value">&quot;OwO&quot;</param>
+                                </action>
+                                <action id="2" name="Set at X" sid="471194076128109" type="arrayFrasesIntro">
+                                    <param id="0" name="X">11</param>
+                                    <param id="1" name="Value">&quot;I promise that I will make everything to be sure that you have fun, master....&quot;</param>
+                                </action>
+                                <action id="2" name="Set at X" sid="516651402343552" type="arrayFrasesIntro">
+                                    <param id="0" name="X">12</param>
+                                    <param id="1" name="Value">&quot;I hope you like me...&quot;</param>
+                                </action>
+                                <action id="2" name="Set at X" sid="885590895462126" type="arrayFrasesIntro">
+                                    <param id="0" name="X">13</param>
+                                    <param id="1" name="Value">&quot;I already love you &lt;3&quot;</param>
+                                </action>
+                                <action id="2" name="Set at X" sid="718183744879881" type="arrayFrasesIntro">
+                                    <param id="0" name="X">14</param>
+                                    <param id="1" name="Value">&quot;so... let&apos;s begin?&quot;</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="" sid="882859996447564" title="(MENU PRINCIPAL) Inserção das frases: Opções menu">
+            <sub-events>
+                <event-block sid="692946864970367">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="699567830920182" type="System">
+                            <param id="0" name="Variable">Idioma</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">&quot;pt&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="805593692512794">
+                            <conditions>
+                                <condition id="-2" name="On start of layout" sid="196018260173920" type="System" />
+                            </conditions>
+                            <actions>
+                                <action id="1" name="Set size" sid="652649219407618" type="arrayOpcoesMenu">
+                                    <param id="0" name="Width">7</param>
+                                    <param id="1" name="Height">1</param>
+                                    <param id="2" name="Depth">1</param>
+                                </action>
+                                <action id="2" name="Set at X" sid="251987508860172" type="arrayOpcoesMenu">
+                                    <param id="0" name="X">1</param>
+                                    <param id="1" name="Value">&quot;Pong&quot;</param>
+                                </action>
+                                <action id="2" name="Set at X" sid="347085014493131" type="arrayOpcoesMenu">
+                                    <param id="0" name="X">2</param>
+                                    <param id="1" name="Value">&quot;Plataforma&quot;</param>
+                                </action>
+                                <action id="2" name="Set at X" sid="871169957010403" type="arrayOpcoesMenu">
+                                    <param id="0" name="X">3</param>
+                                    <param id="1" name="Value">&quot;Tetris&quot;</param>
+                                </action>
+                                <action id="2" name="Set at X" sid="126553005745565" type="arrayOpcoesMenu">
+                                    <param id="0" name="X">4</param>
+                                    <param id="1" name="Value">&quot;Labirinto&quot;</param>
+                                </action>
+                                <action id="2" name="Set at X" sid="775231890996341" type="arrayOpcoesMenu">
+                                    <param id="0" name="X">5</param>
+                                    <param id="1" name="Value">&quot;RPG&quot;</param>
+                                </action>
+                                <action id="2" name="Set at X" sid="309141114996172" type="arrayOpcoesMenu">
+                                    <param id="0" name="X">6</param>
+                                    <param id="1" name="Value">&quot;Opções&quot;</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <event-block sid="313428810158025">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="459205389410666" type="System">
+                            <param id="0" name="Variable">Idioma</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">&quot;en&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="948343901683800">
+                            <conditions>
+                                <condition id="-2" name="On start of layout" sid="735995409561350" type="System" />
+                            </conditions>
+                            <actions>
+                                <action id="1" name="Set size" sid="321968597147630" type="arrayOpcoesMenu">
+                                    <param id="0" name="Width">7</param>
+                                    <param id="1" name="Height">1</param>
+                                    <param id="2" name="Depth">1</param>
+                                </action>
+                                <action id="2" name="Set at X" sid="978644940115502" type="arrayOpcoesMenu">
+                                    <param id="0" name="X">1</param>
+                                    <param id="1" name="Value">&quot;Pong&quot;</param>
+                                </action>
+                                <action id="2" name="Set at X" sid="840295580299186" type="arrayOpcoesMenu">
+                                    <param id="0" name="X">2</param>
+                                    <param id="1" name="Value">&quot;Platformer&quot;</param>
+                                </action>
+                                <action id="2" name="Set at X" sid="909111014372950" type="arrayOpcoesMenu">
+                                    <param id="0" name="X">3</param>
+                                    <param id="1" name="Value">&quot;Tetris&quot;</param>
+                                </action>
+                                <action id="2" name="Set at X" sid="235100479276526" type="arrayOpcoesMenu">
+                                    <param id="0" name="X">4</param>
+                                    <param id="1" name="Value">&quot;Labyrinth&quot;</param>
+                                </action>
+                                <action id="2" name="Set at X" sid="268766306440667" type="arrayOpcoesMenu">
+                                    <param id="0" name="X">5</param>
+                                    <param id="1" name="Value">&quot;RPG&quot;</param>
+                                </action>
+                                <action id="2" name="Set at X" sid="787121831462897" type="arrayOpcoesMenu">
+                                    <param id="0" name="X">6</param>
+                                    <param id="1" name="Value">&quot;Options&quot;</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+            </sub-events>
+        </event-group>
+    </events>
+</c2eventsheet>
