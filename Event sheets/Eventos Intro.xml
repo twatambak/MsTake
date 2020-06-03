@@ -3,6 +3,7 @@
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>Eventos Intro</name>
     <events>
+        <variable constant="0" name="FraseIntro" sid="918808841790477" static="0" type="number">0</variable>
         <comment>Controle de tempo de tela de cada frase.</comment>
         <variable constant="0" name="TempoIntro" sid="895958321804626" static="0" type="number">0</variable>
         <comment>Variáveis globais que contém as frases ditas por Take na intro.</comment>

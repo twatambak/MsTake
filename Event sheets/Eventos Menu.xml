@@ -15,7 +15,7 @@
                     </conditions>
                     <actions>
                         <action id="5" name="Set web font" sid="558689991247833" type="textoOpcoesMenu">
-                            <param id="0" name="Family name">&quot;&apos;digitaldiscomedium&apos;;&quot;</param>
+                            <param id="0" name="Family name">&quot;digitaldiscomedium&quot;</param>
                             <param id="1" name="CSS URL">&quot;digitald.css&quot;</param>
                         </action>
                         <action id="5" name="Set web font" sid="614419606107150" type="textoTitulo">

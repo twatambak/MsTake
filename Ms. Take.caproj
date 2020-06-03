@@ -10,6 +10,7 @@
     <unique-id>378f82haqeuja</unique-id>
     <saved-with-version>26500</saved-with-version>
     <used-plugins>
+        <plugin author="Scirra" id="Arr" version="1">Array</plugin>
         <plugin author="Scirra" id="Text" version="1">Text</plugin>
         <plugin author="Scirra" id="TiledBg" version="1">Tiled Background</plugin>
     </used-plugins>
@@ -89,6 +90,9 @@
                 <plugin id="Text" />
             </object-type>
         </object-folder>
+        <object-type global="1" name="frasesIntro" sid="469679065278458">
+            <plugin id="Arr" />
+        </object-type>
     </object-folder>
     <families />
     <layout-folder>
@@ -98,6 +102,7 @@
     <event-folder>
         <event-sheet>Eventos Menu.xml</event-sheet>
         <event-sheet>Eventos Intro.xml</event-sheet>
+        <event-sheet>Definição das frases.xml</event-sheet>
     </event-folder>
     <global-instances />
     <sounds-folder />
