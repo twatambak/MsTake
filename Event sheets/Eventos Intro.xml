@@ -3,24 +3,11 @@
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>Eventos Intro</name>
     <events>
-        <variable constant="0" name="FraseIntro" sid="918808841790477" static="0" type="number">0</variable>
+        <include>Definição das frases</include>
         <comment>Controle de tempo de tela de cada frase.</comment>
         <variable constant="0" name="TempoIntro" sid="895958321804626" static="0" type="number">0</variable>
         <comment>Variáveis globais que contém as frases ditas por Take na intro.</comment>
-        <variable constant="0" name="FraseIntro1" sid="243544371712768" static="0" type="text">olá...</variable>
-        <variable constant="0" name="FraseIntro2" sid="270614238801932" static="0" type="text">olá... tem alguém aí?</variable>
-        <variable constant="0" name="FraseIntro3" sid="211843544788476" static="0" type="text">eu não acredito...</variable>
-        <variable constant="0" name="FraseIntro4" sid="754926306418386" static="0" type="text">UM JOGADOR!</variable>
-        <variable constant="0" name="FraseIntro5" sid="333606699412965" static="0" type="text">...</variable>
-        <variable constant="0" name="FraseIntro6" sid="109375645628673" static="0" type="text">OwO</variable>
-        <variable constant="0" name="FraseIntro7" sid="848892371050180" static="0" type="text">desculpa... já faz muito tempo desde que brincaram comigo pela última vez</variable>
-        <variable constant="0" name="FraseIntro8" sid="106592127333756" static="0" type="text">eu tenho estado sozinha desde então...</variable>
-        <variable constant="0" name="FraseIntro9" sid="223264320038728" static="0" type="text">mas já que você está aqui eu não estou mais só...</variable>
-        <variable constant="0" name="FraseIntro10" sid="333807234018209" static="0" type="text">OwO</variable>
-        <variable constant="0" name="FraseIntro11" sid="636624038912091" static="0" type="text">eu prometo que farei o máximo possível para você se divertir, mestre...</variable>
-        <variable constant="0" name="FraseIntro12" sid="560986448745810" static="0" type="text">espero que goste de mim...</variable>
-        <variable constant="0" name="FraseIntro13" sid="648596699376669" static="0" type="text">pois eu já amo você &lt;3</variable>
-        <variable constant="0" name="FraseIntro14" sid="669865376419909" static="0" type="text">vamos começar então?</variable>
+        <variable constant="0" name="FraseIntro" sid="918808841790477" static="0" type="text">a</variable>
         <event-group description="" sid="321437284569092" title="Config Inicial (Intro)">
             <sub-events>
                 <event-block sid="459778700505111">
@@ -63,8 +50,12 @@
                         </condition>
                     </conditions>
                     <actions>
+                        <action id="-9" name="Set value" sid="112563360894457" type="System">
+                            <param id="0" name="Variable">FraseIntro</param>
+                            <param id="1" name="Value">frasesIntro.At(1)</param>
+                        </action>
                         <action id="0" name="Set text" sid="661563380881837" type="textoIntro">
-                            <param id="0" name="Text">left(FraseIntro1,len(textoIntro.Text)+1)</param>
+                            <param id="0" name="Text">left(FraseIntro,len(textoIntro.Text)+1)</param>
                         </action>
                         <action id="4" name="Set font color" sid="665278641009058" type="textoIntro">
                             <param id="0" name="Color">rgb(146, 255, 20)</param>
@@ -113,8 +104,12 @@
                         </condition>
                     </conditions>
                     <actions>
-                        <action id="0" name="Set text" sid="957553273997030" type="textoIntro">
-                            <param id="0" name="Text">left(FraseIntro2,len(textoIntro.Text)+1)</param>
+                        <action id="-9" name="Set value" sid="970391087256260" type="System">
+                            <param id="0" name="Variable">FraseIntro</param>
+                            <param id="1" name="Value">frasesIntro.At(2)</param>
+                        </action>
+                        <action id="0" name="Set text" sid="875276787359166" type="textoIntro">
+                            <param id="0" name="Text">left(FraseIntro,len(textoIntro.Text)+1)</param>
                         </action>
                         <action id="4" name="Set font color" sid="956312079679822" type="textoIntro">
                             <param id="0" name="Color">rgb(146, 255, 20)</param>
@@ -163,8 +158,12 @@
                         </condition>
                     </conditions>
                     <actions>
-                        <action id="0" name="Set text" sid="325282491757730" type="textoIntro">
-                            <param id="0" name="Text">left(FraseIntro3,len(textoIntro.Text)+1)</param>
+                        <action id="-9" name="Set value" sid="922633916989341" type="System">
+                            <param id="0" name="Variable">FraseIntro</param>
+                            <param id="1" name="Value">frasesIntro.At(3)</param>
+                        </action>
+                        <action id="0" name="Set text" sid="294134165183832" type="textoIntro">
+                            <param id="0" name="Text">left(FraseIntro,len(textoIntro.Text)+1)</param>
                         </action>
                         <action id="4" name="Set font color" sid="429304019884895" type="textoIntro">
                             <param id="0" name="Color">rgb(146, 255, 20)</param>
@@ -213,8 +212,12 @@
                         </condition>
                     </conditions>
                     <actions>
-                        <action id="0" name="Set text" sid="114562831892396" type="textoIntro">
-                            <param id="0" name="Text">left(FraseIntro4,len(textoIntro.Text)+1)</param>
+                        <action id="-9" name="Set value" sid="671035064477630" type="System">
+                            <param id="0" name="Variable">FraseIntro</param>
+                            <param id="1" name="Value">frasesIntro.At(4)</param>
+                        </action>
+                        <action id="0" name="Set text" sid="972343866048345" type="textoIntro">
+                            <param id="0" name="Text">left(FraseIntro,len(textoIntro.Text)+1)</param>
                         </action>
                         <action id="4" name="Set font color" sid="455040096533233" type="textoIntro">
                             <param id="0" name="Color">rgb(146, 255, 20)</param>
@@ -263,8 +266,12 @@
                         </condition>
                     </conditions>
                     <actions>
-                        <action id="0" name="Set text" sid="209653960165399" type="textoIntro">
-                            <param id="0" name="Text">left(FraseIntro5,len(textoIntro.Text)+1)</param>
+                        <action id="-9" name="Set value" sid="923513687325890" type="System">
+                            <param id="0" name="Variable">FraseIntro</param>
+                            <param id="1" name="Value">frasesIntro.At(5)</param>
+                        </action>
+                        <action id="0" name="Set text" sid="840225667080420" type="textoIntro">
+                            <param id="0" name="Text">left(FraseIntro,len(textoIntro.Text)+1)</param>
                         </action>
                         <action id="4" name="Set font color" sid="948298211208082" type="textoIntro">
                             <param id="0" name="Color">rgb(146, 255, 20)</param>
@@ -313,8 +320,12 @@
                         </condition>
                     </conditions>
                     <actions>
-                        <action id="0" name="Set text" sid="575187808702553" type="textoIntro">
-                            <param id="0" name="Text">left(FraseIntro6,len(textoIntro.Text)+1)</param>
+                        <action id="-9" name="Set value" sid="970919661598206" type="System">
+                            <param id="0" name="Variable">FraseIntro</param>
+                            <param id="1" name="Value">frasesIntro.At(6)</param>
+                        </action>
+                        <action id="0" name="Set text" sid="890149635740106" type="textoIntro">
+                            <param id="0" name="Text">left(FraseIntro,len(textoIntro.Text)+1)</param>
                         </action>
                         <action id="4" name="Set font color" sid="823008067625759" type="textoIntro">
                             <param id="0" name="Color">rgb(251, 0, 239)</param>
@@ -363,8 +374,12 @@
                         </condition>
                     </conditions>
                     <actions>
-                        <action id="0" name="Set text" sid="528260935953695" type="textoIntro">
-                            <param id="0" name="Text">left(FraseIntro7,len(textoIntro.Text)+1)</param>
+                        <action id="-9" name="Set value" sid="779135167380450" type="System">
+                            <param id="0" name="Variable">FraseIntro</param>
+                            <param id="1" name="Value">frasesIntro.At(7)</param>
+                        </action>
+                        <action id="0" name="Set text" sid="809146629604236" type="textoIntro">
+                            <param id="0" name="Text">left(FraseIntro,len(textoIntro.Text)+1)</param>
                         </action>
                         <action id="4" name="Set font color" sid="243953527678409" type="textoIntro">
                             <param id="0" name="Color">rgb(146, 255, 20)</param>
@@ -413,8 +428,12 @@
                         </condition>
                     </conditions>
                     <actions>
-                        <action id="0" name="Set text" sid="971815621262648" type="textoIntro">
-                            <param id="0" name="Text">left(FraseIntro8,len(textoIntro.Text)+1)</param>
+                        <action id="-9" name="Set value" sid="522893735040867" type="System">
+                            <param id="0" name="Variable">FraseIntro</param>
+                            <param id="1" name="Value">frasesIntro.At(8)</param>
+                        </action>
+                        <action id="0" name="Set text" sid="892579641869149" type="textoIntro">
+                            <param id="0" name="Text">left(FraseIntro,len(textoIntro.Text)+1)</param>
                         </action>
                         <action id="4" name="Set font color" sid="310302650627780" type="textoIntro">
                             <param id="0" name="Color">rgb(146, 255, 20)</param>
@@ -463,8 +482,12 @@
                         </condition>
                     </conditions>
                     <actions>
-                        <action id="0" name="Set text" sid="295651068069201" type="textoIntro">
-                            <param id="0" name="Text">left(FraseIntro9,len(textoIntro.Text)+1)</param>
+                        <action id="-9" name="Set value" sid="533103954964370" type="System">
+                            <param id="0" name="Variable">FraseIntro</param>
+                            <param id="1" name="Value">frasesIntro.At(9)</param>
+                        </action>
+                        <action id="0" name="Set text" sid="347315447101972" type="textoIntro">
+                            <param id="0" name="Text">left(FraseIntro,len(textoIntro.Text)+1)</param>
                         </action>
                         <action id="4" name="Set font color" sid="152238582234807" type="textoIntro">
                             <param id="0" name="Color">rgb(146, 255, 20)</param>
@@ -513,8 +536,12 @@
                         </condition>
                     </conditions>
                     <actions>
-                        <action id="0" name="Set text" sid="367314349057774" type="textoIntro">
-                            <param id="0" name="Text">left(FraseIntro10,len(textoIntro.Text)+1)</param>
+                        <action id="-9" name="Set value" sid="373434736217185" type="System">
+                            <param id="0" name="Variable">FraseIntro</param>
+                            <param id="1" name="Value">frasesIntro.At(10)</param>
+                        </action>
+                        <action id="0" name="Set text" sid="764053071625769" type="textoIntro">
+                            <param id="0" name="Text">left(FraseIntro,len(textoIntro.Text)+1)</param>
                         </action>
                         <action id="4" name="Set font color" sid="783649927457851" type="textoIntro">
                             <param id="0" name="Color">rgb(251, 0, 239)</param>
@@ -563,8 +590,12 @@
                         </condition>
                     </conditions>
                     <actions>
-                        <action id="0" name="Set text" sid="381544311752001" type="textoIntro">
-                            <param id="0" name="Text">left(FraseIntro11,len(textoIntro.Text)+1)</param>
+                        <action id="-9" name="Set value" sid="860650210099409" type="System">
+                            <param id="0" name="Variable">FraseIntro</param>
+                            <param id="1" name="Value">frasesIntro.At(11)</param>
+                        </action>
+                        <action id="0" name="Set text" sid="614926284333614" type="textoIntro">
+                            <param id="0" name="Text">left(FraseIntro,len(textoIntro.Text)+1)</param>
                         </action>
                         <action id="4" name="Set font color" sid="147449600564893" type="textoIntro">
                             <param id="0" name="Color">rgb(146, 255, 20)</param>
@@ -613,8 +644,12 @@
                         </condition>
                     </conditions>
                     <actions>
-                        <action id="0" name="Set text" sid="233429764216781" type="textoIntro">
-                            <param id="0" name="Text">left(FraseIntro12,len(textoIntro.Text)+1)</param>
+                        <action id="-9" name="Set value" sid="961064082473343" type="System">
+                            <param id="0" name="Variable">FraseIntro</param>
+                            <param id="1" name="Value">frasesIntro.At(12)</param>
+                        </action>
+                        <action id="0" name="Set text" sid="200932612749827" type="textoIntro">
+                            <param id="0" name="Text">left(FraseIntro,len(textoIntro.Text)+1)</param>
                         </action>
                         <action id="4" name="Set font color" sid="381322513108108" type="textoIntro">
                             <param id="0" name="Color">rgb(146, 255, 20)</param>
@@ -663,8 +698,12 @@
                         </condition>
                     </conditions>
                     <actions>
-                        <action id="0" name="Set text" sid="606524768728842" type="textoIntro">
-                            <param id="0" name="Text">left(FraseIntro13,len(textoIntro.Text)+1)</param>
+                        <action id="-9" name="Set value" sid="907740449214169" type="System">
+                            <param id="0" name="Variable">FraseIntro</param>
+                            <param id="1" name="Value">frasesIntro.At(13)</param>
+                        </action>
+                        <action id="0" name="Set text" sid="609978937186108" type="textoIntro">
+                            <param id="0" name="Text">left(FraseIntro,len(textoIntro.Text)+1)</param>
                         </action>
                         <action id="4" name="Set font color" sid="781322886606177" type="textoIntro">
                             <param id="0" name="Color">rgb(255, 0, 0)</param>
@@ -713,8 +752,12 @@
                         </condition>
                     </conditions>
                     <actions>
-                        <action id="0" name="Set text" sid="599580448318719" type="textoIntro">
-                            <param id="0" name="Text">left(FraseIntro14,len(textoIntro.Text)+1)</param>
+                        <action id="-9" name="Set value" sid="102787918772920" type="System">
+                            <param id="0" name="Variable">FraseIntro</param>
+                            <param id="1" name="Value">frasesIntro.At(14)</param>
+                        </action>
+                        <action id="0" name="Set text" sid="990466778528656" type="textoIntro">
+                            <param id="0" name="Text">left(FraseIntro,len(textoIntro.Text)+1)</param>
                         </action>
                         <action id="4" name="Set font color" sid="475811784990854" type="textoIntro">
                             <param id="0" name="Color">rgb(146, 255, 20)</param>

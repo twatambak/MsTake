@@ -66,6 +66,11 @@
                             <param id="0" name="X">14</param>
                             <param id="1" name="Value">&quot;vamos começar então?&quot;</param>
                         </action>
+                        <action id="1" name="Set size" sid="444973952950031" type="frasesIntro">
+                            <param id="0" name="Width">100</param>
+                            <param id="1" name="Height">1</param>
+                            <param id="2" name="Depth">1</param>
+                        </action>
                     </actions>
                 </event-block>
             </sub-events>
