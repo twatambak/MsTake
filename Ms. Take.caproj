@@ -11,6 +11,7 @@
     <saved-with-version>26500</saved-with-version>
     <used-plugins>
         <plugin author="Scirra" id="Arr" version="1">Array</plugin>
+        <plugin author="Scirra" id="Keyboard" version="1">Keyboard</plugin>
         <plugin author="Scirra" id="Text" version="1">Text</plugin>
         <plugin author="Scirra" id="TiledBg" version="1">Tiled Background</plugin>
     </used-plugins>
@@ -24,6 +25,7 @@
         <effect author="Scirra" id="glowvertical">Glow Vertical</effect>
         <effect author="Scirra" id="noise">Noise</effect>
         <effect author="Scirra" id="scanlines">Scan lines</effect>
+        <effect author="Scirra" id="setcolor">Set color</effect>
     </used-effects>
     <configurations>
         <configuration exporter-descname="HTML5" exporter-id="html5" name="HTML5" />
@@ -65,6 +67,14 @@
             </object-type>
             <object-type name="bordasOpcoes" sid="767504468392773">
                 <plugin id="TiledBg" />
+                <instance-variables>
+                    <instance-variable name="ID" sid="205327345318519" type="number" />
+                </instance-variables>
+                <effects>
+                    <effect-type name="SetColor">
+                        <effect id="setcolor" />
+                    </effect-type>
+                </effects>
                 <texture />
             </object-type>
         </object-folder>
@@ -88,10 +98,21 @@
             </object-type>
             <object-type name="textoOpcoesMenu" sid="843696096578024">
                 <plugin id="Text" />
+                <instance-variables>
+                    <instance-variable name="ID" sid="553663586387523" type="number" />
+                </instance-variables>
+                <effects>
+                    <effect-type name="SetColor">
+                        <effect id="setcolor" />
+                    </effect-type>
+                </effects>
             </object-type>
         </object-folder>
         <object-type global="1" name="frasesIntro" sid="469679065278458">
             <plugin id="Arr" />
+        </object-type>
+        <object-type name="Keyboard" sid="758708323480731">
+            <plugin id="Keyboard" />
         </object-type>
     </object-folder>
     <families />
@@ -103,8 +124,11 @@
         <event-sheet>Eventos Menu.xml</event-sheet>
         <event-sheet>Eventos Intro.xml</event-sheet>
         <event-sheet>Definição das frases.xml</event-sheet>
+        <event-sheet>Config.xml</event-sheet>
     </event-folder>
-    <global-instances />
+    <global-instances>
+        <global-instance type="Keyboard" uid="44" />
+    </global-instances>
     <sounds-folder />
     <music-folder />
     <files-folder>

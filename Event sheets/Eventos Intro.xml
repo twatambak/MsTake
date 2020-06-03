@@ -6,7 +6,7 @@
         <include>Definição das frases</include>
         <comment>Controle de tempo de tela de cada frase.</comment>
         <variable constant="0" name="TempoIntro" sid="895958321804626" static="0" type="number">0</variable>
-        <comment>Variáveis globais que contém as frases ditas por Take na intro.</comment>
+        <comment>Variável que recebe as frases de Ms. Take.</comment>
         <variable constant="0" name="FraseIntro" sid="918808841790477" static="0" type="text">a</variable>
         <event-group description="" sid="321437284569092" title="Config Inicial (Intro)">
             <sub-events>
