@@ -256,8 +256,8 @@
             <effect id="bulge" />
             <effect-instance type="Bulge">
                 <parameters>
-                    <radius>0.6</radius>
-                    <scale>0.15</scale>
+                    <radius>0.7</radius>
+                    <scale>0.1</scale>
                 </parameters>
             </effect-instance>
         </effect-type>

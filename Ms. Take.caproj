@@ -115,6 +115,9 @@
             <object-type global="1" name="arrayOpcoesMenu" sid="242862960478756">
                 <plugin id="Arr" />
             </object-type>
+            <object-type global="1" name="arrayFalasOpcoesMenu" sid="342906009035497">
+                <plugin id="Arr" />
+            </object-type>
         </object-folder>
         <object-folder name="Controles">
             <object-type name="Keyboard" sid="758708323480731">

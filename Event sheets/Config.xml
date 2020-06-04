@@ -4,6 +4,6 @@
     <name>Config</name>
     <events>
         <comment>Idioma do jogo. Opções: [pt] ou [en].</comment>
-        <variable constant="0" name="Idioma" sid="113904520754009" static="0" type="text">en</variable>
+        <variable constant="0" name="Idioma" sid="113904520754009" static="0" type="text">pt</variable>
     </events>
 </c2eventsheet>
