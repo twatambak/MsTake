@@ -11,11 +11,9 @@ you probably do not want to add any .uistate.xml files to the repository.-->
     </configurations>
     <open-tabs>
         <layout order="0">Menu</layout>
-        <layout order="2">Intro</layout>
         <event-sheet active="1" order="1">Eventos Menu</event-sheet>
-        <event-sheet order="3">Eventos Intro</event-sheet>
-        <event-sheet order="4">Inserção das frases</event-sheet>
-        <event-sheet order="5">Config</event-sheet>
+        <event-sheet order="2">Inserção das frases</event-sheet>
+        <event-sheet order="3">Config</event-sheet>
     </open-tabs>
     <properties>
         <property expanded="1" name="About" />

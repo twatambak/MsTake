@@ -285,7 +285,7 @@
                             </conditions>
                             <actions>
                                 <action id="1" name="Set size" sid="477778510007687" type="arrayFalasOpcoesMenu">
-                                    <param id="0" name="Width">14</param>
+                                    <param id="0" name="Width">37</param>
                                     <param id="1" name="Height">1</param>
                                     <param id="2" name="Depth">1</param>
                                 </action>
