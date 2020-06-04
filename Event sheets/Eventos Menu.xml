@@ -8,6 +8,8 @@
         <variable comment="Falas de Ms. Take para quando a opção de jogo PLATAFORMA estiver selecionada." constant="0" name="MENUPRINCIPAL_FalaMsTakePLATAFORMA" sid="394847422763266" static="0" type="text"></variable>
         <variable comment="Falas de Ms. Take para quando a opção de jogo TETRIS estiver selecionada." constant="0" name="MENUPRINCIPAL_FalaMsTakeTETRIS" sid="107565042307558" static="0" type="text"></variable>
         <variable comment="Falas de Ms. Take para quando a opção de jogo LABIRINTO estiver selecionada." constant="0" name="MENUPRINCIPAL_FalaMsTakeLABIRINTO" sid="494051972884941" static="0" type="text"></variable>
+        <variable comment="Falas de Ms. Take para quando a opção de jogo OPÇÕES estiver selecionada." constant="0" name="MENUPRINCIPAL_FalaMsTakeOPCOES" sid="228607751994743" static="0" type="text"></variable>
+        <variable comment="Falas de Ms. Take para quando a opção de jogo GLITCH estiver selecionada." constant="0" name="MENUPRINCIPAL_FalaMsTakeGLITCH" sid="469915575728508" static="0" type="text"></variable>
         <variable constant="0" name="MENUPRINCIPAL_TempoFrase" sid="393049832563785" static="0" type="number">0</variable>
         <variable comment="Variável que armazena qual a opção do menu principal está selecionada." constant="0" name="OpcaoMenu" sid="108793603966217" static="0" type="number">1</variable>
         <variable comment="Controle para verificar se o título já passou pelo efeito de intro." constant="0" name="TituloPassou" sid="992242019100491" static="0" type="number">0</variable>
@@ -467,41 +469,69 @@
                             <param id="0" name="Group name">&quot;(MENU PRINCIPAL) Fala Ms. Take: TETRIS 5&quot;</param>
                             <param id="1" name="State">0</param>
                         </action>
-                        <action id="-9" name="Set value" sid="357840059813922" type="System">
+                        <action id="-9" name="Set value" sid="270833631141790" type="System">
                             <param id="0" name="Variable">MENUPRINCIPAL_FalaMsTakeLABIRINTO</param>
                             <param id="1" name="Value">&quot;&quot;</param>
                         </action>
-                        <action id="-12" name="Set group active" sid="185167972110521" type="System">
+                        <action id="-12" name="Set group active" sid="220735486785858" type="System">
                             <param id="0" name="Group name">&quot;(MENU PRINCIPAL) Fala Ms. Take: LABIRINTO&quot;</param>
                             <param id="1" name="State">0</param>
                         </action>
-                        <action id="-12" name="Set group active" sid="302183648120041" type="System">
+                        <action id="-12" name="Set group active" sid="544021809682501" type="System">
                             <param id="0" name="Group name">&quot;(MENU PRINCIPAL) Fala Ms. Take: LABIRINTO 1&quot;</param>
                             <param id="1" name="State">1</param>
                         </action>
-                        <action id="-12" name="Set group active" sid="790473238880989" type="System">
+                        <action id="-12" name="Set group active" sid="118080666196448" type="System">
                             <param id="0" name="Group name">&quot;(MENU PRINCIPAL) Fala Ms. Take: LABIRINTO 2&quot;</param>
-                            <param id="1" name="State">1</param>
+                            <param id="1" name="State">0</param>
                         </action>
-                        <action id="-12" name="Set group active" sid="877429916838353" type="System">
+                        <action id="-12" name="Set group active" sid="585158294842149" type="System">
                             <param id="0" name="Group name">&quot;(MENU PRINCIPAL) Fala Ms. Take: LABIRINTO 3&quot;</param>
-                            <param id="1" name="State">1</param>
+                            <param id="1" name="State">0</param>
                         </action>
-                        <action id="-12" name="Set group active" sid="543536844282555" type="System">
+                        <action id="-12" name="Set group active" sid="739140870620480" type="System">
                             <param id="0" name="Group name">&quot;(MENU PRINCIPAL) Fala Ms. Take: LABIRINTO 4&quot;</param>
-                            <param id="1" name="State">1</param>
+                            <param id="1" name="State">0</param>
                         </action>
-                        <action id="-12" name="Set group active" sid="991257476552524" type="System">
+                        <action id="-12" name="Set group active" sid="603826514992625" type="System">
                             <param id="0" name="Group name">&quot;(MENU PRINCIPAL) Fala Ms. Take: LABIRINTO 5&quot;</param>
-                            <param id="1" name="State">1</param>
+                            <param id="1" name="State">0</param>
                         </action>
-                        <action id="-12" name="Set group active" sid="303827895386372" type="System">
+                        <action id="-12" name="Set group active" sid="559205327148249" type="System">
                             <param id="0" name="Group name">&quot;(MENU PRINCIPAL) Fala Ms. Take: LABIRINTO 6&quot;</param>
+                            <param id="1" name="State">0</param>
+                        </action>
+                        <action id="-12" name="Set group active" sid="504105815038345" type="System">
+                            <param id="0" name="Group name">&quot;(MENU PRINCIPAL) Fala Ms. Take: LABIRINTO 7&quot;</param>
+                            <param id="1" name="State">0</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="660457038081858" type="System">
+                            <param id="0" name="Variable">MENUPRINCIPAL_FalaMsTakeGLITCH</param>
+                            <param id="1" name="Value">&quot;&quot;</param>
+                        </action>
+                        <action id="-12" name="Set group active" sid="419174107597781" type="System">
+                            <param id="0" name="Group name">&quot;(MENU PRINCIPAL) Fala Ms. Take: GLITCH&quot;</param>
+                            <param id="1" name="State">0</param>
+                        </action>
+                        <action id="-12" name="Set group active" sid="848193819270729" type="System">
+                            <param id="0" name="Group name">&quot;(MENU PRINCIPAL) Fala Ms. Take: GLITCH 1&quot;</param>
                             <param id="1" name="State">1</param>
                         </action>
-                        <action id="-12" name="Set group active" sid="717514154259403" type="System">
-                            <param id="0" name="Group name">&quot;(MENU PRINCIPAL) Fala Ms. Take: LABIRINTO 7&quot;</param>
-                            <param id="1" name="State">1</param>
+                        <action id="-12" name="Set group active" sid="302840861003675" type="System">
+                            <param id="0" name="Group name">&quot;(MENU PRINCIPAL) Fala Ms. Take: GLITCH 2&quot;</param>
+                            <param id="1" name="State">0</param>
+                        </action>
+                        <action id="-12" name="Set group active" sid="436668980838096" type="System">
+                            <param id="0" name="Group name">&quot;(MENU PRINCIPAL) Fala Ms. Take: GLITCH 3&quot;</param>
+                            <param id="1" name="State">0</param>
+                        </action>
+                        <action id="-12" name="Set group active" sid="573931451036269" type="System">
+                            <param id="0" name="Group name">&quot;(MENU PRINCIPAL) Fala Ms. Take: GLITCH 4&quot;</param>
+                            <param id="1" name="State">0</param>
+                        </action>
+                        <action id="-12" name="Set group active" sid="712959533634674" type="System">
+                            <param id="0" name="Group name">&quot;(MENU PRINCIPAL) Fala Ms. Take: GLITCH 5&quot;</param>
+                            <param id="1" name="State">0</param>
                         </action>
                     </actions>
                 </event-block>
@@ -570,41 +600,69 @@
                             <param id="0" name="Group name">&quot;(MENU PRINCIPAL) Fala Ms. Take: TETRIS 5&quot;</param>
                             <param id="1" name="State">0</param>
                         </action>
-                        <action id="-9" name="Set value" sid="975290223341152" type="System">
+                        <action id="-9" name="Set value" sid="129178524442508" type="System">
                             <param id="0" name="Variable">MENUPRINCIPAL_FalaMsTakeLABIRINTO</param>
                             <param id="1" name="Value">&quot;&quot;</param>
                         </action>
-                        <action id="-12" name="Set group active" sid="305227238688662" type="System">
+                        <action id="-12" name="Set group active" sid="704557452298997" type="System">
                             <param id="0" name="Group name">&quot;(MENU PRINCIPAL) Fala Ms. Take: LABIRINTO&quot;</param>
                             <param id="1" name="State">0</param>
                         </action>
-                        <action id="-12" name="Set group active" sid="685812126831735" type="System">
+                        <action id="-12" name="Set group active" sid="757028492038888" type="System">
                             <param id="0" name="Group name">&quot;(MENU PRINCIPAL) Fala Ms. Take: LABIRINTO 1&quot;</param>
                             <param id="1" name="State">1</param>
                         </action>
-                        <action id="-12" name="Set group active" sid="677630884134837" type="System">
+                        <action id="-12" name="Set group active" sid="111429387305366" type="System">
                             <param id="0" name="Group name">&quot;(MENU PRINCIPAL) Fala Ms. Take: LABIRINTO 2&quot;</param>
-                            <param id="1" name="State">1</param>
+                            <param id="1" name="State">0</param>
                         </action>
-                        <action id="-12" name="Set group active" sid="300918755921373" type="System">
+                        <action id="-12" name="Set group active" sid="243668374576290" type="System">
                             <param id="0" name="Group name">&quot;(MENU PRINCIPAL) Fala Ms. Take: LABIRINTO 3&quot;</param>
-                            <param id="1" name="State">1</param>
+                            <param id="1" name="State">0</param>
                         </action>
-                        <action id="-12" name="Set group active" sid="609704286454401" type="System">
+                        <action id="-12" name="Set group active" sid="201323343752875" type="System">
                             <param id="0" name="Group name">&quot;(MENU PRINCIPAL) Fala Ms. Take: LABIRINTO 4&quot;</param>
-                            <param id="1" name="State">1</param>
+                            <param id="1" name="State">0</param>
                         </action>
-                        <action id="-12" name="Set group active" sid="218396314689234" type="System">
+                        <action id="-12" name="Set group active" sid="731482504535111" type="System">
                             <param id="0" name="Group name">&quot;(MENU PRINCIPAL) Fala Ms. Take: LABIRINTO 5&quot;</param>
-                            <param id="1" name="State">1</param>
+                            <param id="1" name="State">0</param>
                         </action>
-                        <action id="-12" name="Set group active" sid="282370142700831" type="System">
+                        <action id="-12" name="Set group active" sid="228239171227716" type="System">
                             <param id="0" name="Group name">&quot;(MENU PRINCIPAL) Fala Ms. Take: LABIRINTO 6&quot;</param>
+                            <param id="1" name="State">0</param>
+                        </action>
+                        <action id="-12" name="Set group active" sid="187103459293243" type="System">
+                            <param id="0" name="Group name">&quot;(MENU PRINCIPAL) Fala Ms. Take: LABIRINTO 7&quot;</param>
+                            <param id="1" name="State">0</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="934886620307766" type="System">
+                            <param id="0" name="Variable">MENUPRINCIPAL_FalaMsTakeGLITCH</param>
+                            <param id="1" name="Value">&quot;&quot;</param>
+                        </action>
+                        <action id="-12" name="Set group active" sid="879980888204771" type="System">
+                            <param id="0" name="Group name">&quot;(MENU PRINCIPAL) Fala Ms. Take: GLITCH&quot;</param>
+                            <param id="1" name="State">0</param>
+                        </action>
+                        <action id="-12" name="Set group active" sid="711787232048011" type="System">
+                            <param id="0" name="Group name">&quot;(MENU PRINCIPAL) Fala Ms. Take: GLITCH 1&quot;</param>
                             <param id="1" name="State">1</param>
                         </action>
-                        <action id="-12" name="Set group active" sid="829597731997283" type="System">
-                            <param id="0" name="Group name">&quot;(MENU PRINCIPAL) Fala Ms. Take: LABIRINTO 7&quot;</param>
-                            <param id="1" name="State">1</param>
+                        <action id="-12" name="Set group active" sid="404783083988501" type="System">
+                            <param id="0" name="Group name">&quot;(MENU PRINCIPAL) Fala Ms. Take: GLITCH 2&quot;</param>
+                            <param id="1" name="State">0</param>
+                        </action>
+                        <action id="-12" name="Set group active" sid="481594335116527" type="System">
+                            <param id="0" name="Group name">&quot;(MENU PRINCIPAL) Fala Ms. Take: GLITCH 3&quot;</param>
+                            <param id="1" name="State">0</param>
+                        </action>
+                        <action id="-12" name="Set group active" sid="432151827718087" type="System">
+                            <param id="0" name="Group name">&quot;(MENU PRINCIPAL) Fala Ms. Take: GLITCH 4&quot;</param>
+                            <param id="1" name="State">0</param>
+                        </action>
+                        <action id="-12" name="Set group active" sid="795873295108392" type="System">
+                            <param id="0" name="Group name">&quot;(MENU PRINCIPAL) Fala Ms. Take: GLITCH 5&quot;</param>
+                            <param id="1" name="State">0</param>
                         </action>
                     </actions>
                 </event-block>
@@ -695,27 +753,55 @@
                         </action>
                         <action id="-12" name="Set group active" sid="879292601924075" type="System">
                             <param id="0" name="Group name">&quot;(MENU PRINCIPAL) Fala Ms. Take: LABIRINTO 2&quot;</param>
-                            <param id="1" name="State">1</param>
+                            <param id="1" name="State">0</param>
                         </action>
                         <action id="-12" name="Set group active" sid="371690004750973" type="System">
                             <param id="0" name="Group name">&quot;(MENU PRINCIPAL) Fala Ms. Take: LABIRINTO 3&quot;</param>
-                            <param id="1" name="State">1</param>
+                            <param id="1" name="State">0</param>
                         </action>
                         <action id="-12" name="Set group active" sid="553546132873700" type="System">
                             <param id="0" name="Group name">&quot;(MENU PRINCIPAL) Fala Ms. Take: LABIRINTO 4&quot;</param>
-                            <param id="1" name="State">1</param>
+                            <param id="1" name="State">0</param>
                         </action>
                         <action id="-12" name="Set group active" sid="555131715479074" type="System">
                             <param id="0" name="Group name">&quot;(MENU PRINCIPAL) Fala Ms. Take: LABIRINTO 5&quot;</param>
-                            <param id="1" name="State">1</param>
+                            <param id="1" name="State">0</param>
                         </action>
                         <action id="-12" name="Set group active" sid="149881323000898" type="System">
                             <param id="0" name="Group name">&quot;(MENU PRINCIPAL) Fala Ms. Take: LABIRINTO 6&quot;</param>
-                            <param id="1" name="State">1</param>
+                            <param id="1" name="State">0</param>
                         </action>
                         <action id="-12" name="Set group active" sid="389457551994242" type="System">
                             <param id="0" name="Group name">&quot;(MENU PRINCIPAL) Fala Ms. Take: LABIRINTO 7&quot;</param>
+                            <param id="1" name="State">0</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="981413131716984" type="System">
+                            <param id="0" name="Variable">MENUPRINCIPAL_FalaMsTakeGLITCH</param>
+                            <param id="1" name="Value">&quot;&quot;</param>
+                        </action>
+                        <action id="-12" name="Set group active" sid="977187458108213" type="System">
+                            <param id="0" name="Group name">&quot;(MENU PRINCIPAL) Fala Ms. Take: GLITCH&quot;</param>
+                            <param id="1" name="State">0</param>
+                        </action>
+                        <action id="-12" name="Set group active" sid="207519029723641" type="System">
+                            <param id="0" name="Group name">&quot;(MENU PRINCIPAL) Fala Ms. Take: GLITCH 1&quot;</param>
                             <param id="1" name="State">1</param>
+                        </action>
+                        <action id="-12" name="Set group active" sid="558754748660857" type="System">
+                            <param id="0" name="Group name">&quot;(MENU PRINCIPAL) Fala Ms. Take: GLITCH 2&quot;</param>
+                            <param id="1" name="State">0</param>
+                        </action>
+                        <action id="-12" name="Set group active" sid="204224706320499" type="System">
+                            <param id="0" name="Group name">&quot;(MENU PRINCIPAL) Fala Ms. Take: GLITCH 3&quot;</param>
+                            <param id="1" name="State">0</param>
+                        </action>
+                        <action id="-12" name="Set group active" sid="924787945356934" type="System">
+                            <param id="0" name="Group name">&quot;(MENU PRINCIPAL) Fala Ms. Take: GLITCH 4&quot;</param>
+                            <param id="1" name="State">0</param>
+                        </action>
+                        <action id="-12" name="Set group active" sid="242520866079157" type="System">
+                            <param id="0" name="Group name">&quot;(MENU PRINCIPAL) Fala Ms. Take: GLITCH 5&quot;</param>
+                            <param id="1" name="State">0</param>
                         </action>
                     </actions>
                 </event-block>
@@ -818,6 +904,173 @@
                         </action>
                         <action id="-12" name="Set group active" sid="935034599605693" type="System">
                             <param id="0" name="Group name">&quot;(MENU PRINCIPAL) Fala Ms. Take: TETRIS 5&quot;</param>
+                            <param id="1" name="State">0</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="303048396788909" type="System">
+                            <param id="0" name="Variable">MENUPRINCIPAL_FalaMsTakeGLITCH</param>
+                            <param id="1" name="Value">&quot;&quot;</param>
+                        </action>
+                        <action id="-12" name="Set group active" sid="680941838745385" type="System">
+                            <param id="0" name="Group name">&quot;(MENU PRINCIPAL) Fala Ms. Take: GLITCH&quot;</param>
+                            <param id="1" name="State">0</param>
+                        </action>
+                        <action id="-12" name="Set group active" sid="265909583038658" type="System">
+                            <param id="0" name="Group name">&quot;(MENU PRINCIPAL) Fala Ms. Take: GLITCH 1&quot;</param>
+                            <param id="1" name="State">1</param>
+                        </action>
+                        <action id="-12" name="Set group active" sid="830718654725220" type="System">
+                            <param id="0" name="Group name">&quot;(MENU PRINCIPAL) Fala Ms. Take: GLITCH 2&quot;</param>
+                            <param id="1" name="State">0</param>
+                        </action>
+                        <action id="-12" name="Set group active" sid="285597005947959" type="System">
+                            <param id="0" name="Group name">&quot;(MENU PRINCIPAL) Fala Ms. Take: GLITCH 3&quot;</param>
+                            <param id="1" name="State">0</param>
+                        </action>
+                        <action id="-12" name="Set group active" sid="810662214247455" type="System">
+                            <param id="0" name="Group name">&quot;(MENU PRINCIPAL) Fala Ms. Take: GLITCH 4&quot;</param>
+                            <param id="1" name="State">0</param>
+                        </action>
+                        <action id="-12" name="Set group active" sid="182923293476999" type="System">
+                            <param id="0" name="Group name">&quot;(MENU PRINCIPAL) Fala Ms. Take: GLITCH 5&quot;</param>
+                            <param id="1" name="State">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="562064361966886">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="743220411637115" type="System">
+                            <param id="0" name="Variable">OpcaoMenu</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">5</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-12" name="Set group active" sid="822352242722542" type="System">
+                            <param id="0" name="Group name">&quot;(MENU PRINCIPAL) Fala Ms. Take: GLITCH&quot;</param>
+                            <param id="1" name="State">1</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="569812114608895" type="System">
+                            <param id="0" name="Variable">MENUPRINCIPAL_FalaMsTakePONG</param>
+                            <param id="1" name="Value">&quot;&quot;</param>
+                        </action>
+                        <action id="-12" name="Set group active" sid="254231069026796" type="System">
+                            <param id="0" name="Group name">&quot;(MENU PRINCIPAL) Fala Ms. Take: PONG&quot;</param>
+                            <param id="1" name="State">0</param>
+                        </action>
+                        <action id="-12" name="Set group active" sid="538136708992486" type="System">
+                            <param id="0" name="Group name">&quot;(MENU PRINCIPAL) Fala Ms. Take: PONG 1&quot;</param>
+                            <param id="1" name="State">1</param>
+                        </action>
+                        <action id="-12" name="Set group active" sid="481145512855677" type="System">
+                            <param id="0" name="Group name">&quot;(MENU PRINCIPAL) Fala Ms. Take: PONG 2&quot;</param>
+                            <param id="1" name="State">0</param>
+                        </action>
+                        <action id="-12" name="Set group active" sid="727985355010778" type="System">
+                            <param id="0" name="Group name">&quot;(MENU PRINCIPAL) Fala Ms. Take: PONG 3&quot;</param>
+                            <param id="1" name="State">0</param>
+                        </action>
+                        <action id="-12" name="Set group active" sid="338901412586233" type="System">
+                            <param id="0" name="Group name">&quot;(MENU PRINCIPAL) Fala Ms. Take: PONG 4&quot;</param>
+                            <param id="1" name="State">0</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="726428193916750" type="System">
+                            <param id="0" name="Variable">MENUPRINCIPAL_FalaMsTakePLATAFORMA</param>
+                            <param id="1" name="Value">&quot;&quot;</param>
+                        </action>
+                        <action id="-12" name="Set group active" sid="968401535879348" type="System">
+                            <param id="0" name="Group name">&quot;(MENU PRINCIPAL) Fala Ms. Take: PLATAFORMA&quot;</param>
+                            <param id="1" name="State">0</param>
+                        </action>
+                        <action id="-12" name="Set group active" sid="283524433846149" type="System">
+                            <param id="0" name="Group name">&quot;(MENU PRINCIPAL) Fala Ms. Take: PLATAFORMA 1&quot;</param>
+                            <param id="1" name="State">1</param>
+                        </action>
+                        <action id="-12" name="Set group active" sid="132017138376308" type="System">
+                            <param id="0" name="Group name">&quot;(MENU PRINCIPAL) Fala Ms. Take: PLATAFORMA 2&quot;</param>
+                            <param id="1" name="State">0</param>
+                        </action>
+                        <action id="-12" name="Set group active" sid="249140337910914" type="System">
+                            <param id="0" name="Group name">&quot;(MENU PRINCIPAL) Fala Ms. Take: PLATAFORMA 3&quot;</param>
+                            <param id="1" name="State">0</param>
+                        </action>
+                        <action id="-12" name="Set group active" sid="916077859795453" type="System">
+                            <param id="0" name="Group name">&quot;(MENU PRINCIPAL) Fala Ms. Take: PLATAFORMA 4&quot;</param>
+                            <param id="1" name="State">0</param>
+                        </action>
+                        <action id="-12" name="Set group active" sid="931362697181728" type="System">
+                            <param id="0" name="Group name">&quot;(MENU PRINCIPAL) Fala Ms. Take: PLATAFORMA 5&quot;</param>
+                            <param id="1" name="State">0</param>
+                        </action>
+                        <action id="-12" name="Set group active" sid="318418306531090" type="System">
+                            <param id="0" name="Group name">&quot;(MENU PRINCIPAL) Fala Ms. Take: PLATAFORMA 6&quot;</param>
+                            <param id="1" name="State">0</param>
+                        </action>
+                        <action id="-12" name="Set group active" sid="630613080215109" type="System">
+                            <param id="0" name="Group name">&quot;(MENU PRINCIPAL) Fala Ms. Take: PLATAFORMA 7&quot;</param>
+                            <param id="1" name="State">0</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="317908506610038" type="System">
+                            <param id="0" name="Variable">MENUPRINCIPAL_FalaMsTakeTETRIS</param>
+                            <param id="1" name="Value">&quot;&quot;</param>
+                        </action>
+                        <action id="-12" name="Set group active" sid="127912890172904" type="System">
+                            <param id="0" name="Group name">&quot;(MENU PRINCIPAL) Fala Ms. Take: TETRIS&quot;</param>
+                            <param id="1" name="State">0</param>
+                        </action>
+                        <action id="-12" name="Set group active" sid="119753792996485" type="System">
+                            <param id="0" name="Group name">&quot;(MENU PRINCIPAL) Fala Ms. Take: TETRIS 1&quot;</param>
+                            <param id="1" name="State">1</param>
+                        </action>
+                        <action id="-12" name="Set group active" sid="585535040988452" type="System">
+                            <param id="0" name="Group name">&quot;(MENU PRINCIPAL) Fala Ms. Take: TETRIS 2&quot;</param>
+                            <param id="1" name="State">0</param>
+                        </action>
+                        <action id="-12" name="Set group active" sid="237604087132155" type="System">
+                            <param id="0" name="Group name">&quot;(MENU PRINCIPAL) Fala Ms. Take: TETRIS 3&quot;</param>
+                            <param id="1" name="State">0</param>
+                        </action>
+                        <action id="-12" name="Set group active" sid="539741846805669" type="System">
+                            <param id="0" name="Group name">&quot;(MENU PRINCIPAL) Fala Ms. Take: TETRIS 4&quot;</param>
+                            <param id="1" name="State">0</param>
+                        </action>
+                        <action id="-12" name="Set group active" sid="941334346245185" type="System">
+                            <param id="0" name="Group name">&quot;(MENU PRINCIPAL) Fala Ms. Take: TETRIS 5&quot;</param>
+                            <param id="1" name="State">0</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="818179199264022" type="System">
+                            <param id="0" name="Variable">MENUPRINCIPAL_FalaMsTakeLABIRINTO</param>
+                            <param id="1" name="Value">&quot;&quot;</param>
+                        </action>
+                        <action id="-12" name="Set group active" sid="979815725161830" type="System">
+                            <param id="0" name="Group name">&quot;(MENU PRINCIPAL) Fala Ms. Take: LABIRINTO&quot;</param>
+                            <param id="1" name="State">0</param>
+                        </action>
+                        <action id="-12" name="Set group active" sid="160044991566614" type="System">
+                            <param id="0" name="Group name">&quot;(MENU PRINCIPAL) Fala Ms. Take: LABIRINTO 1&quot;</param>
+                            <param id="1" name="State">1</param>
+                        </action>
+                        <action id="-12" name="Set group active" sid="438574949275559" type="System">
+                            <param id="0" name="Group name">&quot;(MENU PRINCIPAL) Fala Ms. Take: LABIRINTO 2&quot;</param>
+                            <param id="1" name="State">0</param>
+                        </action>
+                        <action id="-12" name="Set group active" sid="849031328003633" type="System">
+                            <param id="0" name="Group name">&quot;(MENU PRINCIPAL) Fala Ms. Take: LABIRINTO 3&quot;</param>
+                            <param id="1" name="State">0</param>
+                        </action>
+                        <action id="-12" name="Set group active" sid="691562220849702" type="System">
+                            <param id="0" name="Group name">&quot;(MENU PRINCIPAL) Fala Ms. Take: LABIRINTO 4&quot;</param>
+                            <param id="1" name="State">0</param>
+                        </action>
+                        <action id="-12" name="Set group active" sid="781778561554235" type="System">
+                            <param id="0" name="Group name">&quot;(MENU PRINCIPAL) Fala Ms. Take: LABIRINTO 5&quot;</param>
+                            <param id="1" name="State">0</param>
+                        </action>
+                        <action id="-12" name="Set group active" sid="767045515910544" type="System">
+                            <param id="0" name="Group name">&quot;(MENU PRINCIPAL) Fala Ms. Take: LABIRINTO 6&quot;</param>
+                            <param id="1" name="State">0</param>
+                        </action>
+                        <action id="-12" name="Set group active" sid="103366139161930" type="System">
+                            <param id="0" name="Group name">&quot;(MENU PRINCIPAL) Fala Ms. Take: LABIRINTO 7&quot;</param>
                             <param id="1" name="State">0</param>
                         </action>
                     </actions>
@@ -2374,6 +2627,740 @@
                                                     <param id="1" name="State">1</param>
                                                 </action>
                                                 <action id="0" name="Set text" sid="200278029405212" type="textoFala">
+                                                    <param id="0" name="Text">&quot;&quot;</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                    </sub-events>
+                                </event-block>
+                            </sub-events>
+                        </event-group>
+                    </sub-events>
+                </event-group>
+                <event-group description="" inactive="1" sid="300016849188896" title="(MENU PRINCIPAL) Fala Ms. Take: GLITCH">
+                    <sub-events>
+                        <event-group description="" sid="606538151873273" title="(MENU PRINCIPAL) Fala Ms. Take: GLITCH 1">
+                            <sub-events>
+                                <event-block sid="917105955609179">
+                                    <conditions>
+                                        <condition id="-14" name="Compare variable" sid="945161969436839" type="System">
+                                            <param id="0" name="Variable">OpcaoMenu</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">5</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions />
+                                    <sub-events>
+                                        <event-block sid="674383843816044">
+                                            <conditions>
+                                                <condition id="-6" name="Every X seconds" sid="125415310391621" type="System">
+                                                    <param id="0" name="Interval (seconds)">0.03</param>
+                                                </condition>
+                                                <condition id="-14" name="Compare variable" sid="366770426776622" type="System">
+                                                    <param id="0" name="Variable">MENUPRINCIPAL_TempoFrase</param>
+                                                    <param id="1" name="Comparison">2</param>
+                                                    <param id="2" name="Value">2</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="-9" name="Set value" sid="911763348480147" type="System">
+                                                    <param id="0" name="Variable">MENUPRINCIPAL_FalaMsTakeGLITCH</param>
+                                                    <param id="1" name="Value">arrayFalasOpcoesMenu.At(25)</param>
+                                                </action>
+                                                <action id="0" name="Set text" sid="414096054034412" type="textoFala">
+                                                    <param id="0" name="Text">left(MENUPRINCIPAL_FalaMsTakeGLITCH,len(textoFala.Text)+1)</param>
+                                                </action>
+                                                <action id="4" name="Set font color" sid="970910562567576" type="textoFala">
+                                                    <param id="0" name="Color">rgb(146, 255, 20)</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                        <event-block sid="292514116769242">
+                                            <conditions>
+                                                <condition id="-14" name="Compare variable" sid="710526834287312" type="System">
+                                                    <param id="0" name="Variable">MENUPRINCIPAL_TempoFrase</param>
+                                                    <param id="1" name="Comparison">4</param>
+                                                    <param id="2" name="Value">2</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="-9" name="Set value" sid="789382623970279" type="System">
+                                                    <param id="0" name="Variable">MENUPRINCIPAL_TempoFrase</param>
+                                                    <param id="1" name="Value">0</param>
+                                                </action>
+                                                <action id="-12" name="Set group active" sid="749368129826899" type="System">
+                                                    <param id="0" name="Group name">&quot;(MENU PRINCIPAL) Fala Ms. Take: GLITCH 1&quot;</param>
+                                                    <param id="1" name="State">0</param>
+                                                </action>
+                                                <action id="-12" name="Set group active" sid="274650551542365" type="System">
+                                                    <param id="0" name="Group name">&quot;(MENU PRINCIPAL) Fala Ms. Take: GLITCH 2&quot;</param>
+                                                    <param id="1" name="State">1</param>
+                                                </action>
+                                                <action id="0" name="Set text" sid="781458047455824" type="textoFala">
+                                                    <param id="0" name="Text">&quot;&quot;</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                    </sub-events>
+                                </event-block>
+                            </sub-events>
+                        </event-group>
+                        <event-group description="" inactive="1" sid="961010899920241" title="(MENU PRINCIPAL) Fala Ms. Take: GLITCH 2">
+                            <sub-events>
+                                <event-block sid="691657280544618">
+                                    <conditions>
+                                        <condition id="-14" name="Compare variable" sid="725560376036652" type="System">
+                                            <param id="0" name="Variable">OpcaoMenu</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">5</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions />
+                                    <sub-events>
+                                        <event-block sid="880074088165556">
+                                            <conditions>
+                                                <condition id="-6" name="Every X seconds" sid="930645926104888" type="System">
+                                                    <param id="0" name="Interval (seconds)">0.03</param>
+                                                </condition>
+                                                <condition id="-14" name="Compare variable" sid="665822812951401" type="System">
+                                                    <param id="0" name="Variable">MENUPRINCIPAL_TempoFrase</param>
+                                                    <param id="1" name="Comparison">2</param>
+                                                    <param id="2" name="Value">2</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="-9" name="Set value" sid="692536539447472" type="System">
+                                                    <param id="0" name="Variable">MENUPRINCIPAL_FalaMsTakeGLITCH</param>
+                                                    <param id="1" name="Value">arrayFalasOpcoesMenu.At(26)</param>
+                                                </action>
+                                                <action id="0" name="Set text" sid="446074518445500" type="textoFala">
+                                                    <param id="0" name="Text">left(MENUPRINCIPAL_FalaMsTakeGLITCH,len(textoFala.Text)+1)</param>
+                                                </action>
+                                                <action id="4" name="Set font color" sid="894203347359094" type="textoFala">
+                                                    <param id="0" name="Color">rgb(146, 255, 20)</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                        <event-block sid="114359989602119">
+                                            <conditions>
+                                                <condition id="-14" name="Compare variable" sid="180574752311944" type="System">
+                                                    <param id="0" name="Variable">MENUPRINCIPAL_TempoFrase</param>
+                                                    <param id="1" name="Comparison">4</param>
+                                                    <param id="2" name="Value">2</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="-9" name="Set value" sid="214132594411339" type="System">
+                                                    <param id="0" name="Variable">MENUPRINCIPAL_TempoFrase</param>
+                                                    <param id="1" name="Value">0</param>
+                                                </action>
+                                                <action id="-12" name="Set group active" sid="680295519739288" type="System">
+                                                    <param id="0" name="Group name">&quot;(MENU PRINCIPAL) Fala Ms. Take: GLITCH 2&quot;</param>
+                                                    <param id="1" name="State">0</param>
+                                                </action>
+                                                <action id="-12" name="Set group active" sid="131805006934253" type="System">
+                                                    <param id="0" name="Group name">&quot;(MENU PRINCIPAL) Fala Ms. Take: GLITCH 3&quot;</param>
+                                                    <param id="1" name="State">1</param>
+                                                </action>
+                                                <action id="0" name="Set text" sid="856505806007942" type="textoFala">
+                                                    <param id="0" name="Text">&quot;&quot;</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                    </sub-events>
+                                </event-block>
+                            </sub-events>
+                        </event-group>
+                        <event-group description="" inactive="1" sid="644120087663038" title="(MENU PRINCIPAL) Fala Ms. Take: GLITCH 3">
+                            <sub-events>
+                                <event-block sid="749601566406269">
+                                    <conditions>
+                                        <condition id="-14" name="Compare variable" sid="856170584943929" type="System">
+                                            <param id="0" name="Variable">OpcaoMenu</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">5</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions />
+                                    <sub-events>
+                                        <event-block sid="412900615571748">
+                                            <conditions>
+                                                <condition id="-6" name="Every X seconds" sid="239093248474302" type="System">
+                                                    <param id="0" name="Interval (seconds)">0.03</param>
+                                                </condition>
+                                                <condition id="-14" name="Compare variable" sid="829827435842239" type="System">
+                                                    <param id="0" name="Variable">MENUPRINCIPAL_TempoFrase</param>
+                                                    <param id="1" name="Comparison">2</param>
+                                                    <param id="2" name="Value">2</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="-9" name="Set value" sid="247479219912315" type="System">
+                                                    <param id="0" name="Variable">MENUPRINCIPAL_FalaMsTakeGLITCH</param>
+                                                    <param id="1" name="Value">arrayFalasOpcoesMenu.At(27)</param>
+                                                </action>
+                                                <action id="0" name="Set text" sid="515500332477078" type="textoFala">
+                                                    <param id="0" name="Text">left(MENUPRINCIPAL_FalaMsTakeGLITCH,len(textoFala.Text)+1)</param>
+                                                </action>
+                                                <action id="4" name="Set font color" sid="947506152268042" type="textoFala">
+                                                    <param id="0" name="Color">rgb(146, 255, 20)</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                        <event-block sid="842953987221418">
+                                            <conditions>
+                                                <condition id="-14" name="Compare variable" sid="632897910879368" type="System">
+                                                    <param id="0" name="Variable">MENUPRINCIPAL_TempoFrase</param>
+                                                    <param id="1" name="Comparison">4</param>
+                                                    <param id="2" name="Value">2</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="-9" name="Set value" sid="861308730662487" type="System">
+                                                    <param id="0" name="Variable">MENUPRINCIPAL_TempoFrase</param>
+                                                    <param id="1" name="Value">0</param>
+                                                </action>
+                                                <action id="-12" name="Set group active" sid="549822851776332" type="System">
+                                                    <param id="0" name="Group name">&quot;(MENU PRINCIPAL) Fala Ms. Take: GLITCH 3&quot;</param>
+                                                    <param id="1" name="State">0</param>
+                                                </action>
+                                                <action id="-12" name="Set group active" sid="616191607849119" type="System">
+                                                    <param id="0" name="Group name">&quot;(MENU PRINCIPAL) Fala Ms. Take: GLITCH 4&quot;</param>
+                                                    <param id="1" name="State">1</param>
+                                                </action>
+                                                <action id="0" name="Set text" sid="239005392381256" type="textoFala">
+                                                    <param id="0" name="Text">&quot;&quot;</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                    </sub-events>
+                                </event-block>
+                            </sub-events>
+                        </event-group>
+                        <event-group description="" inactive="1" sid="772616201761737" title="(MENU PRINCIPAL) Fala Ms. Take: GLITCH 4">
+                            <sub-events>
+                                <event-block sid="158789875882705">
+                                    <conditions>
+                                        <condition id="-14" name="Compare variable" sid="740379090078612" type="System">
+                                            <param id="0" name="Variable">OpcaoMenu</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">5</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions />
+                                    <sub-events>
+                                        <event-block sid="163853456737519">
+                                            <conditions>
+                                                <condition id="-6" name="Every X seconds" sid="374071149377647" type="System">
+                                                    <param id="0" name="Interval (seconds)">0.03</param>
+                                                </condition>
+                                                <condition id="-14" name="Compare variable" sid="762122895647600" type="System">
+                                                    <param id="0" name="Variable">MENUPRINCIPAL_TempoFrase</param>
+                                                    <param id="1" name="Comparison">2</param>
+                                                    <param id="2" name="Value">2</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="-9" name="Set value" sid="231621206922123" type="System">
+                                                    <param id="0" name="Variable">MENUPRINCIPAL_FalaMsTakeGLITCH</param>
+                                                    <param id="1" name="Value">arrayFalasOpcoesMenu.At(28)</param>
+                                                </action>
+                                                <action id="0" name="Set text" sid="634209753357673" type="textoFala">
+                                                    <param id="0" name="Text">left(MENUPRINCIPAL_FalaMsTakeGLITCH,len(textoFala.Text)+1)</param>
+                                                </action>
+                                                <action id="4" name="Set font color" sid="954387450357343" type="textoFala">
+                                                    <param id="0" name="Color">rgb(146, 255, 20)</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                        <event-block sid="249802950664660">
+                                            <conditions>
+                                                <condition id="-14" name="Compare variable" sid="236592386948672" type="System">
+                                                    <param id="0" name="Variable">MENUPRINCIPAL_TempoFrase</param>
+                                                    <param id="1" name="Comparison">4</param>
+                                                    <param id="2" name="Value">2</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="-9" name="Set value" sid="469042978743848" type="System">
+                                                    <param id="0" name="Variable">MENUPRINCIPAL_TempoFrase</param>
+                                                    <param id="1" name="Value">0</param>
+                                                </action>
+                                                <action id="-12" name="Set group active" sid="549459257654393" type="System">
+                                                    <param id="0" name="Group name">&quot;(MENU PRINCIPAL) Fala Ms. Take: GLITCH 4&quot;</param>
+                                                    <param id="1" name="State">0</param>
+                                                </action>
+                                                <action id="-12" name="Set group active" sid="495457337691135" type="System">
+                                                    <param id="0" name="Group name">&quot;(MENU PRINCIPAL) Fala Ms. Take: GLITCH 5&quot;</param>
+                                                    <param id="1" name="State">1</param>
+                                                </action>
+                                                <action id="0" name="Set text" sid="424647122928795" type="textoFala">
+                                                    <param id="0" name="Text">&quot;&quot;</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                    </sub-events>
+                                </event-block>
+                            </sub-events>
+                        </event-group>
+                        <event-group description="" inactive="1" sid="692220626925062" title="(MENU PRINCIPAL) Fala Ms. Take: GLITCH 5">
+                            <sub-events>
+                                <event-block sid="968169960064953">
+                                    <conditions>
+                                        <condition id="-14" name="Compare variable" sid="816037806603036" type="System">
+                                            <param id="0" name="Variable">OpcaoMenu</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">5</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions />
+                                    <sub-events>
+                                        <event-block sid="740405274968415">
+                                            <conditions>
+                                                <condition id="-6" name="Every X seconds" sid="968359726627063" type="System">
+                                                    <param id="0" name="Interval (seconds)">0.03</param>
+                                                </condition>
+                                                <condition id="-14" name="Compare variable" sid="168886823619374" type="System">
+                                                    <param id="0" name="Variable">MENUPRINCIPAL_TempoFrase</param>
+                                                    <param id="1" name="Comparison">2</param>
+                                                    <param id="2" name="Value">2</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="-9" name="Set value" sid="190263334490701" type="System">
+                                                    <param id="0" name="Variable">MENUPRINCIPAL_FalaMsTakeGLITCH</param>
+                                                    <param id="1" name="Value">arrayFalasOpcoesMenu.At(29)</param>
+                                                </action>
+                                                <action id="0" name="Set text" sid="502215828341199" type="textoFala">
+                                                    <param id="0" name="Text">left(MENUPRINCIPAL_FalaMsTakeGLITCH,len(textoFala.Text)+1)</param>
+                                                </action>
+                                                <action id="4" name="Set font color" sid="991257790410898" type="textoFala">
+                                                    <param id="0" name="Color">rgb(146, 255, 20)</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                        <event-block sid="917501769882605">
+                                            <conditions>
+                                                <condition id="-14" name="Compare variable" sid="553921921215091" type="System">
+                                                    <param id="0" name="Variable">MENUPRINCIPAL_TempoFrase</param>
+                                                    <param id="1" name="Comparison">4</param>
+                                                    <param id="2" name="Value">2</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="-9" name="Set value" sid="427577133285533" type="System">
+                                                    <param id="0" name="Variable">MENUPRINCIPAL_TempoFrase</param>
+                                                    <param id="1" name="Value">0</param>
+                                                </action>
+                                                <action id="-12" name="Set group active" sid="114798943684561" type="System">
+                                                    <param id="0" name="Group name">&quot;(MENU PRINCIPAL) Fala Ms. Take: GLITCH 5&quot;</param>
+                                                    <param id="1" name="State">0</param>
+                                                </action>
+                                                <action id="-12" name="Set group active" sid="439341994930094" type="System">
+                                                    <param id="0" name="Group name">&quot;(MENU PRINCIPAL) Fala Ms. Take: GLITCH 1&quot;</param>
+                                                    <param id="1" name="State">1</param>
+                                                </action>
+                                                <action id="0" name="Set text" sid="149593439067309" type="textoFala">
+                                                    <param id="0" name="Text">&quot;&quot;</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                    </sub-events>
+                                </event-block>
+                            </sub-events>
+                        </event-group>
+                    </sub-events>
+                </event-group>
+                <event-group description="" inactive="1" sid="519107854928598" title="(MENU PRINCIPAL) Fala Ms. Take: OPÇÕES">
+                    <sub-events>
+                        <event-group description="" sid="626258938217081" title="(MENU PRINCIPAL) Fala Ms. Take: OPÇÕES 1">
+                            <sub-events>
+                                <event-block sid="815045917905556">
+                                    <conditions>
+                                        <condition id="-14" name="Compare variable" sid="758711826684317" type="System">
+                                            <param id="0" name="Variable">OpcaoMenu</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">6</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions />
+                                    <sub-events>
+                                        <event-block sid="453285726428636">
+                                            <conditions>
+                                                <condition id="-6" name="Every X seconds" sid="306190036159390" type="System">
+                                                    <param id="0" name="Interval (seconds)">0.08</param>
+                                                </condition>
+                                                <condition id="-14" name="Compare variable" sid="634563432318799" type="System">
+                                                    <param id="0" name="Variable">MENUPRINCIPAL_TempoFrase</param>
+                                                    <param id="1" name="Comparison">2</param>
+                                                    <param id="2" name="Value">6</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="-9" name="Set value" sid="950425046716458" type="System">
+                                                    <param id="0" name="Variable">MENUPRINCIPAL_FalaMsTakeOPCOES</param>
+                                                    <param id="1" name="Value">arrayFalasOpcoesMenu.At(30)</param>
+                                                </action>
+                                                <action id="0" name="Set text" sid="629644161146395" type="textoFala">
+                                                    <param id="0" name="Text">left(MENUPRINCIPAL_FalaMsTakeOPCOES,len(textoFala.Text)+1)</param>
+                                                </action>
+                                                <action id="4" name="Set font color" sid="853096406617961" type="textoFala">
+                                                    <param id="0" name="Color">rgb(146, 255, 20)</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                        <event-block sid="482596519835008">
+                                            <conditions>
+                                                <condition id="-14" name="Compare variable" sid="967862676219809" type="System">
+                                                    <param id="0" name="Variable">MENUPRINCIPAL_TempoFrase</param>
+                                                    <param id="1" name="Comparison">4</param>
+                                                    <param id="2" name="Value">6</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="-9" name="Set value" sid="208916161060895" type="System">
+                                                    <param id="0" name="Variable">MENUPRINCIPAL_TempoFrase</param>
+                                                    <param id="1" name="Value">0</param>
+                                                </action>
+                                                <action id="-12" name="Set group active" sid="564031940596991" type="System">
+                                                    <param id="0" name="Group name">&quot;(MENU PRINCIPAL) Fala Ms. Take: OPÇÕES 1&quot;</param>
+                                                    <param id="1" name="State">0</param>
+                                                </action>
+                                                <action id="-12" name="Set group active" sid="896090216419928" type="System">
+                                                    <param id="0" name="Group name">&quot;(MENU PRINCIPAL) Fala Ms. Take: OPÇÕES 2&quot;</param>
+                                                    <param id="1" name="State">1</param>
+                                                </action>
+                                                <action id="0" name="Set text" sid="413640687817637" type="textoFala">
+                                                    <param id="0" name="Text">&quot;&quot;</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                    </sub-events>
+                                </event-block>
+                            </sub-events>
+                        </event-group>
+                        <event-group description="" inactive="1" sid="271953847075746" title="(MENU PRINCIPAL) Fala Ms. Take: OPÇÕES 2">
+                            <sub-events>
+                                <event-block sid="560305101284770">
+                                    <conditions>
+                                        <condition id="-14" name="Compare variable" sid="449596811813760" type="System">
+                                            <param id="0" name="Variable">OpcaoMenu</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">6</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions />
+                                    <sub-events>
+                                        <event-block sid="849100622254221">
+                                            <conditions>
+                                                <condition id="-6" name="Every X seconds" sid="470588730718107" type="System">
+                                                    <param id="0" name="Interval (seconds)">0.08</param>
+                                                </condition>
+                                                <condition id="-14" name="Compare variable" sid="151225093681138" type="System">
+                                                    <param id="0" name="Variable">MENUPRINCIPAL_TempoFrase</param>
+                                                    <param id="1" name="Comparison">2</param>
+                                                    <param id="2" name="Value">6</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="-9" name="Set value" sid="885575786027725" type="System">
+                                                    <param id="0" name="Variable">MENUPRINCIPAL_FalaMsTakeOPCOES</param>
+                                                    <param id="1" name="Value">arrayFalasOpcoesMenu.At(31)</param>
+                                                </action>
+                                                <action id="0" name="Set text" sid="689340717219165" type="textoFala">
+                                                    <param id="0" name="Text">left(MENUPRINCIPAL_FalaMsTakeOPCOES,len(textoFala.Text)+1)</param>
+                                                </action>
+                                                <action id="4" name="Set font color" sid="551960479685732" type="textoFala">
+                                                    <param id="0" name="Color">rgb(146, 255, 20)</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                        <event-block sid="779508660235229">
+                                            <conditions>
+                                                <condition id="-14" name="Compare variable" sid="790525826541370" type="System">
+                                                    <param id="0" name="Variable">MENUPRINCIPAL_TempoFrase</param>
+                                                    <param id="1" name="Comparison">4</param>
+                                                    <param id="2" name="Value">6</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="-9" name="Set value" sid="176920810965794" type="System">
+                                                    <param id="0" name="Variable">MENUPRINCIPAL_TempoFrase</param>
+                                                    <param id="1" name="Value">0</param>
+                                                </action>
+                                                <action id="-12" name="Set group active" sid="113504677427728" type="System">
+                                                    <param id="0" name="Group name">&quot;(MENU PRINCIPAL) Fala Ms. Take: OPÇÕES 2&quot;</param>
+                                                    <param id="1" name="State">0</param>
+                                                </action>
+                                                <action id="-12" name="Set group active" sid="175629540867844" type="System">
+                                                    <param id="0" name="Group name">&quot;(MENU PRINCIPAL) Fala Ms. Take: OPÇÕES 3&quot;</param>
+                                                    <param id="1" name="State">1</param>
+                                                </action>
+                                                <action id="0" name="Set text" sid="838146139675287" type="textoFala">
+                                                    <param id="0" name="Text">&quot;&quot;</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                    </sub-events>
+                                </event-block>
+                            </sub-events>
+                        </event-group>
+                        <event-group description="" inactive="1" sid="186625945008222" title="(MENU PRINCIPAL) Fala Ms. Take: OPÇÕES 3">
+                            <sub-events>
+                                <event-block sid="708936486986833">
+                                    <conditions>
+                                        <condition id="-14" name="Compare variable" sid="388228186537312" type="System">
+                                            <param id="0" name="Variable">OpcaoMenu</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">6</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions />
+                                    <sub-events>
+                                        <event-block sid="731612905093294">
+                                            <conditions>
+                                                <condition id="-6" name="Every X seconds" sid="721703600196167" type="System">
+                                                    <param id="0" name="Interval (seconds)">0.08</param>
+                                                </condition>
+                                                <condition id="-14" name="Compare variable" sid="481966029833281" type="System">
+                                                    <param id="0" name="Variable">MENUPRINCIPAL_TempoFrase</param>
+                                                    <param id="1" name="Comparison">2</param>
+                                                    <param id="2" name="Value">6</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="-9" name="Set value" sid="343915842576346" type="System">
+                                                    <param id="0" name="Variable">MENUPRINCIPAL_FalaMsTakeOPCOES</param>
+                                                    <param id="1" name="Value">arrayFalasOpcoesMenu.At(32)</param>
+                                                </action>
+                                                <action id="0" name="Set text" sid="416035030640809" type="textoFala">
+                                                    <param id="0" name="Text">left(MENUPRINCIPAL_FalaMsTakeOPCOES,len(textoFala.Text)+1)</param>
+                                                </action>
+                                                <action id="4" name="Set font color" sid="139227553806626" type="textoFala">
+                                                    <param id="0" name="Color">rgb(146, 255, 20)</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                        <event-block sid="503710928911342">
+                                            <conditions>
+                                                <condition id="-14" name="Compare variable" sid="858852062743749" type="System">
+                                                    <param id="0" name="Variable">MENUPRINCIPAL_TempoFrase</param>
+                                                    <param id="1" name="Comparison">4</param>
+                                                    <param id="2" name="Value">6</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="-9" name="Set value" sid="113782484158077" type="System">
+                                                    <param id="0" name="Variable">MENUPRINCIPAL_TempoFrase</param>
+                                                    <param id="1" name="Value">0</param>
+                                                </action>
+                                                <action id="-12" name="Set group active" sid="457024483441650" type="System">
+                                                    <param id="0" name="Group name">&quot;(MENU PRINCIPAL) Fala Ms. Take: OPÇÕES 3&quot;</param>
+                                                    <param id="1" name="State">0</param>
+                                                </action>
+                                                <action id="-12" name="Set group active" sid="441888825531206" type="System">
+                                                    <param id="0" name="Group name">&quot;(MENU PRINCIPAL) Fala Ms. Take: OPÇÕES 4&quot;</param>
+                                                    <param id="1" name="State">1</param>
+                                                </action>
+                                                <action id="0" name="Set text" sid="981280490854737" type="textoFala">
+                                                    <param id="0" name="Text">&quot;&quot;</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                    </sub-events>
+                                </event-block>
+                            </sub-events>
+                        </event-group>
+                        <event-group description="" inactive="1" sid="262095075155837" title="(MENU PRINCIPAL) Fala Ms. Take: OPÇÕES 4">
+                            <sub-events>
+                                <event-block sid="328293240038327">
+                                    <conditions>
+                                        <condition id="-14" name="Compare variable" sid="643543969464149" type="System">
+                                            <param id="0" name="Variable">OpcaoMenu</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">6</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions />
+                                    <sub-events>
+                                        <event-block sid="294721358020163">
+                                            <conditions>
+                                                <condition id="-6" name="Every X seconds" sid="150273183388340" type="System">
+                                                    <param id="0" name="Interval (seconds)">0.08</param>
+                                                </condition>
+                                                <condition id="-14" name="Compare variable" sid="666246621326299" type="System">
+                                                    <param id="0" name="Variable">MENUPRINCIPAL_TempoFrase</param>
+                                                    <param id="1" name="Comparison">2</param>
+                                                    <param id="2" name="Value">6</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="-9" name="Set value" sid="852515928894173" type="System">
+                                                    <param id="0" name="Variable">MENUPRINCIPAL_FalaMsTakeOPCOES</param>
+                                                    <param id="1" name="Value">arrayFalasOpcoesMenu.At(33)</param>
+                                                </action>
+                                                <action id="0" name="Set text" sid="366469318770055" type="textoFala">
+                                                    <param id="0" name="Text">left(MENUPRINCIPAL_FalaMsTakeOPCOES,len(textoFala.Text)+1)</param>
+                                                </action>
+                                                <action id="4" name="Set font color" sid="413473803870004" type="textoFala">
+                                                    <param id="0" name="Color">rgb(146, 255, 20)</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                        <event-block sid="565438607107904">
+                                            <conditions>
+                                                <condition id="-14" name="Compare variable" sid="240920127023934" type="System">
+                                                    <param id="0" name="Variable">MENUPRINCIPAL_TempoFrase</param>
+                                                    <param id="1" name="Comparison">4</param>
+                                                    <param id="2" name="Value">6</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="-9" name="Set value" sid="433646315924489" type="System">
+                                                    <param id="0" name="Variable">MENUPRINCIPAL_TempoFrase</param>
+                                                    <param id="1" name="Value">0</param>
+                                                </action>
+                                                <action id="-12" name="Set group active" sid="225653966212149" type="System">
+                                                    <param id="0" name="Group name">&quot;(MENU PRINCIPAL) Fala Ms. Take: OPÇÕES 4&quot;</param>
+                                                    <param id="1" name="State">0</param>
+                                                </action>
+                                                <action id="-12" name="Set group active" sid="378957662362429" type="System">
+                                                    <param id="0" name="Group name">&quot;(MENU PRINCIPAL) Fala Ms. Take: OPÇÕES 5&quot;</param>
+                                                    <param id="1" name="State">1</param>
+                                                </action>
+                                                <action id="0" name="Set text" sid="155709265518936" type="textoFala">
+                                                    <param id="0" name="Text">&quot;&quot;</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                    </sub-events>
+                                </event-block>
+                            </sub-events>
+                        </event-group>
+                        <event-group description="" inactive="1" sid="303871824332401" title="(MENU PRINCIPAL) Fala Ms. Take: OPÇÕES 5">
+                            <sub-events>
+                                <event-block sid="944376873578947">
+                                    <conditions>
+                                        <condition id="-14" name="Compare variable" sid="785583301972419" type="System">
+                                            <param id="0" name="Variable">OpcaoMenu</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">6</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions />
+                                    <sub-events>
+                                        <event-block sid="287490519451087">
+                                            <conditions>
+                                                <condition id="-6" name="Every X seconds" sid="444968967859467" type="System">
+                                                    <param id="0" name="Interval (seconds)">0.08</param>
+                                                </condition>
+                                                <condition id="-14" name="Compare variable" sid="287931284026723" type="System">
+                                                    <param id="0" name="Variable">MENUPRINCIPAL_TempoFrase</param>
+                                                    <param id="1" name="Comparison">2</param>
+                                                    <param id="2" name="Value">6</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="-9" name="Set value" sid="863879766142210" type="System">
+                                                    <param id="0" name="Variable">MENUPRINCIPAL_FalaMsTakeOPCOES</param>
+                                                    <param id="1" name="Value">arrayFalasOpcoesMenu.At(34)</param>
+                                                </action>
+                                                <action id="0" name="Set text" sid="985527080102941" type="textoFala">
+                                                    <param id="0" name="Text">left(MENUPRINCIPAL_FalaMsTakeOPCOES,len(textoFala.Text)+1)</param>
+                                                </action>
+                                                <action id="4" name="Set font color" sid="967671820439554" type="textoFala">
+                                                    <param id="0" name="Color">rgb(146, 255, 20)</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                        <event-block sid="960730707980327">
+                                            <conditions>
+                                                <condition id="-14" name="Compare variable" sid="989877183552716" type="System">
+                                                    <param id="0" name="Variable">MENUPRINCIPAL_TempoFrase</param>
+                                                    <param id="1" name="Comparison">4</param>
+                                                    <param id="2" name="Value">6</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="-9" name="Set value" sid="723974709841798" type="System">
+                                                    <param id="0" name="Variable">MENUPRINCIPAL_TempoFrase</param>
+                                                    <param id="1" name="Value">0</param>
+                                                </action>
+                                                <action id="-12" name="Set group active" sid="825173418745070" type="System">
+                                                    <param id="0" name="Group name">&quot;(MENU PRINCIPAL) Fala Ms. Take: OPÇÕES 5&quot;</param>
+                                                    <param id="1" name="State">0</param>
+                                                </action>
+                                                <action id="-12" name="Set group active" sid="589084801809773" type="System">
+                                                    <param id="0" name="Group name">&quot;(MENU PRINCIPAL) Fala Ms. Take: OPÇÕES 6&quot;</param>
+                                                    <param id="1" name="State">1</param>
+                                                </action>
+                                                <action id="0" name="Set text" sid="807068002696897" type="textoFala">
+                                                    <param id="0" name="Text">&quot;&quot;</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                    </sub-events>
+                                </event-block>
+                            </sub-events>
+                        </event-group>
+                        <event-group description="" inactive="1" sid="337337160984716" title="(MENU PRINCIPAL) Fala Ms. Take: OPÇÕES 6">
+                            <sub-events>
+                                <event-block sid="181354838959478">
+                                    <conditions>
+                                        <condition id="-14" name="Compare variable" sid="892488163826082" type="System">
+                                            <param id="0" name="Variable">OpcaoMenu</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">6</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions />
+                                    <sub-events>
+                                        <event-block sid="959326773347431">
+                                            <conditions>
+                                                <condition id="-6" name="Every X seconds" sid="750467738450807" type="System">
+                                                    <param id="0" name="Interval (seconds)">0.08</param>
+                                                </condition>
+                                                <condition id="-14" name="Compare variable" sid="918887915641087" type="System">
+                                                    <param id="0" name="Variable">MENUPRINCIPAL_TempoFrase</param>
+                                                    <param id="1" name="Comparison">2</param>
+                                                    <param id="2" name="Value">6</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="-9" name="Set value" sid="696463307824355" type="System">
+                                                    <param id="0" name="Variable">MENUPRINCIPAL_FalaMsTakeOPCOES</param>
+                                                    <param id="1" name="Value">arrayFalasOpcoesMenu.At(35)</param>
+                                                </action>
+                                                <action id="0" name="Set text" sid="346097822315054" type="textoFala">
+                                                    <param id="0" name="Text">left(MENUPRINCIPAL_FalaMsTakeOPCOES,len(textoFala.Text)+1)</param>
+                                                </action>
+                                                <action id="4" name="Set font color" sid="825116958556441" type="textoFala">
+                                                    <param id="0" name="Color">rgb(146, 255, 20)</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                        <event-block sid="303251318572273">
+                                            <conditions>
+                                                <condition id="-14" name="Compare variable" sid="259491245205563" type="System">
+                                                    <param id="0" name="Variable">MENUPRINCIPAL_TempoFrase</param>
+                                                    <param id="1" name="Comparison">4</param>
+                                                    <param id="2" name="Value">6</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="-9" name="Set value" sid="669992118652356" type="System">
+                                                    <param id="0" name="Variable">MENUPRINCIPAL_TempoFrase</param>
+                                                    <param id="1" name="Value">0</param>
+                                                </action>
+                                                <action id="-12" name="Set group active" sid="134316424815478" type="System">
+                                                    <param id="0" name="Group name">&quot;(MENU PRINCIPAL) Fala Ms. Take: OPÇÕES 6&quot;</param>
+                                                    <param id="1" name="State">0</param>
+                                                </action>
+                                                <action id="-12" name="Set group active" sid="125095651985577" type="System">
+                                                    <param id="0" name="Group name">&quot;(MENU PRINCIPAL) Fala Ms. Take: OPÇÕES 1&quot;</param>
+                                                    <param id="1" name="State">1</param>
+                                                </action>
+                                                <action id="0" name="Set text" sid="341246489847960" type="textoFala">
                                                     <param id="0" name="Text">&quot;&quot;</param>
                                                 </action>
                                             </actions>
