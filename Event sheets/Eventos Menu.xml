@@ -533,6 +533,38 @@
                             <param id="0" name="Group name">&quot;(MENU PRINCIPAL) Fala Ms. Take: GLITCH 5&quot;</param>
                             <param id="1" name="State">0</param>
                         </action>
+                        <action id="-9" name="Set value" sid="688685023546162" type="System">
+                            <param id="0" name="Variable">MENUPRINCIPAL_FalaMsTakeOPCOES</param>
+                            <param id="1" name="Value">&quot;&quot;</param>
+                        </action>
+                        <action id="-12" name="Set group active" sid="596654759024299" type="System">
+                            <param id="0" name="Group name">&quot;(MENU PRINCIPAL) Fala Ms. Take: OPÇÕES&quot;</param>
+                            <param id="1" name="State">0</param>
+                        </action>
+                        <action id="-12" name="Set group active" sid="895658865952318" type="System">
+                            <param id="0" name="Group name">&quot;(MENU PRINCIPAL) Fala Ms. Take: OPÇÕES 1&quot;</param>
+                            <param id="1" name="State">1</param>
+                        </action>
+                        <action id="-12" name="Set group active" sid="838377649532162" type="System">
+                            <param id="0" name="Group name">&quot;(MENU PRINCIPAL) Fala Ms. Take: OPÇÕES 2&quot;</param>
+                            <param id="1" name="State">0</param>
+                        </action>
+                        <action id="-12" name="Set group active" sid="611995649396830" type="System">
+                            <param id="0" name="Group name">&quot;(MENU PRINCIPAL) Fala Ms. Take: OPÇÕES 3&quot;</param>
+                            <param id="1" name="State">0</param>
+                        </action>
+                        <action id="-12" name="Set group active" sid="785922985280928" type="System">
+                            <param id="0" name="Group name">&quot;(MENU PRINCIPAL) Fala Ms. Take: OPÇÕES 4&quot;</param>
+                            <param id="1" name="State">0</param>
+                        </action>
+                        <action id="-12" name="Set group active" sid="596497653958897" type="System">
+                            <param id="0" name="Group name">&quot;(MENU PRINCIPAL) Fala Ms. Take: OPÇÕES 5&quot;</param>
+                            <param id="1" name="State">0</param>
+                        </action>
+                        <action id="-12" name="Set group active" sid="465497381636644" type="System">
+                            <param id="0" name="Group name">&quot;(MENU PRINCIPAL) Fala Ms. Take: OPÇÕES 6&quot;</param>
+                            <param id="1" name="State">0</param>
+                        </action>
                     </actions>
                 </event-block>
                 <event-block sid="127033941256557">
@@ -662,6 +694,38 @@
                         </action>
                         <action id="-12" name="Set group active" sid="795873295108392" type="System">
                             <param id="0" name="Group name">&quot;(MENU PRINCIPAL) Fala Ms. Take: GLITCH 5&quot;</param>
+                            <param id="1" name="State">0</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="541670184722869" type="System">
+                            <param id="0" name="Variable">MENUPRINCIPAL_FalaMsTakeOPCOES</param>
+                            <param id="1" name="Value">&quot;&quot;</param>
+                        </action>
+                        <action id="-12" name="Set group active" sid="556631079011326" type="System">
+                            <param id="0" name="Group name">&quot;(MENU PRINCIPAL) Fala Ms. Take: OPÇÕES&quot;</param>
+                            <param id="1" name="State">0</param>
+                        </action>
+                        <action id="-12" name="Set group active" sid="759593047665572" type="System">
+                            <param id="0" name="Group name">&quot;(MENU PRINCIPAL) Fala Ms. Take: OPÇÕES 1&quot;</param>
+                            <param id="1" name="State">1</param>
+                        </action>
+                        <action id="-12" name="Set group active" sid="663106532801745" type="System">
+                            <param id="0" name="Group name">&quot;(MENU PRINCIPAL) Fala Ms. Take: OPÇÕES 2&quot;</param>
+                            <param id="1" name="State">0</param>
+                        </action>
+                        <action id="-12" name="Set group active" sid="251912522394402" type="System">
+                            <param id="0" name="Group name">&quot;(MENU PRINCIPAL) Fala Ms. Take: OPÇÕES 3&quot;</param>
+                            <param id="1" name="State">0</param>
+                        </action>
+                        <action id="-12" name="Set group active" sid="113066487606226" type="System">
+                            <param id="0" name="Group name">&quot;(MENU PRINCIPAL) Fala Ms. Take: OPÇÕES 4&quot;</param>
+                            <param id="1" name="State">0</param>
+                        </action>
+                        <action id="-12" name="Set group active" sid="653843263285625" type="System">
+                            <param id="0" name="Group name">&quot;(MENU PRINCIPAL) Fala Ms. Take: OPÇÕES 5&quot;</param>
+                            <param id="1" name="State">0</param>
+                        </action>
+                        <action id="-12" name="Set group active" sid="807311008265014" type="System">
+                            <param id="0" name="Group name">&quot;(MENU PRINCIPAL) Fala Ms. Take: OPÇÕES 6&quot;</param>
                             <param id="1" name="State">0</param>
                         </action>
                     </actions>
@@ -803,6 +867,38 @@
                             <param id="0" name="Group name">&quot;(MENU PRINCIPAL) Fala Ms. Take: GLITCH 5&quot;</param>
                             <param id="1" name="State">0</param>
                         </action>
+                        <action id="-9" name="Set value" sid="429525687887267" type="System">
+                            <param id="0" name="Variable">MENUPRINCIPAL_FalaMsTakeOPCOES</param>
+                            <param id="1" name="Value">&quot;&quot;</param>
+                        </action>
+                        <action id="-12" name="Set group active" sid="182912352248220" type="System">
+                            <param id="0" name="Group name">&quot;(MENU PRINCIPAL) Fala Ms. Take: OPÇÕES&quot;</param>
+                            <param id="1" name="State">0</param>
+                        </action>
+                        <action id="-12" name="Set group active" sid="374059854086067" type="System">
+                            <param id="0" name="Group name">&quot;(MENU PRINCIPAL) Fala Ms. Take: OPÇÕES 1&quot;</param>
+                            <param id="1" name="State">1</param>
+                        </action>
+                        <action id="-12" name="Set group active" sid="981770168861968" type="System">
+                            <param id="0" name="Group name">&quot;(MENU PRINCIPAL) Fala Ms. Take: OPÇÕES 2&quot;</param>
+                            <param id="1" name="State">0</param>
+                        </action>
+                        <action id="-12" name="Set group active" sid="159719129990326" type="System">
+                            <param id="0" name="Group name">&quot;(MENU PRINCIPAL) Fala Ms. Take: OPÇÕES 3&quot;</param>
+                            <param id="1" name="State">0</param>
+                        </action>
+                        <action id="-12" name="Set group active" sid="265477669003349" type="System">
+                            <param id="0" name="Group name">&quot;(MENU PRINCIPAL) Fala Ms. Take: OPÇÕES 4&quot;</param>
+                            <param id="1" name="State">0</param>
+                        </action>
+                        <action id="-12" name="Set group active" sid="789467896610506" type="System">
+                            <param id="0" name="Group name">&quot;(MENU PRINCIPAL) Fala Ms. Take: OPÇÕES 5&quot;</param>
+                            <param id="1" name="State">0</param>
+                        </action>
+                        <action id="-12" name="Set group active" sid="331029950000464" type="System">
+                            <param id="0" name="Group name">&quot;(MENU PRINCIPAL) Fala Ms. Take: OPÇÕES 6&quot;</param>
+                            <param id="1" name="State">0</param>
+                        </action>
                     </actions>
                 </event-block>
                 <event-block sid="827057727305884">
@@ -932,6 +1028,38 @@
                         </action>
                         <action id="-12" name="Set group active" sid="182923293476999" type="System">
                             <param id="0" name="Group name">&quot;(MENU PRINCIPAL) Fala Ms. Take: GLITCH 5&quot;</param>
+                            <param id="1" name="State">0</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="223498047706297" type="System">
+                            <param id="0" name="Variable">MENUPRINCIPAL_FalaMsTakeOPCOES</param>
+                            <param id="1" name="Value">&quot;&quot;</param>
+                        </action>
+                        <action id="-12" name="Set group active" sid="262049880524086" type="System">
+                            <param id="0" name="Group name">&quot;(MENU PRINCIPAL) Fala Ms. Take: OPÇÕES&quot;</param>
+                            <param id="1" name="State">0</param>
+                        </action>
+                        <action id="-12" name="Set group active" sid="665757702273201" type="System">
+                            <param id="0" name="Group name">&quot;(MENU PRINCIPAL) Fala Ms. Take: OPÇÕES 1&quot;</param>
+                            <param id="1" name="State">1</param>
+                        </action>
+                        <action id="-12" name="Set group active" sid="358113083258148" type="System">
+                            <param id="0" name="Group name">&quot;(MENU PRINCIPAL) Fala Ms. Take: OPÇÕES 2&quot;</param>
+                            <param id="1" name="State">0</param>
+                        </action>
+                        <action id="-12" name="Set group active" sid="244951776030542" type="System">
+                            <param id="0" name="Group name">&quot;(MENU PRINCIPAL) Fala Ms. Take: OPÇÕES 3&quot;</param>
+                            <param id="1" name="State">0</param>
+                        </action>
+                        <action id="-12" name="Set group active" sid="720877902372547" type="System">
+                            <param id="0" name="Group name">&quot;(MENU PRINCIPAL) Fala Ms. Take: OPÇÕES 4&quot;</param>
+                            <param id="1" name="State">0</param>
+                        </action>
+                        <action id="-12" name="Set group active" sid="222464980611230" type="System">
+                            <param id="0" name="Group name">&quot;(MENU PRINCIPAL) Fala Ms. Take: OPÇÕES 5&quot;</param>
+                            <param id="1" name="State">0</param>
+                        </action>
+                        <action id="-12" name="Set group active" sid="414652545199965" type="System">
+                            <param id="0" name="Group name">&quot;(MENU PRINCIPAL) Fala Ms. Take: OPÇÕES 6&quot;</param>
                             <param id="1" name="State">0</param>
                         </action>
                     </actions>
@@ -1071,6 +1199,205 @@
                         </action>
                         <action id="-12" name="Set group active" sid="103366139161930" type="System">
                             <param id="0" name="Group name">&quot;(MENU PRINCIPAL) Fala Ms. Take: LABIRINTO 7&quot;</param>
+                            <param id="1" name="State">0</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="129959063498038" type="System">
+                            <param id="0" name="Variable">MENUPRINCIPAL_FalaMsTakeOPCOES</param>
+                            <param id="1" name="Value">&quot;&quot;</param>
+                        </action>
+                        <action id="-12" name="Set group active" sid="144195846567363" type="System">
+                            <param id="0" name="Group name">&quot;(MENU PRINCIPAL) Fala Ms. Take: OPÇÕES&quot;</param>
+                            <param id="1" name="State">0</param>
+                        </action>
+                        <action id="-12" name="Set group active" sid="218743737892489" type="System">
+                            <param id="0" name="Group name">&quot;(MENU PRINCIPAL) Fala Ms. Take: OPÇÕES 1&quot;</param>
+                            <param id="1" name="State">1</param>
+                        </action>
+                        <action id="-12" name="Set group active" sid="288964857377992" type="System">
+                            <param id="0" name="Group name">&quot;(MENU PRINCIPAL) Fala Ms. Take: OPÇÕES 2&quot;</param>
+                            <param id="1" name="State">0</param>
+                        </action>
+                        <action id="-12" name="Set group active" sid="258143253361139" type="System">
+                            <param id="0" name="Group name">&quot;(MENU PRINCIPAL) Fala Ms. Take: OPÇÕES 3&quot;</param>
+                            <param id="1" name="State">0</param>
+                        </action>
+                        <action id="-12" name="Set group active" sid="283154879528097" type="System">
+                            <param id="0" name="Group name">&quot;(MENU PRINCIPAL) Fala Ms. Take: OPÇÕES 4&quot;</param>
+                            <param id="1" name="State">0</param>
+                        </action>
+                        <action id="-12" name="Set group active" sid="413763311157988" type="System">
+                            <param id="0" name="Group name">&quot;(MENU PRINCIPAL) Fala Ms. Take: OPÇÕES 5&quot;</param>
+                            <param id="1" name="State">0</param>
+                        </action>
+                        <action id="-12" name="Set group active" sid="831348663349956" type="System">
+                            <param id="0" name="Group name">&quot;(MENU PRINCIPAL) Fala Ms. Take: OPÇÕES 6&quot;</param>
+                            <param id="1" name="State">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="469472627716559">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="899994204462502" type="System">
+                            <param id="0" name="Variable">OpcaoMenu</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">6</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-12" name="Set group active" sid="789866975867616" type="System">
+                            <param id="0" name="Group name">&quot;(MENU PRINCIPAL) Fala Ms. Take: OPÇÕES&quot;</param>
+                            <param id="1" name="State">1</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="151375948734385" type="System">
+                            <param id="0" name="Variable">MENUPRINCIPAL_FalaMsTakePONG</param>
+                            <param id="1" name="Value">&quot;&quot;</param>
+                        </action>
+                        <action id="-12" name="Set group active" sid="977536543425215" type="System">
+                            <param id="0" name="Group name">&quot;(MENU PRINCIPAL) Fala Ms. Take: PONG&quot;</param>
+                            <param id="1" name="State">0</param>
+                        </action>
+                        <action id="-12" name="Set group active" sid="763777395316085" type="System">
+                            <param id="0" name="Group name">&quot;(MENU PRINCIPAL) Fala Ms. Take: PONG 1&quot;</param>
+                            <param id="1" name="State">1</param>
+                        </action>
+                        <action id="-12" name="Set group active" sid="885422975499396" type="System">
+                            <param id="0" name="Group name">&quot;(MENU PRINCIPAL) Fala Ms. Take: PONG 2&quot;</param>
+                            <param id="1" name="State">0</param>
+                        </action>
+                        <action id="-12" name="Set group active" sid="907070514500916" type="System">
+                            <param id="0" name="Group name">&quot;(MENU PRINCIPAL) Fala Ms. Take: PONG 3&quot;</param>
+                            <param id="1" name="State">0</param>
+                        </action>
+                        <action id="-12" name="Set group active" sid="946982452855714" type="System">
+                            <param id="0" name="Group name">&quot;(MENU PRINCIPAL) Fala Ms. Take: PONG 4&quot;</param>
+                            <param id="1" name="State">0</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="473559455279525" type="System">
+                            <param id="0" name="Variable">MENUPRINCIPAL_FalaMsTakePLATAFORMA</param>
+                            <param id="1" name="Value">&quot;&quot;</param>
+                        </action>
+                        <action id="-12" name="Set group active" sid="689683122652846" type="System">
+                            <param id="0" name="Group name">&quot;(MENU PRINCIPAL) Fala Ms. Take: PLATAFORMA&quot;</param>
+                            <param id="1" name="State">0</param>
+                        </action>
+                        <action id="-12" name="Set group active" sid="704394393686289" type="System">
+                            <param id="0" name="Group name">&quot;(MENU PRINCIPAL) Fala Ms. Take: PLATAFORMA 1&quot;</param>
+                            <param id="1" name="State">1</param>
+                        </action>
+                        <action id="-12" name="Set group active" sid="976203516963549" type="System">
+                            <param id="0" name="Group name">&quot;(MENU PRINCIPAL) Fala Ms. Take: PLATAFORMA 2&quot;</param>
+                            <param id="1" name="State">0</param>
+                        </action>
+                        <action id="-12" name="Set group active" sid="922552737333608" type="System">
+                            <param id="0" name="Group name">&quot;(MENU PRINCIPAL) Fala Ms. Take: PLATAFORMA 3&quot;</param>
+                            <param id="1" name="State">0</param>
+                        </action>
+                        <action id="-12" name="Set group active" sid="451160597253275" type="System">
+                            <param id="0" name="Group name">&quot;(MENU PRINCIPAL) Fala Ms. Take: PLATAFORMA 4&quot;</param>
+                            <param id="1" name="State">0</param>
+                        </action>
+                        <action id="-12" name="Set group active" sid="678410165952348" type="System">
+                            <param id="0" name="Group name">&quot;(MENU PRINCIPAL) Fala Ms. Take: PLATAFORMA 5&quot;</param>
+                            <param id="1" name="State">0</param>
+                        </action>
+                        <action id="-12" name="Set group active" sid="593255076377282" type="System">
+                            <param id="0" name="Group name">&quot;(MENU PRINCIPAL) Fala Ms. Take: PLATAFORMA 6&quot;</param>
+                            <param id="1" name="State">0</param>
+                        </action>
+                        <action id="-12" name="Set group active" sid="261445323240937" type="System">
+                            <param id="0" name="Group name">&quot;(MENU PRINCIPAL) Fala Ms. Take: PLATAFORMA 7&quot;</param>
+                            <param id="1" name="State">0</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="712374851653875" type="System">
+                            <param id="0" name="Variable">MENUPRINCIPAL_FalaMsTakeTETRIS</param>
+                            <param id="1" name="Value">&quot;&quot;</param>
+                        </action>
+                        <action id="-12" name="Set group active" sid="616886607484362" type="System">
+                            <param id="0" name="Group name">&quot;(MENU PRINCIPAL) Fala Ms. Take: TETRIS&quot;</param>
+                            <param id="1" name="State">0</param>
+                        </action>
+                        <action id="-12" name="Set group active" sid="790915895104193" type="System">
+                            <param id="0" name="Group name">&quot;(MENU PRINCIPAL) Fala Ms. Take: TETRIS 1&quot;</param>
+                            <param id="1" name="State">1</param>
+                        </action>
+                        <action id="-12" name="Set group active" sid="369930857194564" type="System">
+                            <param id="0" name="Group name">&quot;(MENU PRINCIPAL) Fala Ms. Take: TETRIS 2&quot;</param>
+                            <param id="1" name="State">0</param>
+                        </action>
+                        <action id="-12" name="Set group active" sid="480332563572458" type="System">
+                            <param id="0" name="Group name">&quot;(MENU PRINCIPAL) Fala Ms. Take: TETRIS 3&quot;</param>
+                            <param id="1" name="State">0</param>
+                        </action>
+                        <action id="-12" name="Set group active" sid="362637200844591" type="System">
+                            <param id="0" name="Group name">&quot;(MENU PRINCIPAL) Fala Ms. Take: TETRIS 4&quot;</param>
+                            <param id="1" name="State">0</param>
+                        </action>
+                        <action id="-12" name="Set group active" sid="248951481731195" type="System">
+                            <param id="0" name="Group name">&quot;(MENU PRINCIPAL) Fala Ms. Take: TETRIS 5&quot;</param>
+                            <param id="1" name="State">0</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="873989495983573" type="System">
+                            <param id="0" name="Variable">MENUPRINCIPAL_FalaMsTakeLABIRINTO</param>
+                            <param id="1" name="Value">&quot;&quot;</param>
+                        </action>
+                        <action id="-12" name="Set group active" sid="480402850474351" type="System">
+                            <param id="0" name="Group name">&quot;(MENU PRINCIPAL) Fala Ms. Take: LABIRINTO&quot;</param>
+                            <param id="1" name="State">0</param>
+                        </action>
+                        <action id="-12" name="Set group active" sid="856561110945458" type="System">
+                            <param id="0" name="Group name">&quot;(MENU PRINCIPAL) Fala Ms. Take: LABIRINTO 1&quot;</param>
+                            <param id="1" name="State">1</param>
+                        </action>
+                        <action id="-12" name="Set group active" sid="938567659851563" type="System">
+                            <param id="0" name="Group name">&quot;(MENU PRINCIPAL) Fala Ms. Take: LABIRINTO 2&quot;</param>
+                            <param id="1" name="State">0</param>
+                        </action>
+                        <action id="-12" name="Set group active" sid="995351751935930" type="System">
+                            <param id="0" name="Group name">&quot;(MENU PRINCIPAL) Fala Ms. Take: LABIRINTO 3&quot;</param>
+                            <param id="1" name="State">0</param>
+                        </action>
+                        <action id="-12" name="Set group active" sid="599459470926162" type="System">
+                            <param id="0" name="Group name">&quot;(MENU PRINCIPAL) Fala Ms. Take: LABIRINTO 4&quot;</param>
+                            <param id="1" name="State">0</param>
+                        </action>
+                        <action id="-12" name="Set group active" sid="397871188872671" type="System">
+                            <param id="0" name="Group name">&quot;(MENU PRINCIPAL) Fala Ms. Take: LABIRINTO 5&quot;</param>
+                            <param id="1" name="State">0</param>
+                        </action>
+                        <action id="-12" name="Set group active" sid="320313347989389" type="System">
+                            <param id="0" name="Group name">&quot;(MENU PRINCIPAL) Fala Ms. Take: LABIRINTO 6&quot;</param>
+                            <param id="1" name="State">0</param>
+                        </action>
+                        <action id="-12" name="Set group active" sid="574672781589535" type="System">
+                            <param id="0" name="Group name">&quot;(MENU PRINCIPAL) Fala Ms. Take: LABIRINTO 7&quot;</param>
+                            <param id="1" name="State">0</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="410453151386341" type="System">
+                            <param id="0" name="Variable">MENUPRINCIPAL_FalaMsTakeGLITCH</param>
+                            <param id="1" name="Value">&quot;&quot;</param>
+                        </action>
+                        <action id="-12" name="Set group active" sid="598143317924766" type="System">
+                            <param id="0" name="Group name">&quot;(MENU PRINCIPAL) Fala Ms. Take: GLITCH&quot;</param>
+                            <param id="1" name="State">0</param>
+                        </action>
+                        <action id="-12" name="Set group active" sid="525223754441606" type="System">
+                            <param id="0" name="Group name">&quot;(MENU PRINCIPAL) Fala Ms. Take: GLITCH 1&quot;</param>
+                            <param id="1" name="State">1</param>
+                        </action>
+                        <action id="-12" name="Set group active" sid="257694000720563" type="System">
+                            <param id="0" name="Group name">&quot;(MENU PRINCIPAL) Fala Ms. Take: GLITCH 2&quot;</param>
+                            <param id="1" name="State">0</param>
+                        </action>
+                        <action id="-12" name="Set group active" sid="265289087660401" type="System">
+                            <param id="0" name="Group name">&quot;(MENU PRINCIPAL) Fala Ms. Take: GLITCH 3&quot;</param>
+                            <param id="1" name="State">0</param>
+                        </action>
+                        <action id="-12" name="Set group active" sid="824602917625394" type="System">
+                            <param id="0" name="Group name">&quot;(MENU PRINCIPAL) Fala Ms. Take: GLITCH 4&quot;</param>
+                            <param id="1" name="State">0</param>
+                        </action>
+                        <action id="-12" name="Set group active" sid="543147765355110" type="System">
+                            <param id="0" name="Group name">&quot;(MENU PRINCIPAL) Fala Ms. Take: GLITCH 5&quot;</param>
                             <param id="1" name="State">0</param>
                         </action>
                     </actions>
