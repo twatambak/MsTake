@@ -12,12 +12,16 @@
     <used-plugins>
         <plugin author="Scirra" id="Arr" version="1">Array</plugin>
         <plugin author="Scirra" id="Keyboard" version="1">Keyboard</plugin>
+        <plugin author="Scirra" id="Sprite" version="1">Sprite</plugin>
         <plugin author="Scirra" id="Text" version="1">Text</plugin>
         <plugin author="Scirra" id="TiledBg" version="1">Tiled Background</plugin>
     </used-plugins>
     <used-behaviors>
+        <behavior author="Scirra" id="EightDir" version="1">8 Direction</behavior>
         <behavior author="Scirra" id="Flash" version="1">Flash</behavior>
         <behavior author="Scirra" id="Sin" version="1">Sine</behavior>
+        <behavior author="Scirra" id="bound" version="1">Bound to layout</behavior>
+        <behavior author="Scirra" id="solid" version="1">Solid</behavior>
     </used-behaviors>
     <used-effects>
         <effect author="Brad Larson" id="bulge">Bulge</effect>
@@ -124,10 +128,147 @@
                 <plugin id="Keyboard" />
             </object-type>
         </object-folder>
+        <object-folder name="Pong">
+            <object-folder name="Jogador">
+                <object-type name="pongPlayer1H" sid="735278331759395">
+                    <plugin id="Sprite" />
+                    <behaviors>
+                        <behavior-type name="8Direction" sid="632427685005798">
+                            <behavior id="EightDir" />
+                        </behavior-type>
+                        <behavior-type name="Solid" sid="821440245500942">
+                            <behavior id="solid" />
+                        </behavior-type>
+                        <behavior-type name="BoundToLayout" sid="643347678599723">
+                            <behavior id="bound" />
+                        </behavior-type>
+                    </behaviors>
+                    <animation-folder>
+                        <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="432387426185862" speed="5">
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Users\Thiago L. Watambak\Downloads\Jogador.png">
+                                <collision-poly>
+                                    <point x="0.03125" y="0.00625" />
+                                    <point x="0.96875" y="0.00625" />
+                                    <point x="1" y="0.5" />
+                                    <point x="0.96875" y="0.99375" />
+                                    <point x="0.03125" y="0.99375" />
+                                    <point x="0" y="0.5" />
+                                </collision-poly>
+                            </frame>
+                        </animation>
+                    </animation-folder>
+                </object-type>
+                <object-type name="pongPlayer1V" sid="168601193213763">
+                    <plugin id="Sprite" />
+                    <behaviors>
+                        <behavior-type name="8Direction" sid="788062144151618">
+                            <behavior id="EightDir" />
+                        </behavior-type>
+                        <behavior-type name="Solid" sid="242434317237563">
+                            <behavior id="solid" />
+                        </behavior-type>
+                        <behavior-type name="BoundToLayout" sid="324363562008312">
+                            <behavior id="bound" />
+                        </behavior-type>
+                    </behaviors>
+                    <animation-folder>
+                        <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="628223146058948" speed="5">
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Users\Thiago L. Watambak\Downloads\Jogador.png">
+                                <collision-poly>
+                                    <point x="0.03125" y="0.00625" />
+                                    <point x="0.96875" y="0.00625" />
+                                    <point x="1" y="0.5" />
+                                    <point x="0.96875" y="0.99375" />
+                                    <point x="0.03125" y="0.99375" />
+                                    <point x="0" y="0.5" />
+                                </collision-poly>
+                            </frame>
+                        </animation>
+                    </animation-folder>
+                </object-type>
+                <object-type name="pongPlayer2H" sid="959803676390763">
+                    <plugin id="Sprite" />
+                    <behaviors>
+                        <behavior-type name="8Direction" sid="899537252303839">
+                            <behavior id="EightDir" />
+                        </behavior-type>
+                    </behaviors>
+                    <animation-folder>
+                        <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="582425063359480" speed="5">
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Users\Thiago L. Watambak\Downloads\Jogador.png" />
+                        </animation>
+                    </animation-folder>
+                </object-type>
+                <object-type name="pongPlayer2V" sid="942332500530165">
+                    <plugin id="Sprite" />
+                    <behaviors>
+                        <behavior-type name="8Direction" sid="818722741956732">
+                            <behavior id="EightDir" />
+                        </behavior-type>
+                    </behaviors>
+                    <animation-folder>
+                        <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="311774780150115" speed="5">
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Users\Thiago L. Watambak\Downloads\Jogador.png">
+                                <collision-poly>
+                                    <point x="0.03125" y="0.00625" />
+                                    <point x="0.96875" y="0.00625" />
+                                    <point x="1" y="0.5" />
+                                    <point x="0.96875" y="0.99375" />
+                                    <point x="0.03125" y="0.99375" />
+                                    <point x="0" y="0.5" />
+                                </collision-poly>
+                            </frame>
+                        </animation>
+                    </animation-folder>
+                </object-type>
+            </object-folder>
+            <object-type name="bordasPong" sid="704424633719714">
+                <plugin id="TiledBg" />
+                <behaviors>
+                    <behavior-type name="Solid" sid="445947202290107">
+                        <behavior id="solid" />
+                    </behavior-type>
+                </behaviors>
+                <texture />
+            </object-type>
+        </object-folder>
+        <object-type name="bolaPong" sid="783492084660864">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="487131902131480" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Users\Thiago L. Watambak\Downloads\Bola.png">
+                        <collision-poly>
+                            <point x="0.15625" y="0.15625" />
+                            <point x="0.5" y="0" />
+                            <point x="0.84375" y="0.15625" />
+                            <point x="1" y="0.5" />
+                            <point x="0.84375" y="0.84375" />
+                            <point x="0.5" y="1" />
+                            <point x="0.15625" y="0.84375" />
+                            <point x="0" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Solido" sid="745970537262623">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="605740666798210">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="929160071208765" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
     </object-folder>
     <families />
     <layout-folder>
         <layout>Menu.xml</layout>
+        <layout>Pong.xml</layout>
         <layout>Intro.xml</layout>
     </layout-folder>
     <event-folder>
@@ -135,6 +276,7 @@
         <event-sheet>Eventos Intro.xml</event-sheet>
         <event-sheet>Inserção das frases.xml</event-sheet>
         <event-sheet>Config.xml</event-sheet>
+        <event-sheet>Eventos Pong.xml</event-sheet>
     </event-folder>
     <global-instances>
         <global-instance type="Keyboard" uid="44" />

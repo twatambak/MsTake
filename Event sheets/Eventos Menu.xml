@@ -10,7 +10,7 @@
         <variable comment="Falas de Ms. Take para quando a opção de jogo LABIRINTO estiver selecionada." constant="0" name="MENUPRINCIPAL_FalaMsTakeLABIRINTO" sid="494051972884941" static="0" type="text"></variable>
         <variable comment="Falas de Ms. Take para quando a opção de jogo OPÇÕES estiver selecionada." constant="0" name="MENUPRINCIPAL_FalaMsTakeOPCOES" sid="228607751994743" static="0" type="text"></variable>
         <variable comment="Falas de Ms. Take para quando a opção de jogo GLITCH estiver selecionada." constant="0" name="MENUPRINCIPAL_FalaMsTakeGLITCH" sid="469915575728508" static="0" type="text"></variable>
-        <variable constant="0" name="MENUPRINCIPAL_TempoFrase" sid="393049832563785" static="0" type="number">0</variable>
+        <variable comment="Tempo de exibição das frases." constant="0" name="MENUPRINCIPAL_TempoFrase" sid="393049832563785" static="0" type="number">0</variable>
         <variable comment="Variável que armazena qual a opção do menu principal está selecionada." constant="0" name="OpcaoMenu" sid="108793603966217" static="0" type="number">1</variable>
         <variable comment="Controle para verificar se o título já passou pelo efeito de intro." constant="0" name="TituloPassou" sid="992242019100491" static="0" type="number">0</variable>
         <variable comment="Título do jogo." constant="0" name="Titulo" sid="136093149238283" static="0" type="text">Ms. Take</variable>

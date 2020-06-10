@@ -1,0 +1,75 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>Eventos Pong</name>
+    <events>
+        <event-group description="" sid="706714030006572" title="(PONG) ControleP1">
+            <sub-events>
+                <event-block sid="104869992027111">
+                    <conditions>
+                        <condition id="2" name="Key is down" sid="759883832629115" type="Keyboard">
+                            <param id="0" name="Key">38</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action behavior="8Direction" id="7" name="Simulate control" sid="658326757622564" type="pongPlayer1V">
+                            <param id="0" name="Control">2</param>
+                        </action>
+                        <action behavior="8Direction" id="7" name="Simulate control" sid="909534674687148" type="pongPlayer1H">
+                            <param id="0" name="Control">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="579471033182706">
+                    <conditions>
+                        <condition id="2" name="Key is down" sid="126924880485953" type="Keyboard">
+                            <param id="0" name="Key">40</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action behavior="8Direction" id="7" name="Simulate control" sid="562135582878706" type="pongPlayer1V">
+                            <param id="0" name="Control">3</param>
+                        </action>
+                        <action behavior="8Direction" id="7" name="Simulate control" sid="635236549123348" type="pongPlayer1H">
+                            <param id="0" name="Control">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="" sid="545501457474494" title="(PONG) ControleP2">
+            <sub-events>
+                <event-block sid="654647967664436">
+                    <conditions>
+                        <condition id="2" name="Key is down" sid="992109753106263" type="Keyboard">
+                            <param id="0" name="Key">87</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action behavior="8Direction" id="7" name="Simulate control" sid="729804643632224" type="pongPlayer2V">
+                            <param id="0" name="Control">2</param>
+                        </action>
+                        <action behavior="8Direction" id="7" name="Simulate control" sid="667778608045107" type="pongPlayer2H">
+                            <param id="0" name="Control">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="690649614779293">
+                    <conditions>
+                        <condition id="2" name="Key is down" sid="961980858531095" type="Keyboard">
+                            <param id="0" name="Key">83</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action behavior="8Direction" id="7" name="Simulate control" sid="550953712293606" type="pongPlayer2V">
+                            <param id="0" name="Control">3</param>
+                        </action>
+                        <action behavior="8Direction" id="7" name="Simulate control" sid="909914713025805" type="pongPlayer2H">
+                            <param id="0" name="Control">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+    </events>
+</c2eventsheet>
