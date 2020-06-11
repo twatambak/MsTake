@@ -769,7 +769,32 @@
                             <conditions>
                                 <condition id="-2" name="On start of layout" sid="439078489267120" type="System" />
                             </conditions>
-                            <actions />
+                            <actions>
+                                <action id="2" name="Set at X" sid="622499083140890" type="arrayOpcoesConfigPong">
+                                    <param id="0" name="X">1</param>
+                                    <param id="1" name="Value">&quot;Velocidade do jogador:&quot;</param>
+                                </action>
+                                <action id="2" name="Set at X" sid="244495833883535" type="arrayOpcoesConfigPong">
+                                    <param id="0" name="X">2</param>
+                                    <param id="1" name="Value">&quot;Velocidade inicial da bola:&quot;</param>
+                                </action>
+                                <action id="2" name="Set at X" sid="775330848875995" type="arrayOpcoesConfigPong">
+                                    <param id="0" name="X">3</param>
+                                    <param id="1" name="Value">&quot;Tempo de aumento da velocidade da bola:&quot;</param>
+                                </action>
+                                <action id="2" name="Set at X" sid="176936970211779" type="arrayOpcoesConfigPong">
+                                    <param id="0" name="X">4</param>
+                                    <param id="1" name="Value">&quot;Valor de aumento da velocidade da bola:&quot;</param>
+                                </action>
+                                <action id="2" name="Set at X" sid="746953648755714" type="arrayOpcoesConfigPong">
+                                    <param id="0" name="X">5</param>
+                                    <param id="1" name="Value">&quot;Gravidade da bola:&quot;</param>
+                                </action>
+                                <action id="2" name="Set at X" sid="536498505359807" type="arrayOpcoesConfigPong">
+                                    <param id="0" name="X">6</param>
+                                    <param id="1" name="Value">&quot;Modo de jogo:&quot;</param>
+                                </action>
+                            </actions>
                         </event-block>
                     </sub-events>
                 </event-block>

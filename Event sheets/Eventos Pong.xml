@@ -1638,7 +1638,186 @@
                     </actions>
                 </event-block>
                 <event-group description="" sid="671341526587385" title="(PONG) Alteração das configurações" />
-                <event-group description="" sid="566760428999689" title="(PONG) Exibição dos textos" />
+                <event-group description="" sid="566760428999689" title="(PONG) Exibição dos textos">
+                    <sub-events>
+                        <event-block sid="295042406882554">
+                            <conditions>
+                                <condition id="-2" name="On start of layout" sid="133949627667526" type="System" />
+                            </conditions>
+                            <actions />
+                            <sub-events>
+                                <event-block sid="633822260067045">
+                                    <conditions>
+                                        <condition id="-7" name="Compare instance variable" sid="888607462194523" type="textoConfigPong">
+                                            <param id="0" name="Instance variable">ID</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">1</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="0" name="Set text" sid="601701004733603" type="textoConfigPong">
+                                            <param id="0" name="Text">arrayOpcoesConfigPong.At(1)</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="123539859504122">
+                                    <conditions>
+                                        <condition id="-7" name="Compare instance variable" sid="417005158210096" type="textoInfo">
+                                            <param id="0" name="Instance variable">ID</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">1</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="0" name="Set text" sid="215133133976384" type="textoInfo">
+                                            <param id="0" name="Text">PONG_VelocidadeJogador</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="628151781001213">
+                                    <conditions>
+                                        <condition id="-7" name="Compare instance variable" sid="706411154372816" type="textoConfigPong">
+                                            <param id="0" name="Instance variable">ID</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">2</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="0" name="Set text" sid="168136275094263" type="textoConfigPong">
+                                            <param id="0" name="Text">arrayOpcoesConfigPong.At(2)</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="721557671694751">
+                                    <conditions>
+                                        <condition id="-7" name="Compare instance variable" sid="106505643441155" type="textoInfo">
+                                            <param id="0" name="Instance variable">ID</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">2</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="0" name="Set text" sid="430554323097513" type="textoInfo">
+                                            <param id="0" name="Text">PONG_VelocidadeInicialBola</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="870931810878262">
+                                    <conditions>
+                                        <condition id="-7" name="Compare instance variable" sid="936960224054372" type="textoConfigPong">
+                                            <param id="0" name="Instance variable">ID</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">3</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="0" name="Set text" sid="293719095889209" type="textoConfigPong">
+                                            <param id="0" name="Text">arrayOpcoesConfigPong.At(3)</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="687776497046274">
+                                    <conditions>
+                                        <condition id="-7" name="Compare instance variable" sid="470666077505858" type="textoInfo">
+                                            <param id="0" name="Instance variable">ID</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">3</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="0" name="Set text" sid="215993223017585" type="textoInfo">
+                                            <param id="0" name="Text">PONG_DelayVelocidadeBola</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="147550247708679">
+                                    <conditions>
+                                        <condition id="-7" name="Compare instance variable" sid="824758532779430" type="textoConfigPong">
+                                            <param id="0" name="Instance variable">ID</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">4</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="0" name="Set text" sid="615456739342903" type="textoConfigPong">
+                                            <param id="0" name="Text">arrayOpcoesConfigPong.At(4)</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="863434068216389">
+                                    <conditions>
+                                        <condition id="-7" name="Compare instance variable" sid="925998941917417" type="textoInfo">
+                                            <param id="0" name="Instance variable">ID</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">4</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="0" name="Set text" sid="170382866935303" type="textoInfo">
+                                            <param id="0" name="Text">PONG_AumentoVelocidadeBola</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="987493809615554">
+                                    <conditions>
+                                        <condition id="-7" name="Compare instance variable" sid="333625027536303" type="textoConfigPong">
+                                            <param id="0" name="Instance variable">ID</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">5</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="0" name="Set text" sid="604497397988572" type="textoConfigPong">
+                                            <param id="0" name="Text">arrayOpcoesConfigPong.At(5)</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="813529218967860">
+                                    <conditions>
+                                        <condition id="-7" name="Compare instance variable" sid="672791976858860" type="textoInfo">
+                                            <param id="0" name="Instance variable">ID</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">5</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="0" name="Set text" sid="328723311183736" type="textoInfo">
+                                            <param id="0" name="Text">PONG_GravidadeBola</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="716643201429209">
+                                    <conditions>
+                                        <condition id="-7" name="Compare instance variable" sid="454218476002094" type="textoConfigPong">
+                                            <param id="0" name="Instance variable">ID</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">6</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="0" name="Set text" sid="565379865446789" type="textoConfigPong">
+                                            <param id="0" name="Text">arrayOpcoesConfigPong.At(6)</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="321767715868828">
+                                    <conditions>
+                                        <condition id="-7" name="Compare instance variable" sid="635517286281150" type="textoInfo">
+                                            <param id="0" name="Instance variable">ID</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">6</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="0" name="Set text" sid="605019983885201" type="textoInfo">
+                                            <param id="0" name="Text">PONG_Modo</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                    </sub-events>
+                </event-group>
                 <event-group description="" sid="749831382211341" title="(PONG) Escolha das opções de configuração">
                     <sub-events>
                         <event-block sid="338983029503294">
