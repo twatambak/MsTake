@@ -1862,21 +1862,6 @@
                                                 </action>
                                             </actions>
                                         </event-block>
-                                        <event-block sid="623696091287921">
-                                            <conditions>
-                                                <condition id="-14" name="Compare variable" sid="284512009399207" type="System">
-                                                    <param id="0" name="Variable">PONG_Modo</param>
-                                                    <param id="1" name="Comparison">0</param>
-                                                    <param id="2" name="Value">&quot;2P&quot;</param>
-                                                </condition>
-                                            </conditions>
-                                            <actions>
-                                                <action id="-9" name="Set value" sid="849219876847052" type="System">
-                                                    <param id="0" name="Variable">PONG_Modo</param>
-                                                    <param id="1" name="Value">&quot;1P&quot;</param>
-                                                </action>
-                                            </actions>
-                                        </event-block>
                                     </sub-events>
                                 </event-block>
                                 <event-block sid="416452734181749">
@@ -1887,21 +1872,6 @@
                                     </conditions>
                                     <actions />
                                     <sub-events>
-                                        <event-block sid="445166053154754">
-                                            <conditions>
-                                                <condition id="-14" name="Compare variable" sid="539220801645921" type="System">
-                                                    <param id="0" name="Variable">PONG_Modo</param>
-                                                    <param id="1" name="Comparison">0</param>
-                                                    <param id="2" name="Value">&quot;1P&quot;</param>
-                                                </condition>
-                                            </conditions>
-                                            <actions>
-                                                <action id="-9" name="Set value" sid="835514062677309" type="System">
-                                                    <param id="0" name="Variable">PONG_Modo</param>
-                                                    <param id="1" name="Value">&quot;2P&quot;</param>
-                                                </action>
-                                            </actions>
-                                        </event-block>
                                         <event-block sid="468659737859772">
                                             <conditions>
                                                 <condition id="-14" name="Compare variable" sid="870712518475088" type="System">
