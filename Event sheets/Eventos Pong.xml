@@ -1637,12 +1637,297 @@
                         </action>
                     </actions>
                 </event-block>
-                <event-group description="" sid="671341526587385" title="(PONG) Alteração das configurações" />
+                <event-group description="" sid="671341526587385" title="(PONG) Alteração das configurações">
+                    <sub-events>
+                        <event-block sid="281883079376529">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="802410705169640" type="System">
+                                    <param id="0" name="Variable">PONG_OpcoesConfig</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">1</param>
+                                </condition>
+                            </conditions>
+                            <actions />
+                            <sub-events>
+                                <event-block sid="402809776882847">
+                                    <conditions>
+                                        <condition id="2" name="Key is down" sid="737722817958914" type="Keyboard">
+                                            <param id="0" name="Key">39</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-10" name="Add to" sid="404947699548746" type="System">
+                                            <param id="0" name="Variable">PONG_VelocidadeJogador</param>
+                                            <param id="1" name="Value">1</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="843455265222443">
+                                    <conditions>
+                                        <condition id="2" name="Key is down" sid="962118611298505" type="Keyboard">
+                                            <param id="0" name="Key">37</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-11" name="Subtract from" sid="920710379019848" type="System">
+                                            <param id="0" name="Variable">PONG_VelocidadeJogador</param>
+                                            <param id="1" name="Value">1</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                        <event-block sid="273462302470116">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="732217544197537" type="System">
+                                    <param id="0" name="Variable">PONG_OpcoesConfig</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">2</param>
+                                </condition>
+                            </conditions>
+                            <actions />
+                            <sub-events>
+                                <event-block sid="433727214999157">
+                                    <conditions>
+                                        <condition id="2" name="Key is down" sid="422282940564492" type="Keyboard">
+                                            <param id="0" name="Key">39</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-10" name="Add to" sid="431375248673631" type="System">
+                                            <param id="0" name="Variable">PONG_VelocidadeInicialBola</param>
+                                            <param id="1" name="Value">1</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="544030681366632">
+                                    <conditions>
+                                        <condition id="2" name="Key is down" sid="857172224720157" type="Keyboard">
+                                            <param id="0" name="Key">37</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-11" name="Subtract from" sid="935464814421983" type="System">
+                                            <param id="0" name="Variable">PONG_VelocidadeInicialBola</param>
+                                            <param id="1" name="Value">1</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                        <event-block sid="808509567433498">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="685390660432621" type="System">
+                                    <param id="0" name="Variable">PONG_OpcoesConfig</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">3</param>
+                                </condition>
+                            </conditions>
+                            <actions />
+                            <sub-events>
+                                <event-block sid="328745670479737">
+                                    <conditions>
+                                        <condition id="2" name="Key is down" sid="978310207349134" type="Keyboard">
+                                            <param id="0" name="Key">39</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-10" name="Add to" sid="414486480310670" type="System">
+                                            <param id="0" name="Variable">PONG_DelayVelocidadeBola</param>
+                                            <param id="1" name="Value">0.01</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="791694537174745">
+                                    <conditions>
+                                        <condition id="2" name="Key is down" sid="646537597658194" type="Keyboard">
+                                            <param id="0" name="Key">37</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-11" name="Subtract from" sid="594288867538865" type="System">
+                                            <param id="0" name="Variable">PONG_DelayVelocidadeBola</param>
+                                            <param id="1" name="Value">0.01</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                        <event-block sid="277538602252864">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="812813067885581" type="System">
+                                    <param id="0" name="Variable">PONG_OpcoesConfig</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">4</param>
+                                </condition>
+                            </conditions>
+                            <actions />
+                            <sub-events>
+                                <event-block sid="964207179663273">
+                                    <conditions>
+                                        <condition id="2" name="Key is down" sid="690329729540358" type="Keyboard">
+                                            <param id="0" name="Key">39</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-10" name="Add to" sid="683434502610888" type="System">
+                                            <param id="0" name="Variable">PONG_AumentoVelocidadeBola</param>
+                                            <param id="1" name="Value">1</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="353315945858471">
+                                    <conditions>
+                                        <condition id="2" name="Key is down" sid="172981745443046" type="Keyboard">
+                                            <param id="0" name="Key">37</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-11" name="Subtract from" sid="986447348643886" type="System">
+                                            <param id="0" name="Variable">PONG_AumentoVelocidadeBola</param>
+                                            <param id="1" name="Value">1</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                        <event-block sid="741255657201671">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="228569773926014" type="System">
+                                    <param id="0" name="Variable">PONG_OpcoesConfig</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">5</param>
+                                </condition>
+                            </conditions>
+                            <actions />
+                            <sub-events>
+                                <event-block sid="844831514000518">
+                                    <conditions>
+                                        <condition id="2" name="Key is down" sid="427538514206711" type="Keyboard">
+                                            <param id="0" name="Key">39</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-10" name="Add to" sid="407133927719265" type="System">
+                                            <param id="0" name="Variable">PONG_GravidadeBola</param>
+                                            <param id="1" name="Value">1</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="839485005559816">
+                                    <conditions>
+                                        <condition id="2" name="Key is down" sid="642629637016678" type="Keyboard">
+                                            <param id="0" name="Key">37</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-11" name="Subtract from" sid="774912067095811" type="System">
+                                            <param id="0" name="Variable">PONG_GravidadeBola</param>
+                                            <param id="1" name="Value">1</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                        <event-block sid="391555523564394">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="969888404724029" type="System">
+                                    <param id="0" name="Variable">PONG_OpcoesConfig</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">6</param>
+                                </condition>
+                            </conditions>
+                            <actions />
+                            <sub-events>
+                                <event-block sid="899011202591893">
+                                    <conditions>
+                                        <condition id="0" name="On key pressed" sid="740407230347626" type="Keyboard">
+                                            <param id="0" name="Key">39</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions />
+                                    <sub-events>
+                                        <event-block sid="397435996056696">
+                                            <conditions>
+                                                <condition id="-14" name="Compare variable" sid="698233482236196" type="System">
+                                                    <param id="0" name="Variable">PONG_Modo</param>
+                                                    <param id="1" name="Comparison">0</param>
+                                                    <param id="2" name="Value">&quot;1P&quot;</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="-9" name="Set value" sid="249487843660221" type="System">
+                                                    <param id="0" name="Variable">PONG_Modo</param>
+                                                    <param id="1" name="Value">&quot;2P&quot;</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                        <event-block sid="623696091287921">
+                                            <conditions>
+                                                <condition id="-14" name="Compare variable" sid="284512009399207" type="System">
+                                                    <param id="0" name="Variable">PONG_Modo</param>
+                                                    <param id="1" name="Comparison">0</param>
+                                                    <param id="2" name="Value">&quot;2P&quot;</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="-9" name="Set value" sid="849219876847052" type="System">
+                                                    <param id="0" name="Variable">PONG_Modo</param>
+                                                    <param id="1" name="Value">&quot;1P&quot;</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                    </sub-events>
+                                </event-block>
+                                <event-block sid="416452734181749">
+                                    <conditions>
+                                        <condition id="0" name="On key pressed" sid="528765436393204" type="Keyboard">
+                                            <param id="0" name="Key">37</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions />
+                                    <sub-events>
+                                        <event-block sid="445166053154754">
+                                            <conditions>
+                                                <condition id="-14" name="Compare variable" sid="539220801645921" type="System">
+                                                    <param id="0" name="Variable">PONG_Modo</param>
+                                                    <param id="1" name="Comparison">0</param>
+                                                    <param id="2" name="Value">&quot;1P&quot;</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="-9" name="Set value" sid="835514062677309" type="System">
+                                                    <param id="0" name="Variable">PONG_Modo</param>
+                                                    <param id="1" name="Value">&quot;2P&quot;</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                        <event-block sid="468659737859772">
+                                            <conditions>
+                                                <condition id="-14" name="Compare variable" sid="870712518475088" type="System">
+                                                    <param id="0" name="Variable">PONG_Modo</param>
+                                                    <param id="1" name="Comparison">0</param>
+                                                    <param id="2" name="Value">&quot;2P&quot;</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="-9" name="Set value" sid="429143862404753" type="System">
+                                                    <param id="0" name="Variable">PONG_Modo</param>
+                                                    <param id="1" name="Value">&quot;1P&quot;</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                    </sub-events>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                    </sub-events>
+                </event-group>
                 <event-group description="" sid="566760428999689" title="(PONG) Exibição dos textos">
                     <sub-events>
                         <event-block sid="295042406882554">
                             <conditions>
-                                <condition id="-2" name="On start of layout" sid="133949627667526" type="System" />
+                                <condition id="-1" name="Every tick" sid="133949627667526" type="System" />
                             </conditions>
                             <actions />
                             <sub-events>
