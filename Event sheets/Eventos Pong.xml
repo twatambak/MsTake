@@ -3,13 +3,11 @@
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>Eventos Pong</name>
     <events>
-        <variable constant="0" name="PONG_IntroPassou" sid="451649737935773" static="0" type="number">1</variable>
-        <variable constant="0" name="PONG_OpcoesConfig" sid="727147722702645" static="0" type="number">1</variable>
         <include>Inserção das frases</include>
+        <variable constant="0" name="PONG_IntroPassou" sid="451649737935773" static="0" type="number">0</variable>
+        <variable constant="0" name="PONG_OpcoesConfig" sid="727147722702645" static="0" type="number">1</variable>
         <variable constant="0" name="PONG_FalaMsTakeTUTORIAL" sid="678856850608491" static="0" type="text"></variable>
         <variable constant="0" name="PONG_FalaMsTakeOPCOES" sid="632233387515446" static="0" type="text"></variable>
-        <variable constant="0" name="PONG_TempoFrase" sid="546874850709013" static="0" type="number">0</variable>
-        <variable constant="0" name="PONG_Game" sid="270921344390799" static="0" type="number">0</variable>
         <comment>Variáveis de configuração dos jogadores</comment>
         <variable comment="Velocidade inicial dos jogadores. Padrão: 600" constant="0" name="PONG_VelocidadeJogador" sid="969260652258080" static="0" type="number">600</variable>
         <variable comment="Valor da cor vermelha para o efeito SetColor do player 1. Padrão: 50" constant="0" name="PONG_CorP1Red" sid="529817246038202" static="0" type="number">50</variable>
@@ -24,7 +22,9 @@
         <variable comment="Valor de aumento da velocidade da bola. Padrão: 1" constant="0" name="PONG_AumentoVelocidadeBola" sid="129338439913716" static="0" type="number">1</variable>
         <variable comment="Gravidade da bola. Padrão: 80" constant="0" name="PONG_GravidadeBola" sid="922047400360833" static="0" type="number">80</variable>
         <comment>Variáveis de configuração do jogo</comment>
+        <variable constant="0" name="PONG_Game" sid="270921344390799" static="0" type="number">0</variable>
         <variable constant="0" name="PONG_Modo" sid="890010206849738" static="0" type="text">1P</variable>
+        <variable constant="0" name="PONG_TempoFrase" sid="546874850709013" static="0" type="number">0</variable>
         <event-block sid="300645809289993">
             <conditions>
                 <condition id="-2" name="On start of layout" sid="885416114390601" type="System" />
@@ -33,6 +33,26 @@
                 <action id="-9" name="Set value" sid="730018565088559" type="System">
                     <param id="0" name="Variable">PONG_Game</param>
                     <param id="1" name="Value">0</param>
+                </action>
+                <action id="-9" name="Set value" sid="570949472870253" type="System">
+                    <param id="0" name="Variable">PONG_VelocidadeJogador</param>
+                    <param id="1" name="Value">600</param>
+                </action>
+                <action id="-9" name="Set value" sid="813698647374514" type="System">
+                    <param id="0" name="Variable">PONG_DelayVelocidadeBola</param>
+                    <param id="1" name="Value">0.2</param>
+                </action>
+                <action id="-9" name="Set value" sid="499736926841129" type="System">
+                    <param id="0" name="Variable">PONG_VelocidadeInicialBola</param>
+                    <param id="1" name="Value">450</param>
+                </action>
+                <action id="-9" name="Set value" sid="987145941696274" type="System">
+                    <param id="0" name="Variable">PONG_AumentoVelocidadeBola</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="-9" name="Set value" sid="589905056996381" type="System">
+                    <param id="0" name="Variable">PONG_GravidadeBola</param>
+                    <param id="1" name="Value">80</param>
                 </action>
             </actions>
         </event-block>
@@ -114,25 +134,6 @@
         </event-block>
         <event-group description="" sid="487026517482213" title="(PONG) Controles">
             <sub-events>
-                <event-block disabled="1" sid="678092562010838">
-                    <conditions>
-                        <condition id="-2" name="On start of layout" sid="860922394697257" type="System" />
-                    </conditions>
-                    <actions>
-                        <action behavior="8Direction" id="3" name="Set speed" sid="504708069351290" type="pongPlayer1H">
-                            <param id="0" name="Speed">PONG_VelocidadeJogador</param>
-                        </action>
-                        <action behavior="8Direction" id="3" name="Set speed" sid="316751836070146" type="pongPlayer1V">
-                            <param id="0" name="Speed">PONG_VelocidadeJogador</param>
-                        </action>
-                        <action behavior="8Direction" id="3" name="Set speed" sid="752998704780351" type="pongPlayer2H">
-                            <param id="0" name="Speed">PONG_VelocidadeJogador</param>
-                        </action>
-                        <action behavior="8Direction" id="3" name="Set speed" sid="772702726169837" type="pongPlayer2V">
-                            <param id="0" name="Speed">PONG_VelocidadeJogador</param>
-                        </action>
-                    </actions>
-                </event-block>
                 <event-block sid="412658527538357">
                     <conditions>
                         <condition id="-2" name="On start of layout" sid="899028120691700" type="System" />
@@ -363,19 +364,6 @@
         </event-group>
         <event-group description="" sid="583928842299233" title="(PONG) Bola">
             <sub-events>
-                <event-block disabled="1" sid="790735306360547">
-                    <conditions>
-                        <condition id="-2" name="On start of layout" sid="112838336923746" type="System" />
-                    </conditions>
-                    <actions>
-                        <action behavior="Bullet" id="0" name="Set speed" sid="895999869135220" type="bolaPong">
-                            <param id="0" name="Speed">PONG_VelocidadeInicialBola</param>
-                        </action>
-                        <action behavior="Bullet" id="2" name="Set gravity" sid="140163242814997" type="bolaPong">
-                            <param id="0" name="Gravity">PONG_GravidadeBola</param>
-                        </action>
-                    </actions>
-                </event-block>
                 <event-block sid="491387669049026">
                     <conditions>
                         <condition id="0" name="On collision with another object" sid="558894936031033" type="bolaPong">
@@ -458,7 +446,40 @@
                 </event-group>
             </sub-events>
         </event-group>
-        <event-group description="" sid="577330593444087" title="(PONG) Gatilhos vitória" />
+        <event-group description="" sid="577330593444087" title="(PONG) Gatilhos vitória">
+            <sub-events>
+                <event-block sid="891155815616614">
+                    <conditions>
+                        <condition id="0" name="On collision with another object" sid="155352432189160" type="bolaPong">
+                            <param id="0" name="Object">pongGatilhoVitoria</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="570676342800045">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="731358249316877" type="pongGatilhoVitoria">
+                                    <param id="0" name="Instance variable">Player</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">1</param>
+                                </condition>
+                            </conditions>
+                            <actions />
+                        </event-block>
+                        <event-block sid="263221766497237">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="719583238696598" type="pongGatilhoVitoria">
+                                    <param id="0" name="Instance variable">Player</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">2</param>
+                                </condition>
+                            </conditions>
+                            <actions />
+                        </event-block>
+                    </sub-events>
+                </event-block>
+            </sub-events>
+        </event-group>
         <event-group description="" sid="832903496542392" title="(PONG) Falas Ms. Take">
             <sub-events>
                 <event-block sid="769584349027342">
@@ -484,6 +505,31 @@
                             <param id="1" name="Value">1</param>
                         </action>
                     </actions>
+                </event-block>
+                <event-block sid="896461239173344">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="689272792702939" type="System">
+                            <param id="0" name="Variable">PONG_IntroPassou</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">0</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="521775719472829">
+                            <conditions>
+                                <condition id="0" name="On key pressed" sid="180674993870869" type="Keyboard">
+                                    <param id="0" name="Key">13</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-9" name="Set value" sid="866056544229304" type="System">
+                                    <param id="0" name="Variable">PONG_IntroPassou</param>
+                                    <param id="1" name="Value">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
                 </event-block>
                 <event-group description="" sid="737995480405026" title="(PONG) Falas Ms. Take: OPÇÕES">
                     <sub-events>

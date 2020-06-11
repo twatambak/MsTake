@@ -12015,7 +12015,35 @@
             <use-render-cells>0</use-render-cells>
             <blend-mode>0</blend-mode>
             <effect-fallback>0</effect-fallback>
-            <instances />
+            <instances>
+                <instance type="textoFala" uid="84">
+                    <properties>
+                        <text>parabéns :3</text>
+                        <initial-visibility>Visible</initial-visibility>
+                        <font>Arial,-42.4,400,0</font>
+                        <color>255,255,0</color>
+                        <horizontal-alignment>Center</horizontal-alignment>
+                        <vertical-alignment>Center</vertical-alignment>
+                        <hotspot>Top-left</hotspot>
+                        <wrapping>Word</wrapping>
+                        <line-height>0</line-height>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>160</x>
+                        <y>256</y>
+                        <z>0</z>
+                        <width>832</width>
+                        <height>192</height>
+                        <depth>0</depth>
+                        <hotspotX>0</hotspotX>
+                        <hotspotY>0</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+            </instances>
             <effects />
         </layer>
     </layers>
@@ -12026,7 +12054,7 @@
             <effect-instance type="Bulge">
                 <parameters>
                     <radius>0.7</radius>
-                    <scale>0.1</scale>
+                    <scale>0</scale>
                 </parameters>
             </effect-instance>
         </effect-type>
