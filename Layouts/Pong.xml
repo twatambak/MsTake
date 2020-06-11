@@ -11953,6 +11953,33 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
+                <instance type="textoFala" uid="475">
+                    <properties>
+                        <text>vamos nos divertir, Mestre?</text>
+                        <initial-visibility>Visible</initial-visibility>
+                        <font>Arial,-45.6,400,0</font>
+                        <color>146,254,20</color>
+                        <horizontal-alignment>Center</horizontal-alignment>
+                        <vertical-alignment>Center</vertical-alignment>
+                        <hotspot>Top-left</hotspot>
+                        <wrapping>Word</wrapping>
+                        <line-height>0</line-height>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>240</x>
+                        <y>800</y>
+                        <z>0</z>
+                        <width>672</width>
+                        <height>288</height>
+                        <depth>0</depth>
+                        <hotspotX>0</hotspotX>
+                        <hotspotY>0</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
             </instances>
             <effects>
                 <effect-type name="GlowHorizontal">
@@ -11999,7 +12026,7 @@
             <effect-instance type="Bulge">
                 <parameters>
                     <radius>0.7</radius>
-                    <scale>0</scale>
+                    <scale>0.1</scale>
                 </parameters>
             </effect-instance>
         </effect-type>

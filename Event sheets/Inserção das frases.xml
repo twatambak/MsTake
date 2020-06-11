@@ -794,6 +794,18 @@
                                     <param id="0" name="X">6</param>
                                     <param id="1" name="Value">&quot;Modo de jogo:&quot;</param>
                                 </action>
+                                <action id="2" name="Set at X" sid="471523291159331" type="arrayOpcoesConfigPong">
+                                    <param id="0" name="X">7</param>
+                                    <param id="1" name="Value">&quot;para trocar de opção use as setas para cima e para baixo...&quot;</param>
+                                </action>
+                                <action id="2" name="Set at X" sid="243629836464954" type="arrayOpcoesConfigPong">
+                                    <param id="0" name="X">8</param>
+                                    <param id="1" name="Value">&quot;para alterar o valor use as setas para esquerda e para direita...&quot;</param>
+                                </action>
+                                <action id="2" name="Set at X" sid="994675891086449" type="arrayOpcoesConfigPong">
+                                    <param id="0" name="X">9</param>
+                                    <param id="1" name="Value">&quot;quando estiver pronto aperte espaço...&quot;</param>
+                                </action>
                             </actions>
                         </event-block>
                     </sub-events>
