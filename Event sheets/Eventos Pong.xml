@@ -3,6 +3,7 @@
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>Eventos Pong</name>
     <events>
+        <include>Inserção das frases</include>
         <variable constant="0" name="PONG_FalaMsTakeTUTORIAL" sid="678856850608491" static="0" type="text"></variable>
         <variable constant="0" name="PONG_TempoFrase" sid="546874850709013" static="0" type="number">0</variable>
         <variable constant="0" name="PONG_Game" sid="270921344390799" static="0" type="number">0</variable>
@@ -480,12 +481,12 @@
                                 <event-block sid="372773753233523">
                                     <conditions>
                                         <condition id="-6" name="Every X seconds" sid="883242737071151" type="System">
-                                            <param id="0" name="Interval (seconds)">0.2</param>
+                                            <param id="0" name="Interval (seconds)">0.08</param>
                                         </condition>
                                         <condition id="-14" name="Compare variable" sid="930071221036521" type="System">
                                             <param id="0" name="Variable">PONG_TempoFrase</param>
                                             <param id="1" name="Comparison">2</param>
-                                            <param id="2" name="Value">6</param>
+                                            <param id="2" name="Value">(len(arrayFrasesPong.At(1)) * 0.08) + 0.1</param>
                                         </condition>
                                     </conditions>
                                     <actions>
@@ -506,7 +507,7 @@
                                         <condition id="-14" name="Compare variable" sid="812730606397766" type="System">
                                             <param id="0" name="Variable">PONG_TempoFrase</param>
                                             <param id="1" name="Comparison">4</param>
-                                            <param id="2" name="Value">6</param>
+                                            <param id="2" name="Value">(len(arrayFrasesPong.At(1)) * 0.08) + 0.05</param>
                                         </condition>
                                     </conditions>
                                     <actions>
@@ -534,12 +535,12 @@
                                 <event-block sid="137670180076570">
                                     <conditions>
                                         <condition id="-6" name="Every X seconds" sid="971813772417084" type="System">
-                                            <param id="0" name="Interval (seconds)">0.2</param>
+                                            <param id="0" name="Interval (seconds)">0.08</param>
                                         </condition>
                                         <condition id="-14" name="Compare variable" sid="457384573207842" type="System">
                                             <param id="0" name="Variable">PONG_TempoFrase</param>
                                             <param id="1" name="Comparison">2</param>
-                                            <param id="2" name="Value">6</param>
+                                            <param id="2" name="Value">(len(arrayFrasesPong.At(2)) * 0.08) + 0.1</param>
                                         </condition>
                                     </conditions>
                                     <actions>
@@ -560,7 +561,7 @@
                                         <condition id="-14" name="Compare variable" sid="413601518381063" type="System">
                                             <param id="0" name="Variable">PONG_TempoFrase</param>
                                             <param id="1" name="Comparison">4</param>
-                                            <param id="2" name="Value">6</param>
+                                            <param id="2" name="Value">(len(arrayFrasesPong.At(2)) * 0.08) + 0.1</param>
                                         </condition>
                                     </conditions>
                                     <actions>
@@ -588,12 +589,12 @@
                                 <event-block sid="361430069843734">
                                     <conditions>
                                         <condition id="-6" name="Every X seconds" sid="408786502728877" type="System">
-                                            <param id="0" name="Interval (seconds)">0.2</param>
+                                            <param id="0" name="Interval (seconds)">0.08</param>
                                         </condition>
                                         <condition id="-14" name="Compare variable" sid="518855133506995" type="System">
                                             <param id="0" name="Variable">PONG_TempoFrase</param>
                                             <param id="1" name="Comparison">2</param>
-                                            <param id="2" name="Value">6</param>
+                                            <param id="2" name="Value">(len(arrayFrasesPong.At(3)) * 0.08) + 0.1</param>
                                         </condition>
                                     </conditions>
                                     <actions>
@@ -614,7 +615,7 @@
                                         <condition id="-14" name="Compare variable" sid="598784776341632" type="System">
                                             <param id="0" name="Variable">PONG_TempoFrase</param>
                                             <param id="1" name="Comparison">4</param>
-                                            <param id="2" name="Value">6</param>
+                                            <param id="2" name="Value">(len(arrayFrasesPong.At(3)) * 0.08) + 0.1</param>
                                         </condition>
                                     </conditions>
                                     <actions>
@@ -642,12 +643,12 @@
                                 <event-block sid="416341848700212">
                                     <conditions>
                                         <condition id="-6" name="Every X seconds" sid="678460380289445" type="System">
-                                            <param id="0" name="Interval (seconds)">0.2</param>
+                                            <param id="0" name="Interval (seconds)">0.08</param>
                                         </condition>
                                         <condition id="-14" name="Compare variable" sid="471375899471595" type="System">
                                             <param id="0" name="Variable">PONG_TempoFrase</param>
                                             <param id="1" name="Comparison">2</param>
-                                            <param id="2" name="Value">6</param>
+                                            <param id="2" name="Value">(len(arrayFrasesPong.At(4)) * 0.08) + 0.1</param>
                                         </condition>
                                     </conditions>
                                     <actions>
@@ -668,7 +669,7 @@
                                         <condition id="-14" name="Compare variable" sid="629720060708779" type="System">
                                             <param id="0" name="Variable">PONG_TempoFrase</param>
                                             <param id="1" name="Comparison">4</param>
-                                            <param id="2" name="Value">6</param>
+                                            <param id="2" name="Value">(len(arrayFrasesPong.At(4)) * 0.08) + 0.1</param>
                                         </condition>
                                     </conditions>
                                     <actions>
@@ -681,10 +682,64 @@
                                             <param id="1" name="State">0</param>
                                         </action>
                                         <action id="-12" name="Set group active" sid="183394531187313" type="System">
-                                            <param id="0" name="Group name">&quot;(PONG) Falas Ms. Take: TUTORIAL 5&quot;</param>
+                                            <param id="0" name="Group name">&quot;(PONG) Falas Ms. Take: TUTORIAL 4 (eu errei a ordem)&quot;</param>
                                             <param id="1" name="State">1</param>
                                         </action>
                                         <action id="0" name="Set text" sid="241086206071697" type="textoFala">
+                                            <param id="0" name="Text">&quot;&quot;</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-group>
+                        <event-group description="" inactive="1" sid="353318540491095" title="(PONG) Falas Ms. Take: TUTORIAL 4 (eu errei a ordem)">
+                            <sub-events>
+                                <event-block sid="479513303181665">
+                                    <conditions>
+                                        <condition id="-6" name="Every X seconds" sid="462453642829848" type="System">
+                                            <param id="0" name="Interval (seconds)">0.08</param>
+                                        </condition>
+                                        <condition id="-14" name="Compare variable" sid="258774313460529" type="System">
+                                            <param id="0" name="Variable">PONG_TempoFrase</param>
+                                            <param id="1" name="Comparison">2</param>
+                                            <param id="2" name="Value">(len(arrayFrasesPong.At(20)) * 0.08) + 0.1</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-9" name="Set value" sid="924468845289836" type="System">
+                                            <param id="0" name="Variable">PONG_FalaMsTakeTUTORIAL</param>
+                                            <param id="1" name="Value">arrayFrasesPong.At(20)</param>
+                                        </action>
+                                        <action id="0" name="Set text" sid="164390390631807" type="textoFala">
+                                            <param id="0" name="Text">left(PONG_FalaMsTakeTUTORIAL,len(textoFala.Text)+1)</param>
+                                        </action>
+                                        <action id="4" name="Set font color" sid="571334877862228" type="textoFala">
+                                            <param id="0" name="Color">rgb(146, 255, 20)</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="614878285007591">
+                                    <conditions>
+                                        <condition id="-14" name="Compare variable" sid="834706408176453" type="System">
+                                            <param id="0" name="Variable">PONG_TempoFrase</param>
+                                            <param id="1" name="Comparison">4</param>
+                                            <param id="2" name="Value">(len(arrayFrasesPong.At(20)) * 0.08) + 0.1</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-9" name="Set value" sid="968945086259068" type="System">
+                                            <param id="0" name="Variable">PONG_TempoFrase</param>
+                                            <param id="1" name="Value">0</param>
+                                        </action>
+                                        <action id="-12" name="Set group active" sid="662413080092218" type="System">
+                                            <param id="0" name="Group name">&quot;(PONG) Falas Ms. Take: TUTORIAL 4 (eu errei a ordem)&quot;</param>
+                                            <param id="1" name="State">0</param>
+                                        </action>
+                                        <action id="-12" name="Set group active" sid="733426521318748" type="System">
+                                            <param id="0" name="Group name">&quot;(PONG) Falas Ms. Take: TUTORIAL 5&quot;</param>
+                                            <param id="1" name="State">1</param>
+                                        </action>
+                                        <action id="0" name="Set text" sid="753444110507732" type="textoFala">
                                             <param id="0" name="Text">&quot;&quot;</param>
                                         </action>
                                     </actions>
@@ -696,12 +751,12 @@
                                 <event-block sid="732336453353251">
                                     <conditions>
                                         <condition id="-6" name="Every X seconds" sid="852328389559552" type="System">
-                                            <param id="0" name="Interval (seconds)">0.2</param>
+                                            <param id="0" name="Interval (seconds)">0.08</param>
                                         </condition>
                                         <condition id="-14" name="Compare variable" sid="652888979526605" type="System">
                                             <param id="0" name="Variable">PONG_TempoFrase</param>
                                             <param id="1" name="Comparison">2</param>
-                                            <param id="2" name="Value">6</param>
+                                            <param id="2" name="Value">(len(arrayFrasesPong.At(5)) * 0.08) + 0.1</param>
                                         </condition>
                                     </conditions>
                                     <actions>
@@ -722,7 +777,7 @@
                                         <condition id="-14" name="Compare variable" sid="874208789857128" type="System">
                                             <param id="0" name="Variable">PONG_TempoFrase</param>
                                             <param id="1" name="Comparison">4</param>
-                                            <param id="2" name="Value">6</param>
+                                            <param id="2" name="Value">(len(arrayFrasesPong.At(5)) * 0.08) + 0.1</param>
                                         </condition>
                                     </conditions>
                                     <actions>
@@ -750,12 +805,12 @@
                                 <event-block sid="585995666196609">
                                     <conditions>
                                         <condition id="-6" name="Every X seconds" sid="339801326010894" type="System">
-                                            <param id="0" name="Interval (seconds)">0.2</param>
+                                            <param id="0" name="Interval (seconds)">0.08</param>
                                         </condition>
                                         <condition id="-14" name="Compare variable" sid="560836894546257" type="System">
                                             <param id="0" name="Variable">PONG_TempoFrase</param>
                                             <param id="1" name="Comparison">2</param>
-                                            <param id="2" name="Value">6</param>
+                                            <param id="2" name="Value">(len(arrayFrasesPong.At(6)) * 0.08) + 0.1</param>
                                         </condition>
                                     </conditions>
                                     <actions>
@@ -776,7 +831,7 @@
                                         <condition id="-14" name="Compare variable" sid="418284227280949" type="System">
                                             <param id="0" name="Variable">PONG_TempoFrase</param>
                                             <param id="1" name="Comparison">4</param>
-                                            <param id="2" name="Value">6</param>
+                                            <param id="2" name="Value">(len(arrayFrasesPong.At(6)) * 0.08) + 0.1</param>
                                         </condition>
                                     </conditions>
                                     <actions>
@@ -804,12 +859,12 @@
                                 <event-block sid="296610831474252">
                                     <conditions>
                                         <condition id="-6" name="Every X seconds" sid="456934588513735" type="System">
-                                            <param id="0" name="Interval (seconds)">0.2</param>
+                                            <param id="0" name="Interval (seconds)">0.08</param>
                                         </condition>
                                         <condition id="-14" name="Compare variable" sid="571664572115540" type="System">
                                             <param id="0" name="Variable">PONG_TempoFrase</param>
                                             <param id="1" name="Comparison">2</param>
-                                            <param id="2" name="Value">6</param>
+                                            <param id="2" name="Value">(len(arrayFrasesPong.At(7)) * 0.08) + 0.1</param>
                                         </condition>
                                     </conditions>
                                     <actions>
@@ -830,7 +885,7 @@
                                         <condition id="-14" name="Compare variable" sid="490268607797862" type="System">
                                             <param id="0" name="Variable">PONG_TempoFrase</param>
                                             <param id="1" name="Comparison">4</param>
-                                            <param id="2" name="Value">6</param>
+                                            <param id="2" name="Value">(len(arrayFrasesPong.At(7)) * 0.08) + 0.1</param>
                                         </condition>
                                     </conditions>
                                     <actions>
@@ -858,12 +913,12 @@
                                 <event-block sid="306161362272329">
                                     <conditions>
                                         <condition id="-6" name="Every X seconds" sid="460954576434521" type="System">
-                                            <param id="0" name="Interval (seconds)">0.2</param>
+                                            <param id="0" name="Interval (seconds)">0.08</param>
                                         </condition>
                                         <condition id="-14" name="Compare variable" sid="334422908660639" type="System">
                                             <param id="0" name="Variable">PONG_TempoFrase</param>
                                             <param id="1" name="Comparison">2</param>
-                                            <param id="2" name="Value">6</param>
+                                            <param id="2" name="Value">(len(arrayFrasesPong.At(8)) * 0.08) + 0.1</param>
                                         </condition>
                                     </conditions>
                                     <actions>
@@ -884,7 +939,7 @@
                                         <condition id="-14" name="Compare variable" sid="869968594918115" type="System">
                                             <param id="0" name="Variable">PONG_TempoFrase</param>
                                             <param id="1" name="Comparison">4</param>
-                                            <param id="2" name="Value">6</param>
+                                            <param id="2" name="Value">(len(arrayFrasesPong.At(8)) * 0.08) + 0.1</param>
                                         </condition>
                                     </conditions>
                                     <actions>
@@ -912,12 +967,12 @@
                                 <event-block sid="612893650243861">
                                     <conditions>
                                         <condition id="-6" name="Every X seconds" sid="933113879247469" type="System">
-                                            <param id="0" name="Interval (seconds)">0.2</param>
+                                            <param id="0" name="Interval (seconds)">0.08</param>
                                         </condition>
                                         <condition id="-14" name="Compare variable" sid="761029370714942" type="System">
                                             <param id="0" name="Variable">PONG_TempoFrase</param>
                                             <param id="1" name="Comparison">2</param>
-                                            <param id="2" name="Value">6</param>
+                                            <param id="2" name="Value">(len(arrayFrasesPong.At(9)) * 0.08) + 0.1</param>
                                         </condition>
                                     </conditions>
                                     <actions>
@@ -938,7 +993,7 @@
                                         <condition id="-14" name="Compare variable" sid="254278651344073" type="System">
                                             <param id="0" name="Variable">PONG_TempoFrase</param>
                                             <param id="1" name="Comparison">4</param>
-                                            <param id="2" name="Value">6</param>
+                                            <param id="2" name="Value">(len(arrayFrasesPong.At(9)) * 0.08) + 0.1</param>
                                         </condition>
                                     </conditions>
                                     <actions>
@@ -966,12 +1021,12 @@
                                 <event-block sid="225172866031045">
                                     <conditions>
                                         <condition id="-6" name="Every X seconds" sid="382512024194812" type="System">
-                                            <param id="0" name="Interval (seconds)">0.2</param>
+                                            <param id="0" name="Interval (seconds)">0.08</param>
                                         </condition>
                                         <condition id="-14" name="Compare variable" sid="536080324845391" type="System">
                                             <param id="0" name="Variable">PONG_TempoFrase</param>
                                             <param id="1" name="Comparison">2</param>
-                                            <param id="2" name="Value">6</param>
+                                            <param id="2" name="Value">(len(arrayFrasesPong.At(10)) * 0.08) + 0.1</param>
                                         </condition>
                                     </conditions>
                                     <actions>
@@ -992,7 +1047,7 @@
                                         <condition id="-14" name="Compare variable" sid="132803779046742" type="System">
                                             <param id="0" name="Variable">PONG_TempoFrase</param>
                                             <param id="1" name="Comparison">4</param>
-                                            <param id="2" name="Value">6</param>
+                                            <param id="2" name="Value">(len(arrayFrasesPong.At(10)) * 0.08) + 0.1</param>
                                         </condition>
                                     </conditions>
                                     <actions>
@@ -1020,12 +1075,12 @@
                                 <event-block sid="780708704074813">
                                     <conditions>
                                         <condition id="-6" name="Every X seconds" sid="308139634562459" type="System">
-                                            <param id="0" name="Interval (seconds)">0.2</param>
+                                            <param id="0" name="Interval (seconds)">0.08</param>
                                         </condition>
                                         <condition id="-14" name="Compare variable" sid="158953660378399" type="System">
                                             <param id="0" name="Variable">PONG_TempoFrase</param>
                                             <param id="1" name="Comparison">2</param>
-                                            <param id="2" name="Value">6</param>
+                                            <param id="2" name="Value">(len(arrayFrasesPong.At(11)) * 0.08) + 0.1</param>
                                         </condition>
                                     </conditions>
                                     <actions>
@@ -1046,7 +1101,7 @@
                                         <condition id="-14" name="Compare variable" sid="490182610648355" type="System">
                                             <param id="0" name="Variable">PONG_TempoFrase</param>
                                             <param id="1" name="Comparison">4</param>
-                                            <param id="2" name="Value">6</param>
+                                            <param id="2" name="Value">(len(arrayFrasesPong.At(11)) * 0.08) + 0.1</param>
                                         </condition>
                                     </conditions>
                                     <actions>
@@ -1074,12 +1129,12 @@
                                 <event-block sid="967074505817594">
                                     <conditions>
                                         <condition id="-6" name="Every X seconds" sid="173101353044727" type="System">
-                                            <param id="0" name="Interval (seconds)">0.2</param>
+                                            <param id="0" name="Interval (seconds)">0.08</param>
                                         </condition>
                                         <condition id="-14" name="Compare variable" sid="940451427968035" type="System">
                                             <param id="0" name="Variable">PONG_TempoFrase</param>
                                             <param id="1" name="Comparison">2</param>
-                                            <param id="2" name="Value">6</param>
+                                            <param id="2" name="Value">(len(arrayFrasesPong.At(12)) * 0.08) + 0.1</param>
                                         </condition>
                                     </conditions>
                                     <actions>
@@ -1100,7 +1155,7 @@
                                         <condition id="-14" name="Compare variable" sid="176182704551495" type="System">
                                             <param id="0" name="Variable">PONG_TempoFrase</param>
                                             <param id="1" name="Comparison">4</param>
-                                            <param id="2" name="Value">6</param>
+                                            <param id="2" name="Value">(len(arrayFrasesPong.At(12)) * 0.08) + 0.1</param>
                                         </condition>
                                     </conditions>
                                     <actions>
@@ -1128,12 +1183,12 @@
                                 <event-block sid="847512026300490">
                                     <conditions>
                                         <condition id="-6" name="Every X seconds" sid="840549763418080" type="System">
-                                            <param id="0" name="Interval (seconds)">0.2</param>
+                                            <param id="0" name="Interval (seconds)">0.08</param>
                                         </condition>
                                         <condition id="-14" name="Compare variable" sid="457055749370755" type="System">
                                             <param id="0" name="Variable">PONG_TempoFrase</param>
                                             <param id="1" name="Comparison">2</param>
-                                            <param id="2" name="Value">6</param>
+                                            <param id="2" name="Value">(len(arrayFrasesPong.At(13)) * 0.08) + 0.1</param>
                                         </condition>
                                     </conditions>
                                     <actions>
@@ -1154,7 +1209,7 @@
                                         <condition id="-14" name="Compare variable" sid="305782850651026" type="System">
                                             <param id="0" name="Variable">PONG_TempoFrase</param>
                                             <param id="1" name="Comparison">4</param>
-                                            <param id="2" name="Value">6</param>
+                                            <param id="2" name="Value">(len(arrayFrasesPong.At(13)) * 0.08) + 0.1</param>
                                         </condition>
                                     </conditions>
                                     <actions>
@@ -1182,12 +1237,12 @@
                                 <event-block sid="850412254809442">
                                     <conditions>
                                         <condition id="-6" name="Every X seconds" sid="317205432650846" type="System">
-                                            <param id="0" name="Interval (seconds)">0.2</param>
+                                            <param id="0" name="Interval (seconds)">0.08</param>
                                         </condition>
                                         <condition id="-14" name="Compare variable" sid="525800141381159" type="System">
                                             <param id="0" name="Variable">PONG_TempoFrase</param>
                                             <param id="1" name="Comparison">2</param>
-                                            <param id="2" name="Value">6</param>
+                                            <param id="2" name="Value">(len(arrayFrasesPong.At(14)) * 0.08) + 0.1</param>
                                         </condition>
                                     </conditions>
                                     <actions>
@@ -1208,7 +1263,7 @@
                                         <condition id="-14" name="Compare variable" sid="492722550223801" type="System">
                                             <param id="0" name="Variable">PONG_TempoFrase</param>
                                             <param id="1" name="Comparison">4</param>
-                                            <param id="2" name="Value">6</param>
+                                            <param id="2" name="Value">(len(arrayFrasesPong.At(14)) * 0.08) + 0.1</param>
                                         </condition>
                                     </conditions>
                                     <actions>
@@ -1236,12 +1291,12 @@
                                 <event-block sid="595413353476339">
                                     <conditions>
                                         <condition id="-6" name="Every X seconds" sid="281169888299425" type="System">
-                                            <param id="0" name="Interval (seconds)">0.2</param>
+                                            <param id="0" name="Interval (seconds)">0.08</param>
                                         </condition>
                                         <condition id="-14" name="Compare variable" sid="779150898046651" type="System">
                                             <param id="0" name="Variable">PONG_TempoFrase</param>
                                             <param id="1" name="Comparison">2</param>
-                                            <param id="2" name="Value">6</param>
+                                            <param id="2" name="Value">(len(arrayFrasesPong.At(15)) * 0.08) + 0.1</param>
                                         </condition>
                                     </conditions>
                                     <actions>
@@ -1262,7 +1317,7 @@
                                         <condition id="-14" name="Compare variable" sid="126986226283350" type="System">
                                             <param id="0" name="Variable">PONG_TempoFrase</param>
                                             <param id="1" name="Comparison">4</param>
-                                            <param id="2" name="Value">6</param>
+                                            <param id="2" name="Value">(len(arrayFrasesPong.At(15)) * 0.08) + 0.1</param>
                                         </condition>
                                     </conditions>
                                     <actions>
@@ -1290,12 +1345,12 @@
                                 <event-block sid="376978755763093">
                                     <conditions>
                                         <condition id="-6" name="Every X seconds" sid="192693833502802" type="System">
-                                            <param id="0" name="Interval (seconds)">0.2</param>
+                                            <param id="0" name="Interval (seconds)">0.08</param>
                                         </condition>
                                         <condition id="-14" name="Compare variable" sid="675189767155174" type="System">
                                             <param id="0" name="Variable">PONG_TempoFrase</param>
                                             <param id="1" name="Comparison">2</param>
-                                            <param id="2" name="Value">6</param>
+                                            <param id="2" name="Value">(len(arrayFrasesPong.At(16)) * 0.08) + 0.1</param>
                                         </condition>
                                     </conditions>
                                     <actions>
@@ -1316,7 +1371,7 @@
                                         <condition id="-14" name="Compare variable" sid="794424035390643" type="System">
                                             <param id="0" name="Variable">PONG_TempoFrase</param>
                                             <param id="1" name="Comparison">4</param>
-                                            <param id="2" name="Value">6</param>
+                                            <param id="2" name="Value">(len(arrayFrasesPong.At(16)) * 0.08) + 0.1</param>
                                         </condition>
                                     </conditions>
                                     <actions>
@@ -1344,12 +1399,12 @@
                                 <event-block sid="997319082770982">
                                     <conditions>
                                         <condition id="-6" name="Every X seconds" sid="725978642233367" type="System">
-                                            <param id="0" name="Interval (seconds)">0.2</param>
+                                            <param id="0" name="Interval (seconds)">0.08</param>
                                         </condition>
                                         <condition id="-14" name="Compare variable" sid="626220688065975" type="System">
                                             <param id="0" name="Variable">PONG_TempoFrase</param>
                                             <param id="1" name="Comparison">2</param>
-                                            <param id="2" name="Value">6</param>
+                                            <param id="2" name="Value">(len(arrayFrasesPong.At(17)) * 0.08) + 0.1</param>
                                         </condition>
                                     </conditions>
                                     <actions>
@@ -1370,7 +1425,7 @@
                                         <condition id="-14" name="Compare variable" sid="584055109494651" type="System">
                                             <param id="0" name="Variable">PONG_TempoFrase</param>
                                             <param id="1" name="Comparison">4</param>
-                                            <param id="2" name="Value">6</param>
+                                            <param id="2" name="Value">(len(arrayFrasesPong.At(17)) * 0.08) + 0.1</param>
                                         </condition>
                                     </conditions>
                                     <actions>
@@ -1398,12 +1453,12 @@
                                 <event-block sid="597537550798277">
                                     <conditions>
                                         <condition id="-6" name="Every X seconds" sid="632136686290771" type="System">
-                                            <param id="0" name="Interval (seconds)">0.2</param>
+                                            <param id="0" name="Interval (seconds)">0.08</param>
                                         </condition>
                                         <condition id="-14" name="Compare variable" sid="341501609961281" type="System">
                                             <param id="0" name="Variable">PONG_TempoFrase</param>
                                             <param id="1" name="Comparison">2</param>
-                                            <param id="2" name="Value">6</param>
+                                            <param id="2" name="Value">(len(arrayFrasesPong.At(18)) * 0.08) + 0.1</param>
                                         </condition>
                                     </conditions>
                                     <actions>
@@ -1424,7 +1479,7 @@
                                         <condition id="-14" name="Compare variable" sid="273167581966196" type="System">
                                             <param id="0" name="Variable">PONG_TempoFrase</param>
                                             <param id="1" name="Comparison">4</param>
-                                            <param id="2" name="Value">6</param>
+                                            <param id="2" name="Value">(len(arrayFrasesPong.At(18)) * 0.08) + 0.1</param>
                                         </condition>
                                     </conditions>
                                     <actions>
@@ -1452,12 +1507,12 @@
                                 <event-block sid="492321079961087">
                                     <conditions>
                                         <condition id="-6" name="Every X seconds" sid="935268405228231" type="System">
-                                            <param id="0" name="Interval (seconds)">0.2</param>
+                                            <param id="0" name="Interval (seconds)">0.08</param>
                                         </condition>
                                         <condition id="-14" name="Compare variable" sid="185098299998862" type="System">
                                             <param id="0" name="Variable">PONG_TempoFrase</param>
                                             <param id="1" name="Comparison">2</param>
-                                            <param id="2" name="Value">6</param>
+                                            <param id="2" name="Value">(len(arrayFrasesPong.At(19)) * 0.08) + 0.1</param>
                                         </condition>
                                     </conditions>
                                     <actions>
@@ -1478,7 +1533,7 @@
                                         <condition id="-14" name="Compare variable" sid="406743864079618" type="System">
                                             <param id="0" name="Variable">PONG_TempoFrase</param>
                                             <param id="1" name="Comparison">4</param>
-                                            <param id="2" name="Value">6</param>
+                                            <param id="2" name="Value">(len(arrayFrasesPong.At(19)) * 0.08) + 0.1</param>
                                         </condition>
                                     </conditions>
                                     <actions>

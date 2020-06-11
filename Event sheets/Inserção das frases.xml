@@ -700,7 +700,7 @@
                                     <param id="1" name="Value">&quot;com um amigo seu...&quot;</param>
                                 </action>
                                 <action id="2" name="Set at X" sid="621008866768095" type="arrayFrasesPong">
-                                    <param id="0" name="X">4</param>
+                                    <param id="0" name="X">20</param>
                                     <param id="1" name="Value">&quot;ou...&quot;</param>
                                 </action>
                                 <action id="2" name="Set at X" sid="582942580776485" type="arrayFrasesPong">
