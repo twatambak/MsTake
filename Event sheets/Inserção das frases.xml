@@ -733,7 +733,7 @@
                                 </action>
                                 <action id="2" name="Set at X" sid="401597992861226" type="arrayFrasesPong">
                                     <param id="0" name="X">12</param>
-                                    <param id="1" name="Value">&quot;estou explicaando detalhadamente para que não fiquem dúvidas e você possa se divertir bastante &lt;3&quot;</param>
+                                    <param id="1" name="Value">&quot;estou explicando detalhadamente para que não fiquem dúvidas e você possa se divertir bastante &lt;3&quot;</param>
                                 </action>
                                 <action id="2" name="Set at X" sid="638217376741657" type="arrayFrasesPong">
                                     <param id="0" name="X">13</param>

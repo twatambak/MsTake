@@ -251,7 +251,7 @@
                         <text>vamos nos divertir, Mestre?</text>
                         <initial-visibility>Visible</initial-visibility>
                         <font>Arial,-42.4,400,0</font>
-                        <color>146,255,20</color>
+                        <color>255,255,0</color>
                         <horizontal-alignment>Center</horizontal-alignment>
                         <vertical-alignment>Center</vertical-alignment>
                         <hotspot>Top-left</hotspot>
