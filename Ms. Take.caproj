@@ -20,6 +20,7 @@
         <behavior author="Scirra" id="Bullet" version="1">Bullet</behavior>
         <behavior author="Scirra" id="EightDir" version="1">8 Direction</behavior>
         <behavior author="Scirra" id="Flash" version="1">Flash</behavior>
+        <behavior author="Scirra" id="Persist" version="1">Persist</behavior>
         <behavior author="Scirra" id="Sin" version="1">Sine</behavior>
         <behavior author="Scirra" id="bound" version="1">Bound to layout</behavior>
         <behavior author="Scirra" id="solid" version="1">Solid</behavior>
@@ -128,6 +129,11 @@
                 <instance-variables>
                     <instance-variable name="ID" sid="434727005013243" type="number" />
                 </instance-variables>
+                <behaviors>
+                    <behavior-type name="Persist" sid="222846605219333">
+                        <behavior id="Persist" />
+                    </behavior-type>
+                </behaviors>
                 <effects>
                     <effect-type name="SetColor">
                         <effect id="setcolor" />
