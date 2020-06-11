@@ -661,5 +661,308 @@
                 </event-block>
             </sub-events>
         </event-group>
+        <event-group description="" sid="394508095381707" title="(PONG) Inserção das frases: Tutorial e vitória Pong">
+            <sub-events>
+                <event-block sid="908692119194862">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="894223141796721" type="System">
+                            <param id="0" name="Variable">Idioma</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">&quot;pt&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="800690635260579">
+                            <conditions>
+                                <condition id="-2" name="On start of layout" sid="440868226245735" type="System" />
+                            </conditions>
+                            <actions>
+                                <action id="1" name="Set size" sid="255063295081560" type="arrayFrasesPong">
+                                    <param id="0" name="Width">100</param>
+                                    <param id="1" name="Height">1</param>
+                                    <param id="2" name="Depth">1</param>
+                                </action>
+                                <action id="2" name="Set at X" sid="923528015251892" type="arrayFrasesPong">
+                                    <param id="0" name="X">1</param>
+                                    <param id="1" name="Value">&quot;vamos de Pong então?!&quot;</param>
+                                </action>
+                                <action id="2" name="Set at X" sid="757756114206468" type="arrayFrasesPong">
+                                    <param id="0" name="X">2</param>
+                                    <param id="1" name="Value">&quot;esse jogo é bem simples...&quot;</param>
+                                </action>
+                                <action id="2" name="Set at X" sid="193169144647524" type="arrayFrasesPong">
+                                    <param id="0" name="X">3</param>
+                                    <param id="1" name="Value">&quot;primeiro você precisa escolher com quem vai jogar...&quot;</param>
+                                </action>
+                                <action id="2" name="Set at X" sid="256487643284138" type="arrayFrasesPong">
+                                    <param id="0" name="X">4</param>
+                                    <param id="1" name="Value">&quot;com um amigo seu...&quot;</param>
+                                </action>
+                                <action id="2" name="Set at X" sid="621008866768095" type="arrayFrasesPong">
+                                    <param id="0" name="X">4</param>
+                                    <param id="1" name="Value">&quot;ou...&quot;</param>
+                                </action>
+                                <action id="2" name="Set at X" sid="582942580776485" type="arrayFrasesPong">
+                                    <param id="0" name="X">5</param>
+                                    <param id="1" name="Value">&quot;comigo &lt;3&quot;</param>
+                                </action>
+                                <action id="2" name="Set at X" sid="780676725659105" type="arrayFrasesPong">
+                                    <param id="0" name="X">6</param>
+                                    <param id="1" name="Value">&quot;jogando comigo você irá controlar uma das bases, sendo uma horizontal e uma vertical para cada jogador&quot;</param>
+                                </action>
+                                <action id="2" name="Set at X" sid="433041612521512" type="arrayFrasesPong">
+                                    <param id="0" name="X">7</param>
+                                    <param id="1" name="Value">&quot;o objetivo é destruir a parede do adversário e fazer a bolinha passar pro outro lado&quot;</param>
+                                </action>
+                                <action id="2" name="Set at X" sid="304335842885991" type="arrayFrasesPong">
+                                    <param id="0" name="X">8</param>
+                                    <param id="1" name="Value">&quot;a bola irá destruir o bloco em que ela encostar&quot;</param>
+                                </action>
+                                <action id="2" name="Set at X" sid="165010728233887" type="arrayFrasesPong">
+                                    <param id="0" name="X">9</param>
+                                    <param id="1" name="Value">&quot;você controla a base utilizando as setas pra cima e pra baixo&quot;</param>
+                                </action>
+                                <action id="2" name="Set at X" sid="587573650126797" type="arrayFrasesPong">
+                                    <param id="0" name="X">10</param>
+                                    <param id="1" name="Value">&quot;a seta para cima faz a base vertical ir pra cima e a base horizontal ir pra direita&quot;</param>
+                                </action>
+                                <action id="2" name="Set at X" sid="985119413142531" type="arrayFrasesPong">
+                                    <param id="0" name="X">11</param>
+                                    <param id="1" name="Value">&quot;a seta para baixo faz a base vertical ir pra baixo e a base horizontal ir pra esquerda&quot;</param>
+                                </action>
+                                <action id="2" name="Set at X" sid="401597992861226" type="arrayFrasesPong">
+                                    <param id="0" name="X">12</param>
+                                    <param id="1" name="Value">&quot;e você possa se divertir bastante &lt;3&quot;</param>
+                                </action>
+                                <action id="2" name="Set at X" sid="638217376741657" type="arrayFrasesPong">
+                                    <param id="0" name="X">13</param>
+                                    <param id="1" name="Value">&quot;...&quot;</param>
+                                </action>
+                                <action id="2" name="Set at X" sid="673750718835453" type="arrayFrasesPong">
+                                    <param id="0" name="X">14</param>
+                                    <param id="1" name="Value">&quot;ah, se você jogar com um amigo seu ele controla no WASD...&quot;</param>
+                                </action>
+                                <action id="2" name="Set at X" sid="680274853516581" type="arrayFrasesPong">
+                                    <param id="0" name="X">15</param>
+                                    <param id="1" name="Value">&quot;...&quot;</param>
+                                </action>
+                                <action id="2" name="Set at X" sid="314445624441060" type="arrayFrasesPong">
+                                    <param id="0" name="X">16</param>
+                                    <param id="1" name="Value">&quot;antes de começar o jogo você pode alterar algumas configurações da partida&quot;</param>
+                                </action>
+                                <action id="2" name="Set at X" sid="905533073963161" type="arrayFrasesPong">
+                                    <param id="0" name="X">17</param>
+                                    <param id="1" name="Value">&quot;eu imagino que o criador irá adicionar mais coisas futuramente&quot;</param>
+                                </action>
+                                <action id="2" name="Set at X" sid="690430867450434" type="arrayFrasesPong">
+                                    <param id="0" name="X">18</param>
+                                    <param id="1" name="Value">&quot;estou ansiosa para ver o que ele irá adicionar :3&quot;</param>
+                                </action>
+                                <action id="2" name="Set at X" sid="447475866829684" type="arrayFrasesPong">
+                                    <param id="0" name="X">19</param>
+                                    <param id="1" name="Value">&quot;vamos começar então?&quot;</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <event-block sid="827697271052016">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="176843624696972" type="System">
+                            <param id="0" name="Variable">Idioma</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">&quot;en&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="455623116694572">
+                            <conditions>
+                                <condition id="-2" name="On start of layout" sid="951128123018690" type="System" />
+                            </conditions>
+                            <actions>
+                                <action id="1" name="Set size" sid="945445017285165" type="arrayFalasOpcoesMenu">
+                                    <param id="0" name="Width">37</param>
+                                    <param id="1" name="Height">1</param>
+                                    <param id="2" name="Depth">1</param>
+                                </action>
+                                <action id="2" name="Set at X" sid="942184568801559" type="arrayFalasOpcoesMenu">
+                                    <param id="0" name="X">1</param>
+                                    <param id="1" name="Value">&quot;ow, this is a game inspired in pong...&quot;</param>
+                                </action>
+                                <action id="2" name="Set at X" sid="113641019895174" type="arrayFalasOpcoesMenu">
+                                    <param id="0" name="X">2</param>
+                                    <param id="1" name="Value">&quot;that from atari, you know?&quot;</param>
+                                </action>
+                                <action id="2" name="Set at X" sid="846707941336947" type="arrayFalasOpcoesMenu">
+                                    <param id="0" name="X">3</param>
+                                    <param id="1" name="Value">&quot;this game you can play with me &lt;3&quot;</param>
+                                </action>
+                                <action id="2" name="Set at X" sid="715784072539663" type="arrayFalasOpcoesMenu">
+                                    <param id="0" name="X">4</param>
+                                    <param id="1" name="Value">&quot;or... with some friend too&quot;</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="856118480628057">
+                            <conditions>
+                                <condition id="-2" name="On start of layout" sid="911044933051029" type="System" />
+                            </conditions>
+                            <actions>
+                                <action id="2" name="Set at X" sid="333261714676675" type="arrayFalasOpcoesMenu">
+                                    <param id="0" name="X">5</param>
+                                    <param id="1" name="Value">&quot;this is a simple platform game&quot;</param>
+                                </action>
+                                <action id="2" name="Set at X" sid="260339930136488" type="arrayFalasOpcoesMenu">
+                                    <param id="0" name="X">6</param>
+                                    <param id="1" name="Value">&quot;you need to find a key and open a door&quot;</param>
+                                </action>
+                                <action id="2" name="Set at X" sid="194732813500428" type="arrayFalasOpcoesMenu">
+                                    <param id="0" name="X">7</param>
+                                    <param id="1" name="Value">&quot;then you go to other stages&quot;</param>
+                                </action>
+                                <action id="2" name="Set at X" sid="645324494448363" type="arrayFalasOpcoesMenu">
+                                    <param id="0" name="X">8</param>
+                                    <param id="1" name="Value">&quot;to find me &lt;3&quot;</param>
+                                </action>
+                                <action id="2" name="Set at X" sid="157086368756182" type="arrayFalasOpcoesMenu">
+                                    <param id="0" name="X">9</param>
+                                    <param id="1" name="Value">&quot;and then we will be together...&quot;</param>
+                                </action>
+                                <action id="2" name="Set at X" sid="119370557121891" type="arrayFalasOpcoesMenu">
+                                    <param id="0" name="X">10</param>
+                                    <param id="1" name="Value">&quot;sounds like a dream, right?&quot;</param>
+                                </action>
+                                <action id="2" name="Set at X" sid="776098457114198" type="arrayFalasOpcoesMenu">
+                                    <param id="0" name="X">11</param>
+                                    <param id="1" name="Value">&quot;i&apos;m so excited OwO&quot;</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="170675430053081">
+                            <conditions>
+                                <condition id="-2" name="On start of layout" sid="290569469092766" type="System" />
+                            </conditions>
+                            <actions>
+                                <action id="2" name="Set at X" sid="935456912534791" type="arrayFalasOpcoesMenu">
+                                    <param id="0" name="X">12</param>
+                                    <param id="1" name="Value">&quot;like the name says this is a clone from tetris...&quot;</param>
+                                </action>
+                                <action id="2" name="Set at X" sid="836245265289899" type="arrayFalasOpcoesMenu">
+                                    <param id="0" name="X">13</param>
+                                    <param id="1" name="Value">&quot;there isn&apos;t much to say&quot;</param>
+                                </action>
+                                <action id="2" name="Set at X" sid="639255947241169" type="arrayFalasOpcoesMenu">
+                                    <param id="0" name="X">14</param>
+                                    <param id="1" name="Value">&quot;the creator likes tetris&quot;</param>
+                                </action>
+                                <action id="2" name="Set at X" sid="907651729022086" type="arrayFalasOpcoesMenu">
+                                    <param id="0" name="X">15</param>
+                                    <param id="1" name="Value">&quot;and he said that the games are way better with me &lt;3&quot;</param>
+                                </action>
+                                <action id="2" name="Set at X" sid="737993020177287" type="arrayFalasOpcoesMenu">
+                                    <param id="0" name="X">16</param>
+                                    <param id="1" name="Value">&quot;i hope you think that too...&quot;</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="167295059571495">
+                            <conditions>
+                                <condition id="-2" name="On start of layout" sid="141354747102771" type="System" />
+                            </conditions>
+                            <actions>
+                                <action id="2" name="Set at X" sid="414136408864519" type="arrayFalasOpcoesMenu">
+                                    <param id="0" name="X">17</param>
+                                    <param id="1" name="Value">&quot;the name gives the tip...&quot;</param>
+                                </action>
+                                <action id="2" name="Set at X" sid="253153637328000" type="arrayFalasOpcoesMenu">
+                                    <param id="0" name="X">18</param>
+                                    <param id="1" name="Value">&quot;you&apos;re trapped in a labyrinth and need to find the exit&quot;</param>
+                                </action>
+                                <action id="2" name="Set at X" sid="714350888781085" type="arrayFalasOpcoesMenu">
+                                    <param id="0" name="X">19</param>
+                                    <param id="1" name="Value">&quot;or you gonna stay there, alone, waiting the end&quot;</param>
+                                </action>
+                                <action id="2" name="Set at X" sid="448608078354320" type="arrayFalasOpcoesMenu">
+                                    <param id="0" name="X">20</param>
+                                    <param id="1" name="Value">&quot;just hoping you get out the void&quot;</param>
+                                </action>
+                                <action id="2" name="Set at X" sid="587997758291762" type="arrayFalasOpcoesMenu">
+                                    <param id="0" name="X">21</param>
+                                    <param id="1" name="Value">&quot;hoping that the darkness go away&quot;</param>
+                                </action>
+                                <action id="2" name="Set at X" sid="900136420059602" type="arrayFalasOpcoesMenu">
+                                    <param id="0" name="X">22</param>
+                                    <param id="1" name="Value">&quot;...&quot;</param>
+                                </action>
+                                <action id="2" name="Set at X" sid="136439597908453" type="arrayFalasOpcoesMenu">
+                                    <param id="0" name="X">23</param>
+                                    <param id="1" name="Value">&quot;this game is fun, trust me...&quot;</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="768319088394563">
+                            <conditions>
+                                <condition id="-2" name="On start of layout" sid="605775891900699" type="System" />
+                            </conditions>
+                            <actions>
+                                <action id="2" name="Set at X" sid="218242880643939" type="arrayFalasOpcoesMenu">
+                                    <param id="0" name="X">25</param>
+                                    <param id="1" name="Value">&quot;AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA&quot;</param>
+                                </action>
+                                <action id="2" name="Set at X" sid="504645299384667" type="arrayFalasOpcoesMenu">
+                                    <param id="0" name="X">26</param>
+                                    <param id="1" name="Value">&quot;AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA&quot;</param>
+                                </action>
+                                <action id="2" name="Set at X" sid="447788726529587" type="arrayFalasOpcoesMenu">
+                                    <param id="0" name="X">27</param>
+                                    <param id="1" name="Value">&quot;AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA&quot;</param>
+                                </action>
+                                <action id="2" name="Set at X" sid="352228282878543" type="arrayFalasOpcoesMenu">
+                                    <param id="0" name="X">28</param>
+                                    <param id="1" name="Value">&quot;AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA&quot;</param>
+                                </action>
+                                <action id="2" name="Set at X" sid="331356980104857" type="arrayFalasOpcoesMenu">
+                                    <param id="0" name="X">29</param>
+                                    <param id="1" name="Value">&quot;AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA&quot;</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="101408086704812">
+                            <conditions>
+                                <condition id="-2" name="On start of layout" sid="102112742018641" type="System" />
+                            </conditions>
+                            <actions>
+                                <action id="2" name="Set at X" sid="521296822132147" type="arrayFalasOpcoesMenu">
+                                    <param id="0" name="X">30</param>
+                                    <param id="1" name="Value">&quot;here you set the game configuration&quot;</param>
+                                </action>
+                                <action id="2" name="Set at X" sid="414179848408657" type="arrayFalasOpcoesMenu">
+                                    <param id="0" name="X">31</param>
+                                    <param id="1" name="Value">&quot;you can change language, sounds, effects and some other stuff&quot;</param>
+                                </action>
+                                <action id="2" name="Set at X" sid="825446768940002" type="arrayFalasOpcoesMenu">
+                                    <param id="0" name="X">32</param>
+                                    <param id="1" name="Value">&quot;i...&quot;</param>
+                                </action>
+                                <action id="2" name="Set at X" sid="623454598634434" type="arrayFalasOpcoesMenu">
+                                    <param id="0" name="X">33</param>
+                                    <param id="1" name="Value">&quot;i can&apos;t see what happens in that frame&quot;</param>
+                                </action>
+                                <action id="2" name="Set at X" sid="898762726192853" type="arrayFalasOpcoesMenu">
+                                    <param id="0" name="X">34</param>
+                                    <param id="1" name="Value">&quot;i, just know what is in there...&quot;</param>
+                                </action>
+                                <action id="2" name="Set at X" sid="169568718474848" type="arrayFalasOpcoesMenu">
+                                    <param id="0" name="X">35</param>
+                                    <param id="1" name="Value">&quot;...&quot;</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+            </sub-events>
+        </event-group>
     </events>
 </c2eventsheet>

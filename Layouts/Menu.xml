@@ -251,7 +251,7 @@
                         <text>vamos nos divertir, Mestre?</text>
                         <initial-visibility>Visible</initial-visibility>
                         <font>Arial,-42.4,400,0</font>
-                        <color>22,254,254</color>
+                        <color>146,255,20</color>
                         <horizontal-alignment>Center</horizontal-alignment>
                         <vertical-alignment>Center</vertical-alignment>
                         <hotspot>Top-left</hotspot>
@@ -1390,6 +1390,13 @@
                 <depth>1</depth>
             </properties>
         </instance>
+        <instance type="arrayFrasesPong" uid="461">
+            <properties>
+                <width>10</width>
+                <height>1</height>
+                <depth>1</depth>
+            </properties>
+        </instance>
     </nonworld-instances>
     <effects>
         <effect-type name="Bulge">
@@ -1405,7 +1412,7 @@
             <effect id="scanlines" />
             <effect-instance type="ScanLines">
                 <parameters>
-                    <line-height>2</line-height>
+                    <line-height>3</line-height>
                 </parameters>
             </effect-instance>
         </effect-type>
@@ -1414,7 +1421,7 @@
             <effect-instance type="Noise">
                 <parameters>
                     <color>0.3</color>
-                    <intensity>0.2</intensity>
+                    <intensity>0.25</intensity>
                 </parameters>
             </effect-instance>
         </effect-type>

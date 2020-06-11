@@ -10761,7 +10761,24 @@
                     </world>
                 </instance>
             </instances>
-            <effects />
+            <effects>
+                <effect-type name="GlowHorizontal">
+                    <effect id="glowhorizontal" />
+                    <effect-instance type="GlowHorizontal">
+                        <parameters>
+                            <intensity>0.75</intensity>
+                        </parameters>
+                    </effect-instance>
+                </effect-type>
+                <effect-type name="GlowVertical">
+                    <effect id="glowvertical" />
+                    <effect-instance type="GlowVertical">
+                        <parameters>
+                            <intensity>0.75</intensity>
+                        </parameters>
+                    </effect-instance>
+                </effect-type>
+            </effects>
         </layer>
         <layer name="Jogador" sid="567354888246708">
             <initially-visible>1</initially-visible>
@@ -10790,7 +10807,7 @@
                         <behavior-instance type="8Direction">
                             <properties>
                                 <max-speed>600</max-speed>
-                                <acceleration>1000</acceleration>
+                                <acceleration>10000</acceleration>
                                 <deceleration>10000</deceleration>
                                 <directions>4 directions</directions>
                                 <set-angle>No</set-angle>
@@ -10809,10 +10826,19 @@
                             </properties>
                         </behavior-instance>
                     </behavior-instances>
+                    <effect-instances>
+                        <effect-instance type="SetColor">
+                            <parameters>
+                                <blue>0</blue>
+                                <green>1</green>
+                                <red>0.5</red>
+                            </parameters>
+                        </effect-instance>
+                    </effect-instances>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>256</x>
+                        <x>896</x>
                         <y>160</y>
                         <z>0</z>
                         <width>32</width>
@@ -10835,7 +10861,7 @@
                         <behavior-instance type="8Direction">
                             <properties>
                                 <max-speed>600</max-speed>
-                                <acceleration>1000</acceleration>
+                                <acceleration>10000</acceleration>
                                 <deceleration>10000</deceleration>
                                 <directions>4 directions</directions>
                                 <set-angle>No</set-angle>
@@ -10843,12 +10869,26 @@
                                 <initial-state>Enabled</initial-state>
                             </properties>
                         </behavior-instance>
+                        <behavior-instance type="Solid">
+                            <properties>
+                                <initial-state>Enabled</initial-state>
+                            </properties>
+                        </behavior-instance>
                     </behavior-instances>
+                    <effect-instances>
+                        <effect-instance type="SetColor">
+                            <parameters>
+                                <blue>0.6</blue>
+                                <green>0</green>
+                                <red>0.9</red>
+                            </parameters>
+                        </effect-instance>
+                    </effect-instances>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
                         <x>160</x>
-                        <y>256</y>
+                        <y>896</y>
                         <z>0</z>
                         <width>32</width>
                         <height>160</height>
@@ -10870,7 +10910,7 @@
                         <behavior-instance type="8Direction">
                             <properties>
                                 <max-speed>600</max-speed>
-                                <acceleration>1000</acceleration>
+                                <acceleration>10000</acceleration>
                                 <deceleration>10000</deceleration>
                                 <directions>4 directions</directions>
                                 <set-angle>No</set-angle>
@@ -10878,11 +10918,25 @@
                                 <initial-state>Enabled</initial-state>
                             </properties>
                         </behavior-instance>
+                        <behavior-instance type="Solid">
+                            <properties>
+                                <initial-state>Enabled</initial-state>
+                            </properties>
+                        </behavior-instance>
                     </behavior-instances>
+                    <effect-instances>
+                        <effect-instance type="SetColor">
+                            <parameters>
+                                <blue>0.6</blue>
+                                <green>0</green>
+                                <red>1</red>
+                            </parameters>
+                        </effect-instance>
+                    </effect-instances>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>896</x>
+                        <x>256</x>
                         <y>992</y>
                         <z>0</z>
                         <width>32</width>
@@ -10905,7 +10959,7 @@
                         <behavior-instance type="8Direction">
                             <properties>
                                 <max-speed>600</max-speed>
-                                <acceleration>1000</acceleration>
+                                <acceleration>10000</acceleration>
                                 <deceleration>10000</deceleration>
                                 <directions>4 directions</directions>
                                 <set-angle>No</set-angle>
@@ -10924,11 +10978,20 @@
                             </properties>
                         </behavior-instance>
                     </behavior-instances>
+                    <effect-instances>
+                        <effect-instance type="SetColor">
+                            <parameters>
+                                <blue>0</blue>
+                                <green>1</green>
+                                <red>0.5</red>
+                            </parameters>
+                        </effect-instance>
+                    </effect-instances>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
                         <x>992</x>
-                        <y>896</y>
+                        <y>256</y>
                         <z>0</z>
                         <width>32</width>
                         <height>160</height>
@@ -10974,7 +11037,7 @@
                     <effect id="glowhorizontal" />
                     <effect-instance type="GlowHorizontal">
                         <parameters>
-                            <intensity>0.8</intensity>
+                            <intensity>0.75</intensity>
                         </parameters>
                     </effect-instance>
                 </effect-type>
@@ -10982,7 +11045,7 @@
                     <effect id="glowvertical" />
                     <effect-instance type="GlowVertical">
                         <parameters>
-                            <intensity>0.8</intensity>
+                            <intensity>0.75</intensity>
                         </parameters>
                     </effect-instance>
                 </effect-type>
@@ -11011,6 +11074,32 @@
                         <initial-frame>0</initial-frame>
                         <collisions>Enabled</collisions>
                     </properties>
+                    <behavior-instances>
+                        <behavior-instance type="Bullet">
+                            <properties>
+                                <speed>300</speed>
+                                <acceleration>0</acceleration>
+                                <gravity>80</gravity>
+                                <bounce-off-solids>Yes</bounce-off-solids>
+                                <set-angle>Yes</set-angle>
+                                <initial-state>Enabled</initial-state>
+                            </properties>
+                        </behavior-instance>
+                        <behavior-instance type="Solid">
+                            <properties>
+                                <initial-state>Enabled</initial-state>
+                            </properties>
+                        </behavior-instance>
+                    </behavior-instances>
+                    <effect-instances>
+                        <effect-instance type="SetColor">
+                            <parameters>
+                                <blue>1</blue>
+                                <green>1</green>
+                                <red>1</red>
+                            </parameters>
+                        </effect-instance>
+                    </effect-instances>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
@@ -11032,7 +11121,7 @@
                     <effect id="glowhorizontal" />
                     <effect-instance type="GlowHorizontal">
                         <parameters>
-                            <intensity>0.8</intensity>
+                            <intensity>0.75</intensity>
                         </parameters>
                     </effect-instance>
                 </effect-type>
@@ -11040,7 +11129,7 @@
                     <effect id="glowvertical" />
                     <effect-instance type="GlowVertical">
                         <parameters>
-                            <intensity>0.8</intensity>
+                            <intensity>0.75</intensity>
                         </parameters>
                     </effect-instance>
                 </effect-type>
@@ -11149,6 +11238,98 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
+                <instance type="pongGatilhoVitoria" uid="456">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <hotspot>Top-left</hotspot>
+                    </properties>
+                    <instance-variables>
+                        <Player>2</Player>
+                    </instance-variables>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>-64</x>
+                        <y>1184</y>
+                        <z>0</z>
+                        <width>1280</width>
+                        <height>32</height>
+                        <depth>0</depth>
+                        <hotspotX>0</hotspotX>
+                        <hotspotY>0</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="pongGatilhoVitoria" uid="459">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <hotspot>Top-left</hotspot>
+                    </properties>
+                    <instance-variables>
+                        <Player>1</Player>
+                    </instance-variables>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>1184</x>
+                        <y>-64</y>
+                        <z>0</z>
+                        <width>32</width>
+                        <height>1248</height>
+                        <depth>0</depth>
+                        <hotspotX>0</hotspotX>
+                        <hotspotY>0</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="pongGatilhoVitoria" uid="457">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <hotspot>Top-left</hotspot>
+                    </properties>
+                    <instance-variables>
+                        <Player>2</Player>
+                    </instance-variables>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>-64</x>
+                        <y>-64</y>
+                        <z>0</z>
+                        <width>32</width>
+                        <height>1248</height>
+                        <depth>0</depth>
+                        <hotspotX>0</hotspotX>
+                        <hotspotY>0</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="pongGatilhoVitoria" uid="458">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <hotspot>Top-left</hotspot>
+                    </properties>
+                    <instance-variables>
+                        <Player>1</Player>
+                    </instance-variables>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>-32</x>
+                        <y>-64</y>
+                        <z>0</z>
+                        <width>1216</width>
+                        <height>32</height>
+                        <depth>0</depth>
+                        <hotspotX>0</hotspotX>
+                        <hotspotY>0</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
             </instances>
             <effects>
                 <effect-type name="GlowHorizontal">
@@ -11169,7 +11350,7 @@
                 </effect-type>
             </effects>
         </layer>
-        <layer name="TextoOpcoes" sid="993687243735225">
+        <layer name="ExtraOpacidade" sid="993687243735225">
             <initially-visible>1</initially-visible>
             <background-color>255,255,255</background-color>
             <transparent>1</transparent>
@@ -11184,7 +11365,28 @@
             <use-render-cells>0</use-render-cells>
             <blend-mode>0</blend-mode>
             <effect-fallback>0</effect-fallback>
-            <instances />
+            <instances>
+                <instance type="extraOpacidade" uid="460">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <hotspot>Top-left</hotspot>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>96</x>
+                        <y>96</y>
+                        <z>0</z>
+                        <width>960</width>
+                        <height>960</height>
+                        <depth>0</depth>
+                        <hotspotX>0</hotspotX>
+                        <hotspotY>0</hotspotY>
+                        <angle>0</angle>
+                        <opacity>0.800000012</opacity>
+                    </world>
+                </instance>
+            </instances>
             <effects>
                 <effect-type name="GlowHorizontal">
                     <effect id="glowhorizontal" />
@@ -11204,6 +11406,124 @@
                 </effect-type>
             </effects>
         </layer>
+        <layer name="TextoTutorial" sid="169826898359434">
+            <initially-visible>1</initially-visible>
+            <background-color>255,255,255</background-color>
+            <transparent>1</transparent>
+            <parallax>
+                <x>1</x>
+                <y>1</y>
+            </parallax>
+            <zoom-rate>1</zoom-rate>
+            <opacity>1</opacity>
+            <force-own-texture>0</force-own-texture>
+            <global>0</global>
+            <use-render-cells>0</use-render-cells>
+            <blend-mode>0</blend-mode>
+            <effect-fallback>0</effect-fallback>
+            <instances />
+            <effects />
+        </layer>
+        <layer name="TextoVitoria" sid="423400752337080">
+            <initially-visible>1</initially-visible>
+            <background-color>255,255,255</background-color>
+            <transparent>1</transparent>
+            <parallax>
+                <x>1</x>
+                <y>1</y>
+            </parallax>
+            <zoom-rate>1</zoom-rate>
+            <opacity>1</opacity>
+            <force-own-texture>0</force-own-texture>
+            <global>0</global>
+            <use-render-cells>0</use-render-cells>
+            <blend-mode>0</blend-mode>
+            <effect-fallback>0</effect-fallback>
+            <instances>
+                <instance type="textoInfo" uid="462">
+                    <properties>
+                        <text>Texto</text>
+                        <initial-visibility>Visible</initial-visibility>
+                        <font>Arial,-64,400,0</font>
+                        <color>153,255,0</color>
+                        <horizontal-alignment>Center</horizontal-alignment>
+                        <vertical-alignment>Center</vertical-alignment>
+                        <hotspot>Top-left</hotspot>
+                        <wrapping>Word</wrapping>
+                        <line-height>0</line-height>
+                    </properties>
+                    <effect-instances>
+                        <effect-instance type="SetColor">
+                            <parameters>
+                                <blue>0</blue>
+                                <green>0.9</green>
+                                <red>0.5</red>
+                            </parameters>
+                        </effect-instance>
+                    </effect-instances>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>-512</x>
+                        <y>320</y>
+                        <z>0</z>
+                        <width>448</width>
+                        <height>192</height>
+                        <depth>0</depth>
+                        <hotspotX>0</hotspotX>
+                        <hotspotY>0</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="textoFala" uid="463">
+                    <properties>
+                        <text>vamos nos divertir, Mestre?</text>
+                        <initial-visibility>Visible</initial-visibility>
+                        <font>Arial,-64,400,0</font>
+                        <color>146,254,20</color>
+                        <horizontal-alignment>Center</horizontal-alignment>
+                        <vertical-alignment>Center</vertical-alignment>
+                        <hotspot>Top-left</hotspot>
+                        <wrapping>Word</wrapping>
+                        <line-height>0</line-height>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>160</x>
+                        <y>512</y>
+                        <z>0</z>
+                        <width>832</width>
+                        <height>96</height>
+                        <depth>0</depth>
+                        <hotspotX>0</hotspotX>
+                        <hotspotY>0</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+            </instances>
+            <effects />
+        </layer>
+        <layer name="OpcoesJogo" sid="866296543764442">
+            <initially-visible>1</initially-visible>
+            <background-color>255,255,255</background-color>
+            <transparent>1</transparent>
+            <parallax>
+                <x>1</x>
+                <y>1</y>
+            </parallax>
+            <zoom-rate>1</zoom-rate>
+            <opacity>1</opacity>
+            <force-own-texture>0</force-own-texture>
+            <global>0</global>
+            <use-render-cells>0</use-render-cells>
+            <blend-mode>0</blend-mode>
+            <effect-fallback>0</effect-fallback>
+            <instances />
+            <effects />
+        </layer>
     </layers>
     <nonworld-instances />
     <effects>
@@ -11220,7 +11540,7 @@
             <effect id="scanlines" />
             <effect-instance type="ScanLines">
                 <parameters>
-                    <line-height>2</line-height>
+                    <line-height>3</line-height>
                 </parameters>
             </effect-instance>
         </effect-type>
@@ -11229,7 +11549,7 @@
             <effect-instance type="Noise">
                 <parameters>
                     <color>0.3</color>
-                    <intensity>0.2</intensity>
+                    <intensity>0.25</intensity>
                 </parameters>
             </effect-instance>
         </effect-type>

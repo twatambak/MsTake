@@ -17,6 +17,7 @@
         <plugin author="Scirra" id="TiledBg" version="1">Tiled Background</plugin>
     </used-plugins>
     <used-behaviors>
+        <behavior author="Scirra" id="Bullet" version="1">Bullet</behavior>
         <behavior author="Scirra" id="EightDir" version="1">8 Direction</behavior>
         <behavior author="Scirra" id="Flash" version="1">Flash</behavior>
         <behavior author="Scirra" id="Sin" version="1">Sine</behavior>
@@ -111,6 +112,14 @@
                     </effect-type>
                 </effects>
             </object-type>
+            <object-type name="textoInfo" sid="223263431724322">
+                <plugin id="Text" />
+                <effects>
+                    <effect-type name="SetColor">
+                        <effect id="setcolor" />
+                    </effect-type>
+                </effects>
+            </object-type>
         </object-folder>
         <object-folder name="Arrays textos">
             <object-type global="1" name="arrayFrasesIntro" sid="469679065278458">
@@ -120,6 +129,9 @@
                 <plugin id="Arr" />
             </object-type>
             <object-type global="1" name="arrayFalasOpcoesMenu" sid="342906009035497">
+                <plugin id="Arr" />
+            </object-type>
+            <object-type global="1" name="arrayFrasesPong" sid="889951143940507">
                 <plugin id="Arr" />
             </object-type>
         </object-folder>
@@ -143,6 +155,11 @@
                             <behavior id="bound" />
                         </behavior-type>
                     </behaviors>
+                    <effects>
+                        <effect-type name="SetColor">
+                            <effect id="setcolor" />
+                        </effect-type>
+                    </effects>
                     <animation-folder>
                         <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="432387426185862" speed="5">
                             <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Users\Thiago L. Watambak\Downloads\Jogador.png">
@@ -171,6 +188,11 @@
                             <behavior id="bound" />
                         </behavior-type>
                     </behaviors>
+                    <effects>
+                        <effect-type name="SetColor">
+                            <effect id="setcolor" />
+                        </effect-type>
+                    </effects>
                     <animation-folder>
                         <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="628223146058948" speed="5">
                             <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Users\Thiago L. Watambak\Downloads\Jogador.png">
@@ -192,7 +214,15 @@
                         <behavior-type name="8Direction" sid="899537252303839">
                             <behavior id="EightDir" />
                         </behavior-type>
+                        <behavior-type name="Solid" sid="151926639231052">
+                            <behavior id="solid" />
+                        </behavior-type>
                     </behaviors>
+                    <effects>
+                        <effect-type name="SetColor">
+                            <effect id="setcolor" />
+                        </effect-type>
+                    </effects>
                     <animation-folder>
                         <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="582425063359480" speed="5">
                             <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Users\Thiago L. Watambak\Downloads\Jogador.png" />
@@ -205,7 +235,15 @@
                         <behavior-type name="8Direction" sid="818722741956732">
                             <behavior id="EightDir" />
                         </behavior-type>
+                        <behavior-type name="Solid" sid="474342578487341">
+                            <behavior id="solid" />
+                        </behavior-type>
                     </behaviors>
+                    <effects>
+                        <effect-type name="SetColor">
+                            <effect id="setcolor" />
+                        </effect-type>
+                    </effects>
                     <animation-folder>
                         <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="311774780150115" speed="5">
                             <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Users\Thiago L. Watambak\Downloads\Jogador.png">
@@ -234,6 +272,19 @@
         </object-folder>
         <object-type name="bolaPong" sid="783492084660864">
             <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Bullet" sid="693330840812207">
+                    <behavior id="Bullet" />
+                </behavior-type>
+                <behavior-type name="Solid" sid="730377457496465">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <effects>
+                <effect-type name="SetColor">
+                    <effect id="setcolor" />
+                </effect-type>
+            </effects>
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="487131902131480" speed="5">
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Users\Thiago L. Watambak\Downloads\Bola.png">
@@ -263,6 +314,17 @@
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
                 </animation>
             </animation-folder>
+        </object-type>
+        <object-type name="pongGatilhoVitoria" sid="212800340955474">
+            <plugin id="TiledBg" />
+            <instance-variables>
+                <instance-variable name="Player" sid="147912282787908" type="number" />
+            </instance-variables>
+            <texture />
+        </object-type>
+        <object-type name="extraOpacidade" sid="299691558284520">
+            <plugin id="TiledBg" />
+            <texture />
         </object-type>
     </object-folder>
     <families />

@@ -4,11 +4,11 @@
 It is entirely optional and the project will load without it.  If you are placing the project under source control,
 you probably do not want to add any .uistate.xml files to the repository.-->
     <camera>
-        <position-x>627.955</position-x>
-        <position-y>686.789</position-y>
-        <position-z>112.623</position-z>
-        <lookat-x>627.955</lookat-x>
-        <lookat-y>686.789</lookat-y>
+        <position-x>545.027</position-x>
+        <position-y>603.152</position-y>
+        <position-z>164.891</position-z>
+        <lookat-x>545.027</lookat-x>
+        <lookat-y>603.152</lookat-y>
         <lookat-z>0</lookat-z>
     </camera>
     <snap-to-grid>1</snap-to-grid>
@@ -23,7 +23,7 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <property expanded="0" name="Margins" />
         <property expanded="1" name="Effects" />
     </properties>
-    <active-layer name="GatilhoVitoria" />
+    <active-layer name="TextoVitoria" />
     <layers>
         <layer locked="1" name="Background" parallax-in-editor="0" visible="1" />
         <layer locked="0" name="BordasTela" parallax-in-editor="0" visible="1" />
@@ -31,6 +31,9 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <layer locked="0" name="Jogador" parallax-in-editor="0" visible="1" />
         <layer locked="0" name="Bola" parallax-in-editor="0" visible="1" />
         <layer locked="0" name="GatilhoVitoria" parallax-in-editor="0" visible="1" />
-        <layer locked="0" name="TextoOpcoes" parallax-in-editor="0" visible="1" />
+        <layer locked="0" name="ExtraOpacidade" parallax-in-editor="0" visible="1" />
+        <layer locked="0" name="TextoTutorial" parallax-in-editor="0" visible="1" />
+        <layer locked="0" name="TextoVitoria" parallax-in-editor="0" visible="1" />
+        <layer locked="0" name="OpcoesJogo" parallax-in-editor="0" visible="1" />
     </layers>
 </c2uistate>

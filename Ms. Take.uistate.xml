@@ -11,8 +11,8 @@ you probably do not want to add any .uistate.xml files to the repository.-->
     </configurations>
     <open-tabs>
         <layout order="0">Menu</layout>
-        <layout active="1" order="3">Pong</layout>
-        <event-sheet order="1">Eventos Menu</event-sheet>
+        <layout order="3">Pong</layout>
+        <event-sheet active="1" order="1">Eventos Menu</event-sheet>
         <event-sheet order="2">Inserção das frases</event-sheet>
         <event-sheet order="5">Config</event-sheet>
         <event-sheet order="4">Eventos Pong</event-sheet>
@@ -28,8 +28,8 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="1" path="object-folder/" />
         <folder expanded="1" path="object-folder/Background/" />
         <folder expanded="1" path="object-folder/Bordas/" />
-        <folder expanded="0" path="object-folder/Textos/" />
-        <folder expanded="0" path="object-folder/Arrays textos/" />
+        <folder expanded="1" path="object-folder/Textos/" />
+        <folder expanded="1" path="object-folder/Arrays textos/" />
         <folder expanded="0" path="object-folder/Controles/" />
         <folder expanded="1" path="object-folder/Pong/" />
         <folder expanded="1" path="object-folder/Pong/Jogador/" />

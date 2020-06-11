@@ -3,69 +3,458 @@
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>Eventos Pong</name>
     <events>
-        <event-group description="" sid="706714030006572" title="(PONG) ControleP1">
+        <variable constant="0" name="PONG_Game" sid="270921344390799" static="0" type="number">0</variable>
+        <comment>Variáveis de configuração dos jogadores</comment>
+        <variable comment="Velocidade inicial dos jogadores. Padrão: 600" constant="0" name="PONG_VelocidadeJogador" sid="969260652258080" static="0" type="number">600</variable>
+        <variable comment="Valor da cor vermelha para o efeito SetColor do player 1. Padrão: 50" constant="0" name="PONG_CorP1Red" sid="529817246038202" static="0" type="number">50</variable>
+        <variable comment="Valor da cor verde para o efeito SetColor do player 1. Padrão: 100" constant="0" name="PONG_CorP1Green" sid="244136691493713" static="0" type="number">100</variable>
+        <variable comment="Valor da cor azul para o efeito SetColor do player 1. Padrão: 50" constant="0" name="PONG_CorP1Blue" sid="338893287642744" static="0" type="number">0</variable>
+        <variable comment="Valor da cor vermelha para o efeito SetColor do player 2. Padrão: 100" constant="0" name="PONG_CorP2Red" sid="857743620503244" static="0" type="number">100</variable>
+        <variable comment="Valor da cor verde para o efeito SetColor do player 2. Padrão: 0" constant="0" name="PONG_CorP2Green" sid="953766970193834" static="0" type="number">0</variable>
+        <variable comment="Valor da cor azul para o efeito SetColor do player 2. Padrão: 50" constant="0" name="PONG_CorP2Blue" sid="229607979430727" static="0" type="number">60</variable>
+        <comment>Variáveis de configuração da bola</comment>
+        <variable comment="Delay para aumento da velocidade da bola. Padrão: 0.2" constant="0" name="PONG_DelayVelocidadeBola" sid="126267159819351" static="0" type="number">0.2</variable>
+        <variable comment="Velocidade inicial da bola. Padrão: 300" constant="0" name="PONG_VelocidadeInicialBola" sid="237712107883033" static="0" type="number">450</variable>
+        <variable comment="Valor de aumento da velocidade da bola. Padrão: 1" constant="0" name="PONG_AumentoVelocidadeBola" sid="129338439913716" static="0" type="number">1</variable>
+        <variable comment="Gravidade da bola. Padrão: 80" constant="0" name="PONG_GravidadeBola" sid="922047400360833" static="0" type="number">80</variable>
+        <comment>Variáveis de configuração do jogo</comment>
+        <variable constant="0" name="PONG_Modo" sid="890010206849738" static="0" type="text">1P</variable>
+        <event-block sid="300645809289993">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="885416114390601" type="System" />
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="730018565088559" type="System">
+                    <param id="0" name="Variable">PONG_Game</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="141141901122622">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="986529450126058" type="System">
+                    <param id="0" name="Variable">PONG_Game</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-12" name="Set group active" sid="127394104465921" type="System">
+                    <param id="0" name="Group name">&quot;(PONG) Controles&quot;</param>
+                    <param id="1" name="State">0</param>
+                </action>
+                <action id="-12" name="Set group active" sid="584336471318711" type="System">
+                    <param id="0" name="Group name">&quot;(PONG) Bola&quot;</param>
+                    <param id="1" name="State">0</param>
+                </action>
+                <action behavior="Bullet" id="5" name="Set enabled" sid="740720493855796" type="bolaPong">
+                    <param id="0" name="State">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-group description="" sid="487026517482213" title="(PONG) Controles">
             <sub-events>
-                <event-block sid="104869992027111">
+                <event-block sid="678092562010838">
                     <conditions>
-                        <condition id="2" name="Key is down" sid="759883832629115" type="Keyboard">
-                            <param id="0" name="Key">38</param>
-                        </condition>
+                        <condition id="-2" name="On start of layout" sid="860922394697257" type="System" />
                     </conditions>
                     <actions>
-                        <action behavior="8Direction" id="7" name="Simulate control" sid="658326757622564" type="pongPlayer1V">
-                            <param id="0" name="Control">2</param>
+                        <action behavior="8Direction" id="3" name="Set speed" sid="504708069351290" type="pongPlayer1H">
+                            <param id="0" name="Speed">PONG_VelocidadeJogador</param>
                         </action>
-                        <action behavior="8Direction" id="7" name="Simulate control" sid="909534674687148" type="pongPlayer1H">
-                            <param id="0" name="Control">1</param>
+                        <action behavior="8Direction" id="3" name="Set speed" sid="316751836070146" type="pongPlayer1V">
+                            <param id="0" name="Speed">PONG_VelocidadeJogador</param>
+                        </action>
+                        <action behavior="8Direction" id="3" name="Set speed" sid="752998704780351" type="pongPlayer2H">
+                            <param id="0" name="Speed">PONG_VelocidadeJogador</param>
+                        </action>
+                        <action behavior="8Direction" id="3" name="Set speed" sid="772702726169837" type="pongPlayer2V">
+                            <param id="0" name="Speed">PONG_VelocidadeJogador</param>
                         </action>
                     </actions>
                 </event-block>
-                <event-block sid="579471033182706">
+                <event-block sid="412658527538357">
                     <conditions>
-                        <condition id="2" name="Key is down" sid="126924880485953" type="Keyboard">
-                            <param id="0" name="Key">40</param>
-                        </condition>
+                        <condition id="-2" name="On start of layout" sid="899028120691700" type="System" />
                     </conditions>
                     <actions>
-                        <action behavior="8Direction" id="7" name="Simulate control" sid="562135582878706" type="pongPlayer1V">
-                            <param id="0" name="Control">3</param>
+                        <action id="-28" name="Set effect parameter" sid="515831821418243" type="pongPlayer1H">
+                            <param id="0" name="Effect">&quot;SetColor&quot;</param>
+                            <param id="1" name="Parameter index">0</param>
+                            <param id="2" name="Value">PONG_CorP1Red</param>
                         </action>
-                        <action behavior="8Direction" id="7" name="Simulate control" sid="635236549123348" type="pongPlayer1H">
-                            <param id="0" name="Control">0</param>
+                        <action id="-28" name="Set effect parameter" sid="637553364390025" type="pongPlayer1H">
+                            <param id="0" name="Effect">&quot;SetColor&quot;</param>
+                            <param id="1" name="Parameter index">1</param>
+                            <param id="2" name="Value">PONG_CorP1Green</param>
+                        </action>
+                        <action id="-28" name="Set effect parameter" sid="287868801216028" type="pongPlayer1H">
+                            <param id="0" name="Effect">&quot;SetColor&quot;</param>
+                            <param id="1" name="Parameter index">2</param>
+                            <param id="2" name="Value">PONG_CorP1Blue</param>
+                        </action>
+                        <action id="-28" name="Set effect parameter" sid="226881826000335" type="pongPlayer1V">
+                            <param id="0" name="Effect">&quot;SetColor&quot;</param>
+                            <param id="1" name="Parameter index">0</param>
+                            <param id="2" name="Value">PONG_CorP1Red</param>
+                        </action>
+                        <action id="-28" name="Set effect parameter" sid="111439114581445" type="pongPlayer1V">
+                            <param id="0" name="Effect">&quot;SetColor&quot;</param>
+                            <param id="1" name="Parameter index">1</param>
+                            <param id="2" name="Value">PONG_CorP1Green</param>
+                        </action>
+                        <action id="-28" name="Set effect parameter" sid="644213891945948" type="pongPlayer1V">
+                            <param id="0" name="Effect">&quot;SetColor&quot;</param>
+                            <param id="1" name="Parameter index">2</param>
+                            <param id="2" name="Value">PONG_CorP1Blue</param>
+                        </action>
+                        <action id="-28" name="Set effect parameter" sid="415149750801792" type="pongPlayer2H">
+                            <param id="0" name="Effect">&quot;SetColor&quot;</param>
+                            <param id="1" name="Parameter index">0</param>
+                            <param id="2" name="Value">PONG_CorP2Red</param>
+                        </action>
+                        <action id="-28" name="Set effect parameter" sid="930139005638222" type="pongPlayer2H">
+                            <param id="0" name="Effect">&quot;SetColor&quot;</param>
+                            <param id="1" name="Parameter index">1</param>
+                            <param id="2" name="Value">PONG_CorP2Green</param>
+                        </action>
+                        <action id="-28" name="Set effect parameter" sid="858965994798252" type="pongPlayer2H">
+                            <param id="0" name="Effect">&quot;SetColor&quot;</param>
+                            <param id="1" name="Parameter index">2</param>
+                            <param id="2" name="Value">PONG_CorP2Blue</param>
+                        </action>
+                        <action id="-28" name="Set effect parameter" sid="855260614837987" type="pongPlayer2V">
+                            <param id="0" name="Effect">&quot;SetColor&quot;</param>
+                            <param id="1" name="Parameter index">0</param>
+                            <param id="2" name="Value">PONG_CorP2Red</param>
+                        </action>
+                        <action id="-28" name="Set effect parameter" sid="156373399256288" type="pongPlayer2V">
+                            <param id="0" name="Effect">&quot;SetColor&quot;</param>
+                            <param id="1" name="Parameter index">1</param>
+                            <param id="2" name="Value">PONG_CorP2Green</param>
+                        </action>
+                        <action id="-28" name="Set effect parameter" sid="555006615472353" type="pongPlayer2V">
+                            <param id="0" name="Effect">&quot;SetColor&quot;</param>
+                            <param id="1" name="Parameter index">2</param>
+                            <param id="2" name="Value">PONG_CorP2Blue</param>
                         </action>
                     </actions>
                 </event-block>
+                <event-block sid="541793393617016">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="194258232826479" type="System">
+                            <param id="0" name="Variable">PONG_Modo</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">&quot;1P&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-12" name="Set group active" sid="419343671616075" type="System">
+                            <param id="0" name="Group name">&quot;(PONG) ControleP1&quot;</param>
+                            <param id="1" name="State">1</param>
+                        </action>
+                        <action id="-12" name="Set group active" sid="195646506364197" type="System">
+                            <param id="0" name="Group name">&quot;(PONG) ControleP2&quot;</param>
+                            <param id="1" name="State">1</param>
+                        </action>
+                        <action id="-12" name="Set group active" sid="299879449256792" type="System">
+                            <param id="0" name="Group name">&quot;(PONG) Bot&quot;</param>
+                            <param id="1" name="State">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="831179858977182">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="120441956588499" type="System">
+                            <param id="0" name="Variable">PONG_Modo</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">&quot;2P&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-12" name="Set group active" sid="661396763704667" type="System">
+                            <param id="0" name="Group name">&quot;(PONG) ControleP1&quot;</param>
+                            <param id="1" name="State">1</param>
+                        </action>
+                        <action id="-12" name="Set group active" sid="605233257827519" type="System">
+                            <param id="0" name="Group name">&quot;(PONG) ControleP2&quot;</param>
+                            <param id="1" name="State">0</param>
+                        </action>
+                        <action id="-12" name="Set group active" sid="801921161586756" type="System">
+                            <param id="0" name="Group name">&quot;(PONG) Bot&quot;</param>
+                            <param id="1" name="State">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-group description="" sid="706714030006572" title="(PONG) ControleP1">
+                    <sub-events>
+                        <event-block sid="104869992027111">
+                            <conditions>
+                                <condition id="2" name="Key is down" sid="759883832629115" type="Keyboard">
+                                    <param id="0" name="Key">38</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action behavior="8Direction" id="7" name="Simulate control" sid="658326757622564" type="pongPlayer1V">
+                                    <param id="0" name="Control">2</param>
+                                </action>
+                                <action behavior="8Direction" id="7" name="Simulate control" sid="909534674687148" type="pongPlayer1H">
+                                    <param id="0" name="Control">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="579471033182706">
+                            <conditions>
+                                <condition id="2" name="Key is down" sid="126924880485953" type="Keyboard">
+                                    <param id="0" name="Key">40</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action behavior="8Direction" id="7" name="Simulate control" sid="562135582878706" type="pongPlayer1V">
+                                    <param id="0" name="Control">3</param>
+                                </action>
+                                <action behavior="8Direction" id="7" name="Simulate control" sid="635236549123348" type="pongPlayer1H">
+                                    <param id="0" name="Control">0</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-group>
+                <event-group description="" sid="545501457474494" title="(PONG) ControleP2">
+                    <sub-events>
+                        <event-block sid="654647967664436">
+                            <conditions>
+                                <condition id="2" name="Key is down" sid="992109753106263" type="Keyboard">
+                                    <param id="0" name="Key">87</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action behavior="8Direction" id="7" name="Simulate control" sid="729804643632224" type="pongPlayer2V">
+                                    <param id="0" name="Control">2</param>
+                                </action>
+                                <action behavior="8Direction" id="7" name="Simulate control" sid="667778608045107" type="pongPlayer2H">
+                                    <param id="0" name="Control">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="690649614779293">
+                            <conditions>
+                                <condition id="2" name="Key is down" sid="961980858531095" type="Keyboard">
+                                    <param id="0" name="Key">83</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action behavior="8Direction" id="7" name="Simulate control" sid="550953712293606" type="pongPlayer2V">
+                                    <param id="0" name="Control">3</param>
+                                </action>
+                                <action behavior="8Direction" id="7" name="Simulate control" sid="909914713025805" type="pongPlayer2H">
+                                    <param id="0" name="Control">0</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-group>
+                <event-group description="" sid="292416848658157" title="(PONG) Bot">
+                    <sub-events>
+                        <event-block sid="841474603648416">
+                            <conditions>
+                                <condition id="-2" name="Compare Y" sid="597756305895711" type="bolaPong">
+                                    <param id="0" name="Comparison">3</param>
+                                    <param id="1" name="Y co-ordinate">928</param>
+                                </condition>
+                                <condition id="-2" name="Compare Y" sid="494795566236686" type="bolaPong">
+                                    <param id="0" name="Comparison">5</param>
+                                    <param id="1" name="Y co-ordinate">224</param>
+                                </condition>
+                            </conditions>
+                            <actions />
+                            <sub-events>
+                                <event-block sid="171710952264925">
+                                    <conditions>
+                                        <condition id="-1" name="Compare X" sid="407855622096004" type="pongPlayer2H">
+                                            <param id="0" name="Comparison">2</param>
+                                            <param id="1" name="X co-ordinate">bolaPong.X</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action behavior="8Direction" id="7" name="Simulate control" sid="766866468033211" type="pongPlayer2V">
+                                            <param id="0" name="Control">2</param>
+                                        </action>
+                                        <action behavior="8Direction" id="7" name="Simulate control" sid="694413027170187" type="pongPlayer2H">
+                                            <param id="0" name="Control">1</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="919905195521732">
+                                    <conditions>
+                                        <condition id="-1" name="Compare X" sid="536650149732435" type="pongPlayer2H">
+                                            <param id="0" name="Comparison">4</param>
+                                            <param id="1" name="X co-ordinate">bolaPong.X</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action behavior="8Direction" id="7" name="Simulate control" sid="634826133020793" type="pongPlayer2V">
+                                            <param id="0" name="Control">3</param>
+                                        </action>
+                                        <action behavior="8Direction" id="7" name="Simulate control" sid="171732530117136" type="pongPlayer2H">
+                                            <param id="0" name="Control">0</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                        <event-block sid="284180441273144">
+                            <conditions>
+                                <condition id="-22" name="Else" sid="576722986633141" type="System" />
+                            </conditions>
+                            <actions />
+                            <sub-events>
+                                <event-block sid="232436392202539">
+                                    <conditions>
+                                        <condition id="-2" name="Compare Y" sid="428531337819730" type="pongPlayer2H">
+                                            <param id="0" name="Comparison">2</param>
+                                            <param id="1" name="Y co-ordinate">bolaPong.Y</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action behavior="8Direction" id="7" name="Simulate control" sid="936453362417812" type="pongPlayer2V">
+                                            <param id="0" name="Control">2</param>
+                                        </action>
+                                        <action behavior="8Direction" id="7" name="Simulate control" sid="553066386265031" type="pongPlayer2H">
+                                            <param id="0" name="Control">1</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="962451370903202">
+                                    <conditions>
+                                        <condition id="-2" name="Compare Y" sid="158247249897444" type="pongPlayer2V">
+                                            <param id="0" name="Comparison">4</param>
+                                            <param id="1" name="Y co-ordinate">bolaPong.Y</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action behavior="8Direction" id="7" name="Simulate control" sid="948069695842111" type="pongPlayer2V">
+                                            <param id="0" name="Control">3</param>
+                                        </action>
+                                        <action behavior="8Direction" id="7" name="Simulate control" sid="574023672714296" type="pongPlayer2H">
+                                            <param id="0" name="Control">0</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                    </sub-events>
+                </event-group>
             </sub-events>
         </event-group>
-        <event-group description="" sid="545501457474494" title="(PONG) ControleP2">
+        <event-group description="" sid="583928842299233" title="(PONG) Bola">
             <sub-events>
-                <event-block sid="654647967664436">
+                <event-block sid="790735306360547">
                     <conditions>
-                        <condition id="2" name="Key is down" sid="992109753106263" type="Keyboard">
-                            <param id="0" name="Key">87</param>
-                        </condition>
+                        <condition id="-2" name="On start of layout" sid="112838336923746" type="System" />
                     </conditions>
                     <actions>
-                        <action behavior="8Direction" id="7" name="Simulate control" sid="729804643632224" type="pongPlayer2V">
-                            <param id="0" name="Control">2</param>
+                        <action behavior="Bullet" id="0" name="Set speed" sid="895999869135220" type="bolaPong">
+                            <param id="0" name="Speed">PONG_VelocidadeInicialBola</param>
                         </action>
-                        <action behavior="8Direction" id="7" name="Simulate control" sid="667778608045107" type="pongPlayer2H">
-                            <param id="0" name="Control">1</param>
+                        <action behavior="Bullet" id="2" name="Set gravity" sid="140163242814997" type="bolaPong">
+                            <param id="0" name="Gravity">PONG_GravidadeBola</param>
                         </action>
                     </actions>
                 </event-block>
-                <event-block sid="690649614779293">
+                <event-block sid="491387669049026">
                     <conditions>
-                        <condition id="2" name="Key is down" sid="961980858531095" type="Keyboard">
-                            <param id="0" name="Key">83</param>
+                        <condition id="0" name="On collision with another object" sid="558894936031033" type="bolaPong">
+                            <param id="0" name="Object">bordasPong</param>
                         </condition>
                     </conditions>
                     <actions>
-                        <action behavior="8Direction" id="7" name="Simulate control" sid="550953712293606" type="pongPlayer2V">
-                            <param id="0" name="Control">3</param>
+                        <action id="-9" name="Destroy" sid="891466326628830" type="bordasPong" />
+                    </actions>
+                </event-block>
+                <event-block sid="151139314056192">
+                    <conditions>
+                        <condition id="-6" name="Every X seconds" sid="928436461168029" type="System">
+                            <param id="0" name="Interval (seconds)">PONG_DelayVelocidadeBola</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action behavior="Bullet" id="0" name="Set speed" sid="534060424445131" type="bolaPong">
+                            <param id="0" name="Speed">bolaPong.Bullet.Speed + PONG_AumentoVelocidadeBola</param>
                         </action>
-                        <action behavior="8Direction" id="7" name="Simulate control" sid="909914713025805" type="pongPlayer2H">
-                            <param id="0" name="Control">0</param>
+                    </actions>
+                </event-block>
+                <event-group description="" sid="677537465285817" title="(PONG) Cor da bola">
+                    <sub-events>
+                        <event-block any="1" sid="534180639349727">
+                            <conditions>
+                                <condition id="0" name="On collision with another object" sid="905373034124667" type="bolaPong">
+                                    <param id="0" name="Object">pongPlayer1H</param>
+                                </condition>
+                                <condition id="0" name="On collision with another object" sid="389483911120727" type="bolaPong">
+                                    <param id="0" name="Object">pongPlayer1V</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-28" name="Set effect parameter" sid="649763464515642" type="bolaPong">
+                                    <param id="0" name="Effect">&quot;SetColor&quot;</param>
+                                    <param id="1" name="Parameter index">0</param>
+                                    <param id="2" name="Value">PONG_CorP1Red</param>
+                                </action>
+                                <action id="-28" name="Set effect parameter" sid="901911546595645" type="bolaPong">
+                                    <param id="0" name="Effect">&quot;SetColor&quot;</param>
+                                    <param id="1" name="Parameter index">1</param>
+                                    <param id="2" name="Value">PONG_CorP1Green</param>
+                                </action>
+                                <action id="-28" name="Set effect parameter" sid="584563340681779" type="bolaPong">
+                                    <param id="0" name="Effect">&quot;SetColor&quot;</param>
+                                    <param id="1" name="Parameter index">2</param>
+                                    <param id="2" name="Value">PONG_CorP1Blue</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block any="1" sid="201399401411747">
+                            <conditions>
+                                <condition id="0" name="On collision with another object" sid="607747248909896" type="bolaPong">
+                                    <param id="0" name="Object">pongPlayer2H</param>
+                                </condition>
+                                <condition id="0" name="On collision with another object" sid="738153260512139" type="bolaPong">
+                                    <param id="0" name="Object">pongPlayer2V</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-28" name="Set effect parameter" sid="870905372741200" type="bolaPong">
+                                    <param id="0" name="Effect">&quot;SetColor&quot;</param>
+                                    <param id="1" name="Parameter index">0</param>
+                                    <param id="2" name="Value">PONG_CorP2Red</param>
+                                </action>
+                                <action id="-28" name="Set effect parameter" sid="851466997559774" type="bolaPong">
+                                    <param id="0" name="Effect">&quot;SetColor&quot;</param>
+                                    <param id="1" name="Parameter index">1</param>
+                                    <param id="2" name="Value">PONG_CorP2Green</param>
+                                </action>
+                                <action id="-28" name="Set effect parameter" sid="847476697132553" type="bolaPong">
+                                    <param id="0" name="Effect">&quot;SetColor&quot;</param>
+                                    <param id="1" name="Parameter index">2</param>
+                                    <param id="2" name="Value">PONG_CorP2Blue</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-group>
+            </sub-events>
+        </event-group>
+        <event-group description="" sid="577330593444087" title="(PONG) Gatilhos vitória" />
+        <event-group description="" sid="832903496542392" title="(PONG) Frases Ms. Take">
+            <sub-events>
+                <event-block sid="769584349027342">
+                    <conditions>
+                        <condition id="-2" name="On start of layout" sid="270905910083783" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="5" name="Set web font" sid="585376904734050" type="textoFala">
+                            <param id="0" name="Family name">&quot;babybluemedium&quot;</param>
+                            <param id="1" name="CSS URL">&quot;babyblue.css&quot;</param>
                         </action>
                     </actions>
                 </event-block>
