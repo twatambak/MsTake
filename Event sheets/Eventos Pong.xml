@@ -200,52 +200,6 @@
                         </action>
                     </actions>
                 </event-block>
-                <event-block sid="541793393617016">
-                    <conditions>
-                        <condition id="-14" name="Compare variable" sid="194258232826479" type="System">
-                            <param id="0" name="Variable">PONG_Modo</param>
-                            <param id="1" name="Comparison">0</param>
-                            <param id="2" name="Value">&quot;1P&quot;</param>
-                        </condition>
-                    </conditions>
-                    <actions>
-                        <action id="-12" name="Set group active" sid="419343671616075" type="System">
-                            <param id="0" name="Group name">&quot;(PONG) ControleP1&quot;</param>
-                            <param id="1" name="State">1</param>
-                        </action>
-                        <action id="-12" name="Set group active" sid="195646506364197" type="System">
-                            <param id="0" name="Group name">&quot;(PONG) ControleP2&quot;</param>
-                            <param id="1" name="State">1</param>
-                        </action>
-                        <action id="-12" name="Set group active" sid="299879449256792" type="System">
-                            <param id="0" name="Group name">&quot;(PONG) Bot&quot;</param>
-                            <param id="1" name="State">0</param>
-                        </action>
-                    </actions>
-                </event-block>
-                <event-block sid="831179858977182">
-                    <conditions>
-                        <condition id="-14" name="Compare variable" sid="120441956588499" type="System">
-                            <param id="0" name="Variable">PONG_Modo</param>
-                            <param id="1" name="Comparison">0</param>
-                            <param id="2" name="Value">&quot;2P&quot;</param>
-                        </condition>
-                    </conditions>
-                    <actions>
-                        <action id="-12" name="Set group active" sid="661396763704667" type="System">
-                            <param id="0" name="Group name">&quot;(PONG) ControleP1&quot;</param>
-                            <param id="1" name="State">1</param>
-                        </action>
-                        <action id="-12" name="Set group active" sid="605233257827519" type="System">
-                            <param id="0" name="Group name">&quot;(PONG) ControleP2&quot;</param>
-                            <param id="1" name="State">0</param>
-                        </action>
-                        <action id="-12" name="Set group active" sid="801921161586756" type="System">
-                            <param id="0" name="Group name">&quot;(PONG) Bot&quot;</param>
-                            <param id="1" name="State">1</param>
-                        </action>
-                    </actions>
-                </event-block>
                 <event-group description="" sid="706714030006572" title="(PONG) ControleP1">
                     <sub-events>
                         <event-block sid="104869992027111">
@@ -1911,6 +1865,54 @@
                                     <param id="1" name="Value">1</param>
                                 </action>
                             </actions>
+                            <sub-events>
+                                <event-block sid="546793257248890">
+                                    <conditions>
+                                        <condition id="-14" name="Compare variable" sid="154190218656776" type="System">
+                                            <param id="0" name="Variable">PONG_Modo</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">&quot;1P&quot;</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-12" name="Set group active" sid="271790784093120" type="System">
+                                            <param id="0" name="Group name">&quot;(PONG) ControleP1&quot;</param>
+                                            <param id="1" name="State">1</param>
+                                        </action>
+                                        <action id="-12" name="Set group active" sid="124761133322971" type="System">
+                                            <param id="0" name="Group name">&quot;(PONG) ControleP2&quot;</param>
+                                            <param id="1" name="State">0</param>
+                                        </action>
+                                        <action id="-12" name="Set group active" sid="689560293432244" type="System">
+                                            <param id="0" name="Group name">&quot;(PONG) Bot&quot;</param>
+                                            <param id="1" name="State">1</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="334220042203852">
+                                    <conditions>
+                                        <condition id="-14" name="Compare variable" sid="731051939666350" type="System">
+                                            <param id="0" name="Variable">PONG_Modo</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">&quot;2P&quot;</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-12" name="Set group active" sid="833045015053549" type="System">
+                                            <param id="0" name="Group name">&quot;(PONG) ControleP1&quot;</param>
+                                            <param id="1" name="State">1</param>
+                                        </action>
+                                        <action id="-12" name="Set group active" sid="756852502747176" type="System">
+                                            <param id="0" name="Group name">&quot;(PONG) ControleP2&quot;</param>
+                                            <param id="1" name="State">1</param>
+                                        </action>
+                                        <action id="-12" name="Set group active" sid="145760059357437" type="System">
+                                            <param id="0" name="Group name">&quot;(PONG) Bot&quot;</param>
+                                            <param id="1" name="State">0</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
                         </event-block>
                     </sub-events>
                 </event-block>
