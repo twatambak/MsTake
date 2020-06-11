@@ -765,6 +765,12 @@
                                 </action>
                             </actions>
                         </event-block>
+                        <event-block sid="269695812294393">
+                            <conditions>
+                                <condition id="-2" name="On start of layout" sid="439078489267120" type="System" />
+                            </conditions>
+                            <actions />
+                        </event-block>
                     </sub-events>
                 </event-block>
                 <event-block sid="827697271052016">

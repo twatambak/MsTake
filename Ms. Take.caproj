@@ -148,6 +148,9 @@
             <object-type global="1" name="arrayFrasesPong" sid="889951143940507">
                 <plugin id="Arr" />
             </object-type>
+            <object-type global="1" name="arrayOpcoesConfigPong" sid="759939751431605">
+                <plugin id="Arr" />
+            </object-type>
         </object-folder>
         <object-folder name="Controles">
             <object-type name="Keyboard" sid="758708323480731">

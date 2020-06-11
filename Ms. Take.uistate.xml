@@ -13,8 +13,8 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <layout order="0">Menu</layout>
         <layout order="2">Pong</layout>
         <event-sheet order="1">Eventos Menu</event-sheet>
-        <event-sheet order="5">Inserção das frases</event-sheet>
-        <event-sheet active="1" order="3">Eventos Pong</event-sheet>
+        <event-sheet active="1" order="5">Inserção das frases</event-sheet>
+        <event-sheet order="3">Eventos Pong</event-sheet>
         <event-sheet order="4">Config</event-sheet>
     </open-tabs>
     <properties>

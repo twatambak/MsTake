@@ -3,6 +3,7 @@
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>Eventos Pong</name>
     <events>
+        <variable constant="0" name="PONG_IntroPassou" sid="451649737935773" static="0" type="number">1</variable>
         <variable constant="0" name="PONG_OpcoesConfig" sid="727147722702645" static="0" type="number">1</variable>
         <include>Inserção das frases</include>
         <variable constant="0" name="PONG_FalaMsTakeTUTORIAL" sid="678856850608491" static="0" type="text"></variable>
@@ -31,6 +32,14 @@
                 <action id="-9" name="Set value" sid="730018565088559" type="System">
                     <param id="0" name="Variable">PONG_Game</param>
                     <param id="1" name="Value">0</param>
+                </action>
+                <action id="5" name="Set web font" sid="393687551038568" type="textoInfo">
+                    <param id="0" name="Family name">&quot;digitaldiscomedium&quot;</param>
+                    <param id="1" name="CSS URL">&quot;digitald.css&quot;</param>
+                </action>
+                <action id="5" name="Set web font" sid="220941819169749" type="textoConfigPong">
+                    <param id="0" name="Family name">&quot;digitaldiscomedium&quot;</param>
+                    <param id="1" name="CSS URL">&quot;digitald.css&quot;</param>
                 </action>
             </actions>
         </event-block>
@@ -1546,9 +1555,9 @@
                                             <param id="0" name="Group name">&quot;(PONG) Falas Ms. Take: TUTORIAL 19&quot;</param>
                                             <param id="1" name="State">0</param>
                                         </action>
-                                        <action id="-12" name="Set group active" sid="161344032659271" type="System">
-                                            <param id="0" name="Group name">&quot;(PONG) Falas Ms. Take: TUTORIAL 1&quot;</param>
-                                            <param id="1" name="State">1</param>
+                                        <action id="-9" name="Set value" sid="705530173869462" type="System">
+                                            <param id="0" name="Variable">PONG_IntroPassou</param>
+                                            <param id="1" name="Value">1</param>
                                         </action>
                                         <action id="0" name="Set text" sid="619313336876675" type="textoFala">
                                             <param id="0" name="Text">&quot;&quot;</param>
@@ -1578,10 +1587,58 @@
                         </action>
                         <action id="-4" name="Set layer visible" sid="428343044328269" type="System">
                             <param id="0" name="Layer">&quot;OpcoesJogo&quot;</param>
+                            <param id="1" name="Visibility">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="472580488842168">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="108843692081383" type="System">
+                            <param id="0" name="Variable">PONG_IntroPassou</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">0</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-12" name="Set group active" sid="836273995164388" type="System">
+                            <param id="0" name="Group name">&quot;(PONG) Escolha das opções de configuração&quot;</param>
+                            <param id="1" name="State">0</param>
+                        </action>
+                        <action id="-4" name="Set layer visible" sid="327887606289598" type="System">
+                            <param id="0" name="Layer">&quot;OpcoesJogo&quot;</param>
+                            <param id="1" name="Visibility">0</param>
+                        </action>
+                        <action id="-4" name="Set layer visible" sid="825303591533925" type="System">
+                            <param id="0" name="Layer">&quot;MsTakeTutorial&quot;</param>
                             <param id="1" name="Visibility">1</param>
                         </action>
                     </actions>
                 </event-block>
+                <event-block sid="520816703949455">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="174497269898390" type="System">
+                            <param id="0" name="Variable">PONG_IntroPassou</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-12" name="Set group active" sid="883501746013859" type="System">
+                            <param id="0" name="Group name">&quot;(PONG) Escolha das opções de configuração&quot;</param>
+                            <param id="1" name="State">1</param>
+                        </action>
+                        <action id="-4" name="Set layer visible" sid="434742922208689" type="System">
+                            <param id="0" name="Layer">&quot;OpcoesJogo&quot;</param>
+                            <param id="1" name="Visibility">1</param>
+                        </action>
+                        <action id="-4" name="Set layer visible" sid="379022893450696" type="System">
+                            <param id="0" name="Layer">&quot;MsTakeTutorial&quot;</param>
+                            <param id="1" name="Visibility">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-group description="" sid="671341526587385" title="(PONG) Alteração das configurações" />
+                <event-group description="" sid="566760428999689" title="(PONG) Exibição dos textos" />
                 <event-group description="" sid="749831382211341" title="(PONG) Escolha das opções de configuração">
                     <sub-events>
                         <event-block sid="338983029503294">
@@ -1597,7 +1654,7 @@
                                         <condition id="-14" name="Compare variable" sid="325589475932780" type="System">
                                             <param id="0" name="Variable">PONG_OpcoesConfig</param>
                                             <param id="1" name="Comparison">2</param>
-                                            <param id="2" name="Value">5</param>
+                                            <param id="2" name="Value">6</param>
                                         </condition>
                                     </conditions>
                                     <actions>
