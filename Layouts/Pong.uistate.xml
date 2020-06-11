@@ -5,10 +5,10 @@ It is entirely optional and the project will load without it.  If you are placin
 you probably do not want to add any .uistate.xml files to the repository.-->
     <camera>
         <position-x>545.027</position-x>
-        <position-y>603.152</position-y>
-        <position-z>164.891</position-z>
+        <position-y>583.496</position-y>
+        <position-z>149.901</position-z>
         <lookat-x>545.027</lookat-x>
-        <lookat-y>603.152</lookat-y>
+        <lookat-y>583.496</lookat-y>
         <lookat-z>0</lookat-z>
     </camera>
     <snap-to-grid>1</snap-to-grid>
@@ -23,17 +23,17 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <property expanded="0" name="Margins" />
         <property expanded="1" name="Effects" />
     </properties>
-    <active-layer name="TextoVitoria" />
+    <active-layer name="OpcoesJogo" />
     <layers>
         <layer locked="1" name="Background" parallax-in-editor="0" visible="1" />
-        <layer locked="0" name="BordasTela" parallax-in-editor="0" visible="1" />
+        <layer locked="1" name="BordasTela" parallax-in-editor="0" visible="1" />
         <layer locked="0" name="TextoTitulo" parallax-in-editor="0" visible="1" />
-        <layer locked="0" name="Jogador" parallax-in-editor="0" visible="1" />
-        <layer locked="0" name="Bola" parallax-in-editor="0" visible="1" />
-        <layer locked="0" name="GatilhoVitoria" parallax-in-editor="0" visible="1" />
-        <layer locked="0" name="ExtraOpacidade" parallax-in-editor="0" visible="1" />
-        <layer locked="0" name="TextoTutorial" parallax-in-editor="0" visible="1" />
-        <layer locked="0" name="TextoVitoria" parallax-in-editor="0" visible="1" />
+        <layer locked="1" name="Jogador" parallax-in-editor="0" visible="1" />
+        <layer locked="1" name="Bola" parallax-in-editor="0" visible="1" />
+        <layer locked="1" name="GatilhoVitoria" parallax-in-editor="0" visible="1" />
+        <layer locked="1" name="ExtraOpacidade" parallax-in-editor="0" visible="1" />
+        <layer locked="0" name="MsTakeTutorial" parallax-in-editor="0" visible="0" />
         <layer locked="0" name="OpcoesJogo" parallax-in-editor="0" visible="1" />
+        <layer locked="0" name="TextoVitoria" parallax-in-editor="0" visible="1" />
     </layers>
 </c2uistate>

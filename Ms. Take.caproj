@@ -114,6 +114,20 @@
             </object-type>
             <object-type name="textoInfo" sid="223263431724322">
                 <plugin id="Text" />
+                <instance-variables>
+                    <instance-variable name="ID" sid="510538572294910" type="number" />
+                </instance-variables>
+                <effects>
+                    <effect-type name="SetColor">
+                        <effect id="setcolor" />
+                    </effect-type>
+                </effects>
+            </object-type>
+            <object-type name="textoConfigPong" sid="107342103419117">
+                <plugin id="Text" />
+                <instance-variables>
+                    <instance-variable name="ID" sid="434727005013243" type="number" />
+                </instance-variables>
                 <effects>
                     <effect-type name="SetColor">
                         <effect id="setcolor" />
