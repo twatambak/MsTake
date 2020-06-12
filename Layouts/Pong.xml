@@ -12036,7 +12036,7 @@
             <instances>
                 <instance type="textoFala" uid="84">
                     <properties>
-                        <text>parabéns :3</text>
+                        <text>vamos nos divertir, Mestre?</text>
                         <initial-visibility>Visible</initial-visibility>
                         <font>Arial,-42.4,400,0</font>
                         <color>255,255,0</color>
@@ -12050,10 +12050,10 @@
                     <effect-fallback>0</effect-fallback>
                     <world>
                         <x>160</x>
-                        <y>256</y>
+                        <y>192</y>
                         <z>0</z>
                         <width>832</width>
-                        <height>192</height>
+                        <height>96</height>
                         <depth>0</depth>
                         <hotspotX>0</hotspotX>
                         <hotspotY>0</hotspotY>
@@ -12072,7 +12072,7 @@
             <effect-instance type="Bulge">
                 <parameters>
                     <radius>0.7</radius>
-                    <scale>0.1</scale>
+                    <scale>0</scale>
                 </parameters>
             </effect-instance>
         </effect-type>
