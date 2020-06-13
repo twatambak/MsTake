@@ -679,7 +679,7 @@
                             </conditions>
                             <actions>
                                 <action id="1" name="Set size" sid="255063295081560" type="arrayFrasesPong">
-                                    <param id="0" name="Width">100</param>
+                                    <param id="0" name="Width">30</param>
                                     <param id="1" name="Height">1</param>
                                     <param id="2" name="Depth">1</param>
                                 </action>
@@ -770,6 +770,11 @@
                                 <condition id="-2" name="On start of layout" sid="439078489267120" type="System" />
                             </conditions>
                             <actions>
+                                <action id="1" name="Set size" sid="790600716195635" type="arrayOpcoesConfigPong">
+                                    <param id="0" name="Width">30</param>
+                                    <param id="1" name="Height">1</param>
+                                    <param id="2" name="Depth">1</param>
+                                </action>
                                 <action id="2" name="Set at X" sid="622499083140890" type="arrayOpcoesConfigPong">
                                     <param id="0" name="X">1</param>
                                     <param id="1" name="Value">&quot;Velocidade do jogador:&quot;</param>

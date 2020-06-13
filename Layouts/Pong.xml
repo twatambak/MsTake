@@ -12053,7 +12053,7 @@
                         <y>192</y>
                         <z>0</z>
                         <width>832</width>
-                        <height>96</height>
+                        <height>416</height>
                         <depth>0</depth>
                         <hotspotX>0</hotspotX>
                         <hotspotY>0</hotspotY>
@@ -12062,7 +12062,24 @@
                     </world>
                 </instance>
             </instances>
-            <effects />
+            <effects>
+                <effect-type name="GlowHorizontal">
+                    <effect id="glowhorizontal" />
+                    <effect-instance type="GlowHorizontal">
+                        <parameters>
+                            <intensity>0.75</intensity>
+                        </parameters>
+                    </effect-instance>
+                </effect-type>
+                <effect-type name="GlowVertical">
+                    <effect id="glowvertical" />
+                    <effect-instance type="GlowVertical">
+                        <parameters>
+                            <intensity>0.75</intensity>
+                        </parameters>
+                    </effect-instance>
+                </effect-type>
+            </effects>
         </layer>
     </layers>
     <nonworld-instances />
@@ -12072,7 +12089,7 @@
             <effect-instance type="Bulge">
                 <parameters>
                     <radius>0.7</radius>
-                    <scale>0</scale>
+                    <scale>0.1</scale>
                 </parameters>
             </effect-instance>
         </effect-type>

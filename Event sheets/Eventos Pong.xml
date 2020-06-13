@@ -460,7 +460,16 @@
                             <param id="0" name="Object">pongGatilhoVitoria</param>
                         </condition>
                     </conditions>
-                    <actions />
+                    <actions>
+                        <action id="-9" name="Set value" sid="194384931979897" type="System">
+                            <param id="0" name="Variable">PONG_Vitoria</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="131789826784238" type="System">
+                            <param id="0" name="Variable">PONG_Game</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                    </actions>
                     <sub-events>
                         <event-block sid="570676342800045">
                             <conditions>
@@ -470,12 +479,39 @@
                                     <param id="2" name="Value">1</param>
                                 </condition>
                             </conditions>
-                            <actions>
-                                <action id="-9" name="Set value" sid="225143357869653" type="System">
-                                    <param id="0" name="Variable">PONG_Game</param>
-                                    <param id="1" name="Value">0</param>
-                                </action>
-                            </actions>
+                            <actions />
+                            <sub-events>
+                                <event-block sid="241585458295582">
+                                    <conditions>
+                                        <condition id="-14" name="Compare variable" sid="370807532035425" type="System">
+                                            <param id="0" name="Variable">PONG_Modo</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">&quot;1P&quot;</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-12" name="Set group active" sid="156814605638192" type="System">
+                                            <param id="0" name="Group name">&quot;(PONG) Falas Ms. Take: VITÓRIA [MsTake]&quot;</param>
+                                            <param id="1" name="State">1</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="291469438883540">
+                                    <conditions>
+                                        <condition id="-14" name="Compare variable" sid="845094864797398" type="System">
+                                            <param id="0" name="Variable">PONG_Modo</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">&quot;2P&quot;</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-12" name="Set group active" sid="529826523677514" type="System">
+                                            <param id="0" name="Group name">&quot;(PONG) Falas Ms. Take: VITÓRIA [P2]&quot;</param>
+                                            <param id="1" name="State">1</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
                         </event-block>
                         <event-block sid="263221766497237">
                             <conditions>
@@ -486,37 +522,11 @@
                                 </condition>
                             </conditions>
                             <actions>
-                                <action id="-9" name="Set value" sid="832185435593690" type="System">
-                                    <param id="0" name="Variable">PONG_Game</param>
-                                    <param id="1" name="Value">0</param>
-                                </action>
-                                <action id="-9" name="Set value" sid="345638510586422" type="System">
-                                    <param id="0" name="Variable">PONG_Vitoria</param>
-                                    <param id="1" name="Value">1</param>
+                                <action id="-12" name="Set group active" sid="713837084347845" type="System">
+                                    <param id="0" name="Group name">&quot;(PONG) Falas Ms. Take: VITÓRIA [P1]&quot;</param>
+                                    <param id="1" name="State">1</param>
                                 </action>
                             </actions>
-                            <sub-events>
-                                <event-block sid="241585458295582">
-                                    <conditions>
-                                        <condition id="-14" name="Compare variable" sid="370807532035425" type="System">
-                                            <param id="0" name="Variable">PONG_Modo</param>
-                                            <param id="1" name="Comparison">0</param>
-                                            <param id="2" name="Value">&quot;1P&quot;</param>
-                                        </condition>
-                                    </conditions>
-                                    <actions />
-                                </event-block>
-                                <event-block sid="291469438883540">
-                                    <conditions>
-                                        <condition id="-14" name="Compare variable" sid="845094864797398" type="System">
-                                            <param id="0" name="Variable">PONG_Modo</param>
-                                            <param id="1" name="Comparison">0</param>
-                                            <param id="2" name="Value">&quot;2P&quot;</param>
-                                        </condition>
-                                    </conditions>
-                                    <actions />
-                                </event-block>
-                            </sub-events>
                         </event-block>
                     </sub-events>
                 </event-block>
@@ -2657,123 +2667,226 @@
         </event-group>
         <event-group description="" sid="622937390545479" title="(PONG) Configurações da partida">
             <sub-events>
-                <event-block sid="472580488842168">
+                <event-block sid="636541972123178">
                     <conditions>
-                        <condition id="-14" name="Compare variable" sid="108843692081383" type="System">
-                            <param id="0" name="Variable">PONG_IntroPassou</param>
+                        <condition id="-14" name="Compare variable" sid="266638173309309" type="System">
+                            <param id="0" name="Variable">PONG_Vitoria</param>
                             <param id="1" name="Comparison">0</param>
                             <param id="2" name="Value">0</param>
                         </condition>
                     </conditions>
-                    <actions>
-                        <action id="5" name="Set web font" sid="634245712293620" type="textoFala">
-                            <param id="0" name="Family name">&quot;babybluemedium&quot;</param>
-                            <param id="1" name="CSS URL">&quot;babyblue.css&quot;</param>
-                        </action>
-                        <action id="5" name="Set web font" sid="642997373710112" type="textoInfo">
-                            <param id="0" name="Family name">&quot;digitaldiscomedium&quot;</param>
-                            <param id="1" name="CSS URL">&quot;digitald.css&quot;</param>
-                        </action>
-                        <action id="5" name="Set web font" sid="678956870837578" type="textoConfigPong">
-                            <param id="0" name="Family name">&quot;digitaldiscomedium&quot;</param>
-                            <param id="1" name="CSS URL">&quot;digitald.css&quot;</param>
-                        </action>
-                        <action id="-12" name="Set group active" sid="836273995164388" type="System">
-                            <param id="0" name="Group name">&quot;(PONG) Escolha das opções de configuração&quot;</param>
-                            <param id="1" name="State">0</param>
-                        </action>
-                        <action id="-4" name="Set layer visible" sid="825303591533925" type="System">
-                            <param id="0" name="Layer">&quot;MsTakeTutorial&quot;</param>
-                            <param id="1" name="Visibility">1</param>
-                        </action>
-                        <action id="-4" name="Set layer visible" sid="331037567189821" type="System">
-                            <param id="0" name="Layer">&quot;OpcoesJogo&quot;</param>
-                            <param id="1" name="Visibility">0</param>
-                        </action>
-                        <action id="-4" name="Set layer visible" sid="260126312349861" type="System">
-                            <param id="0" name="Layer">&quot;TextoVitoria&quot;</param>
-                            <param id="1" name="Visibility">0</param>
-                        </action>
-                        <action id="-12" name="Set group active" sid="375258178027746" type="System">
-                            <param id="0" name="Group name">&quot;(PONG) Falas Ms. Take: OPÇÕES&quot;</param>
-                            <param id="1" name="State">0</param>
-                        </action>
-                        <action id="-12" name="Set group active" sid="401497532251285" type="System">
-                            <param id="0" name="Group name">&quot;(PONG) Falas Ms. Take: VITÓRIA [P1]&quot;</param>
-                            <param id="1" name="State">0</param>
-                        </action>
-                        <action id="-12" name="Set group active" sid="524198097058654" type="System">
-                            <param id="0" name="Group name">&quot;(PONG) Falas Ms. Take: VITÓRIA [P2]&quot;</param>
-                            <param id="1" name="State">0</param>
-                        </action>
-                        <action id="-12" name="Set group active" sid="335846692248821" type="System">
-                            <param id="0" name="Group name">&quot;(PONG) Falas Ms. Take: VITÓRIA [MsTake]&quot;</param>
-                            <param id="1" name="State">0</param>
-                        </action>
-                        <action id="-12" name="Set group active" sid="287517253751391" type="System">
-                            <param id="0" name="Group name">&quot;(PONG) Falas Ms. Take: TUTORIAL&quot;</param>
-                            <param id="1" name="State">1</param>
-                        </action>
-                    </actions>
-                </event-block>
-                <event-block sid="520816703949455">
-                    <conditions>
-                        <condition id="-14" name="Compare variable" sid="174497269898390" type="System">
-                            <param id="0" name="Variable">PONG_IntroPassou</param>
-                            <param id="1" name="Comparison">0</param>
-                            <param id="2" name="Value">1</param>
-                        </condition>
-                    </conditions>
-                    <actions>
-                        <action id="5" name="Set web font" sid="998160718988922" type="textoFala">
-                            <param id="0" name="Family name">&quot;babybluemedium&quot;</param>
-                            <param id="1" name="CSS URL">&quot;babyblue.css&quot;</param>
-                        </action>
-                        <action id="5" name="Set web font" sid="894521349292933" type="textoInfo">
-                            <param id="0" name="Family name">&quot;digitaldiscomedium&quot;</param>
-                            <param id="1" name="CSS URL">&quot;digitald.css&quot;</param>
-                        </action>
-                        <action id="5" name="Set web font" sid="315921497337290" type="textoConfigPong">
-                            <param id="0" name="Family name">&quot;digitaldiscomedium&quot;</param>
-                            <param id="1" name="CSS URL">&quot;digitald.css&quot;</param>
-                        </action>
-                        <action id="-12" name="Set group active" sid="883501746013859" type="System">
-                            <param id="0" name="Group name">&quot;(PONG) Escolha das opções de configuração&quot;</param>
-                            <param id="1" name="State">1</param>
-                        </action>
-                        <action id="-4" name="Set layer visible" sid="379022893450696" type="System">
-                            <param id="0" name="Layer">&quot;MsTakeTutorial&quot;</param>
-                            <param id="1" name="Visibility">0</param>
-                        </action>
-                        <action id="-4" name="Set layer visible" sid="132294932569520" type="System">
-                            <param id="0" name="Layer">&quot;OpcoesJogo&quot;</param>
-                            <param id="1" name="Visibility">1</param>
-                        </action>
-                        <action id="-4" name="Set layer visible" sid="132973801963486" type="System">
-                            <param id="0" name="Layer">&quot;TextoVitoria&quot;</param>
-                            <param id="1" name="Visibility">0</param>
-                        </action>
-                        <action id="-12" name="Set group active" sid="580709524089318" type="System">
-                            <param id="0" name="Group name">&quot;(PONG) Falas Ms. Take: OPÇÕES&quot;</param>
-                            <param id="1" name="State">1</param>
-                        </action>
-                        <action id="-12" name="Set group active" sid="723508549406444" type="System">
-                            <param id="0" name="Group name">&quot;(PONG) Falas Ms. Take: VITÓRIA [P1]&quot;</param>
-                            <param id="1" name="State">0</param>
-                        </action>
-                        <action id="-12" name="Set group active" sid="222526533571755" type="System">
-                            <param id="0" name="Group name">&quot;(PONG) Falas Ms. Take: VITÓRIA [P2]&quot;</param>
-                            <param id="1" name="State">0</param>
-                        </action>
-                        <action id="-12" name="Set group active" sid="680178728495145" type="System">
-                            <param id="0" name="Group name">&quot;(PONG) Falas Ms. Take: VITÓRIA [MsTake]&quot;</param>
-                            <param id="1" name="State">0</param>
-                        </action>
-                        <action id="-12" name="Set group active" sid="662504626938368" type="System">
-                            <param id="0" name="Group name">&quot;(PONG) Falas Ms. Take: TUTORIAL&quot;</param>
-                            <param id="1" name="State">0</param>
-                        </action>
-                    </actions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="472580488842168">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="108843692081383" type="System">
+                                    <param id="0" name="Variable">PONG_IntroPassou</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">0</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="5" name="Set web font" sid="634245712293620" type="textoFala">
+                                    <param id="0" name="Family name">&quot;babybluemedium&quot;</param>
+                                    <param id="1" name="CSS URL">&quot;babyblue.css&quot;</param>
+                                </action>
+                                <action id="5" name="Set web font" sid="642997373710112" type="textoInfo">
+                                    <param id="0" name="Family name">&quot;digitaldiscomedium&quot;</param>
+                                    <param id="1" name="CSS URL">&quot;digitald.css&quot;</param>
+                                </action>
+                                <action id="5" name="Set web font" sid="678956870837578" type="textoConfigPong">
+                                    <param id="0" name="Family name">&quot;digitaldiscomedium&quot;</param>
+                                    <param id="1" name="CSS URL">&quot;digitald.css&quot;</param>
+                                </action>
+                                <action id="-12" name="Set group active" sid="836273995164388" type="System">
+                                    <param id="0" name="Group name">&quot;(PONG) Escolha das opções de configuração&quot;</param>
+                                    <param id="1" name="State">0</param>
+                                </action>
+                                <action id="-4" name="Set layer visible" sid="825303591533925" type="System">
+                                    <param id="0" name="Layer">&quot;MsTakeTutorial&quot;</param>
+                                    <param id="1" name="Visibility">1</param>
+                                </action>
+                                <action id="-4" name="Set layer visible" sid="331037567189821" type="System">
+                                    <param id="0" name="Layer">&quot;OpcoesJogo&quot;</param>
+                                    <param id="1" name="Visibility">0</param>
+                                </action>
+                                <action id="-4" name="Set layer visible" sid="260126312349861" type="System">
+                                    <param id="0" name="Layer">&quot;TextoVitoria&quot;</param>
+                                    <param id="1" name="Visibility">0</param>
+                                </action>
+                                <action id="-12" name="Set group active" sid="375258178027746" type="System">
+                                    <param id="0" name="Group name">&quot;(PONG) Falas Ms. Take: OPÇÕES&quot;</param>
+                                    <param id="1" name="State">0</param>
+                                </action>
+                                <action id="-12" name="Set group active" sid="401497532251285" type="System">
+                                    <param id="0" name="Group name">&quot;(PONG) Falas Ms. Take: VITÓRIA [P1]&quot;</param>
+                                    <param id="1" name="State">0</param>
+                                </action>
+                                <action id="-12" name="Set group active" sid="524198097058654" type="System">
+                                    <param id="0" name="Group name">&quot;(PONG) Falas Ms. Take: VITÓRIA [P2]&quot;</param>
+                                    <param id="1" name="State">0</param>
+                                </action>
+                                <action id="-12" name="Set group active" sid="335846692248821" type="System">
+                                    <param id="0" name="Group name">&quot;(PONG) Falas Ms. Take: VITÓRIA [MsTake]&quot;</param>
+                                    <param id="1" name="State">0</param>
+                                </action>
+                                <action id="-12" name="Set group active" sid="287517253751391" type="System">
+                                    <param id="0" name="Group name">&quot;(PONG) Falas Ms. Take: TUTORIAL&quot;</param>
+                                    <param id="1" name="State">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="520816703949455">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="174497269898390" type="System">
+                                    <param id="0" name="Variable">PONG_IntroPassou</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">1</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="5" name="Set web font" sid="998160718988922" type="textoFala">
+                                    <param id="0" name="Family name">&quot;babybluemedium&quot;</param>
+                                    <param id="1" name="CSS URL">&quot;babyblue.css&quot;</param>
+                                </action>
+                                <action id="5" name="Set web font" sid="894521349292933" type="textoInfo">
+                                    <param id="0" name="Family name">&quot;digitaldiscomedium&quot;</param>
+                                    <param id="1" name="CSS URL">&quot;digitald.css&quot;</param>
+                                </action>
+                                <action id="5" name="Set web font" sid="315921497337290" type="textoConfigPong">
+                                    <param id="0" name="Family name">&quot;digitaldiscomedium&quot;</param>
+                                    <param id="1" name="CSS URL">&quot;digitald.css&quot;</param>
+                                </action>
+                                <action id="-12" name="Set group active" sid="883501746013859" type="System">
+                                    <param id="0" name="Group name">&quot;(PONG) Escolha das opções de configuração&quot;</param>
+                                    <param id="1" name="State">1</param>
+                                </action>
+                                <action id="-4" name="Set layer visible" sid="379022893450696" type="System">
+                                    <param id="0" name="Layer">&quot;MsTakeTutorial&quot;</param>
+                                    <param id="1" name="Visibility">0</param>
+                                </action>
+                                <action id="-4" name="Set layer visible" sid="132294932569520" type="System">
+                                    <param id="0" name="Layer">&quot;OpcoesJogo&quot;</param>
+                                    <param id="1" name="Visibility">1</param>
+                                </action>
+                                <action id="-4" name="Set layer visible" sid="132973801963486" type="System">
+                                    <param id="0" name="Layer">&quot;TextoVitoria&quot;</param>
+                                    <param id="1" name="Visibility">0</param>
+                                </action>
+                                <action id="-12" name="Set group active" sid="580709524089318" type="System">
+                                    <param id="0" name="Group name">&quot;(PONG) Falas Ms. Take: OPÇÕES&quot;</param>
+                                    <param id="1" name="State">1</param>
+                                </action>
+                                <action id="-12" name="Set group active" sid="723508549406444" type="System">
+                                    <param id="0" name="Group name">&quot;(PONG) Falas Ms. Take: VITÓRIA [P1]&quot;</param>
+                                    <param id="1" name="State">0</param>
+                                </action>
+                                <action id="-12" name="Set group active" sid="222526533571755" type="System">
+                                    <param id="0" name="Group name">&quot;(PONG) Falas Ms. Take: VITÓRIA [P2]&quot;</param>
+                                    <param id="1" name="State">0</param>
+                                </action>
+                                <action id="-12" name="Set group active" sid="680178728495145" type="System">
+                                    <param id="0" name="Group name">&quot;(PONG) Falas Ms. Take: VITÓRIA [MsTake]&quot;</param>
+                                    <param id="1" name="State">0</param>
+                                </action>
+                                <action id="-12" name="Set group active" sid="662504626938368" type="System">
+                                    <param id="0" name="Group name">&quot;(PONG) Falas Ms. Take: TUTORIAL&quot;</param>
+                                    <param id="1" name="State">0</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="759209288454764">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="565336997307040" type="System">
+                                    <param id="0" name="Variable">PONG_IntroPassou</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">1</param>
+                                </condition>
+                            </conditions>
+                            <actions />
+                            <sub-events>
+                                <event-block sid="288227304713461">
+                                    <conditions>
+                                        <condition id="0" name="On key pressed" sid="147007627822120" type="Keyboard">
+                                            <param id="0" name="Key">32</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action behavior="8Direction" id="3" name="Set speed" sid="678745127438637" type="pongPlayer1H">
+                                            <param id="0" name="Speed">PONG_VelocidadeJogador</param>
+                                        </action>
+                                        <action behavior="8Direction" id="3" name="Set speed" sid="960897578409968" type="pongPlayer1V">
+                                            <param id="0" name="Speed">PONG_VelocidadeJogador</param>
+                                        </action>
+                                        <action behavior="8Direction" id="3" name="Set speed" sid="609851716281080" type="pongPlayer2H">
+                                            <param id="0" name="Speed">PONG_VelocidadeJogador</param>
+                                        </action>
+                                        <action behavior="8Direction" id="3" name="Set speed" sid="379930861992762" type="pongPlayer2V">
+                                            <param id="0" name="Speed">PONG_VelocidadeJogador</param>
+                                        </action>
+                                        <action behavior="Bullet" id="0" name="Set speed" sid="708761157656790" type="bolaPong">
+                                            <param id="0" name="Speed">PONG_VelocidadeInicialBola</param>
+                                        </action>
+                                        <action behavior="Bullet" id="2" name="Set gravity" sid="946054927061832" type="bolaPong">
+                                            <param id="0" name="Gravity">PONG_GravidadeBola</param>
+                                        </action>
+                                        <action id="-9" name="Set value" sid="486647746826572" type="System">
+                                            <param id="0" name="Variable">PONG_Game</param>
+                                            <param id="1" name="Value">1</param>
+                                        </action>
+                                    </actions>
+                                    <sub-events>
+                                        <event-block sid="546793257248890">
+                                            <conditions>
+                                                <condition id="-14" name="Compare variable" sid="154190218656776" type="System">
+                                                    <param id="0" name="Variable">PONG_Modo</param>
+                                                    <param id="1" name="Comparison">0</param>
+                                                    <param id="2" name="Value">&quot;1P&quot;</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="-12" name="Set group active" sid="271790784093120" type="System">
+                                                    <param id="0" name="Group name">&quot;(PONG) ControleP1&quot;</param>
+                                                    <param id="1" name="State">1</param>
+                                                </action>
+                                                <action id="-12" name="Set group active" sid="124761133322971" type="System">
+                                                    <param id="0" name="Group name">&quot;(PONG) ControleP2&quot;</param>
+                                                    <param id="1" name="State">0</param>
+                                                </action>
+                                                <action id="-12" name="Set group active" sid="689560293432244" type="System">
+                                                    <param id="0" name="Group name">&quot;(PONG) Bot&quot;</param>
+                                                    <param id="1" name="State">1</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                        <event-block sid="334220042203852">
+                                            <conditions>
+                                                <condition id="-14" name="Compare variable" sid="731051939666350" type="System">
+                                                    <param id="0" name="Variable">PONG_Modo</param>
+                                                    <param id="1" name="Comparison">0</param>
+                                                    <param id="2" name="Value">&quot;2P&quot;</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="-12" name="Set group active" sid="833045015053549" type="System">
+                                                    <param id="0" name="Group name">&quot;(PONG) ControleP1&quot;</param>
+                                                    <param id="1" name="State">1</param>
+                                                </action>
+                                                <action id="-12" name="Set group active" sid="756852502747176" type="System">
+                                                    <param id="0" name="Group name">&quot;(PONG) ControleP2&quot;</param>
+                                                    <param id="1" name="State">1</param>
+                                                </action>
+                                                <action id="-12" name="Set group active" sid="145760059357437" type="System">
+                                                    <param id="0" name="Group name">&quot;(PONG) Bot&quot;</param>
+                                                    <param id="1" name="State">0</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                    </sub-events>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                    </sub-events>
                 </event-block>
                 <event-block sid="833987053321882">
                     <conditions>
@@ -2795,6 +2908,10 @@
                         <action id="5" name="Set web font" sid="751642855549136" type="textoConfigPong">
                             <param id="0" name="Family name">&quot;digitaldiscomedium&quot;</param>
                             <param id="1" name="CSS URL">&quot;digitald.css&quot;</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="910421452096428" type="System">
+                            <param id="0" name="Variable">PONG_IntroPassou</param>
+                            <param id="1" name="Value">0</param>
                         </action>
                         <action id="-12" name="Set group active" sid="748392447233352" type="System">
                             <param id="0" name="Group name">&quot;(PONG) Escolha das opções de configuração&quot;</param>
@@ -2820,98 +2937,10 @@
                             <param id="0" name="Group name">&quot;(PONG) Falas Ms. Take: TUTORIAL&quot;</param>
                             <param id="1" name="State">0</param>
                         </action>
+                        <action id="3" name="Set font size" sid="180179198882931" type="textoFala">
+                            <param id="0" name="Size (pt)">45</param>
+                        </action>
                     </actions>
-                </event-block>
-                <event-block sid="759209288454764">
-                    <conditions>
-                        <condition id="-14" name="Compare variable" sid="565336997307040" type="System">
-                            <param id="0" name="Variable">PONG_IntroPassou</param>
-                            <param id="1" name="Comparison">0</param>
-                            <param id="2" name="Value">1</param>
-                        </condition>
-                    </conditions>
-                    <actions />
-                    <sub-events>
-                        <event-block sid="288227304713461">
-                            <conditions>
-                                <condition id="0" name="On key pressed" sid="147007627822120" type="Keyboard">
-                                    <param id="0" name="Key">32</param>
-                                </condition>
-                            </conditions>
-                            <actions>
-                                <action behavior="8Direction" id="3" name="Set speed" sid="678745127438637" type="pongPlayer1H">
-                                    <param id="0" name="Speed">PONG_VelocidadeJogador</param>
-                                </action>
-                                <action behavior="8Direction" id="3" name="Set speed" sid="960897578409968" type="pongPlayer1V">
-                                    <param id="0" name="Speed">PONG_VelocidadeJogador</param>
-                                </action>
-                                <action behavior="8Direction" id="3" name="Set speed" sid="609851716281080" type="pongPlayer2H">
-                                    <param id="0" name="Speed">PONG_VelocidadeJogador</param>
-                                </action>
-                                <action behavior="8Direction" id="3" name="Set speed" sid="379930861992762" type="pongPlayer2V">
-                                    <param id="0" name="Speed">PONG_VelocidadeJogador</param>
-                                </action>
-                                <action behavior="Bullet" id="0" name="Set speed" sid="708761157656790" type="bolaPong">
-                                    <param id="0" name="Speed">PONG_VelocidadeInicialBola</param>
-                                </action>
-                                <action behavior="Bullet" id="2" name="Set gravity" sid="946054927061832" type="bolaPong">
-                                    <param id="0" name="Gravity">PONG_GravidadeBola</param>
-                                </action>
-                                <action id="-9" name="Set value" sid="486647746826572" type="System">
-                                    <param id="0" name="Variable">PONG_Game</param>
-                                    <param id="1" name="Value">1</param>
-                                </action>
-                            </actions>
-                            <sub-events>
-                                <event-block sid="546793257248890">
-                                    <conditions>
-                                        <condition id="-14" name="Compare variable" sid="154190218656776" type="System">
-                                            <param id="0" name="Variable">PONG_Modo</param>
-                                            <param id="1" name="Comparison">0</param>
-                                            <param id="2" name="Value">&quot;1P&quot;</param>
-                                        </condition>
-                                    </conditions>
-                                    <actions>
-                                        <action id="-12" name="Set group active" sid="271790784093120" type="System">
-                                            <param id="0" name="Group name">&quot;(PONG) ControleP1&quot;</param>
-                                            <param id="1" name="State">1</param>
-                                        </action>
-                                        <action id="-12" name="Set group active" sid="124761133322971" type="System">
-                                            <param id="0" name="Group name">&quot;(PONG) ControleP2&quot;</param>
-                                            <param id="1" name="State">0</param>
-                                        </action>
-                                        <action id="-12" name="Set group active" sid="689560293432244" type="System">
-                                            <param id="0" name="Group name">&quot;(PONG) Bot&quot;</param>
-                                            <param id="1" name="State">1</param>
-                                        </action>
-                                    </actions>
-                                </event-block>
-                                <event-block sid="334220042203852">
-                                    <conditions>
-                                        <condition id="-14" name="Compare variable" sid="731051939666350" type="System">
-                                            <param id="0" name="Variable">PONG_Modo</param>
-                                            <param id="1" name="Comparison">0</param>
-                                            <param id="2" name="Value">&quot;2P&quot;</param>
-                                        </condition>
-                                    </conditions>
-                                    <actions>
-                                        <action id="-12" name="Set group active" sid="833045015053549" type="System">
-                                            <param id="0" name="Group name">&quot;(PONG) ControleP1&quot;</param>
-                                            <param id="1" name="State">1</param>
-                                        </action>
-                                        <action id="-12" name="Set group active" sid="756852502747176" type="System">
-                                            <param id="0" name="Group name">&quot;(PONG) ControleP2&quot;</param>
-                                            <param id="1" name="State">1</param>
-                                        </action>
-                                        <action id="-12" name="Set group active" sid="145760059357437" type="System">
-                                            <param id="0" name="Group name">&quot;(PONG) Bot&quot;</param>
-                                            <param id="1" name="State">0</param>
-                                        </action>
-                                    </actions>
-                                </event-block>
-                            </sub-events>
-                        </event-block>
-                    </sub-events>
                 </event-block>
                 <event-group description="" sid="671341526587385" title="(PONG) Alteração das configurações">
                     <sub-events>
