@@ -806,29 +806,86 @@
                                     <param id="0" name="X">9</param>
                                     <param id="1" name="Value">&quot;quando estiver pronto aperte espaço...&quot;</param>
                                 </action>
-                                <action id="2" name="Set at X" sid="320927856255232" type="arrayOpcoesConfigPong">
+                            </actions>
+                        </event-block>
+                        <event-block sid="267061619832451">
+                            <conditions>
+                                <condition id="-2" name="On start of layout" sid="441507205463141" type="System" />
+                            </conditions>
+                            <actions>
+                                <action id="2" name="Set at X" sid="327510455369879" type="arrayOpcoesConfigPong">
                                     <param id="0" name="X">10</param>
                                     <param id="1" name="Value">&quot;parabééééééns!!!&quot;</param>
                                 </action>
-                                <action id="2" name="Set at X" sid="569030939033909" type="arrayOpcoesConfigPong">
+                                <action id="2" name="Set at X" sid="566250825994601" type="arrayOpcoesConfigPong">
                                     <param id="0" name="X">11</param>
                                     <param id="1" name="Value">&quot;o(a) jogador(a) 1 ganhou :3&quot;</param>
                                 </action>
-                                <action id="2" name="Set at X" sid="767339905844472" type="arrayOpcoesConfigPong">
+                                <action id="2" name="Set at X" sid="548998310206196" type="arrayOpcoesConfigPong">
                                     <param id="0" name="X">12</param>
                                     <param id="1" name="Value">&quot;você jogou muito bem :3&quot;</param>
                                 </action>
-                                <action id="2" name="Set at X" sid="148239628856422" type="arrayOpcoesConfigPong">
+                                <action id="2" name="Set at X" sid="657518283792239" type="arrayOpcoesConfigPong">
                                     <param id="0" name="X">13</param>
                                     <param id="1" name="Value">&quot;é um campeão :D&quot;</param>
                                 </action>
-                                <action id="2" name="Set at X" sid="615401250177328" type="arrayOpcoesConfigPong">
+                                <action id="2" name="Set at X" sid="109648038552488" type="arrayOpcoesConfigPong">
                                     <param id="0" name="X">14</param>
-                                    <param id="1" name="Value">&quot;espero que tenha se divertido :3&quot;</param>
+                                    <param id="1" name="Value">&quot;aperte espaço para selecionar a sua opção :3&quot;</param>
                                 </action>
-                                <action id="2" name="Set at X" sid="231128607928225" type="arrayOpcoesConfigPong">
+                            </actions>
+                        </event-block>
+                        <event-block sid="294031828979033">
+                            <conditions>
+                                <condition id="-2" name="On start of layout" sid="478185177420905" type="System" />
+                            </conditions>
+                            <actions>
+                                <action id="2" name="Set at X" sid="783015365397495" type="arrayOpcoesConfigPong">
                                     <param id="0" name="X">15</param>
-                                    <param id="1" name="Value">&quot;se quiser você pode jogar de novo :3&quot;</param>
+                                    <param id="1" name="Value">&quot;ebaaaaaaaa!&quot;</param>
+                                </action>
+                                <action id="2" name="Set at X" sid="857831453300150" type="arrayOpcoesConfigPong">
+                                    <param id="0" name="X">16</param>
+                                    <param id="1" name="Value">&quot;eu venci :3&quot;</param>
+                                </action>
+                                <action id="2" name="Set at X" sid="413811681797264" type="arrayOpcoesConfigPong">
+                                    <param id="0" name="X">17</param>
+                                    <param id="1" name="Value">&quot;foi muito divertido :D&quot;</param>
+                                </action>
+                                <action id="2" name="Set at X" sid="489492544160800" type="arrayOpcoesConfigPong">
+                                    <param id="0" name="X">18</param>
+                                    <param id="1" name="Value">&quot;obrigado por jogar comigo &lt;3&quot;</param>
+                                </action>
+                                <action id="2" name="Set at X" sid="860847220378791" type="arrayOpcoesConfigPong">
+                                    <param id="0" name="X">19</param>
+                                    <param id="1" name="Value">&quot;aperte espaço para selecionar a sua opção :3&quot;</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="126678470609209">
+                            <conditions>
+                                <condition id="-2" name="On start of layout" sid="720428738946735" type="System" />
+                            </conditions>
+                            <actions>
+                                <action id="2" name="Set at X" sid="496456181288104" type="arrayOpcoesConfigPong">
+                                    <param id="0" name="X">20</param>
+                                    <param id="1" name="Value">&quot;ah...&quot;</param>
+                                </action>
+                                <action id="2" name="Set at X" sid="450545411275635" type="arrayOpcoesConfigPong">
+                                    <param id="0" name="X">21</param>
+                                    <param id="1" name="Value">&quot;o jogador 2 ganhou&quot;</param>
+                                </action>
+                                <action id="2" name="Set at X" sid="660778890409056" type="arrayOpcoesConfigPong">
+                                    <param id="0" name="X">22</param>
+                                    <param id="1" name="Value">&quot;parabéns&quot;</param>
+                                </action>
+                                <action id="2" name="Set at X" sid="299282151778416" type="arrayOpcoesConfigPong">
+                                    <param id="0" name="X">23</param>
+                                    <param id="1" name="Value">&quot;você tem sorte...&quot;</param>
+                                </action>
+                                <action id="2" name="Set at X" sid="711847912333721" type="arrayOpcoesConfigPong">
+                                    <param id="0" name="X">24</param>
+                                    <param id="1" name="Value">&quot;aperte espaço para selecionar a sua opção...&quot;</param>
                                 </action>
                             </actions>
                         </event-block>

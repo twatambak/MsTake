@@ -3,7 +3,6 @@
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>Eventos Pong</name>
     <events>
-        <variable constant="0" name="Resetar" sid="685023136662194" static="0" type="number">0</variable>
         <include>Inserção das frases</include>
         <variable constant="0" name="PONG_IntroPassou" sid="451649737935773" static="0" type="number">0</variable>
         <variable constant="0" name="PONG_OpcoesConfig" sid="727147722702645" static="0" type="number">1</variable>
@@ -23,6 +22,8 @@
         <variable comment="Valor de aumento da velocidade da bola. Padrão: 1" constant="0" name="PONG_AumentoVelocidadeBola" sid="129338439913716" static="0" type="number">1</variable>
         <variable comment="Gravidade da bola. Padrão: 80" constant="0" name="PONG_GravidadeBola" sid="922047400360833" static="0" type="number">80</variable>
         <comment>Variáveis de configuração do jogo</comment>
+        <variable constant="0" name="PONG_Vitoria" sid="247320456290249" static="0" type="number">0</variable>
+        <variable constant="0" name="PONG_Reseta" sid="685023136662194" static="0" type="number">0</variable>
         <variable constant="0" name="PONG_Game" sid="270921344390799" static="0" type="number">0</variable>
         <variable constant="0" name="PONG_Modo" sid="890010206849738" static="0" type="text">1P</variable>
         <variable constant="0" name="PONG_TempoFrase" sid="546874850709013" static="0" type="number">0</variable>
@@ -469,7 +470,12 @@
                                     <param id="2" name="Value">1</param>
                                 </condition>
                             </conditions>
-                            <actions />
+                            <actions>
+                                <action id="-9" name="Set value" sid="225143357869653" type="System">
+                                    <param id="0" name="Variable">PONG_Game</param>
+                                    <param id="1" name="Value">0</param>
+                                </action>
+                            </actions>
                         </event-block>
                         <event-block sid="263221766497237">
                             <conditions>
@@ -479,7 +485,38 @@
                                     <param id="2" name="Value">2</param>
                                 </condition>
                             </conditions>
-                            <actions />
+                            <actions>
+                                <action id="-9" name="Set value" sid="832185435593690" type="System">
+                                    <param id="0" name="Variable">PONG_Game</param>
+                                    <param id="1" name="Value">0</param>
+                                </action>
+                                <action id="-9" name="Set value" sid="345638510586422" type="System">
+                                    <param id="0" name="Variable">PONG_Vitoria</param>
+                                    <param id="1" name="Value">1</param>
+                                </action>
+                            </actions>
+                            <sub-events>
+                                <event-block sid="241585458295582">
+                                    <conditions>
+                                        <condition id="-14" name="Compare variable" sid="370807532035425" type="System">
+                                            <param id="0" name="Variable">PONG_Modo</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">&quot;1P&quot;</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions />
+                                </event-block>
+                                <event-block sid="291469438883540">
+                                    <conditions>
+                                        <condition id="-14" name="Compare variable" sid="845094864797398" type="System">
+                                            <param id="0" name="Variable">PONG_Modo</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">&quot;2P&quot;</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions />
+                                </event-block>
+                            </sub-events>
                         </event-block>
                     </sub-events>
                 </event-block>
@@ -1778,7 +1815,7 @@
                                             <param id="1" name="Value">1</param>
                                         </action>
                                         <action id="-9" name="Set value" sid="922327243934412" type="System">
-                                            <param id="0" name="Variable">Resetar</param>
+                                            <param id="0" name="Variable">PONG_Reseta</param>
                                             <param id="1" name="Value">1</param>
                                         </action>
                                         <action id="-12" name="Set group active" sid="866261207985945" type="System">
@@ -1786,6 +1823,828 @@
                                             <param id="1" name="State">1</param>
                                         </action>
                                         <action id="0" name="Set text" sid="619313336876675" type="textoFala">
+                                            <param id="0" name="Text">&quot;&quot;</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-group>
+                    </sub-events>
+                </event-group>
+                <event-group description="" sid="735012783972045" title="(PONG) Falas Ms. Take: VITÓRIA [P1]">
+                    <sub-events>
+                        <event-group description="" sid="628540702547121" title="(PONG) Falas Ms. Take: VITÓRIA [P1] 1">
+                            <sub-events>
+                                <event-block sid="379971314958877">
+                                    <conditions>
+                                        <condition id="-6" name="Every X seconds" sid="282967448288995" type="System">
+                                            <param id="0" name="Interval (seconds)">0.08</param>
+                                        </condition>
+                                        <condition id="-14" name="Compare variable" sid="257051671434643" type="System">
+                                            <param id="0" name="Variable">PONG_TempoFrase</param>
+                                            <param id="1" name="Comparison">2</param>
+                                            <param id="2" name="Value">(len(arrayOpcoesConfigPong.At(10)) * 0.08) + 0.3</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-9" name="Set value" sid="385713718596648" type="System">
+                                            <param id="0" name="Variable">PONG_FalaMsTakeOPCOES</param>
+                                            <param id="1" name="Value">arrayOpcoesConfigPong.At(10)</param>
+                                        </action>
+                                        <action id="0" name="Set text" sid="370166220702810" type="textoFala">
+                                            <param id="0" name="Text">left(PONG_FalaMsTakeOPCOES,len(textoFala.Text)+1)</param>
+                                        </action>
+                                        <action id="4" name="Set font color" sid="320750787879911" type="textoFala">
+                                            <param id="0" name="Color">rgb(0, 255, 255)</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="966333282908070">
+                                    <conditions>
+                                        <condition id="-14" name="Compare variable" sid="365141713371176" type="System">
+                                            <param id="0" name="Variable">PONG_TempoFrase</param>
+                                            <param id="1" name="Comparison">4</param>
+                                            <param id="2" name="Value">(len(arrayOpcoesConfigPong.At(10)) * 0.08) + 0.3</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-9" name="Set value" sid="900628383216320" type="System">
+                                            <param id="0" name="Variable">PONG_TempoFrase</param>
+                                            <param id="1" name="Value">0</param>
+                                        </action>
+                                        <action id="-12" name="Set group active" sid="505724345541341" type="System">
+                                            <param id="0" name="Group name">&quot;(PONG) Falas Ms. Take: VITÓRIA [P1] 1&quot;</param>
+                                            <param id="1" name="State">0</param>
+                                        </action>
+                                        <action id="-12" name="Set group active" sid="341872694525936" type="System">
+                                            <param id="0" name="Group name">&quot;(PONG) Falas Ms. Take: VITÓRIA [P1] 2&quot;</param>
+                                            <param id="1" name="State">1</param>
+                                        </action>
+                                        <action id="0" name="Set text" sid="873830938963301" type="textoFala">
+                                            <param id="0" name="Text">&quot;&quot;</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-group>
+                        <event-group description="" inactive="1" sid="273193119778145" title="(PONG) Falas Ms. Take: VITÓRIA [P1] 2">
+                            <sub-events>
+                                <event-block sid="935346555120190">
+                                    <conditions>
+                                        <condition id="-6" name="Every X seconds" sid="675355765767144" type="System">
+                                            <param id="0" name="Interval (seconds)">0.08</param>
+                                        </condition>
+                                        <condition id="-14" name="Compare variable" sid="113730353126232" type="System">
+                                            <param id="0" name="Variable">PONG_TempoFrase</param>
+                                            <param id="1" name="Comparison">2</param>
+                                            <param id="2" name="Value">(len(arrayOpcoesConfigPong.At(11)) * 0.08) + 0.3</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-9" name="Set value" sid="922528898452606" type="System">
+                                            <param id="0" name="Variable">PONG_FalaMsTakeOPCOES</param>
+                                            <param id="1" name="Value">arrayOpcoesConfigPong.At(11)</param>
+                                        </action>
+                                        <action id="0" name="Set text" sid="419687838181686" type="textoFala">
+                                            <param id="0" name="Text">left(PONG_FalaMsTakeOPCOES,len(textoFala.Text)+1)</param>
+                                        </action>
+                                        <action id="4" name="Set font color" sid="907861178834325" type="textoFala">
+                                            <param id="0" name="Color">rgb(0, 255, 255)</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="102380595063929">
+                                    <conditions>
+                                        <condition id="-14" name="Compare variable" sid="189347603862002" type="System">
+                                            <param id="0" name="Variable">PONG_TempoFrase</param>
+                                            <param id="1" name="Comparison">4</param>
+                                            <param id="2" name="Value">(len(arrayOpcoesConfigPong.At(11)) * 0.08) + 0.3</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-9" name="Set value" sid="307828177459988" type="System">
+                                            <param id="0" name="Variable">PONG_TempoFrase</param>
+                                            <param id="1" name="Value">0</param>
+                                        </action>
+                                        <action id="-12" name="Set group active" sid="880543586182864" type="System">
+                                            <param id="0" name="Group name">&quot;(PONG) Falas Ms. Take: VITÓRIA [P1] 2&quot;</param>
+                                            <param id="1" name="State">0</param>
+                                        </action>
+                                        <action id="-12" name="Set group active" sid="369847920019714" type="System">
+                                            <param id="0" name="Group name">&quot;(PONG) Falas Ms. Take: VITÓRIA [P1] 3&quot;</param>
+                                            <param id="1" name="State">1</param>
+                                        </action>
+                                        <action id="0" name="Set text" sid="886866716514547" type="textoFala">
+                                            <param id="0" name="Text">&quot;&quot;</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-group>
+                        <event-group description="" inactive="1" sid="634446677616266" title="(PONG) Falas Ms. Take: VITÓRIA [P1] 3">
+                            <sub-events>
+                                <event-block sid="522439033964305">
+                                    <conditions>
+                                        <condition id="-6" name="Every X seconds" sid="759795330256209" type="System">
+                                            <param id="0" name="Interval (seconds)">0.08</param>
+                                        </condition>
+                                        <condition id="-14" name="Compare variable" sid="935342255742071" type="System">
+                                            <param id="0" name="Variable">PONG_TempoFrase</param>
+                                            <param id="1" name="Comparison">2</param>
+                                            <param id="2" name="Value">(len(arrayOpcoesConfigPong.At(12)) * 0.08) + 0.3</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-9" name="Set value" sid="369477144642529" type="System">
+                                            <param id="0" name="Variable">PONG_FalaMsTakeOPCOES</param>
+                                            <param id="1" name="Value">arrayOpcoesConfigPong.At(12)</param>
+                                        </action>
+                                        <action id="0" name="Set text" sid="434429131790856" type="textoFala">
+                                            <param id="0" name="Text">left(PONG_FalaMsTakeOPCOES,len(textoFala.Text)+1)</param>
+                                        </action>
+                                        <action id="4" name="Set font color" sid="519093327595924" type="textoFala">
+                                            <param id="0" name="Color">rgb(0, 255, 255)</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="440104334129961">
+                                    <conditions>
+                                        <condition id="-14" name="Compare variable" sid="471001749091644" type="System">
+                                            <param id="0" name="Variable">PONG_TempoFrase</param>
+                                            <param id="1" name="Comparison">4</param>
+                                            <param id="2" name="Value">(len(arrayOpcoesConfigPong.At(12)) * 0.08) + 0.3</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-9" name="Set value" sid="835501541226777" type="System">
+                                            <param id="0" name="Variable">PONG_TempoFrase</param>
+                                            <param id="1" name="Value">0</param>
+                                        </action>
+                                        <action id="-12" name="Set group active" sid="202431866754232" type="System">
+                                            <param id="0" name="Group name">&quot;(PONG) Falas Ms. Take: VITÓRIA [P1] 3&quot;</param>
+                                            <param id="1" name="State">0</param>
+                                        </action>
+                                        <action id="-12" name="Set group active" sid="156680355974613" type="System">
+                                            <param id="0" name="Group name">&quot;(PONG) Falas Ms. Take: VITÓRIA [P1] 4&quot;</param>
+                                            <param id="1" name="State">1</param>
+                                        </action>
+                                        <action id="0" name="Set text" sid="569490610476502" type="textoFala">
+                                            <param id="0" name="Text">&quot;&quot;</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-group>
+                        <event-group description="" inactive="1" sid="528754541253648" title="(PONG) Falas Ms. Take: VITÓRIA [P1] 4">
+                            <sub-events>
+                                <event-block sid="418423687634504">
+                                    <conditions>
+                                        <condition id="-6" name="Every X seconds" sid="324946557714333" type="System">
+                                            <param id="0" name="Interval (seconds)">0.08</param>
+                                        </condition>
+                                        <condition id="-14" name="Compare variable" sid="528302166986693" type="System">
+                                            <param id="0" name="Variable">PONG_TempoFrase</param>
+                                            <param id="1" name="Comparison">2</param>
+                                            <param id="2" name="Value">(len(arrayOpcoesConfigPong.At(13)) * 0.08) + 0.3</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-9" name="Set value" sid="394384692727943" type="System">
+                                            <param id="0" name="Variable">PONG_FalaMsTakeOPCOES</param>
+                                            <param id="1" name="Value">arrayOpcoesConfigPong.At(13)</param>
+                                        </action>
+                                        <action id="0" name="Set text" sid="810818821024975" type="textoFala">
+                                            <param id="0" name="Text">left(PONG_FalaMsTakeOPCOES,len(textoFala.Text)+1)</param>
+                                        </action>
+                                        <action id="4" name="Set font color" sid="386928680355642" type="textoFala">
+                                            <param id="0" name="Color">rgb(0, 255, 255)</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="920687281446047">
+                                    <conditions>
+                                        <condition id="-14" name="Compare variable" sid="833584934876142" type="System">
+                                            <param id="0" name="Variable">PONG_TempoFrase</param>
+                                            <param id="1" name="Comparison">4</param>
+                                            <param id="2" name="Value">(len(arrayOpcoesConfigPong.At(13)) * 0.08) + 0.3</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-9" name="Set value" sid="456851374131637" type="System">
+                                            <param id="0" name="Variable">PONG_TempoFrase</param>
+                                            <param id="1" name="Value">0</param>
+                                        </action>
+                                        <action id="-12" name="Set group active" sid="606420139127631" type="System">
+                                            <param id="0" name="Group name">&quot;(PONG) Falas Ms. Take: VITÓRIA [P1] 4&quot;</param>
+                                            <param id="1" name="State">0</param>
+                                        </action>
+                                        <action id="-12" name="Set group active" sid="471175444814521" type="System">
+                                            <param id="0" name="Group name">&quot;(PONG) Falas Ms. Take: VITÓRIA [P1] 5&quot;</param>
+                                            <param id="1" name="State">1</param>
+                                        </action>
+                                        <action id="0" name="Set text" sid="413654540730332" type="textoFala">
+                                            <param id="0" name="Text">&quot;&quot;</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-group>
+                        <event-group description="" inactive="1" sid="853454219567760" title="(PONG) Falas Ms. Take: VITÓRIA [P1] 5">
+                            <sub-events>
+                                <event-block sid="546616261612272">
+                                    <conditions>
+                                        <condition id="-6" name="Every X seconds" sid="768055520174322" type="System">
+                                            <param id="0" name="Interval (seconds)">0.08</param>
+                                        </condition>
+                                        <condition id="-14" name="Compare variable" sid="593012415047125" type="System">
+                                            <param id="0" name="Variable">PONG_TempoFrase</param>
+                                            <param id="1" name="Comparison">2</param>
+                                            <param id="2" name="Value">(len(arrayOpcoesConfigPong.At(14)) * 0.08) + 0.3</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-9" name="Set value" sid="507716889454021" type="System">
+                                            <param id="0" name="Variable">PONG_FalaMsTakeOPCOES</param>
+                                            <param id="1" name="Value">arrayOpcoesConfigPong.At(14)</param>
+                                        </action>
+                                        <action id="0" name="Set text" sid="474687350767980" type="textoFala">
+                                            <param id="0" name="Text">left(PONG_FalaMsTakeOPCOES,len(textoFala.Text)+1)</param>
+                                        </action>
+                                        <action id="4" name="Set font color" sid="583652757930792" type="textoFala">
+                                            <param id="0" name="Color">rgb(0, 255, 255)</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="413821968810773">
+                                    <conditions>
+                                        <condition id="-14" name="Compare variable" sid="881429109961016" type="System">
+                                            <param id="0" name="Variable">PONG_TempoFrase</param>
+                                            <param id="1" name="Comparison">4</param>
+                                            <param id="2" name="Value">(len(arrayOpcoesConfigPong.At(14)) * 0.08) + 0.3</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-9" name="Set value" sid="123011991134056" type="System">
+                                            <param id="0" name="Variable">PONG_TempoFrase</param>
+                                            <param id="1" name="Value">0</param>
+                                        </action>
+                                        <action id="-12" name="Set group active" sid="966464246903855" type="System">
+                                            <param id="0" name="Group name">&quot;(PONG) Falas Ms. Take: VITÓRIA [P1] 5&quot;</param>
+                                            <param id="1" name="State">0</param>
+                                        </action>
+                                        <action id="-12" name="Set group active" sid="117918346149046" type="System">
+                                            <param id="0" name="Group name">&quot;(PONG) Falas Ms. Take: VITÓRIA [P1] 1&quot;</param>
+                                            <param id="1" name="State">1</param>
+                                        </action>
+                                        <action id="0" name="Set text" sid="637126386710898" type="textoFala">
+                                            <param id="0" name="Text">&quot;&quot;</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-group>
+                    </sub-events>
+                </event-group>
+                <event-group description="" sid="625005637150487" title="(PONG) Falas Ms. Take: VITÓRIA [MsTake]">
+                    <sub-events>
+                        <event-group description="" sid="895685708338876" title="(PONG) Falas Ms. Take: VITÓRIA [MsTake] 1">
+                            <sub-events>
+                                <event-block sid="791957341125817">
+                                    <conditions>
+                                        <condition id="-6" name="Every X seconds" sid="429120050610016" type="System">
+                                            <param id="0" name="Interval (seconds)">0.08</param>
+                                        </condition>
+                                        <condition id="-14" name="Compare variable" sid="579561393742871" type="System">
+                                            <param id="0" name="Variable">PONG_TempoFrase</param>
+                                            <param id="1" name="Comparison">2</param>
+                                            <param id="2" name="Value">(len(arrayOpcoesConfigPong.At(15)) * 0.08) + 0.3</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-9" name="Set value" sid="648850985573900" type="System">
+                                            <param id="0" name="Variable">PONG_FalaMsTakeOPCOES</param>
+                                            <param id="1" name="Value">arrayOpcoesConfigPong.At(15)</param>
+                                        </action>
+                                        <action id="0" name="Set text" sid="533843745730411" type="textoFala">
+                                            <param id="0" name="Text">left(PONG_FalaMsTakeOPCOES,len(textoFala.Text)+1)</param>
+                                        </action>
+                                        <action id="4" name="Set font color" sid="679901265451435" type="textoFala">
+                                            <param id="0" name="Color">rgb(0, 255, 255)</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="198845617334742">
+                                    <conditions>
+                                        <condition id="-14" name="Compare variable" sid="241848747201600" type="System">
+                                            <param id="0" name="Variable">PONG_TempoFrase</param>
+                                            <param id="1" name="Comparison">4</param>
+                                            <param id="2" name="Value">(len(arrayOpcoesConfigPong.At(15)) * 0.08) + 0.3</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-9" name="Set value" sid="530294225383190" type="System">
+                                            <param id="0" name="Variable">PONG_TempoFrase</param>
+                                            <param id="1" name="Value">0</param>
+                                        </action>
+                                        <action id="-12" name="Set group active" sid="551414322285121" type="System">
+                                            <param id="0" name="Group name">&quot;(PONG) Falas Ms. Take: VITÓRIA [MsTake] 1&quot;</param>
+                                            <param id="1" name="State">0</param>
+                                        </action>
+                                        <action id="-12" name="Set group active" sid="770385293135018" type="System">
+                                            <param id="0" name="Group name">&quot;(PONG) Falas Ms. Take: VITÓRIA [MsTake] 2&quot;</param>
+                                            <param id="1" name="State">1</param>
+                                        </action>
+                                        <action id="0" name="Set text" sid="687870337211573" type="textoFala">
+                                            <param id="0" name="Text">&quot;&quot;</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-group>
+                        <event-group description="" inactive="1" sid="623766275155581" title="(PONG) Falas Ms. Take: VITÓRIA [MsTake] 2">
+                            <sub-events>
+                                <event-block sid="627895765805059">
+                                    <conditions>
+                                        <condition id="-6" name="Every X seconds" sid="594773746362769" type="System">
+                                            <param id="0" name="Interval (seconds)">0.08</param>
+                                        </condition>
+                                        <condition id="-14" name="Compare variable" sid="122312701919515" type="System">
+                                            <param id="0" name="Variable">PONG_TempoFrase</param>
+                                            <param id="1" name="Comparison">2</param>
+                                            <param id="2" name="Value">(len(arrayOpcoesConfigPong.At(16)) * 0.08) + 0.3</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-9" name="Set value" sid="131461878983248" type="System">
+                                            <param id="0" name="Variable">PONG_FalaMsTakeOPCOES</param>
+                                            <param id="1" name="Value">arrayOpcoesConfigPong.At(16)</param>
+                                        </action>
+                                        <action id="0" name="Set text" sid="455676246587566" type="textoFala">
+                                            <param id="0" name="Text">left(PONG_FalaMsTakeOPCOES,len(textoFala.Text)+1)</param>
+                                        </action>
+                                        <action id="4" name="Set font color" sid="391558203921328" type="textoFala">
+                                            <param id="0" name="Color">rgb(0, 255, 255)</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="794707378773749">
+                                    <conditions>
+                                        <condition id="-14" name="Compare variable" sid="427518712101580" type="System">
+                                            <param id="0" name="Variable">PONG_TempoFrase</param>
+                                            <param id="1" name="Comparison">4</param>
+                                            <param id="2" name="Value">(len(arrayOpcoesConfigPong.At(16)) * 0.08) + 0.3</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-9" name="Set value" sid="447190174644169" type="System">
+                                            <param id="0" name="Variable">PONG_TempoFrase</param>
+                                            <param id="1" name="Value">0</param>
+                                        </action>
+                                        <action id="-12" name="Set group active" sid="474694870204898" type="System">
+                                            <param id="0" name="Group name">&quot;(PONG) Falas Ms. Take: VITÓRIA [MsTake] 2&quot;</param>
+                                            <param id="1" name="State">0</param>
+                                        </action>
+                                        <action id="-12" name="Set group active" sid="535815157305362" type="System">
+                                            <param id="0" name="Group name">&quot;(PONG) Falas Ms. Take: VITÓRIA [MsTake] 3&quot;</param>
+                                            <param id="1" name="State">1</param>
+                                        </action>
+                                        <action id="0" name="Set text" sid="151579174503795" type="textoFala">
+                                            <param id="0" name="Text">&quot;&quot;</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-group>
+                        <event-group description="" inactive="1" sid="988670999298579" title="(PONG) Falas Ms. Take: VITÓRIA [MsTake] 3">
+                            <sub-events>
+                                <event-block sid="230313588342764">
+                                    <conditions>
+                                        <condition id="-6" name="Every X seconds" sid="956340780733454" type="System">
+                                            <param id="0" name="Interval (seconds)">0.08</param>
+                                        </condition>
+                                        <condition id="-14" name="Compare variable" sid="899302655058559" type="System">
+                                            <param id="0" name="Variable">PONG_TempoFrase</param>
+                                            <param id="1" name="Comparison">2</param>
+                                            <param id="2" name="Value">(len(arrayOpcoesConfigPong.At(17)) * 0.08) + 0.3</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-9" name="Set value" sid="573685862951128" type="System">
+                                            <param id="0" name="Variable">PONG_FalaMsTakeOPCOES</param>
+                                            <param id="1" name="Value">arrayOpcoesConfigPong.At(17)</param>
+                                        </action>
+                                        <action id="0" name="Set text" sid="127065020883777" type="textoFala">
+                                            <param id="0" name="Text">left(PONG_FalaMsTakeOPCOES,len(textoFala.Text)+1)</param>
+                                        </action>
+                                        <action id="4" name="Set font color" sid="997765908871715" type="textoFala">
+                                            <param id="0" name="Color">rgb(0, 255, 255)</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="617889655876940">
+                                    <conditions>
+                                        <condition id="-14" name="Compare variable" sid="965708308236845" type="System">
+                                            <param id="0" name="Variable">PONG_TempoFrase</param>
+                                            <param id="1" name="Comparison">4</param>
+                                            <param id="2" name="Value">(len(arrayOpcoesConfigPong.At(17)) * 0.08) + 0.3</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-9" name="Set value" sid="830602849882066" type="System">
+                                            <param id="0" name="Variable">PONG_TempoFrase</param>
+                                            <param id="1" name="Value">0</param>
+                                        </action>
+                                        <action id="-12" name="Set group active" sid="323107269273537" type="System">
+                                            <param id="0" name="Group name">&quot;(PONG) Falas Ms. Take: VITÓRIA [MsTake] 3&quot;</param>
+                                            <param id="1" name="State">0</param>
+                                        </action>
+                                        <action id="-12" name="Set group active" sid="488951265700716" type="System">
+                                            <param id="0" name="Group name">&quot;(PONG) Falas Ms. Take: VITÓRIA [MsTake] 4&quot;</param>
+                                            <param id="1" name="State">1</param>
+                                        </action>
+                                        <action id="0" name="Set text" sid="662126719762169" type="textoFala">
+                                            <param id="0" name="Text">&quot;&quot;</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-group>
+                        <event-group description="" inactive="1" sid="614363615098661" title="(PONG) Falas Ms. Take: VITÓRIA [MsTake] 4">
+                            <sub-events>
+                                <event-block sid="485066608628423">
+                                    <conditions>
+                                        <condition id="-6" name="Every X seconds" sid="346061942447556" type="System">
+                                            <param id="0" name="Interval (seconds)">0.08</param>
+                                        </condition>
+                                        <condition id="-14" name="Compare variable" sid="736356002394727" type="System">
+                                            <param id="0" name="Variable">PONG_TempoFrase</param>
+                                            <param id="1" name="Comparison">2</param>
+                                            <param id="2" name="Value">(len(arrayOpcoesConfigPong.At(18)) * 0.08) + 0.3</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-9" name="Set value" sid="690544938087304" type="System">
+                                            <param id="0" name="Variable">PONG_FalaMsTakeOPCOES</param>
+                                            <param id="1" name="Value">arrayOpcoesConfigPong.At(18)</param>
+                                        </action>
+                                        <action id="0" name="Set text" sid="598822597524593" type="textoFala">
+                                            <param id="0" name="Text">left(PONG_FalaMsTakeOPCOES,len(textoFala.Text)+1)</param>
+                                        </action>
+                                        <action id="4" name="Set font color" sid="219343487888381" type="textoFala">
+                                            <param id="0" name="Color">rgb(0, 255, 255)</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="327113020975725">
+                                    <conditions>
+                                        <condition id="-14" name="Compare variable" sid="845509794746371" type="System">
+                                            <param id="0" name="Variable">PONG_TempoFrase</param>
+                                            <param id="1" name="Comparison">4</param>
+                                            <param id="2" name="Value">(len(arrayOpcoesConfigPong.At(18)) * 0.08) + 0.3</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-9" name="Set value" sid="773424773176600" type="System">
+                                            <param id="0" name="Variable">PONG_TempoFrase</param>
+                                            <param id="1" name="Value">0</param>
+                                        </action>
+                                        <action id="-12" name="Set group active" sid="612995281938781" type="System">
+                                            <param id="0" name="Group name">&quot;(PONG) Falas Ms. Take: VITÓRIA [MsTake] 4&quot;</param>
+                                            <param id="1" name="State">0</param>
+                                        </action>
+                                        <action id="-12" name="Set group active" sid="607025198291050" type="System">
+                                            <param id="0" name="Group name">&quot;(PONG) Falas Ms. Take: VITÓRIA [MsTake] 5&quot;</param>
+                                            <param id="1" name="State">1</param>
+                                        </action>
+                                        <action id="0" name="Set text" sid="258941926880902" type="textoFala">
+                                            <param id="0" name="Text">&quot;&quot;</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-group>
+                        <event-group description="" inactive="1" sid="991682957563174" title="(PONG) Falas Ms. Take: VITÓRIA [MsTake] 5">
+                            <sub-events>
+                                <event-block sid="139915092242601">
+                                    <conditions>
+                                        <condition id="-6" name="Every X seconds" sid="489703835989542" type="System">
+                                            <param id="0" name="Interval (seconds)">0.08</param>
+                                        </condition>
+                                        <condition id="-14" name="Compare variable" sid="905248260191208" type="System">
+                                            <param id="0" name="Variable">PONG_TempoFrase</param>
+                                            <param id="1" name="Comparison">2</param>
+                                            <param id="2" name="Value">(len(arrayOpcoesConfigPong.At(19)) * 0.08) + 0.3</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-9" name="Set value" sid="766642596181530" type="System">
+                                            <param id="0" name="Variable">PONG_FalaMsTakeOPCOES</param>
+                                            <param id="1" name="Value">arrayOpcoesConfigPong.At(19)</param>
+                                        </action>
+                                        <action id="0" name="Set text" sid="612719769570271" type="textoFala">
+                                            <param id="0" name="Text">left(PONG_FalaMsTakeOPCOES,len(textoFala.Text)+1)</param>
+                                        </action>
+                                        <action id="4" name="Set font color" sid="963798944763686" type="textoFala">
+                                            <param id="0" name="Color">rgb(0, 255, 255)</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="241815077380683">
+                                    <conditions>
+                                        <condition id="-14" name="Compare variable" sid="510521833012252" type="System">
+                                            <param id="0" name="Variable">PONG_TempoFrase</param>
+                                            <param id="1" name="Comparison">4</param>
+                                            <param id="2" name="Value">(len(arrayOpcoesConfigPong.At(19)) * 0.08) + 0.3</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-9" name="Set value" sid="590915779194941" type="System">
+                                            <param id="0" name="Variable">PONG_TempoFrase</param>
+                                            <param id="1" name="Value">0</param>
+                                        </action>
+                                        <action id="-12" name="Set group active" sid="192899645988494" type="System">
+                                            <param id="0" name="Group name">&quot;(PONG) Falas Ms. Take: VITÓRIA [MsTake] 5&quot;</param>
+                                            <param id="1" name="State">0</param>
+                                        </action>
+                                        <action id="-12" name="Set group active" sid="645958424422223" type="System">
+                                            <param id="0" name="Group name">&quot;(PONG) Falas Ms. Take: VITÓRIA [MsTake] 1&quot;</param>
+                                            <param id="1" name="State">1</param>
+                                        </action>
+                                        <action id="0" name="Set text" sid="719327435364471" type="textoFala">
+                                            <param id="0" name="Text">&quot;&quot;</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-group>
+                    </sub-events>
+                </event-group>
+                <event-group description="" sid="268625351420694" title="(PONG) Falas Ms. Take: VITÓRIA [P2]">
+                    <sub-events>
+                        <event-group description="" sid="879262966559425" title="(PONG) Falas Ms. Take: VITÓRIA [P2] 1">
+                            <sub-events>
+                                <event-block sid="163111365525381">
+                                    <conditions>
+                                        <condition id="-6" name="Every X seconds" sid="334195190766084" type="System">
+                                            <param id="0" name="Interval (seconds)">0.08</param>
+                                        </condition>
+                                        <condition id="-14" name="Compare variable" sid="142253145763927" type="System">
+                                            <param id="0" name="Variable">PONG_TempoFrase</param>
+                                            <param id="1" name="Comparison">2</param>
+                                            <param id="2" name="Value">(len(arrayOpcoesConfigPong.At(20)) * 0.08) + 0.3</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-9" name="Set value" sid="428894727287420" type="System">
+                                            <param id="0" name="Variable">PONG_FalaMsTakeOPCOES</param>
+                                            <param id="1" name="Value">arrayOpcoesConfigPong.At(20)</param>
+                                        </action>
+                                        <action id="0" name="Set text" sid="747454957574165" type="textoFala">
+                                            <param id="0" name="Text">left(PONG_FalaMsTakeOPCOES,len(textoFala.Text)+1)</param>
+                                        </action>
+                                        <action id="4" name="Set font color" sid="322027064806199" type="textoFala">
+                                            <param id="0" name="Color">rgb(0, 255, 255)</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="524912593595264">
+                                    <conditions>
+                                        <condition id="-14" name="Compare variable" sid="313225064214879" type="System">
+                                            <param id="0" name="Variable">PONG_TempoFrase</param>
+                                            <param id="1" name="Comparison">4</param>
+                                            <param id="2" name="Value">(len(arrayOpcoesConfigPong.At(20)) * 0.08) + 0.3</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-9" name="Set value" sid="978890864505643" type="System">
+                                            <param id="0" name="Variable">PONG_TempoFrase</param>
+                                            <param id="1" name="Value">0</param>
+                                        </action>
+                                        <action id="-12" name="Set group active" sid="195238923927623" type="System">
+                                            <param id="0" name="Group name">&quot;(PONG) Falas Ms. Take: VITÓRIA [P2] 1&quot;</param>
+                                            <param id="1" name="State">0</param>
+                                        </action>
+                                        <action id="-12" name="Set group active" sid="560120984279741" type="System">
+                                            <param id="0" name="Group name">&quot;(PONG) Falas Ms. Take: VITÓRIA [P2] 2&quot;</param>
+                                            <param id="1" name="State">1</param>
+                                        </action>
+                                        <action id="0" name="Set text" sid="367988391685717" type="textoFala">
+                                            <param id="0" name="Text">&quot;&quot;</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-group>
+                        <event-group description="" inactive="1" sid="654236153228530" title="(PONG) Falas Ms. Take: VITÓRIA [P2] 2">
+                            <sub-events>
+                                <event-block sid="169708868444738">
+                                    <conditions>
+                                        <condition id="-6" name="Every X seconds" sid="132360317886790" type="System">
+                                            <param id="0" name="Interval (seconds)">0.08</param>
+                                        </condition>
+                                        <condition id="-14" name="Compare variable" sid="297550449049862" type="System">
+                                            <param id="0" name="Variable">PONG_TempoFrase</param>
+                                            <param id="1" name="Comparison">2</param>
+                                            <param id="2" name="Value">(len(arrayOpcoesConfigPong.At(21)) * 0.08) + 0.3</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-9" name="Set value" sid="580305816326267" type="System">
+                                            <param id="0" name="Variable">PONG_FalaMsTakeOPCOES</param>
+                                            <param id="1" name="Value">arrayOpcoesConfigPong.At(21)</param>
+                                        </action>
+                                        <action id="0" name="Set text" sid="598385491253992" type="textoFala">
+                                            <param id="0" name="Text">left(PONG_FalaMsTakeOPCOES,len(textoFala.Text)+1)</param>
+                                        </action>
+                                        <action id="4" name="Set font color" sid="264214673875098" type="textoFala">
+                                            <param id="0" name="Color">rgb(0, 255, 255)</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="525202164451394">
+                                    <conditions>
+                                        <condition id="-14" name="Compare variable" sid="870652794088481" type="System">
+                                            <param id="0" name="Variable">PONG_TempoFrase</param>
+                                            <param id="1" name="Comparison">4</param>
+                                            <param id="2" name="Value">(len(arrayOpcoesConfigPong.At(21)) * 0.08) + 0.3</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-9" name="Set value" sid="424738115285879" type="System">
+                                            <param id="0" name="Variable">PONG_TempoFrase</param>
+                                            <param id="1" name="Value">0</param>
+                                        </action>
+                                        <action id="-12" name="Set group active" sid="277814162207597" type="System">
+                                            <param id="0" name="Group name">&quot;(PONG) Falas Ms. Take: VITÓRIA [P2] 2&quot;</param>
+                                            <param id="1" name="State">0</param>
+                                        </action>
+                                        <action id="-12" name="Set group active" sid="169446087758113" type="System">
+                                            <param id="0" name="Group name">&quot;(PONG) Falas Ms. Take: VITÓRIA [P2] 3&quot;</param>
+                                            <param id="1" name="State">1</param>
+                                        </action>
+                                        <action id="0" name="Set text" sid="482801579741958" type="textoFala">
+                                            <param id="0" name="Text">&quot;&quot;</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-group>
+                        <event-group description="" inactive="1" sid="717896395856315" title="(PONG) Falas Ms. Take: VITÓRIA [P2] 3">
+                            <sub-events>
+                                <event-block sid="507580926771007">
+                                    <conditions>
+                                        <condition id="-6" name="Every X seconds" sid="690923947801869" type="System">
+                                            <param id="0" name="Interval (seconds)">0.08</param>
+                                        </condition>
+                                        <condition id="-14" name="Compare variable" sid="528543970216180" type="System">
+                                            <param id="0" name="Variable">PONG_TempoFrase</param>
+                                            <param id="1" name="Comparison">2</param>
+                                            <param id="2" name="Value">(len(arrayOpcoesConfigPong.At(22)) * 0.08) + 0.3</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-9" name="Set value" sid="442072730098553" type="System">
+                                            <param id="0" name="Variable">PONG_FalaMsTakeOPCOES</param>
+                                            <param id="1" name="Value">arrayOpcoesConfigPong.At(22)</param>
+                                        </action>
+                                        <action id="0" name="Set text" sid="156284635053198" type="textoFala">
+                                            <param id="0" name="Text">left(PONG_FalaMsTakeOPCOES,len(textoFala.Text)+1)</param>
+                                        </action>
+                                        <action id="4" name="Set font color" sid="781232166123689" type="textoFala">
+                                            <param id="0" name="Color">rgb(0, 255, 255)</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="919971240352250">
+                                    <conditions>
+                                        <condition id="-14" name="Compare variable" sid="286844907603547" type="System">
+                                            <param id="0" name="Variable">PONG_TempoFrase</param>
+                                            <param id="1" name="Comparison">4</param>
+                                            <param id="2" name="Value">(len(arrayOpcoesConfigPong.At(22)) * 0.08) + 0.3</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-9" name="Set value" sid="555360050166546" type="System">
+                                            <param id="0" name="Variable">PONG_TempoFrase</param>
+                                            <param id="1" name="Value">0</param>
+                                        </action>
+                                        <action id="-12" name="Set group active" sid="779624292547657" type="System">
+                                            <param id="0" name="Group name">&quot;(PONG) Falas Ms. Take: VITÓRIA [P2] 3&quot;</param>
+                                            <param id="1" name="State">0</param>
+                                        </action>
+                                        <action id="-12" name="Set group active" sid="225381381164224" type="System">
+                                            <param id="0" name="Group name">&quot;(PONG) Falas Ms. Take: VITÓRIA [P2] 4&quot;</param>
+                                            <param id="1" name="State">1</param>
+                                        </action>
+                                        <action id="0" name="Set text" sid="669928463616914" type="textoFala">
+                                            <param id="0" name="Text">&quot;&quot;</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-group>
+                        <event-group description="" inactive="1" sid="131924347412507" title="(PONG) Falas Ms. Take: VITÓRIA [P2] 4">
+                            <sub-events>
+                                <event-block sid="678751958375571">
+                                    <conditions>
+                                        <condition id="-6" name="Every X seconds" sid="891635455356122" type="System">
+                                            <param id="0" name="Interval (seconds)">0.08</param>
+                                        </condition>
+                                        <condition id="-14" name="Compare variable" sid="363450089821739" type="System">
+                                            <param id="0" name="Variable">PONG_TempoFrase</param>
+                                            <param id="1" name="Comparison">2</param>
+                                            <param id="2" name="Value">(len(arrayOpcoesConfigPong.At(23)) * 0.08) + 0.3</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-9" name="Set value" sid="333033958844978" type="System">
+                                            <param id="0" name="Variable">PONG_FalaMsTakeOPCOES</param>
+                                            <param id="1" name="Value">arrayOpcoesConfigPong.At(23)</param>
+                                        </action>
+                                        <action id="0" name="Set text" sid="675691042928349" type="textoFala">
+                                            <param id="0" name="Text">left(PONG_FalaMsTakeOPCOES,len(textoFala.Text)+1)</param>
+                                        </action>
+                                        <action id="4" name="Set font color" sid="938590426339342" type="textoFala">
+                                            <param id="0" name="Color">rgb(0, 255, 255)</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="873091625501545">
+                                    <conditions>
+                                        <condition id="-14" name="Compare variable" sid="350707194132150" type="System">
+                                            <param id="0" name="Variable">PONG_TempoFrase</param>
+                                            <param id="1" name="Comparison">4</param>
+                                            <param id="2" name="Value">(len(arrayOpcoesConfigPong.At(23)) * 0.08) + 0.3</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-9" name="Set value" sid="662398306074890" type="System">
+                                            <param id="0" name="Variable">PONG_TempoFrase</param>
+                                            <param id="1" name="Value">0</param>
+                                        </action>
+                                        <action id="-12" name="Set group active" sid="113076932654521" type="System">
+                                            <param id="0" name="Group name">&quot;(PONG) Falas Ms. Take: VITÓRIA [P2] 4&quot;</param>
+                                            <param id="1" name="State">0</param>
+                                        </action>
+                                        <action id="-12" name="Set group active" sid="499615707331655" type="System">
+                                            <param id="0" name="Group name">&quot;(PONG) Falas Ms. Take: VITÓRIA [P2] 5&quot;</param>
+                                            <param id="1" name="State">1</param>
+                                        </action>
+                                        <action id="0" name="Set text" sid="760990270607278" type="textoFala">
+                                            <param id="0" name="Text">&quot;&quot;</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-group>
+                        <event-group description="" inactive="1" sid="739055881038360" title="(PONG) Falas Ms. Take: VITÓRIA [P2] 5">
+                            <sub-events>
+                                <event-block sid="644120936119093">
+                                    <conditions>
+                                        <condition id="-6" name="Every X seconds" sid="583884650201305" type="System">
+                                            <param id="0" name="Interval (seconds)">0.08</param>
+                                        </condition>
+                                        <condition id="-14" name="Compare variable" sid="216662504509555" type="System">
+                                            <param id="0" name="Variable">PONG_TempoFrase</param>
+                                            <param id="1" name="Comparison">2</param>
+                                            <param id="2" name="Value">(len(arrayOpcoesConfigPong.At(24)) * 0.08) + 0.3</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-9" name="Set value" sid="878752843662923" type="System">
+                                            <param id="0" name="Variable">PONG_FalaMsTakeOPCOES</param>
+                                            <param id="1" name="Value">arrayOpcoesConfigPong.At(24)</param>
+                                        </action>
+                                        <action id="0" name="Set text" sid="832381688636342" type="textoFala">
+                                            <param id="0" name="Text">left(PONG_FalaMsTakeOPCOES,len(textoFala.Text)+1)</param>
+                                        </action>
+                                        <action id="4" name="Set font color" sid="890343534706536" type="textoFala">
+                                            <param id="0" name="Color">rgb(0, 255, 255)</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="237931180862493">
+                                    <conditions>
+                                        <condition id="-14" name="Compare variable" sid="706718916931900" type="System">
+                                            <param id="0" name="Variable">PONG_TempoFrase</param>
+                                            <param id="1" name="Comparison">4</param>
+                                            <param id="2" name="Value">(len(arrayOpcoesConfigPong.At(24)) * 0.08) + 0.3</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-9" name="Set value" sid="731293945557451" type="System">
+                                            <param id="0" name="Variable">PONG_TempoFrase</param>
+                                            <param id="1" name="Value">0</param>
+                                        </action>
+                                        <action id="-12" name="Set group active" sid="396341110625771" type="System">
+                                            <param id="0" name="Group name">&quot;(PONG) Falas Ms. Take: VITÓRIA [P2] 5&quot;</param>
+                                            <param id="1" name="State">0</param>
+                                        </action>
+                                        <action id="-12" name="Set group active" sid="729251172978606" type="System">
+                                            <param id="0" name="Group name">&quot;(PONG) Falas Ms. Take: VITÓRIA [P2] 1&quot;</param>
+                                            <param id="1" name="State">1</param>
+                                        </action>
+                                        <action id="0" name="Set text" sid="949707796035693" type="textoFala">
                                             <param id="0" name="Text">&quot;&quot;</param>
                                         </action>
                                     </actions>
@@ -1831,24 +2690,29 @@
                             <param id="0" name="Layer">&quot;OpcoesJogo&quot;</param>
                             <param id="1" name="Visibility">0</param>
                         </action>
+                        <action id="-4" name="Set layer visible" sid="260126312349861" type="System">
+                            <param id="0" name="Layer">&quot;TextoVitoria&quot;</param>
+                            <param id="1" name="Visibility">0</param>
+                        </action>
                         <action id="-12" name="Set group active" sid="375258178027746" type="System">
                             <param id="0" name="Group name">&quot;(PONG) Falas Ms. Take: OPÇÕES&quot;</param>
+                            <param id="1" name="State">0</param>
+                        </action>
+                        <action id="-12" name="Set group active" sid="401497532251285" type="System">
+                            <param id="0" name="Group name">&quot;(PONG) Falas Ms. Take: VITÓRIA [P1]&quot;</param>
+                            <param id="1" name="State">0</param>
+                        </action>
+                        <action id="-12" name="Set group active" sid="524198097058654" type="System">
+                            <param id="0" name="Group name">&quot;(PONG) Falas Ms. Take: VITÓRIA [P2]&quot;</param>
+                            <param id="1" name="State">0</param>
+                        </action>
+                        <action id="-12" name="Set group active" sid="335846692248821" type="System">
+                            <param id="0" name="Group name">&quot;(PONG) Falas Ms. Take: VITÓRIA [MsTake]&quot;</param>
                             <param id="1" name="State">0</param>
                         </action>
                         <action id="-12" name="Set group active" sid="287517253751391" type="System">
                             <param id="0" name="Group name">&quot;(PONG) Falas Ms. Take: TUTORIAL&quot;</param>
                             <param id="1" name="State">1</param>
-                        </action>
-                    </actions>
-                </event-block>
-                <event-block sid="670445156335032">
-                    <conditions>
-                        <condition id="-22" name="Else" sid="402930189439414" type="System" />
-                    </conditions>
-                    <actions>
-                        <action id="5" name="Set web font" sid="257250145150703" type="textoConfigPong">
-                            <param id="0" name="Family name">&quot;digitaldiscomedium&quot;</param>
-                            <param id="1" name="CSS URL">&quot;digitald.css&quot;</param>
                         </action>
                     </actions>
                 </event-block>
@@ -1881,17 +2745,80 @@
                             <param id="0" name="Layer">&quot;MsTakeTutorial&quot;</param>
                             <param id="1" name="Visibility">0</param>
                         </action>
+                        <action id="-4" name="Set layer visible" sid="132294932569520" type="System">
+                            <param id="0" name="Layer">&quot;OpcoesJogo&quot;</param>
+                            <param id="1" name="Visibility">1</param>
+                        </action>
+                        <action id="-4" name="Set layer visible" sid="132973801963486" type="System">
+                            <param id="0" name="Layer">&quot;TextoVitoria&quot;</param>
+                            <param id="1" name="Visibility">0</param>
+                        </action>
                         <action id="-12" name="Set group active" sid="580709524089318" type="System">
                             <param id="0" name="Group name">&quot;(PONG) Falas Ms. Take: OPÇÕES&quot;</param>
                             <param id="1" name="State">1</param>
+                        </action>
+                        <action id="-12" name="Set group active" sid="723508549406444" type="System">
+                            <param id="0" name="Group name">&quot;(PONG) Falas Ms. Take: VITÓRIA [P1]&quot;</param>
+                            <param id="1" name="State">0</param>
+                        </action>
+                        <action id="-12" name="Set group active" sid="222526533571755" type="System">
+                            <param id="0" name="Group name">&quot;(PONG) Falas Ms. Take: VITÓRIA [P2]&quot;</param>
+                            <param id="1" name="State">0</param>
+                        </action>
+                        <action id="-12" name="Set group active" sid="680178728495145" type="System">
+                            <param id="0" name="Group name">&quot;(PONG) Falas Ms. Take: VITÓRIA [MsTake]&quot;</param>
+                            <param id="1" name="State">0</param>
                         </action>
                         <action id="-12" name="Set group active" sid="662504626938368" type="System">
                             <param id="0" name="Group name">&quot;(PONG) Falas Ms. Take: TUTORIAL&quot;</param>
                             <param id="1" name="State">0</param>
                         </action>
-                        <action id="-4" name="Set layer visible" sid="132294932569520" type="System">
+                    </actions>
+                </event-block>
+                <event-block sid="833987053321882">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="946565203834252" type="System">
+                            <param id="0" name="Variable">PONG_Vitoria</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="5" name="Set web font" sid="992342156166195" type="textoFala">
+                            <param id="0" name="Family name">&quot;babybluemedium&quot;</param>
+                            <param id="1" name="CSS URL">&quot;babyblue.css&quot;</param>
+                        </action>
+                        <action id="5" name="Set web font" sid="869531885887334" type="textoInfo">
+                            <param id="0" name="Family name">&quot;digitaldiscomedium&quot;</param>
+                            <param id="1" name="CSS URL">&quot;digitald.css&quot;</param>
+                        </action>
+                        <action id="5" name="Set web font" sid="751642855549136" type="textoConfigPong">
+                            <param id="0" name="Family name">&quot;digitaldiscomedium&quot;</param>
+                            <param id="1" name="CSS URL">&quot;digitald.css&quot;</param>
+                        </action>
+                        <action id="-12" name="Set group active" sid="748392447233352" type="System">
+                            <param id="0" name="Group name">&quot;(PONG) Escolha das opções de configuração&quot;</param>
+                            <param id="1" name="State">0</param>
+                        </action>
+                        <action id="-4" name="Set layer visible" sid="825819945977485" type="System">
+                            <param id="0" name="Layer">&quot;MsTakeTutorial&quot;</param>
+                            <param id="1" name="Visibility">0</param>
+                        </action>
+                        <action id="-4" name="Set layer visible" sid="235648966668913" type="System">
                             <param id="0" name="Layer">&quot;OpcoesJogo&quot;</param>
+                            <param id="1" name="Visibility">0</param>
+                        </action>
+                        <action id="-4" name="Set layer visible" sid="800559734575477" type="System">
+                            <param id="0" name="Layer">&quot;TextoVitoria&quot;</param>
                             <param id="1" name="Visibility">1</param>
+                        </action>
+                        <action id="-12" name="Set group active" sid="479911867609450" type="System">
+                            <param id="0" name="Group name">&quot;(PONG) Falas Ms. Take: OPÇÕES&quot;</param>
+                            <param id="1" name="State">0</param>
+                        </action>
+                        <action id="-12" name="Set group active" sid="186047194632511" type="System">
+                            <param id="0" name="Group name">&quot;(PONG) Falas Ms. Take: TUTORIAL&quot;</param>
+                            <param id="1" name="State">0</param>
                         </action>
                     </actions>
                 </event-block>
@@ -2583,14 +3510,14 @@
                 <event-block sid="664595920990291">
                     <conditions>
                         <condition id="-14" name="Compare variable" sid="225073186479741" type="System">
-                            <param id="0" name="Variable">Resetar</param>
+                            <param id="0" name="Variable">PONG_Reseta</param>
                             <param id="1" name="Comparison">0</param>
                             <param id="2" name="Value">1</param>
                         </condition>
                     </conditions>
                     <actions>
                         <action id="-9" name="Set value" sid="834200183281884" type="System">
-                            <param id="0" name="Variable">Resetar</param>
+                            <param id="0" name="Variable">PONG_Reseta</param>
                             <param id="1" name="Value">0</param>
                         </action>
                         <action id="-12" name="Set group active" sid="108129592767950" type="System">
