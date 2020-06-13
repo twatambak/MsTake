@@ -2734,6 +2734,10 @@
                                     <param id="0" name="Group name">&quot;(PONG) Falas Ms. Take: TUTORIAL&quot;</param>
                                     <param id="1" name="State">1</param>
                                 </action>
+                                <action id="-12" name="Set group active" sid="946219766449390" type="System">
+                                    <param id="0" name="Group name">&quot;(PONG) Menu de fim de jogo&quot;</param>
+                                    <param id="1" name="State">0</param>
+                                </action>
                             </actions>
                         </event-block>
                         <event-block sid="520816703949455">
@@ -2791,6 +2795,10 @@
                                 </action>
                                 <action id="-12" name="Set group active" sid="662504626938368" type="System">
                                     <param id="0" name="Group name">&quot;(PONG) Falas Ms. Take: TUTORIAL&quot;</param>
+                                    <param id="1" name="State">0</param>
+                                </action>
+                                <action id="-12" name="Set group active" sid="814810829035775" type="System">
+                                    <param id="0" name="Group name">&quot;(PONG) Menu de fim de jogo&quot;</param>
                                     <param id="1" name="State">0</param>
                                 </action>
                             </actions>
@@ -2939,6 +2947,10 @@
                         </action>
                         <action id="3" name="Set font size" sid="180179198882931" type="textoFala">
                             <param id="0" name="Size (pt)">45</param>
+                        </action>
+                        <action id="-12" name="Set group active" sid="939067250792009" type="System">
+                            <param id="0" name="Group name">&quot;(PONG) Menu de fim de jogo&quot;</param>
+                            <param id="1" name="State">1</param>
                         </action>
                     </actions>
                 </event-block>
@@ -3380,153 +3392,165 @@
                 </event-group>
                 <event-group description="" sid="749831382211341" title="(PONG) Escolha das opções de configuração">
                     <sub-events>
-                        <event-block sid="338983029503294">
+                        <event-block sid="759561088431413">
                             <conditions>
-                                <condition id="0" name="On key pressed" sid="610106192843157" type="Keyboard">
-                                    <param id="0" name="Key">40</param>
+                                <condition id="-14" name="Compare variable" sid="276255272078015" type="System">
+                                    <param id="0" name="Variable">PONG_Vitoria</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">0</param>
                                 </condition>
                             </conditions>
                             <actions />
                             <sub-events>
-                                <event-block sid="363168834591404">
+                                <event-block sid="928977732305253">
                                     <conditions>
-                                        <condition id="-14" name="Compare variable" sid="325589475932780" type="System">
-                                            <param id="0" name="Variable">PONG_OpcoesConfig</param>
-                                            <param id="1" name="Comparison">2</param>
-                                            <param id="2" name="Value">6</param>
-                                        </condition>
+                                        <condition id="-1" name="Every tick" sid="871006682408942" type="System" />
                                     </conditions>
-                                    <actions>
-                                        <action id="-10" name="Add to" sid="445420743472914" type="System">
-                                            <param id="0" name="Variable">PONG_OpcoesConfig</param>
-                                            <param id="1" name="Value">1</param>
-                                        </action>
-                                    </actions>
+                                    <actions />
+                                    <sub-events>
+                                        <event-block sid="576114745515093">
+                                            <conditions>
+                                                <condition id="-7" name="Compare instance variable" sid="240332889109359" type="textoConfigPong">
+                                                    <param id="0" name="Instance variable">ID</param>
+                                                    <param id="1" name="Comparison">0</param>
+                                                    <param id="2" name="Value">PONG_OpcoesConfig</param>
+                                                </condition>
+                                                <condition id="-7" name="Compare instance variable" sid="140955297709637" type="textoInfo">
+                                                    <param id="0" name="Instance variable">ID</param>
+                                                    <param id="1" name="Comparison">0</param>
+                                                    <param id="2" name="Value">PONG_OpcoesConfig</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="-28" name="Set effect parameter" sid="455628546567103" type="textoConfigPong">
+                                                    <param id="0" name="Effect">&quot;SetColor&quot;</param>
+                                                    <param id="1" name="Parameter index">0</param>
+                                                    <param id="2" name="Value">100</param>
+                                                </action>
+                                                <action id="-28" name="Set effect parameter" sid="346782800327622" type="textoConfigPong">
+                                                    <param id="0" name="Effect">&quot;SetColor&quot;</param>
+                                                    <param id="1" name="Parameter index">1</param>
+                                                    <param id="2" name="Value">0</param>
+                                                </action>
+                                                <action id="-28" name="Set effect parameter" sid="517721527072711" type="textoConfigPong">
+                                                    <param id="0" name="Effect">&quot;SetColor&quot;</param>
+                                                    <param id="1" name="Parameter index">2</param>
+                                                    <param id="2" name="Value">90</param>
+                                                </action>
+                                                <action id="-28" name="Set effect parameter" sid="308529161659634" type="textoInfo">
+                                                    <param id="0" name="Effect">&quot;SetColor&quot;</param>
+                                                    <param id="1" name="Parameter index">0</param>
+                                                    <param id="2" name="Value">100</param>
+                                                </action>
+                                                <action id="-28" name="Set effect parameter" sid="961446580509964" type="textoInfo">
+                                                    <param id="0" name="Effect">&quot;SetColor&quot;</param>
+                                                    <param id="1" name="Parameter index">1</param>
+                                                    <param id="2" name="Value">0</param>
+                                                </action>
+                                                <action id="-28" name="Set effect parameter" sid="840642536787608" type="textoInfo">
+                                                    <param id="0" name="Effect">&quot;SetColor&quot;</param>
+                                                    <param id="1" name="Parameter index">2</param>
+                                                    <param id="2" name="Value">90</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                        <event-block sid="281660109192843">
+                                            <conditions>
+                                                <condition id="-7" inverted="1" name="Compare instance variable" sid="743776364035522" type="textoConfigPong">
+                                                    <param id="0" name="Instance variable">ID</param>
+                                                    <param id="1" name="Comparison">0</param>
+                                                    <param id="2" name="Value">PONG_OpcoesConfig</param>
+                                                </condition>
+                                                <condition id="-7" inverted="1" name="Compare instance variable" sid="142961498477556" type="textoInfo">
+                                                    <param id="0" name="Instance variable">ID</param>
+                                                    <param id="1" name="Comparison">0</param>
+                                                    <param id="2" name="Value">PONG_OpcoesConfig</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="-28" name="Set effect parameter" sid="443236352522826" type="textoConfigPong">
+                                                    <param id="0" name="Effect">&quot;SetColor&quot;</param>
+                                                    <param id="1" name="Parameter index">0</param>
+                                                    <param id="2" name="Value">50</param>
+                                                </action>
+                                                <action id="-28" name="Set effect parameter" sid="813673673721835" type="textoConfigPong">
+                                                    <param id="0" name="Effect">&quot;SetColor&quot;</param>
+                                                    <param id="1" name="Parameter index">1</param>
+                                                    <param id="2" name="Value">90</param>
+                                                </action>
+                                                <action id="-28" name="Set effect parameter" sid="544750901960082" type="textoConfigPong">
+                                                    <param id="0" name="Effect">&quot;SetColor&quot;</param>
+                                                    <param id="1" name="Parameter index">2</param>
+                                                    <param id="2" name="Value">0</param>
+                                                </action>
+                                                <action id="-28" name="Set effect parameter" sid="477877131363559" type="textoInfo">
+                                                    <param id="0" name="Effect">&quot;SetColor&quot;</param>
+                                                    <param id="1" name="Parameter index">0</param>
+                                                    <param id="2" name="Value">50</param>
+                                                </action>
+                                                <action id="-28" name="Set effect parameter" sid="211473586036642" type="textoInfo">
+                                                    <param id="0" name="Effect">&quot;SetColor&quot;</param>
+                                                    <param id="1" name="Parameter index">1</param>
+                                                    <param id="2" name="Value">90</param>
+                                                </action>
+                                                <action id="-28" name="Set effect parameter" sid="544326882230762" type="textoInfo">
+                                                    <param id="0" name="Effect">&quot;SetColor&quot;</param>
+                                                    <param id="1" name="Parameter index">2</param>
+                                                    <param id="2" name="Value">0</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                    </sub-events>
                                 </event-block>
-                            </sub-events>
-                        </event-block>
-                        <event-block sid="388534373538076">
-                            <conditions>
-                                <condition id="0" name="On key pressed" sid="248154772409777" type="Keyboard">
-                                    <param id="0" name="Key">38</param>
-                                </condition>
-                            </conditions>
-                            <actions />
-                            <sub-events>
-                                <event-block sid="457770420009299">
+                                <event-block sid="338983029503294">
                                     <conditions>
-                                        <condition id="-14" name="Compare variable" sid="876446105633224" type="System">
-                                            <param id="0" name="Variable">PONG_OpcoesConfig</param>
-                                            <param id="1" name="Comparison">4</param>
-                                            <param id="2" name="Value">1</param>
+                                        <condition id="0" name="On key pressed" sid="610106192843157" type="Keyboard">
+                                            <param id="0" name="Key">40</param>
                                         </condition>
                                     </conditions>
-                                    <actions>
-                                        <action id="-11" name="Subtract from" sid="573580745006321" type="System">
-                                            <param id="0" name="Variable">PONG_OpcoesConfig</param>
-                                            <param id="1" name="Value">1</param>
-                                        </action>
-                                    </actions>
+                                    <actions />
+                                    <sub-events>
+                                        <event-block sid="363168834591404">
+                                            <conditions>
+                                                <condition id="-14" name="Compare variable" sid="325589475932780" type="System">
+                                                    <param id="0" name="Variable">PONG_OpcoesConfig</param>
+                                                    <param id="1" name="Comparison">2</param>
+                                                    <param id="2" name="Value">6</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="-10" name="Add to" sid="445420743472914" type="System">
+                                                    <param id="0" name="Variable">PONG_OpcoesConfig</param>
+                                                    <param id="1" name="Value">1</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                    </sub-events>
                                 </event-block>
-                            </sub-events>
-                        </event-block>
-                        <event-block sid="928977732305253">
-                            <conditions>
-                                <condition id="-1" name="Every tick" sid="871006682408942" type="System" />
-                            </conditions>
-                            <actions />
-                            <sub-events>
-                                <event-block sid="576114745515093">
+                                <event-block sid="388534373538076">
                                     <conditions>
-                                        <condition id="-7" name="Compare instance variable" sid="240332889109359" type="textoConfigPong">
-                                            <param id="0" name="Instance variable">ID</param>
-                                            <param id="1" name="Comparison">0</param>
-                                            <param id="2" name="Value">PONG_OpcoesConfig</param>
-                                        </condition>
-                                        <condition id="-7" name="Compare instance variable" sid="140955297709637" type="textoInfo">
-                                            <param id="0" name="Instance variable">ID</param>
-                                            <param id="1" name="Comparison">0</param>
-                                            <param id="2" name="Value">PONG_OpcoesConfig</param>
+                                        <condition id="0" name="On key pressed" sid="248154772409777" type="Keyboard">
+                                            <param id="0" name="Key">38</param>
                                         </condition>
                                     </conditions>
-                                    <actions>
-                                        <action id="-28" name="Set effect parameter" sid="455628546567103" type="textoConfigPong">
-                                            <param id="0" name="Effect">&quot;SetColor&quot;</param>
-                                            <param id="1" name="Parameter index">0</param>
-                                            <param id="2" name="Value">100</param>
-                                        </action>
-                                        <action id="-28" name="Set effect parameter" sid="346782800327622" type="textoConfigPong">
-                                            <param id="0" name="Effect">&quot;SetColor&quot;</param>
-                                            <param id="1" name="Parameter index">1</param>
-                                            <param id="2" name="Value">0</param>
-                                        </action>
-                                        <action id="-28" name="Set effect parameter" sid="517721527072711" type="textoConfigPong">
-                                            <param id="0" name="Effect">&quot;SetColor&quot;</param>
-                                            <param id="1" name="Parameter index">2</param>
-                                            <param id="2" name="Value">90</param>
-                                        </action>
-                                        <action id="-28" name="Set effect parameter" sid="308529161659634" type="textoInfo">
-                                            <param id="0" name="Effect">&quot;SetColor&quot;</param>
-                                            <param id="1" name="Parameter index">0</param>
-                                            <param id="2" name="Value">100</param>
-                                        </action>
-                                        <action id="-28" name="Set effect parameter" sid="961446580509964" type="textoInfo">
-                                            <param id="0" name="Effect">&quot;SetColor&quot;</param>
-                                            <param id="1" name="Parameter index">1</param>
-                                            <param id="2" name="Value">0</param>
-                                        </action>
-                                        <action id="-28" name="Set effect parameter" sid="840642536787608" type="textoInfo">
-                                            <param id="0" name="Effect">&quot;SetColor&quot;</param>
-                                            <param id="1" name="Parameter index">2</param>
-                                            <param id="2" name="Value">90</param>
-                                        </action>
-                                    </actions>
-                                </event-block>
-                                <event-block sid="281660109192843">
-                                    <conditions>
-                                        <condition id="-7" inverted="1" name="Compare instance variable" sid="743776364035522" type="textoConfigPong">
-                                            <param id="0" name="Instance variable">ID</param>
-                                            <param id="1" name="Comparison">0</param>
-                                            <param id="2" name="Value">PONG_OpcoesConfig</param>
-                                        </condition>
-                                        <condition id="-7" inverted="1" name="Compare instance variable" sid="142961498477556" type="textoInfo">
-                                            <param id="0" name="Instance variable">ID</param>
-                                            <param id="1" name="Comparison">0</param>
-                                            <param id="2" name="Value">PONG_OpcoesConfig</param>
-                                        </condition>
-                                    </conditions>
-                                    <actions>
-                                        <action id="-28" name="Set effect parameter" sid="443236352522826" type="textoConfigPong">
-                                            <param id="0" name="Effect">&quot;SetColor&quot;</param>
-                                            <param id="1" name="Parameter index">0</param>
-                                            <param id="2" name="Value">50</param>
-                                        </action>
-                                        <action id="-28" name="Set effect parameter" sid="813673673721835" type="textoConfigPong">
-                                            <param id="0" name="Effect">&quot;SetColor&quot;</param>
-                                            <param id="1" name="Parameter index">1</param>
-                                            <param id="2" name="Value">90</param>
-                                        </action>
-                                        <action id="-28" name="Set effect parameter" sid="544750901960082" type="textoConfigPong">
-                                            <param id="0" name="Effect">&quot;SetColor&quot;</param>
-                                            <param id="1" name="Parameter index">2</param>
-                                            <param id="2" name="Value">0</param>
-                                        </action>
-                                        <action id="-28" name="Set effect parameter" sid="477877131363559" type="textoInfo">
-                                            <param id="0" name="Effect">&quot;SetColor&quot;</param>
-                                            <param id="1" name="Parameter index">0</param>
-                                            <param id="2" name="Value">50</param>
-                                        </action>
-                                        <action id="-28" name="Set effect parameter" sid="211473586036642" type="textoInfo">
-                                            <param id="0" name="Effect">&quot;SetColor&quot;</param>
-                                            <param id="1" name="Parameter index">1</param>
-                                            <param id="2" name="Value">90</param>
-                                        </action>
-                                        <action id="-28" name="Set effect parameter" sid="544326882230762" type="textoInfo">
-                                            <param id="0" name="Effect">&quot;SetColor&quot;</param>
-                                            <param id="1" name="Parameter index">2</param>
-                                            <param id="2" name="Value">0</param>
-                                        </action>
-                                    </actions>
+                                    <actions />
+                                    <sub-events>
+                                        <event-block sid="457770420009299">
+                                            <conditions>
+                                                <condition id="-14" name="Compare variable" sid="876446105633224" type="System">
+                                                    <param id="0" name="Variable">PONG_OpcoesConfig</param>
+                                                    <param id="1" name="Comparison">4</param>
+                                                    <param id="2" name="Value">1</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="-11" name="Subtract from" sid="573580745006321" type="System">
+                                                    <param id="0" name="Variable">PONG_OpcoesConfig</param>
+                                                    <param id="1" name="Value">1</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                    </sub-events>
                                 </event-block>
                             </sub-events>
                         </event-block>
@@ -3555,6 +3579,132 @@
                         </action>
                         <action id="-26" name="Restart layout" sid="779340095759280" type="System" />
                     </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="" sid="896514305016206" title="(PONG) Menu de fim de jogo">
+            <sub-events>
+                <event-block sid="493068681310644">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="949036881697394" type="System">
+                            <param id="0" name="Variable">PONG_Vitoria</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="507460928617639">
+                            <conditions>
+                                <condition id="-1" name="Every tick" sid="909005806671215" type="System" />
+                            </conditions>
+                            <actions />
+                            <sub-events>
+                                <event-block sid="771076657984982">
+                                    <conditions>
+                                        <condition id="-7" name="Compare instance variable" sid="358703987554759" type="textoConfigPong">
+                                            <param id="0" name="Instance variable">ID</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">PONG_OpcoesConfig</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-28" name="Set effect parameter" sid="430185414696338" type="textoConfigPong">
+                                            <param id="0" name="Effect">&quot;SetColor&quot;</param>
+                                            <param id="1" name="Parameter index">0</param>
+                                            <param id="2" name="Value">100</param>
+                                        </action>
+                                        <action id="-28" name="Set effect parameter" sid="206867228982715" type="textoConfigPong">
+                                            <param id="0" name="Effect">&quot;SetColor&quot;</param>
+                                            <param id="1" name="Parameter index">1</param>
+                                            <param id="2" name="Value">0</param>
+                                        </action>
+                                        <action id="-28" name="Set effect parameter" sid="974697544111898" type="textoConfigPong">
+                                            <param id="0" name="Effect">&quot;SetColor&quot;</param>
+                                            <param id="1" name="Parameter index">2</param>
+                                            <param id="2" name="Value">90</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="604374107035240">
+                                    <conditions>
+                                        <condition id="-7" inverted="1" name="Compare instance variable" sid="302458816101212" type="textoConfigPong">
+                                            <param id="0" name="Instance variable">ID</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">PONG_OpcoesConfig</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-28" name="Set effect parameter" sid="690173629538530" type="textoConfigPong">
+                                            <param id="0" name="Effect">&quot;SetColor&quot;</param>
+                                            <param id="1" name="Parameter index">0</param>
+                                            <param id="2" name="Value">50</param>
+                                        </action>
+                                        <action id="-28" name="Set effect parameter" sid="231099142759596" type="textoConfigPong">
+                                            <param id="0" name="Effect">&quot;SetColor&quot;</param>
+                                            <param id="1" name="Parameter index">1</param>
+                                            <param id="2" name="Value">90</param>
+                                        </action>
+                                        <action id="-28" name="Set effect parameter" sid="135870163698101" type="textoConfigPong">
+                                            <param id="0" name="Effect">&quot;SetColor&quot;</param>
+                                            <param id="1" name="Parameter index">2</param>
+                                            <param id="2" name="Value">0</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                        <event-block sid="502485209539187">
+                            <conditions>
+                                <condition id="0" name="On key pressed" sid="570044252079987" type="Keyboard">
+                                    <param id="0" name="Key">40</param>
+                                </condition>
+                            </conditions>
+                            <actions />
+                            <sub-events>
+                                <event-block sid="560121370778015">
+                                    <conditions>
+                                        <condition id="-14" name="Compare variable" sid="375241090183004" type="System">
+                                            <param id="0" name="Variable">PONG_OpcoesConfig</param>
+                                            <param id="1" name="Comparison">2</param>
+                                            <param id="2" name="Value">8</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-10" name="Add to" sid="206798092500128" type="System">
+                                            <param id="0" name="Variable">PONG_OpcoesConfig</param>
+                                            <param id="1" name="Value">1</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                        <event-block sid="873959169552675">
+                            <conditions>
+                                <condition id="0" name="On key pressed" sid="373794333483150" type="Keyboard">
+                                    <param id="0" name="Key">38</param>
+                                </condition>
+                            </conditions>
+                            <actions />
+                            <sub-events>
+                                <event-block sid="572219812629875">
+                                    <conditions>
+                                        <condition id="-14" name="Compare variable" sid="698996497083242" type="System">
+                                            <param id="0" name="Variable">PONG_OpcoesConfig</param>
+                                            <param id="1" name="Comparison">4</param>
+                                            <param id="2" name="Value">7</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-11" name="Subtract from" sid="923759162555383" type="System">
+                                            <param id="0" name="Variable">PONG_OpcoesConfig</param>
+                                            <param id="1" name="Value">1</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                    </sub-events>
                 </event-block>
             </sub-events>
         </event-group>
