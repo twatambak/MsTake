@@ -4,10 +4,14 @@
     <name>Eventos Pong</name>
     <events>
         <include>Inserção das frases</include>
-        <variable constant="0" name="PONG_IntroPassou" sid="451649737935773" static="0" type="number">0</variable>
-        <variable constant="0" name="PONG_OpcoesConfig" sid="727147722702645" static="0" type="number">1</variable>
-        <variable constant="0" name="PONG_FalaMsTakeTUTORIAL" sid="678856850608491" static="0" type="text"></variable>
-        <variable constant="0" name="PONG_FalaMsTakeOPCOES" sid="632233387515446" static="0" type="text"></variable>
+        <comment>Variáveis de controle.</comment>
+        <variable comment="Modo dos jogadores. Opções: [1P] [2P]" constant="0" name="PONG_Modo" sid="890010206849738" static="0" type="text">1P</variable>
+        <variable comment="Opção selecionada nos menus de configuração." constant="0" name="PONG_OpcoesConfig" sid="727147722702645" static="0" type="number">1</variable>
+        <variable comment="Variável de controle que verifica se a intro já passou." constant="0" name="PONG_IntroPassou" sid="451649737935773" static="0" type="number">0</variable>
+        <variable comment="Verifica se o jogo já passou pelo estado de fim de jogo." constant="0" name="PONG_Vitoria" sid="247320456290249" static="0" type="number">0</variable>
+        <variable comment="Variável para reset do layout." constant="0" name="PONG_Reseta" sid="685023136662194" static="0" type="number">0</variable>
+        <variable comment="Controle para verificar se o jogo está em andamento ou não." constant="0" name="PONG_Game" sid="270921344390799" static="0" type="number">0</variable>
+        <variable comment="Tempo de permanência de cada frase." constant="0" name="PONG_TempoFrase" sid="546874850709013" static="0" type="number">0</variable>
         <comment>Variáveis de configuração dos jogadores</comment>
         <variable comment="Velocidade inicial dos jogadores. Padrão: 600" constant="0" name="PONG_VelocidadeJogador" sid="969260652258080" static="0" type="number">600</variable>
         <variable comment="Valor da cor vermelha para o efeito SetColor do player 1. Padrão: 50" constant="0" name="PONG_CorP1Red" sid="529817246038202" static="0" type="number">50</variable>
@@ -21,12 +25,10 @@
         <variable comment="Velocidade inicial da bola. Padrão: 300" constant="0" name="PONG_VelocidadeInicialBola" sid="237712107883033" static="0" type="number">450</variable>
         <variable comment="Valor de aumento da velocidade da bola. Padrão: 1" constant="0" name="PONG_AumentoVelocidadeBola" sid="129338439913716" static="0" type="number">1</variable>
         <variable comment="Gravidade da bola. Padrão: 80" constant="0" name="PONG_GravidadeBola" sid="922047400360833" static="0" type="number">80</variable>
-        <comment>Variáveis de configuração do jogo</comment>
-        <variable constant="0" name="PONG_Vitoria" sid="247320456290249" static="0" type="number">0</variable>
-        <variable constant="0" name="PONG_Reseta" sid="685023136662194" static="0" type="number">0</variable>
-        <variable constant="0" name="PONG_Game" sid="270921344390799" static="0" type="number">0</variable>
-        <variable constant="0" name="PONG_Modo" sid="890010206849738" static="0" type="text">1P</variable>
-        <variable constant="0" name="PONG_TempoFrase" sid="546874850709013" static="0" type="number">0</variable>
+        <comment>Variáveis de falas da Ms. Take.</comment>
+        <variable comment="Variável de texto que recebe as frases da Ms. Take no menu de configurações" constant="0" name="PONG_FalaMsTakeOPCOES" sid="632233387515446" static="0" type="text"></variable>
+        <variable comment="Variável de texto que recebe as frases da Ms. Take no tutorial." constant="0" name="PONG_FalaMsTakeTUTORIAL" sid="678856850608491" static="0" type="text"></variable>
+        <comment>Definição dos valores padrões.</comment>
         <event-block sid="300645809289993">
             <conditions>
                 <condition id="-2" name="On start of layout" sid="885416114390601" type="System" />
@@ -468,6 +470,10 @@
                         <action id="-9" name="Set value" sid="131789826784238" type="System">
                             <param id="0" name="Variable">PONG_Game</param>
                             <param id="1" name="Value">0</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="367696697891392" type="System">
+                            <param id="0" name="Variable">PONG_OpcoesConfig</param>
+                            <param id="1" name="Value">7</param>
                         </action>
                     </actions>
                     <sub-events>
