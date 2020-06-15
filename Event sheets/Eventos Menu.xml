@@ -1464,7 +1464,7 @@
                                                     <param id="0" name="Text">left(MENUPRINCIPAL_FalaMsTakePONG,len(textoFala.Text)+1)</param>
                                                 </action>
                                                 <action id="4" name="Set font color" sid="820006799375315" type="textoFala">
-                                                    <param id="0" name="Color">rgb(146, 255, 20)</param>
+                                                    <param id="0" name="Color">rgb(227, 73, 219)</param>
                                                 </action>
                                             </actions>
                                         </event-block>
@@ -1530,7 +1530,7 @@
                                                     <param id="0" name="Text">left(MENUPRINCIPAL_FalaMsTakePONG,len(textoFala.Text)+1)</param>
                                                 </action>
                                                 <action id="4" name="Set font color" sid="966310883492524" type="textoFala">
-                                                    <param id="0" name="Color">rgb(146, 255, 20)</param>
+                                                    <param id="0" name="Color">rgb(227, 73, 219)</param>
                                                 </action>
                                             </actions>
                                         </event-block>
@@ -1596,7 +1596,7 @@
                                                     <param id="0" name="Text">left(MENUPRINCIPAL_FalaMsTakePONG,len(textoFala.Text)+1)</param>
                                                 </action>
                                                 <action id="4" name="Set font color" sid="619057560827781" type="textoFala">
-                                                    <param id="0" name="Color">rgb(146, 255, 20)</param>
+                                                    <param id="0" name="Color">rgb(227, 73, 219)</param>
                                                 </action>
                                             </actions>
                                         </event-block>
@@ -1662,7 +1662,7 @@
                                                     <param id="0" name="Text">left(MENUPRINCIPAL_FalaMsTakePONG,len(textoFala.Text)+1)</param>
                                                 </action>
                                                 <action id="4" name="Set font color" sid="101801100109295" type="textoFala">
-                                                    <param id="0" name="Color">rgb(146, 255, 20)</param>
+                                                    <param id="0" name="Color">rgb(227, 73, 219)</param>
                                                 </action>
                                             </actions>
                                         </event-block>
@@ -1732,7 +1732,7 @@
                                                     <param id="0" name="Text">left(MENUPRINCIPAL_FalaMsTakePLATAFORMA,len(textoFala.Text)+1)</param>
                                                 </action>
                                                 <action id="4" name="Set font color" sid="346004654940241" type="textoFala">
-                                                    <param id="0" name="Color">rgb(146, 255, 20)</param>
+                                                    <param id="0" name="Color">rgb(227, 73, 219)</param>
                                                 </action>
                                             </actions>
                                         </event-block>
@@ -1798,7 +1798,7 @@
                                                     <param id="0" name="Text">left(MENUPRINCIPAL_FalaMsTakePLATAFORMA,len(textoFala.Text)+1)</param>
                                                 </action>
                                                 <action id="4" name="Set font color" sid="344333087897413" type="textoFala">
-                                                    <param id="0" name="Color">rgb(146, 255, 20)</param>
+                                                    <param id="0" name="Color">rgb(227, 73, 219)</param>
                                                 </action>
                                             </actions>
                                         </event-block>
@@ -1864,7 +1864,7 @@
                                                     <param id="0" name="Text">left(MENUPRINCIPAL_FalaMsTakePLATAFORMA,len(textoFala.Text)+1)</param>
                                                 </action>
                                                 <action id="4" name="Set font color" sid="690140420011449" type="textoFala">
-                                                    <param id="0" name="Color">rgb(146, 255, 20)</param>
+                                                    <param id="0" name="Color">rgb(227, 73, 219)</param>
                                                 </action>
                                             </actions>
                                         </event-block>
@@ -1930,7 +1930,7 @@
                                                     <param id="0" name="Text">left(MENUPRINCIPAL_FalaMsTakePLATAFORMA,len(textoFala.Text)+1)</param>
                                                 </action>
                                                 <action id="4" name="Set font color" sid="275212847821349" type="textoFala">
-                                                    <param id="0" name="Color">rgb(146, 255, 20)</param>
+                                                    <param id="0" name="Color">rgb(227, 73, 219)</param>
                                                 </action>
                                             </actions>
                                         </event-block>
@@ -1996,7 +1996,7 @@
                                                     <param id="0" name="Text">left(MENUPRINCIPAL_FalaMsTakePLATAFORMA,len(textoFala.Text)+1)</param>
                                                 </action>
                                                 <action id="4" name="Set font color" sid="449246846865788" type="textoFala">
-                                                    <param id="0" name="Color">rgb(146, 255, 20)</param>
+                                                    <param id="0" name="Color">rgb(227, 73, 219)</param>
                                                 </action>
                                             </actions>
                                         </event-block>
@@ -2062,7 +2062,7 @@
                                                     <param id="0" name="Text">left(MENUPRINCIPAL_FalaMsTakePLATAFORMA,len(textoFala.Text)+1)</param>
                                                 </action>
                                                 <action id="4" name="Set font color" sid="351765246952890" type="textoFala">
-                                                    <param id="0" name="Color">rgb(146, 255, 20)</param>
+                                                    <param id="0" name="Color">rgb(227, 73, 219)</param>
                                                 </action>
                                             </actions>
                                         </event-block>
@@ -2128,7 +2128,7 @@
                                                     <param id="0" name="Text">left(MENUPRINCIPAL_FalaMsTakePLATAFORMA,len(textoFala.Text)+1)</param>
                                                 </action>
                                                 <action id="4" name="Set font color" sid="155126862200444" type="textoFala">
-                                                    <param id="0" name="Color">rgb(146, 255, 20)</param>
+                                                    <param id="0" name="Color">rgb(227, 73, 219)</param>
                                                 </action>
                                             </actions>
                                         </event-block>
@@ -2198,7 +2198,7 @@
                                                     <param id="0" name="Text">left(MENUPRINCIPAL_FalaMsTakeTETRIS,len(textoFala.Text)+1)</param>
                                                 </action>
                                                 <action id="4" name="Set font color" sid="602976197744017" type="textoFala">
-                                                    <param id="0" name="Color">rgb(146, 255, 20)</param>
+                                                    <param id="0" name="Color">rgb(227, 73, 219)</param>
                                                 </action>
                                             </actions>
                                         </event-block>
@@ -2264,7 +2264,7 @@
                                                     <param id="0" name="Text">left(MENUPRINCIPAL_FalaMsTakeTETRIS,len(textoFala.Text)+1)</param>
                                                 </action>
                                                 <action id="4" name="Set font color" sid="381808456586631" type="textoFala">
-                                                    <param id="0" name="Color">rgb(146, 255, 20)</param>
+                                                    <param id="0" name="Color">rgb(227, 73, 219)</param>
                                                 </action>
                                             </actions>
                                         </event-block>
@@ -2330,7 +2330,7 @@
                                                     <param id="0" name="Text">left(MENUPRINCIPAL_FalaMsTakeTETRIS,len(textoFala.Text)+1)</param>
                                                 </action>
                                                 <action id="4" name="Set font color" sid="920792255117596" type="textoFala">
-                                                    <param id="0" name="Color">rgb(146, 255, 20)</param>
+                                                    <param id="0" name="Color">rgb(227, 73, 219)</param>
                                                 </action>
                                             </actions>
                                         </event-block>
@@ -2396,7 +2396,7 @@
                                                     <param id="0" name="Text">left(MENUPRINCIPAL_FalaMsTakeTETRIS,len(textoFala.Text)+1)</param>
                                                 </action>
                                                 <action id="4" name="Set font color" sid="551416329815804" type="textoFala">
-                                                    <param id="0" name="Color">rgb(146, 255, 20)</param>
+                                                    <param id="0" name="Color">rgb(227, 73, 219)</param>
                                                 </action>
                                             </actions>
                                         </event-block>
@@ -2462,7 +2462,7 @@
                                                     <param id="0" name="Text">left(MENUPRINCIPAL_FalaMsTakeTETRIS,len(textoFala.Text)+1)</param>
                                                 </action>
                                                 <action id="4" name="Set font color" sid="277125868051511" type="textoFala">
-                                                    <param id="0" name="Color">rgb(146, 255, 20)</param>
+                                                    <param id="0" name="Color">rgb(227, 73, 219)</param>
                                                 </action>
                                             </actions>
                                         </event-block>
@@ -2532,7 +2532,7 @@
                                                     <param id="0" name="Text">left(MENUPRINCIPAL_FalaMsTakeLABIRINTO,len(textoFala.Text)+1)</param>
                                                 </action>
                                                 <action id="4" name="Set font color" sid="148962365901264" type="textoFala">
-                                                    <param id="0" name="Color">rgb(146, 255, 20)</param>
+                                                    <param id="0" name="Color">rgb(227, 73, 219)</param>
                                                 </action>
                                             </actions>
                                         </event-block>
@@ -2598,7 +2598,7 @@
                                                     <param id="0" name="Text">left(MENUPRINCIPAL_FalaMsTakeLABIRINTO,len(textoFala.Text)+1)</param>
                                                 </action>
                                                 <action id="4" name="Set font color" sid="925290014374554" type="textoFala">
-                                                    <param id="0" name="Color">rgb(146, 255, 20)</param>
+                                                    <param id="0" name="Color">rgb(227, 73, 219)</param>
                                                 </action>
                                             </actions>
                                         </event-block>
@@ -2664,7 +2664,7 @@
                                                     <param id="0" name="Text">left(MENUPRINCIPAL_FalaMsTakeLABIRINTO,len(textoFala.Text)+1)</param>
                                                 </action>
                                                 <action id="4" name="Set font color" sid="406134226199842" type="textoFala">
-                                                    <param id="0" name="Color">rgb(146, 255, 20)</param>
+                                                    <param id="0" name="Color">rgb(227, 73, 219)</param>
                                                 </action>
                                             </actions>
                                         </event-block>
@@ -2730,7 +2730,7 @@
                                                     <param id="0" name="Text">left(MENUPRINCIPAL_FalaMsTakeLABIRINTO,len(textoFala.Text)+1)</param>
                                                 </action>
                                                 <action id="4" name="Set font color" sid="739565554687710" type="textoFala">
-                                                    <param id="0" name="Color">rgb(146, 255, 20)</param>
+                                                    <param id="0" name="Color">rgb(227, 73, 219)</param>
                                                 </action>
                                             </actions>
                                         </event-block>
@@ -2796,7 +2796,7 @@
                                                     <param id="0" name="Text">left(MENUPRINCIPAL_FalaMsTakeLABIRINTO,len(textoFala.Text)+1)</param>
                                                 </action>
                                                 <action id="4" name="Set font color" sid="395485094285330" type="textoFala">
-                                                    <param id="0" name="Color">rgb(146, 255, 20)</param>
+                                                    <param id="0" name="Color">rgb(227, 73, 219)</param>
                                                 </action>
                                             </actions>
                                         </event-block>
@@ -2862,7 +2862,7 @@
                                                     <param id="0" name="Text">left(MENUPRINCIPAL_FalaMsTakeLABIRINTO,len(textoFala.Text)+1)</param>
                                                 </action>
                                                 <action id="4" name="Set font color" sid="737390671622104" type="textoFala">
-                                                    <param id="0" name="Color">rgb(146, 255, 20)</param>
+                                                    <param id="0" name="Color">rgb(227, 73, 219)</param>
                                                 </action>
                                             </actions>
                                         </event-block>
@@ -2928,7 +2928,7 @@
                                                     <param id="0" name="Text">left(MENUPRINCIPAL_FalaMsTakeLABIRINTO,len(textoFala.Text)+1)</param>
                                                 </action>
                                                 <action id="4" name="Set font color" sid="460402927437976" type="textoFala">
-                                                    <param id="0" name="Color">rgb(146, 255, 20)</param>
+                                                    <param id="0" name="Color">rgb(227, 73, 219)</param>
                                                 </action>
                                             </actions>
                                         </event-block>
@@ -2998,7 +2998,7 @@
                                                     <param id="0" name="Text">left(MENUPRINCIPAL_FalaMsTakeGLITCH,len(textoFala.Text)+1)</param>
                                                 </action>
                                                 <action id="4" name="Set font color" sid="970910562567576" type="textoFala">
-                                                    <param id="0" name="Color">rgb(146, 255, 20)</param>
+                                                    <param id="0" name="Color">rgb(227, 73, 219)</param>
                                                 </action>
                                             </actions>
                                         </event-block>
@@ -3064,7 +3064,7 @@
                                                     <param id="0" name="Text">left(MENUPRINCIPAL_FalaMsTakeGLITCH,len(textoFala.Text)+1)</param>
                                                 </action>
                                                 <action id="4" name="Set font color" sid="894203347359094" type="textoFala">
-                                                    <param id="0" name="Color">rgb(146, 255, 20)</param>
+                                                    <param id="0" name="Color">rgb(227, 73, 219)</param>
                                                 </action>
                                             </actions>
                                         </event-block>
@@ -3130,7 +3130,7 @@
                                                     <param id="0" name="Text">left(MENUPRINCIPAL_FalaMsTakeGLITCH,len(textoFala.Text)+1)</param>
                                                 </action>
                                                 <action id="4" name="Set font color" sid="947506152268042" type="textoFala">
-                                                    <param id="0" name="Color">rgb(146, 255, 20)</param>
+                                                    <param id="0" name="Color">rgb(227, 73, 219)</param>
                                                 </action>
                                             </actions>
                                         </event-block>
@@ -3196,7 +3196,7 @@
                                                     <param id="0" name="Text">left(MENUPRINCIPAL_FalaMsTakeGLITCH,len(textoFala.Text)+1)</param>
                                                 </action>
                                                 <action id="4" name="Set font color" sid="954387450357343" type="textoFala">
-                                                    <param id="0" name="Color">rgb(146, 255, 20)</param>
+                                                    <param id="0" name="Color">rgb(227, 73, 219)</param>
                                                 </action>
                                             </actions>
                                         </event-block>
@@ -3262,7 +3262,7 @@
                                                     <param id="0" name="Text">left(MENUPRINCIPAL_FalaMsTakeGLITCH,len(textoFala.Text)+1)</param>
                                                 </action>
                                                 <action id="4" name="Set font color" sid="991257790410898" type="textoFala">
-                                                    <param id="0" name="Color">rgb(146, 255, 20)</param>
+                                                    <param id="0" name="Color">rgb(227, 73, 219)</param>
                                                 </action>
                                             </actions>
                                         </event-block>
@@ -3332,7 +3332,7 @@
                                                     <param id="0" name="Text">left(MENUPRINCIPAL_FalaMsTakeOPCOES,len(textoFala.Text)+1)</param>
                                                 </action>
                                                 <action id="4" name="Set font color" sid="853096406617961" type="textoFala">
-                                                    <param id="0" name="Color">rgb(146, 255, 20)</param>
+                                                    <param id="0" name="Color">rgb(227, 73, 219)</param>
                                                 </action>
                                             </actions>
                                         </event-block>
@@ -3398,7 +3398,7 @@
                                                     <param id="0" name="Text">left(MENUPRINCIPAL_FalaMsTakeOPCOES,len(textoFala.Text)+1)</param>
                                                 </action>
                                                 <action id="4" name="Set font color" sid="551960479685732" type="textoFala">
-                                                    <param id="0" name="Color">rgb(146, 255, 20)</param>
+                                                    <param id="0" name="Color">rgb(227, 73, 219)</param>
                                                 </action>
                                             </actions>
                                         </event-block>
@@ -3464,7 +3464,7 @@
                                                     <param id="0" name="Text">left(MENUPRINCIPAL_FalaMsTakeOPCOES,len(textoFala.Text)+1)</param>
                                                 </action>
                                                 <action id="4" name="Set font color" sid="139227553806626" type="textoFala">
-                                                    <param id="0" name="Color">rgb(146, 255, 20)</param>
+                                                    <param id="0" name="Color">rgb(227, 73, 219)</param>
                                                 </action>
                                             </actions>
                                         </event-block>
@@ -3530,7 +3530,7 @@
                                                     <param id="0" name="Text">left(MENUPRINCIPAL_FalaMsTakeOPCOES,len(textoFala.Text)+1)</param>
                                                 </action>
                                                 <action id="4" name="Set font color" sid="413473803870004" type="textoFala">
-                                                    <param id="0" name="Color">rgb(146, 255, 20)</param>
+                                                    <param id="0" name="Color">rgb(227, 73, 219)</param>
                                                 </action>
                                             </actions>
                                         </event-block>
@@ -3596,7 +3596,7 @@
                                                     <param id="0" name="Text">left(MENUPRINCIPAL_FalaMsTakeOPCOES,len(textoFala.Text)+1)</param>
                                                 </action>
                                                 <action id="4" name="Set font color" sid="967671820439554" type="textoFala">
-                                                    <param id="0" name="Color">rgb(146, 255, 20)</param>
+                                                    <param id="0" name="Color">rgb(227, 73, 219)</param>
                                                 </action>
                                             </actions>
                                         </event-block>
@@ -3662,7 +3662,7 @@
                                                     <param id="0" name="Text">left(MENUPRINCIPAL_FalaMsTakeOPCOES,len(textoFala.Text)+1)</param>
                                                 </action>
                                                 <action id="4" name="Set font color" sid="825116958556441" type="textoFala">
-                                                    <param id="0" name="Color">rgb(146, 255, 20)</param>
+                                                    <param id="0" name="Color">rgb(227, 73, 219)</param>
                                                 </action>
                                             </actions>
                                         </event-block>
