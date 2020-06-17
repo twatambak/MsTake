@@ -353,6 +353,12 @@
         <object-type name="Audio" sid="928622172062010">
             <plugin id="Audio" />
         </object-type>
+        <object-type name="textoInfoJogo" sid="955249424150195">
+            <plugin id="Text" />
+            <instance-variables>
+                <instance-variable name="ID" sid="132695014509105" type="number" />
+            </instance-variables>
+        </object-type>
     </object-folder>
     <families />
     <layout-folder>

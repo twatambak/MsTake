@@ -31,6 +31,10 @@
                             <param id="0" name="Family name">&quot;digitaldiscomedium&quot;</param>
                             <param id="1" name="CSS URL">&quot;digitald.css&quot;</param>
                         </action>
+                        <action id="5" name="Set web font" sid="892926023425249" type="textoInfoJogo">
+                            <param id="0" name="Family name">&quot;digitaldiscomedium&quot;</param>
+                            <param id="1" name="CSS URL">&quot;digitald.css&quot;</param>
+                        </action>
                         <action id="5" name="Set web font" sid="614419606107150" type="textoTitulo">
                             <param id="0" name="Family name">&quot;hacked_crtregular&quot;</param>
                             <param id="1" name="CSS URL">&quot;hacked.css&quot;</param>
@@ -122,6 +126,9 @@
                         <action id="-16" name="Set opacity" sid="380601052602684" type="textoFala">
                             <param id="0" name="Opacity">0</param>
                         </action>
+                        <action id="-16" name="Set opacity" sid="720889773628304" type="textoInfoJogo">
+                            <param id="0" name="Opacity">0</param>
+                        </action>
                     </actions>
                 </event-block>
                 <event-block sid="436407019522763">
@@ -133,16 +140,147 @@
                             <param id="0" name="Group name">&quot;(MENU PRINCIPAL) Frases Ms. Take&quot;</param>
                             <param id="1" name="State">1</param>
                         </action>
-                        <action id="-16" name="Set opacity" sid="945520726718005" type="bordasOpcoes">
-                            <param id="0" name="Opacity">100</param>
-                        </action>
-                        <action id="-16" name="Set opacity" sid="576951447844105" type="textoOpcoesMenu">
-                            <param id="0" name="Opacity">100</param>
-                        </action>
                         <action id="-16" name="Set opacity" sid="234591386872634" type="textoFala">
                             <param id="0" name="Opacity">100</param>
                         </action>
+                        <action id="-16" name="Set opacity" sid="222261624501660" type="textoInfoJogo">
+                            <param id="0" name="Opacity">100</param>
+                        </action>
                     </actions>
+                    <sub-events>
+                        <event-block sid="489821644352823">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="809269855325849" type="textoOpcoesMenu">
+                                    <param id="0" name="Instance variable">ID</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">1</param>
+                                </condition>
+                                <condition id="-7" name="Compare instance variable" sid="197010344410580" type="bordasOpcoes">
+                                    <param id="0" name="Instance variable">ID</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">1</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-16" name="Set opacity" sid="607049882545097" type="bordasOpcoes">
+                                    <param id="0" name="Opacity">100</param>
+                                </action>
+                                <action id="-16" name="Set opacity" sid="866235513410083" type="textoOpcoesMenu">
+                                    <param id="0" name="Opacity">100</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="636634777836073">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="940638347620996" type="textoOpcoesMenu">
+                                    <param id="0" name="Instance variable">ID</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">2</param>
+                                </condition>
+                                <condition id="-7" name="Compare instance variable" sid="344199387961763" type="bordasOpcoes">
+                                    <param id="0" name="Instance variable">ID</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">2</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-16" name="Set opacity" sid="616333206564651" type="bordasOpcoes">
+                                    <param id="0" name="Opacity">70</param>
+                                </action>
+                                <action id="-16" name="Set opacity" sid="733230029485338" type="textoOpcoesMenu">
+                                    <param id="0" name="Opacity">70</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="504304323218545">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="946243998601473" type="textoOpcoesMenu">
+                                    <param id="0" name="Instance variable">ID</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">3</param>
+                                </condition>
+                                <condition id="-7" name="Compare instance variable" sid="541051184271224" type="bordasOpcoes">
+                                    <param id="0" name="Instance variable">ID</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">3</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-16" name="Set opacity" sid="260715935582455" type="bordasOpcoes">
+                                    <param id="0" name="Opacity">70</param>
+                                </action>
+                                <action id="-16" name="Set opacity" sid="610386389343434" type="textoOpcoesMenu">
+                                    <param id="0" name="Opacity">70</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="509082919962526">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="345678398356927" type="textoOpcoesMenu">
+                                    <param id="0" name="Instance variable">ID</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">4</param>
+                                </condition>
+                                <condition id="-7" name="Compare instance variable" sid="118474235083534" type="bordasOpcoes">
+                                    <param id="0" name="Instance variable">ID</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">4</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-16" name="Set opacity" sid="295688862238654" type="bordasOpcoes">
+                                    <param id="0" name="Opacity">70</param>
+                                </action>
+                                <action id="-16" name="Set opacity" sid="167145888224735" type="textoOpcoesMenu">
+                                    <param id="0" name="Opacity">70</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="785554762483640">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="385792064799279" type="textoOpcoesMenu">
+                                    <param id="0" name="Instance variable">ID</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">5</param>
+                                </condition>
+                                <condition id="-7" name="Compare instance variable" sid="668368380895445" type="bordasOpcoes">
+                                    <param id="0" name="Instance variable">ID</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">5</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-16" name="Set opacity" sid="738524837768120" type="bordasOpcoes">
+                                    <param id="0" name="Opacity">70</param>
+                                </action>
+                                <action id="-16" name="Set opacity" sid="634547031608478" type="textoOpcoesMenu">
+                                    <param id="0" name="Opacity">70</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="872602449448795">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="777570471000189" type="textoOpcoesMenu">
+                                    <param id="0" name="Instance variable">ID</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">6</param>
+                                </condition>
+                                <condition id="-7" name="Compare instance variable" sid="153761237957143" type="bordasOpcoes">
+                                    <param id="0" name="Instance variable">ID</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">6</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-16" name="Set opacity" sid="767624674426972" type="bordasOpcoes">
+                                    <param id="0" name="Opacity">70</param>
+                                </action>
+                                <action id="-16" name="Set opacity" sid="867548716356198" type="textoOpcoesMenu">
+                                    <param id="0" name="Opacity">70</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
                 </event-block>
             </sub-events>
         </event-group>
@@ -3730,5 +3868,41 @@
                 </event-group>
             </sub-events>
         </event-group>
+        <event-block sid="696288958252094">
+            <conditions>
+                <condition id="-1" name="Every tick" sid="237399946538893" type="System" />
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="280180721567583">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="957894444204792" type="textoInfoJogo">
+                            <param id="0" name="Instance variable">ID</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Set text" sid="929322586056286" type="textoInfoJogo">
+                            <param id="0" name="Text">&quot;Thiago L. Watambak, HitKill Studios...&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="119184730395153">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="947231558537899" type="textoInfoJogo">
+                            <param id="0" name="Instance variable">ID</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">2</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Set text" sid="509701652549604" type="textoInfoJogo">
+                            <param id="0" name="Text">&quot;V &quot; &amp; projectversion</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
     </events>
 </c2eventsheet>
