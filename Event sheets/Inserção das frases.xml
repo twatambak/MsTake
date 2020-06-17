@@ -185,7 +185,7 @@
                             </conditions>
                             <actions>
                                 <action id="1" name="Set size" sid="652649219407618" type="arrayOpcoesMenu">
-                                    <param id="0" name="Width">7</param>
+                                    <param id="0" name="Width">10</param>
                                     <param id="1" name="Height">1</param>
                                     <param id="2" name="Depth">1</param>
                                 </action>
@@ -213,6 +213,10 @@
                                     <param id="0" name="X">6</param>
                                     <param id="1" name="Value">&quot;Opções&quot;</param>
                                 </action>
+                                <action id="2" name="Set at X" sid="492039950515880" type="arrayOpcoesMenu">
+                                    <param id="0" name="X">7</param>
+                                    <param id="1" name="Value">&quot;Thiago L. Watambak | Um jogo da HitKill Studios&quot;</param>
+                                </action>
                             </actions>
                         </event-block>
                     </sub-events>
@@ -233,7 +237,7 @@
                             </conditions>
                             <actions>
                                 <action id="1" name="Set size" sid="321968597147630" type="arrayOpcoesMenu">
-                                    <param id="0" name="Width">7</param>
+                                    <param id="0" name="Width">10</param>
                                     <param id="1" name="Height">1</param>
                                     <param id="2" name="Depth">1</param>
                                 </action>
@@ -260,6 +264,10 @@
                                 <action id="2" name="Set at X" sid="787121831462897" type="arrayOpcoesMenu">
                                     <param id="0" name="X">6</param>
                                     <param id="1" name="Value">&quot;Options&quot;</param>
+                                </action>
+                                <action id="2" name="Set at X" sid="892908602707305" type="arrayOpcoesMenu">
+                                    <param id="0" name="X">7</param>
+                                    <param id="1" name="Value">&quot;Thiago L. Watambak | A game from HitKill Studios&quot;</param>
                                 </action>
                             </actions>
                         </event-block>

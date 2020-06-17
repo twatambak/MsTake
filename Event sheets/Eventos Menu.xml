@@ -185,10 +185,10 @@
                             </conditions>
                             <actions>
                                 <action id="-16" name="Set opacity" sid="616333206564651" type="bordasOpcoes">
-                                    <param id="0" name="Opacity">70</param>
+                                    <param id="0" name="Opacity">55</param>
                                 </action>
                                 <action id="-16" name="Set opacity" sid="733230029485338" type="textoOpcoesMenu">
-                                    <param id="0" name="Opacity">70</param>
+                                    <param id="0" name="Opacity">55</param>
                                 </action>
                             </actions>
                         </event-block>
@@ -207,10 +207,10 @@
                             </conditions>
                             <actions>
                                 <action id="-16" name="Set opacity" sid="260715935582455" type="bordasOpcoes">
-                                    <param id="0" name="Opacity">70</param>
+                                    <param id="0" name="Opacity">55</param>
                                 </action>
                                 <action id="-16" name="Set opacity" sid="610386389343434" type="textoOpcoesMenu">
-                                    <param id="0" name="Opacity">70</param>
+                                    <param id="0" name="Opacity">55</param>
                                 </action>
                             </actions>
                         </event-block>
@@ -229,10 +229,10 @@
                             </conditions>
                             <actions>
                                 <action id="-16" name="Set opacity" sid="295688862238654" type="bordasOpcoes">
-                                    <param id="0" name="Opacity">70</param>
+                                    <param id="0" name="Opacity">55</param>
                                 </action>
                                 <action id="-16" name="Set opacity" sid="167145888224735" type="textoOpcoesMenu">
-                                    <param id="0" name="Opacity">70</param>
+                                    <param id="0" name="Opacity">55</param>
                                 </action>
                             </actions>
                         </event-block>
@@ -251,10 +251,10 @@
                             </conditions>
                             <actions>
                                 <action id="-16" name="Set opacity" sid="738524837768120" type="bordasOpcoes">
-                                    <param id="0" name="Opacity">70</param>
+                                    <param id="0" name="Opacity">55</param>
                                 </action>
                                 <action id="-16" name="Set opacity" sid="634547031608478" type="textoOpcoesMenu">
-                                    <param id="0" name="Opacity">70</param>
+                                    <param id="0" name="Opacity">55</param>
                                 </action>
                             </actions>
                         </event-block>
@@ -273,10 +273,10 @@
                             </conditions>
                             <actions>
                                 <action id="-16" name="Set opacity" sid="767624674426972" type="bordasOpcoes">
-                                    <param id="0" name="Opacity">70</param>
+                                    <param id="0" name="Opacity">55</param>
                                 </action>
                                 <action id="-16" name="Set opacity" sid="867548716356198" type="textoOpcoesMenu">
-                                    <param id="0" name="Opacity">70</param>
+                                    <param id="0" name="Opacity">55</param>
                                 </action>
                             </actions>
                         </event-block>
@@ -3884,7 +3884,7 @@
                     </conditions>
                     <actions>
                         <action id="0" name="Set text" sid="929322586056286" type="textoInfoJogo">
-                            <param id="0" name="Text">&quot;Thiago L. Watambak, HitKill Studios...&quot;</param>
+                            <param id="0" name="Text">arrayOpcoesMenu.At(7)</param>
                         </action>
                     </actions>
                 </event-block>

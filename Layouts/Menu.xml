@@ -308,7 +308,7 @@
                         <text>Text</text>
                         <initial-visibility>Visible</initial-visibility>
                         <font>Arial,-34.4,400,0</font>
-                        <color>61,255,172</color>
+                        <color>255,204,0</color>
                         <horizontal-alignment>Left</horizontal-alignment>
                         <vertical-alignment>Center</vertical-alignment>
                         <hotspot>Top-left</hotspot>
@@ -324,7 +324,7 @@
                         <x>128</x>
                         <y>960</y>
                         <z>0</z>
-                        <width>672</width>
+                        <width>800</width>
                         <height>96</height>
                         <depth>0</depth>
                         <hotspotX>0</hotspotX>
