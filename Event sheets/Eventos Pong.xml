@@ -64,6 +64,7 @@
                 </action>
             </actions>
         </event-block>
+        <comment>Caso o valor de &quot;PONG_Game&quot; seja 0 os grupos de jogo são desativados, impedindo o jogo de ter continuidade.</comment>
         <event-block sid="141141901122622">
             <conditions>
                 <condition id="-14" name="Compare variable" sid="986529450126058" type="System">
@@ -98,6 +99,7 @@
                 </action>
             </actions>
         </event-block>
+        <comment>Caso o valor de &quot;PONG_Game&quot; seja 1 os grupos de jogo são ativados, dando assim continuidade ao jogo.</comment>
         <event-block sid="472050330659654">
             <conditions>
                 <condition id="-14" name="Compare variable" sid="604405892974189" type="System">
@@ -142,6 +144,7 @@
         </event-block>
         <event-group description="" sid="487026517482213" title="(PONG) Controles">
             <sub-events>
+                <comment>Define as cores das plataformas.</comment>
                 <event-block sid="412658527538357">
                     <conditions>
                         <condition id="-2" name="On start of layout" sid="899028120691700" type="System" />
@@ -211,6 +214,7 @@
                 </event-block>
                 <event-group description="" sid="706714030006572" title="(PONG) ControleP1">
                     <sub-events>
+                        <comment>A seta para cima faz a plataforma vertical ir para cima e a plataforma horizontal ir para direita.</comment>
                         <event-block sid="104869992027111">
                             <conditions>
                                 <condition id="2" name="Key is down" sid="759883832629115" type="Keyboard">
@@ -226,6 +230,7 @@
                                 </action>
                             </actions>
                         </event-block>
+                        <comment>A seta para baixo faz a plataforma vertical ir para baixo e a plataforma horizontal ir para esquerda.</comment>
                         <event-block sid="579471033182706">
                             <conditions>
                                 <condition id="2" name="Key is down" sid="126924880485953" type="Keyboard">
@@ -245,6 +250,7 @@
                 </event-group>
                 <event-group description="" sid="545501457474494" title="(PONG) ControleP2">
                     <sub-events>
+                        <comment>O &quot;W&quot; faz a plataforma vertical ir para cima e a plataforma horizontal ir para direita.</comment>
                         <event-block sid="654647967664436">
                             <conditions>
                                 <condition id="2" name="Key is down" sid="992109753106263" type="Keyboard">
@@ -260,6 +266,7 @@
                                 </action>
                             </actions>
                         </event-block>
+                        <comment>O &quot;S&quot; faz a plataforma vertical ir para baixo e a plataforma horizontal ir para esquerda.</comment>
                         <event-block sid="690649614779293">
                             <conditions>
                                 <condition id="2" name="Key is down" sid="961980858531095" type="Keyboard">
@@ -279,6 +286,7 @@
                 </event-group>
                 <event-group description="" sid="292416848658157" title="(PONG) Bot">
                     <sub-events>
+                        <comment>Caso a bola esteja dentro do intervalo do eixo Y...</comment>
                         <event-block sid="841474603648416">
                             <conditions>
                                 <condition id="-2" name="Compare Y" sid="597756305895711" type="bolaPong">
@@ -292,6 +300,7 @@
                             </conditions>
                             <actions />
                             <sub-events>
+                                <comment>Caso o X da plataforma seja menor que o X da bola a movimentação é feita para cima e para direita.</comment>
                                 <event-block sid="171710952264925">
                                     <conditions>
                                         <condition id="-1" name="Compare X" sid="407855622096004" type="pongPlayer2H">
@@ -308,6 +317,7 @@
                                         </action>
                                     </actions>
                                 </event-block>
+                                <comment>Caso o X da plataforma seja maior que o X da bola a movimentação é feita para baixo e para esquerda.</comment>
                                 <event-block sid="919905195521732">
                                     <conditions>
                                         <condition id="-1" name="Compare X" sid="536650149732435" type="pongPlayer2H">
@@ -326,12 +336,14 @@
                                 </event-block>
                             </sub-events>
                         </event-block>
+                        <comment>Caso a bola esteja fora do intervalo do eixo Y...</comment>
                         <event-block sid="284180441273144">
                             <conditions>
                                 <condition id="-22" name="Else" sid="576722986633141" type="System" />
                             </conditions>
                             <actions />
                             <sub-events>
+                                <comment>Caso o Y da plataforma seja menor que o Y da bola a movimentação é feita para cima e para direita.</comment>
                                 <event-block sid="232436392202539">
                                     <conditions>
                                         <condition id="-2" name="Compare Y" sid="428531337819730" type="pongPlayer2H">
@@ -348,6 +360,7 @@
                                         </action>
                                     </actions>
                                 </event-block>
+                                <comment>Caso o Y da plataforma seja maior que o Y da bola a movimentação é feita para cima e para direita.</comment>
                                 <event-block sid="962451370903202">
                                     <conditions>
                                         <condition id="-2" name="Compare Y" sid="158247249897444" type="pongPlayer2V">
@@ -372,6 +385,7 @@
         </event-group>
         <event-group description="" sid="583928842299233" title="(PONG) Bola">
             <sub-events>
+                <comment>O bloco da borda acertado pela bola será destruído</comment>
                 <event-block sid="491387669049026">
                     <conditions>
                         <condition id="0" name="On collision with another object" sid="558894936031033" type="bolaPong">
@@ -382,6 +396,7 @@
                         <action id="-9" name="Destroy" sid="891466326628830" type="bordasPong" />
                     </actions>
                 </event-block>
+                <comment>Atualiza a velocidade da bola conforme especificado nas configurações da partida.</comment>
                 <event-block sid="151139314056192">
                     <conditions>
                         <condition id="-6" name="Every X seconds" sid="928436461168029" type="System">
@@ -396,6 +411,7 @@
                 </event-block>
                 <event-group description="" sid="677537465285817" title="(PONG) Cor da bola">
                     <sub-events>
+                        <comment>Atingir a plataforma do jogador 1 fará a bola assumir a mesma cor da plataforma.</comment>
                         <event-block any="1" sid="534180639349727">
                             <conditions>
                                 <condition id="0" name="On collision with another object" sid="905373034124667" type="bolaPong">
@@ -423,6 +439,7 @@
                                 </action>
                             </actions>
                         </event-block>
+                        <comment>Atingir a plataforma do jogador 2 fará a bola assumir a mesma cor da plataforma.</comment>
                         <event-block any="1" sid="201399401411747">
                             <conditions>
                                 <condition id="0" name="On collision with another object" sid="607747248909896" type="bolaPong">
@@ -456,6 +473,7 @@
         </event-group>
         <event-group description="" sid="577330593444087" title="(PONG) Gatilhos vitória">
             <sub-events>
+                <comment>Define os eventos quando a bola colide com o gatilho de vitória localizado nas bordas externas à área de jogo.</comment>
                 <event-block sid="891155815616614">
                     <conditions>
                         <condition id="0" name="On collision with another object" sid="155352432189160" type="bolaPong">
@@ -477,6 +495,7 @@
                         </action>
                     </actions>
                     <sub-events>
+                        <comment>Caso a bola acerte os gatilhos de vitória &quot;1P&quot;, então a vitória é computada para o player 2 ou para a Ms. Take.</comment>
                         <event-block sid="570676342800045">
                             <conditions>
                                 <condition id="-7" name="Compare instance variable" sid="731358249316877" type="pongGatilhoVitoria">
@@ -487,6 +506,7 @@
                             </conditions>
                             <actions />
                             <sub-events>
+                                <comment>Caso &quot;PONG_Modo&quot; seja 1P então a vitória é de Ms. Take.</comment>
                                 <event-block sid="241585458295582">
                                     <conditions>
                                         <condition id="-14" name="Compare variable" sid="370807532035425" type="System">
@@ -502,6 +522,7 @@
                                         </action>
                                     </actions>
                                 </event-block>
+                                <comment>Caso &quot;PONG_Modo&quot; seja 2P então a vitória é do player 2.</comment>
                                 <event-block sid="291469438883540">
                                     <conditions>
                                         <condition id="-14" name="Compare variable" sid="845094864797398" type="System">
@@ -519,6 +540,7 @@
                                 </event-block>
                             </sub-events>
                         </event-block>
+                        <comment>Caso a bola acerte os gatilhos de vitória &quot;2P&quot;, então a vitória é computada para o player 1.</comment>
                         <event-block sid="263221766497237">
                             <conditions>
                                 <condition id="-7" name="Compare instance variable" sid="719583238696598" type="pongGatilhoVitoria">
@@ -540,6 +562,7 @@
         </event-group>
         <event-group description="" sid="832903496542392" title="(PONG) Falas Ms. Take">
             <sub-events>
+                <comment>Definição da webfont.</comment>
                 <event-block disabled="1" sid="769584349027342">
                     <conditions>
                         <condition id="-2" name="On start of layout" sid="270905910083783" type="System" />
@@ -551,6 +574,7 @@
                         </action>
                     </actions>
                 </event-block>
+                <comment>A cada segundo o timer das frases da Ms. Take é incrementado para que o contador continue.</comment>
                 <event-block sid="922408468491751">
                     <conditions>
                         <condition id="-6" name="Every X seconds" sid="739290770486838" type="System">
@@ -564,6 +588,7 @@
                         </action>
                     </actions>
                 </event-block>
+                <comment>Caso a intro não tenha passado, apertar &quot;ENTER&quot; fará a intro passar.</comment>
                 <event-block sid="896461239173344">
                     <conditions>
                         <condition id="-14" name="Compare variable" sid="689272792702939" type="System">
@@ -2673,6 +2698,7 @@
         </event-group>
         <event-group description="" sid="622937390545479" title="(PONG) Configurações da partida">
             <sub-events>
+                <comment>O valor de &quot;PONG_Vitoria&quot; estar definido como 0 indica que a bola não entrou em contato com os gatilhos de vitória ainda, portanto o jogo deve prosseguir.</comment>
                 <event-block sid="636541972123178">
                     <conditions>
                         <condition id="-14" name="Compare variable" sid="266638173309309" type="System">
@@ -2683,6 +2709,7 @@
                     </conditions>
                     <actions />
                     <sub-events>
+                        <comment>Caso a intro não tenha passado ainda, as webfonts são definidas, os grupos das falas do tutorial são ativados enquanto os demais são desativados, e as layers do tutorial são definidos como visíveis enquanto os demais se tornam inivisíveis.</comment>
                         <event-block sid="472580488842168">
                             <conditions>
                                 <condition id="-14" name="Compare variable" sid="108843692081383" type="System">
@@ -2746,6 +2773,7 @@
                                 </action>
                             </actions>
                         </event-block>
+                        <comment>Caso a intro já tenha passado, as webfonts são definidas, os grupos do menu de configurações da partida são ativados enquanto os demais grupos são desativados, e as layers de configurações se tornam visíveis enquanto as demais se tornam invisíveis.</comment>
                         <event-block sid="520816703949455">
                             <conditions>
                                 <condition id="-14" name="Compare variable" sid="174497269898390" type="System">
@@ -2809,6 +2837,7 @@
                                 </action>
                             </actions>
                         </event-block>
+                        <comment>O valor de &quot;PONG_IntroPassou&quot; estar definido como 1 indica que a intro onde Ms. Take explica o jogo já passou, o que significa que estamos na tela de configurações.</comment>
                         <event-block sid="759209288454764">
                             <conditions>
                                 <condition id="-14" name="Compare variable" sid="565336997307040" type="System">
@@ -2819,6 +2848,7 @@
                             </conditions>
                             <actions />
                             <sub-events>
+                                <comment>Com &quot;PONG_Vitoria&quot; definido como 1, ao apertar &quot;ESPAÇO&quot; os valores definidos no menu de configurações são aplicados aos objetos.</comment>
                                 <event-block sid="288227304713461">
                                     <conditions>
                                         <condition id="0" name="On key pressed" sid="147007627822120" type="Keyboard">
@@ -2850,6 +2880,7 @@
                                         </action>
                                     </actions>
                                     <sub-events>
+                                        <comment>Caso &quot;PONG_Modo&quot; for &quot;1P&quot; o jogador está jogando sozinho. O controle do player 1 é ativado, o controle do player 2 é desativado e a Ms. Take é ativada.</comment>
                                         <event-block sid="546793257248890">
                                             <conditions>
                                                 <condition id="-14" name="Compare variable" sid="154190218656776" type="System">
@@ -2873,6 +2904,7 @@
                                                 </action>
                                             </actions>
                                         </event-block>
+                                        <comment>Caso &quot;PONG_Modo&quot; for &quot;2P&quot; o jogador está jogando com um amigo. O controle do player 1 é ativado, o controle do player 2 é ativado, e a Ms. Take é desativada.</comment>
                                         <event-block sid="334220042203852">
                                             <conditions>
                                                 <condition id="-14" name="Compare variable" sid="731051939666350" type="System">
@@ -2902,6 +2934,7 @@
                         </event-block>
                     </sub-events>
                 </event-block>
+                <comment>O valor de &quot;PONG_Vitoria&quot; estar definido como 1 indica que a bola entrou em contato com os gatilhos de vitória ainda, portanto o jogo chegou ao seu fim. As webfonts são definididas, os grupos referentes ao fim de jogo são ativados enquanto os demais são desativados, e as layers de fim de jogo são definidas como visíveis enquanto as demais se tornam invisíveis.</comment>
                 <event-block sid="833987053321882">
                     <conditions>
                         <condition id="-14" name="Compare variable" sid="946565203834252" type="System">
@@ -3392,6 +3425,34 @@
                                         </action>
                                     </actions>
                                 </event-block>
+                                <event-block sid="836570509594334">
+                                    <conditions>
+                                        <condition id="-7" name="Compare instance variable" sid="145598828635294" type="textoConfigPong">
+                                            <param id="0" name="Instance variable">ID</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">7</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="0" name="Set text" sid="417730504539121" type="textoConfigPong">
+                                            <param id="0" name="Text">arrayOpcoesConfigPong.At(25)</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="269732102512937">
+                                    <conditions>
+                                        <condition id="-7" name="Compare instance variable" sid="972047640646931" type="textoConfigPong">
+                                            <param id="0" name="Instance variable">ID</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">8</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="0" name="Set text" sid="445649472730454" type="textoConfigPong">
+                                            <param id="0" name="Text">arrayOpcoesConfigPong.At(26)</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
                             </sub-events>
                         </event-block>
                     </sub-events>
@@ -3655,6 +3716,76 @@
                                             <param id="0" name="Effect">&quot;SetColor&quot;</param>
                                             <param id="1" name="Parameter index">2</param>
                                             <param id="2" name="Value">0</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                        <event-block sid="859716538793538">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="516722371770297" type="System">
+                                    <param id="0" name="Variable">PONG_OpcoesConfig</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">7</param>
+                                </condition>
+                            </conditions>
+                            <actions />
+                            <sub-events>
+                                <event-block sid="558910054102094">
+                                    <conditions>
+                                        <condition id="0" name="On key pressed" sid="136613236243087" type="Keyboard">
+                                            <param id="0" name="Key">32</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-26" name="Restart layout" sid="325577874677704" type="System" />
+                                        <action id="-9" name="Set value" sid="556840516857837" type="System">
+                                            <param id="0" name="Variable">PONG_IntroPassou</param>
+                                            <param id="1" name="Value">1</param>
+                                        </action>
+                                        <action id="-9" name="Set value" sid="557238927281414" type="System">
+                                            <param id="0" name="Variable">PONG_Vitoria</param>
+                                            <param id="1" name="Value">0</param>
+                                        </action>
+                                        <action id="-9" name="Set value" sid="164993933439202" type="System">
+                                            <param id="0" name="Variable">PONG_OpcoesConfig</param>
+                                            <param id="1" name="Value">1</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                        <event-block sid="352232763251857">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="707677000015487" type="System">
+                                    <param id="0" name="Variable">PONG_OpcoesConfig</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">8</param>
+                                </condition>
+                            </conditions>
+                            <actions />
+                            <sub-events>
+                                <event-block sid="508730539172703">
+                                    <conditions>
+                                        <condition id="0" name="On key pressed" sid="620393853835668" type="Keyboard">
+                                            <param id="0" name="Key">32</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-2" name="Go to layout" sid="475784914678687" type="System">
+                                            <param id="0" name="Layout">Menu</param>
+                                        </action>
+                                        <action id="-9" name="Set value" sid="308068481283535" type="System">
+                                            <param id="0" name="Variable">PONG_IntroPassou</param>
+                                            <param id="1" name="Value">0</param>
+                                        </action>
+                                        <action id="-9" name="Set value" sid="654944234207638" type="System">
+                                            <param id="0" name="Variable">PONG_Vitoria</param>
+                                            <param id="1" name="Value">0</param>
+                                        </action>
+                                        <action id="-9" name="Set value" sid="175726646837963" type="System">
+                                            <param id="0" name="Variable">PONG_OpcoesConfig</param>
+                                            <param id="1" name="Value">1</param>
                                         </action>
                                     </actions>
                                 </event-block>

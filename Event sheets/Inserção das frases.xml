@@ -892,6 +892,14 @@
                                     <param id="0" name="X">24</param>
                                     <param id="1" name="Value">&quot;aperte espaço para selecionar a sua opção...&quot;</param>
                                 </action>
+                                <action id="2" name="Set at X" sid="938016601161319" type="arrayOpcoesConfigPong">
+                                    <param id="0" name="X">25</param>
+                                    <param id="1" name="Value">&quot;jogar de novo :3&quot;</param>
+                                </action>
+                                <action id="2" name="Set at X" sid="991087274070236" type="arrayOpcoesConfigPong">
+                                    <param id="0" name="X">26</param>
+                                    <param id="1" name="Value">&quot;voltar ao menu :3&quot;</param>
+                                </action>
                             </actions>
                         </event-block>
                     </sub-events>
@@ -1124,6 +1132,14 @@
                                 <action id="2" name="Set at X" sid="454856826019757" type="arrayOpcoesConfigPong">
                                     <param id="0" name="X">24</param>
                                     <param id="1" name="Value">&quot;press space to select your option&quot;</param>
+                                </action>
+                                <action id="2" name="Set at X" sid="529670601541579" type="arrayOpcoesConfigPong">
+                                    <param id="0" name="X">25</param>
+                                    <param id="1" name="Value">&quot;play again :3&quot;</param>
+                                </action>
+                                <action id="2" name="Set at X" sid="152376077764253" type="arrayOpcoesConfigPong">
+                                    <param id="0" name="X">26</param>
+                                    <param id="1" name="Value">&quot;back to menu :3&quot;</param>
                                 </action>
                             </actions>
                         </event-block>

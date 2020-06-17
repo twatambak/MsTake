@@ -21,6 +21,12 @@
                         <condition id="-2" name="On start of layout" sid="426241231405708" type="System" />
                     </conditions>
                     <actions>
+                        <action id="0" name="Play" sid="452227209380254" type="Audio">
+                            <param id="0" name="Audio file">Ehrling - Breeze</param>
+                            <param id="2" name="Loop">1</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                        </action>
                         <action id="5" name="Set web font" sid="558689991247833" type="textoOpcoesMenu">
                             <param id="0" name="Family name">&quot;digitaldiscomedium&quot;</param>
                             <param id="1" name="CSS URL">&quot;digitald.css&quot;</param>
@@ -142,6 +148,30 @@
         </event-group>
         <event-group description="" sid="507900006820353" title="(MENU PRINCIPAL) Escolha das opções">
             <sub-events>
+                <event-block sid="883062437899026">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="777650594768274" type="System">
+                            <param id="0" name="Variable">OpcaoMenu</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="934345390485518">
+                            <conditions>
+                                <condition id="0" name="On key pressed" sid="212361278195260" type="Keyboard">
+                                    <param id="0" name="Key">32</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-2" name="Go to layout" sid="741720711395724" type="System">
+                                    <param id="0" name="Layout">Pong</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
                 <event-block sid="532976769118608">
                     <conditions>
                         <condition id="0" name="On key pressed" sid="424653689937097" type="Keyboard">
