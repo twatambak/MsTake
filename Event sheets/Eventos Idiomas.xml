@@ -1,0 +1,225 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>Eventos Idiomas</name>
+    <events>
+        <include>Inserção das frases</include>
+        <event-block sid="616505688107773">
+            <conditions>
+                <condition id="0" name="On key pressed" sid="531984792534403" type="Keyboard">
+                    <param id="0" name="Key">39</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="993975075838118">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="545053975124421" type="System">
+                            <param id="0" name="Variable">Idioma</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">&quot;pt&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Set value" sid="543262789363664" type="System">
+                            <param id="0" name="Variable">Idioma</param>
+                            <param id="1" name="Value">&quot;en&quot;</param>
+                        </action>
+                        <action id="-26" name="Restart layout" sid="362157836358903" type="System" />
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="713182665930760">
+            <conditions>
+                <condition id="0" name="On key pressed" sid="675269083603927" type="Keyboard">
+                    <param id="0" name="Key">37</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="422250808549792">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="706914573993870" type="System">
+                            <param id="0" name="Variable">Idioma</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">&quot;en&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Set value" sid="786878378852067" type="System">
+                            <param id="0" name="Variable">Idioma</param>
+                            <param id="1" name="Value">&quot;pt&quot;</param>
+                        </action>
+                        <action id="-26" name="Restart layout" sid="439706102490340" type="System" />
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="897604244848747">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="117598187072852" type="System">
+                    <param id="0" name="Variable">Idioma</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">&quot;pt&quot;</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="399921657867987">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="627426937645613" type="textoOpcoesMenu">
+                            <param id="0" name="Instance variable">ID</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-28" name="Set effect parameter" sid="783249144307130" type="textoOpcoesMenu">
+                            <param id="0" name="Effect">&quot;SetColor&quot;</param>
+                            <param id="1" name="Parameter index">0</param>
+                            <param id="2" name="Value">100</param>
+                        </action>
+                        <action id="-28" name="Set effect parameter" sid="216082591215218" type="textoOpcoesMenu">
+                            <param id="0" name="Effect">&quot;SetColor&quot;</param>
+                            <param id="1" name="Parameter index">1</param>
+                            <param id="2" name="Value">0</param>
+                        </action>
+                        <action id="-28" name="Set effect parameter" sid="535091357771064" type="textoOpcoesMenu">
+                            <param id="0" name="Effect">&quot;SetColor&quot;</param>
+                            <param id="1" name="Parameter index">2</param>
+                            <param id="2" name="Value">90</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="591980939338791">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="313990647797674" type="textoOpcoesMenu">
+                            <param id="0" name="Instance variable">ID</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">2</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-28" name="Set effect parameter" sid="110019456783995" type="textoOpcoesMenu">
+                            <param id="0" name="Effect">&quot;SetColor&quot;</param>
+                            <param id="1" name="Parameter index">0</param>
+                            <param id="2" name="Value">50</param>
+                        </action>
+                        <action id="-28" name="Set effect parameter" sid="675337421816880" type="textoOpcoesMenu">
+                            <param id="0" name="Effect">&quot;SetColor&quot;</param>
+                            <param id="1" name="Parameter index">1</param>
+                            <param id="2" name="Value">90</param>
+                        </action>
+                        <action id="-28" name="Set effect parameter" sid="472208810781098" type="textoOpcoesMenu">
+                            <param id="0" name="Effect">&quot;SetColor&quot;</param>
+                            <param id="1" name="Parameter index">2</param>
+                            <param id="2" name="Value">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="827026258917206">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="912192791463983" type="System">
+                    <param id="0" name="Variable">Idioma</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">&quot;en&quot;</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="499905643602326">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="730276695315470" type="textoOpcoesMenu">
+                            <param id="0" name="Instance variable">ID</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">2</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-28" name="Set effect parameter" sid="200123368841424" type="textoOpcoesMenu">
+                            <param id="0" name="Effect">&quot;SetColor&quot;</param>
+                            <param id="1" name="Parameter index">0</param>
+                            <param id="2" name="Value">100</param>
+                        </action>
+                        <action id="-28" name="Set effect parameter" sid="204280627312251" type="textoOpcoesMenu">
+                            <param id="0" name="Effect">&quot;SetColor&quot;</param>
+                            <param id="1" name="Parameter index">1</param>
+                            <param id="2" name="Value">0</param>
+                        </action>
+                        <action id="-28" name="Set effect parameter" sid="767838717573362" type="textoOpcoesMenu">
+                            <param id="0" name="Effect">&quot;SetColor&quot;</param>
+                            <param id="1" name="Parameter index">2</param>
+                            <param id="2" name="Value">90</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="822340661412298">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="529605291408339" type="textoOpcoesMenu">
+                            <param id="0" name="Instance variable">ID</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-28" name="Set effect parameter" sid="580527327171225" type="textoOpcoesMenu">
+                            <param id="0" name="Effect">&quot;SetColor&quot;</param>
+                            <param id="1" name="Parameter index">0</param>
+                            <param id="2" name="Value">50</param>
+                        </action>
+                        <action id="-28" name="Set effect parameter" sid="602546487800471" type="textoOpcoesMenu">
+                            <param id="0" name="Effect">&quot;SetColor&quot;</param>
+                            <param id="1" name="Parameter index">1</param>
+                            <param id="2" name="Value">90</param>
+                        </action>
+                        <action id="-28" name="Set effect parameter" sid="973610874308309" type="textoOpcoesMenu">
+                            <param id="0" name="Effect">&quot;SetColor&quot;</param>
+                            <param id="1" name="Parameter index">2</param>
+                            <param id="2" name="Value">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="464510550941207">
+            <conditions>
+                <condition id="-7" name="Compare instance variable" sid="831073704954628" type="textoOpcoesMenu">
+                    <param id="0" name="Instance variable">ID</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">3</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Set text" sid="592040038998905" type="textoOpcoesMenu">
+                    <param id="0" name="Text">arrayFrasesIntro.At(28)</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="494299351255384">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="956414673494526" type="System" />
+            </conditions>
+            <actions>
+                <action id="5" name="Set web font" sid="322377718298012" type="textoOpcoesMenu">
+                    <param id="0" name="Family name">&quot;digitaldiscomedium&quot;</param>
+                    <param id="1" name="CSS URL">&quot;digitald.css&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="486910241427613">
+            <conditions>
+                <condition id="0" name="On key pressed" sid="537030482792852" type="Keyboard">
+                    <param id="0" name="Key">32</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-2" name="Go to layout" sid="381522750469334" type="System">
+                    <param id="0" name="Layout">Intro</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>

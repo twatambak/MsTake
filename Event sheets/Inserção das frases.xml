@@ -21,7 +21,7 @@
                             </conditions>
                             <actions>
                                 <action id="1" name="Set size" sid="444973952950031" type="arrayFrasesIntro">
-                                    <param id="0" name="Width">15</param>
+                                    <param id="0" name="Width">30</param>
                                     <param id="1" name="Height">1</param>
                                     <param id="2" name="Depth">1</param>
                                 </action>
@@ -81,6 +81,62 @@
                                     <param id="0" name="X">14</param>
                                     <param id="1" name="Value">&quot;vamos começar então?&quot;</param>
                                 </action>
+                                <action id="2" name="Set at X" sid="816285817523310" type="arrayFrasesIntro">
+                                    <param id="0" name="X">15</param>
+                                    <param id="1" name="Value">&quot;Olá. Eu sou Thiago L. Watambak.&quot;</param>
+                                </action>
+                                <action id="2" name="Set at X" sid="126212338913558" type="arrayFrasesIntro">
+                                    <param id="0" name="X">16</param>
+                                    <param id="1" name="Value">&quot;Essa é só uma pequena mensagem do desenvolvedor&quot;</param>
+                                </action>
+                                <action id="2" name="Set at X" sid="674389190417847" type="arrayFrasesIntro">
+                                    <param id="0" name="X">17</param>
+                                    <param id="1" name="Value">&quot;Você está prestes a brincar com a Ms. Take&quot;</param>
+                                </action>
+                                <action id="2" name="Set at X" sid="434907838992215" type="arrayFrasesIntro">
+                                    <param id="0" name="X">18</param>
+                                    <param id="1" name="Value">&quot;Um protótipo extramemente rudimentar de IA que eu trabalhei junto com meu amigo, Hesli H. Azevedo&quot;</param>
+                                </action>
+                                <action id="2" name="Set at X" sid="339384015330175" type="arrayFrasesIntro">
+                                    <param id="0" name="X">19</param>
+                                    <param id="1" name="Value">&quot;Esteja ciente que TUDO aqui ainda está em processo de desenvolvimento&quot;</param>
+                                </action>
+                                <action id="2" name="Set at X" sid="741390658443180" type="arrayFrasesIntro">
+                                    <param id="0" name="X">20</param>
+                                    <param id="1" name="Value">&quot;Nada esta completo&quot;</param>
+                                </action>
+                                <action id="2" name="Set at X" sid="634718814339285" type="arrayFrasesIntro">
+                                    <param id="0" name="X">21</param>
+                                    <param id="1" name="Value">&quot;Peço que qualquer bug, problema, sugestão ou crítica seja enviada para mim&quot;</param>
+                                </action>
+                                <action id="2" name="Set at X" sid="545677582682914" type="arrayFrasesIntro">
+                                    <param id="0" name="X">22</param>
+                                    <param id="1" name="Value">&quot;Eu tenho plena confiança em Ms. Take&quot;</param>
+                                </action>
+                                <action id="2" name="Set at X" sid="612722934345769" type="arrayFrasesIntro">
+                                    <param id="0" name="X">23</param>
+                                    <param id="1" name="Value">&quot;Eu sei que se eu trabalhar duro, me esforçar, ela vai dar certo&quot;</param>
+                                </action>
+                                <action id="2" name="Set at X" sid="773402473847097" type="arrayFrasesIntro">
+                                    <param id="0" name="X">24</param>
+                                    <param id="1" name="Value">&quot;Ela não pode dar errado...&quot;</param>
+                                </action>
+                                <action id="2" name="Set at X" sid="674558590638595" type="arrayFrasesIntro">
+                                    <param id="0" name="X">25</param>
+                                    <param id="1" name="Value">&quot;Ela não pode ser um erro...&quot;</param>
+                                </action>
+                                <action id="2" name="Set at X" sid="987454425498882" type="arrayFrasesIntro">
+                                    <param id="0" name="X">26</param>
+                                    <param id="1" name="Value">&quot;Não de novo&quot;</param>
+                                </action>
+                                <action id="2" name="Set at X" sid="213157020213672" type="arrayFrasesIntro">
+                                    <param id="0" name="X">27</param>
+                                    <param id="1" name="Value">&quot;Chega de fracassos.&quot;</param>
+                                </action>
+                                <action id="2" name="Set at X" sid="348131964257429" type="arrayFrasesIntro">
+                                    <param id="0" name="X">28</param>
+                                    <param id="1" name="Value">&quot;Aperte ESPAÇO quando estiver pronto.&quot;</param>
+                                </action>
                             </actions>
                         </event-block>
                     </sub-events>
@@ -101,7 +157,7 @@
                             </conditions>
                             <actions>
                                 <action id="1" name="Set size" sid="208781925320935" type="arrayFrasesIntro">
-                                    <param id="0" name="Width">15</param>
+                                    <param id="0" name="Width">30</param>
                                     <param id="1" name="Height">1</param>
                                     <param id="2" name="Depth">1</param>
                                 </action>
@@ -161,6 +217,62 @@
                                     <param id="0" name="X">14</param>
                                     <param id="1" name="Value">&quot;so... let&apos;s begin?&quot;</param>
                                 </action>
+                                <action id="2" name="Set at X" sid="435966547847638" type="arrayFrasesIntro">
+                                    <param id="0" name="X">15</param>
+                                    <param id="1" name="Value">&quot;Olá. Eu sou Thiago L. Watambak.&quot;</param>
+                                </action>
+                                <action id="2" name="Set at X" sid="532518800599645" type="arrayFrasesIntro">
+                                    <param id="0" name="X">16</param>
+                                    <param id="1" name="Value">&quot;Essa é só uma pequena mensagem do desenvolvedor&quot;</param>
+                                </action>
+                                <action id="2" name="Set at X" sid="233206047892998" type="arrayFrasesIntro">
+                                    <param id="0" name="X">17</param>
+                                    <param id="1" name="Value">&quot;Você está prestes a brincar com a Ms. Take&quot;</param>
+                                </action>
+                                <action id="2" name="Set at X" sid="476495566458884" type="arrayFrasesIntro">
+                                    <param id="0" name="X">18</param>
+                                    <param id="1" name="Value">&quot;Um protótipo extramemente rudimentar de IA que eu trabalhei junto com meu amigo, Hesli H. Azevedo&quot;</param>
+                                </action>
+                                <action id="2" name="Set at X" sid="547408256080946" type="arrayFrasesIntro">
+                                    <param id="0" name="X">19</param>
+                                    <param id="1" name="Value">&quot;Esteja ciente que TUDO aqui ainda está em processo de desenvolvimento&quot;</param>
+                                </action>
+                                <action id="2" name="Set at X" sid="829237228684135" type="arrayFrasesIntro">
+                                    <param id="0" name="X">20</param>
+                                    <param id="1" name="Value">&quot;Nada esta completo&quot;</param>
+                                </action>
+                                <action id="2" name="Set at X" sid="830223810832301" type="arrayFrasesIntro">
+                                    <param id="0" name="X">21</param>
+                                    <param id="1" name="Value">&quot;Peço que qualquer bug, problema, sugestão ou crítica seja enviada para mim&quot;</param>
+                                </action>
+                                <action id="2" name="Set at X" sid="592358799767903" type="arrayFrasesIntro">
+                                    <param id="0" name="X">22</param>
+                                    <param id="1" name="Value">&quot;Eu tenho plena confiança em Ms. Take&quot;</param>
+                                </action>
+                                <action id="2" name="Set at X" sid="219306411852695" type="arrayFrasesIntro">
+                                    <param id="0" name="X">23</param>
+                                    <param id="1" name="Value">&quot;Eu sei que se eu trabalhar duro, me esforçar, ela vai dar certo&quot;</param>
+                                </action>
+                                <action id="2" name="Set at X" sid="892274631345214" type="arrayFrasesIntro">
+                                    <param id="0" name="X">24</param>
+                                    <param id="1" name="Value">&quot;Ela não pode dar errado...&quot;</param>
+                                </action>
+                                <action id="2" name="Set at X" sid="284744383630752" type="arrayFrasesIntro">
+                                    <param id="0" name="X">25</param>
+                                    <param id="1" name="Value">&quot;Ela não pode ser um erro...&quot;</param>
+                                </action>
+                                <action id="2" name="Set at X" sid="577937435278898" type="arrayFrasesIntro">
+                                    <param id="0" name="X">26</param>
+                                    <param id="1" name="Value">&quot;Não de novo&quot;</param>
+                                </action>
+                                <action id="2" name="Set at X" sid="676037091006909" type="arrayFrasesIntro">
+                                    <param id="0" name="X">27</param>
+                                    <param id="1" name="Value">&quot;Chega de fracassos.&quot;</param>
+                                </action>
+                                <action id="2" name="Set at X" sid="119154878970965" type="arrayFrasesIntro">
+                                    <param id="0" name="X">28</param>
+                                    <param id="1" name="Value">&quot;Press SPACE when you&apos;re ready.&quot;</param>
+                                </action>
                             </actions>
                         </event-block>
                     </sub-events>
@@ -215,7 +327,7 @@
                                 </action>
                                 <action id="2" name="Set at X" sid="492039950515880" type="arrayOpcoesMenu">
                                     <param id="0" name="X">7</param>
-                                    <param id="1" name="Value">&quot;Thiago L. Watambak | Um jogo da HitKill Studios&quot;</param>
+                                    <param id="1" name="Value">&quot;Thiago L. Watambak e Hesli H. Azevedo | HitKill Studios&quot;</param>
                                 </action>
                             </actions>
                         </event-block>
@@ -267,7 +379,7 @@
                                 </action>
                                 <action id="2" name="Set at X" sid="892908602707305" type="arrayOpcoesMenu">
                                     <param id="0" name="X">7</param>
-                                    <param id="1" name="Value">&quot;Thiago L. Watambak | A game from HitKill Studios&quot;</param>
+                                    <param id="1" name="Value">&quot;Thiago L. Watambak e Hesli H. Azevedo | HitKill Studios&quot;</param>
                                 </action>
                             </actions>
                         </event-block>
