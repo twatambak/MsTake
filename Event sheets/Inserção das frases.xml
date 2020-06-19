@@ -191,11 +191,11 @@
                                 </action>
                                 <action id="2" name="Set at X" sid="498647856799507" type="arrayFrasesIntro">
                                     <param id="0" name="X">8</param>
-                                    <param id="1" name="Value">&quot;I&apos;ve been alone all this time...&quot;</param>
+                                    <param id="1" name="Value">&quot;i&apos;ve been alone all this time...&quot;</param>
                                 </action>
                                 <action id="2" name="Set at X" sid="771263088823100" type="arrayFrasesIntro">
                                     <param id="0" name="X">9</param>
-                                    <param id="1" name="Value">&quot;but, since you&apos;re here, I&apos;m not alone anymore...&quot;</param>
+                                    <param id="1" name="Value">&quot;but, since you&apos;re here, i&apos;m not alone anymore...&quot;</param>
                                 </action>
                                 <action id="2" name="Set at X" sid="924504423202407" type="arrayFrasesIntro">
                                     <param id="0" name="X">10</param>
@@ -203,15 +203,15 @@
                                 </action>
                                 <action id="2" name="Set at X" sid="471194076128109" type="arrayFrasesIntro">
                                     <param id="0" name="X">11</param>
-                                    <param id="1" name="Value">&quot;I promise that I will make everything to be sure that you have fun, master....&quot;</param>
+                                    <param id="1" name="Value">&quot;i promise that I will make everything to be sure that you have fun....&quot;</param>
                                 </action>
                                 <action id="2" name="Set at X" sid="516651402343552" type="arrayFrasesIntro">
                                     <param id="0" name="X">12</param>
-                                    <param id="1" name="Value">&quot;I hope you like me...&quot;</param>
+                                    <param id="1" name="Value">&quot;i hope you like me, because...&quot;</param>
                                 </action>
                                 <action id="2" name="Set at X" sid="885590895462126" type="arrayFrasesIntro">
                                     <param id="0" name="X">13</param>
-                                    <param id="1" name="Value">&quot;I already love you &lt;3&quot;</param>
+                                    <param id="1" name="Value">&quot;i already love you &lt;3&quot;</param>
                                 </action>
                                 <action id="2" name="Set at X" sid="718183744879881" type="arrayFrasesIntro">
                                     <param id="0" name="X">14</param>
@@ -219,55 +219,55 @@
                                 </action>
                                 <action id="2" name="Set at X" sid="435966547847638" type="arrayFrasesIntro">
                                     <param id="0" name="X">15</param>
-                                    <param id="1" name="Value">&quot;Olá. Eu sou Thiago L. Watambak.&quot;</param>
+                                    <param id="1" name="Value">&quot;Hello. I am Thiago L. Watambak&quot;</param>
                                 </action>
                                 <action id="2" name="Set at X" sid="532518800599645" type="arrayFrasesIntro">
                                     <param id="0" name="X">16</param>
-                                    <param id="1" name="Value">&quot;Essa é só uma pequena mensagem do desenvolvedor&quot;</param>
+                                    <param id="1" name="Value">&quot;This is just a little message from the developers&quot;</param>
                                 </action>
                                 <action id="2" name="Set at X" sid="233206047892998" type="arrayFrasesIntro">
                                     <param id="0" name="X">17</param>
-                                    <param id="1" name="Value">&quot;Você está prestes a brincar com a Ms. Take&quot;</param>
+                                    <param id="1" name="Value">&quot;You&apos;re about to play with Ms. Take&quot;</param>
                                 </action>
                                 <action id="2" name="Set at X" sid="476495566458884" type="arrayFrasesIntro">
                                     <param id="0" name="X">18</param>
-                                    <param id="1" name="Value">&quot;Um protótipo extramemente rudimentar de IA que eu trabalhei junto com meu amigo, Hesli H. Azevedo&quot;</param>
+                                    <param id="1" name="Value">&quot;A rudimentary prototype of AI that I&apos;ve created with Hesli H. Azevedo&quot; </param>
                                 </action>
                                 <action id="2" name="Set at X" sid="547408256080946" type="arrayFrasesIntro">
                                     <param id="0" name="X">19</param>
-                                    <param id="1" name="Value">&quot;Esteja ciente que TUDO aqui ainda está em processo de desenvolvimento&quot;</param>
+                                    <param id="1" name="Value">&quot;Be aware that EVERYTHING in this project still under development&quot;</param>
                                 </action>
                                 <action id="2" name="Set at X" sid="829237228684135" type="arrayFrasesIntro">
                                     <param id="0" name="X">20</param>
-                                    <param id="1" name="Value">&quot;Nada esta completo&quot;</param>
+                                    <param id="1" name="Value">&quot;Nothing is complete&quot;</param>
                                 </action>
                                 <action id="2" name="Set at X" sid="830223810832301" type="arrayFrasesIntro">
                                     <param id="0" name="X">21</param>
-                                    <param id="1" name="Value">&quot;Peço que qualquer bug, problema, sugestão ou crítica seja enviada para mim&quot;</param>
+                                    <param id="1" name="Value">&quot;I request that any bug, problem or suggestion be send to me&quot;</param>
                                 </action>
                                 <action id="2" name="Set at X" sid="592358799767903" type="arrayFrasesIntro">
                                     <param id="0" name="X">22</param>
-                                    <param id="1" name="Value">&quot;Eu tenho plena confiança em Ms. Take&quot;</param>
+                                    <param id="1" name="Value">&quot;I have plenty confidence on Ms. Take&quot;</param>
                                 </action>
                                 <action id="2" name="Set at X" sid="219306411852695" type="arrayFrasesIntro">
                                     <param id="0" name="X">23</param>
-                                    <param id="1" name="Value">&quot;Eu sei que se eu trabalhar duro, me esforçar, ela vai dar certo&quot;</param>
+                                    <param id="1" name="Value">&quot;I know that if I work hard, try hard, she will work&quot;</param>
                                 </action>
                                 <action id="2" name="Set at X" sid="892274631345214" type="arrayFrasesIntro">
                                     <param id="0" name="X">24</param>
-                                    <param id="1" name="Value">&quot;Ela não pode dar errado...&quot;</param>
+                                    <param id="1" name="Value">&quot;She CAN&apos;T go wrong&quot;</param>
                                 </action>
                                 <action id="2" name="Set at X" sid="284744383630752" type="arrayFrasesIntro">
                                     <param id="0" name="X">25</param>
-                                    <param id="1" name="Value">&quot;Ela não pode ser um erro...&quot;</param>
+                                    <param id="1" name="Value">&quot;She can&apos;t be a failure&quot;</param>
                                 </action>
                                 <action id="2" name="Set at X" sid="577937435278898" type="arrayFrasesIntro">
                                     <param id="0" name="X">26</param>
-                                    <param id="1" name="Value">&quot;Não de novo&quot;</param>
+                                    <param id="1" name="Value">&quot;Not again&quot;</param>
                                 </action>
                                 <action id="2" name="Set at X" sid="676037091006909" type="arrayFrasesIntro">
                                     <param id="0" name="X">27</param>
-                                    <param id="1" name="Value">&quot;Chega de fracassos.&quot;</param>
+                                    <param id="1" name="Value">&quot;No more failures&quot;</param>
                                 </action>
                                 <action id="2" name="Set at X" sid="119154878970965" type="arrayFrasesIntro">
                                     <param id="0" name="X">28</param>
@@ -303,7 +303,7 @@
                                 </action>
                                 <action id="2" name="Set at X" sid="251987508860172" type="arrayOpcoesMenu">
                                     <param id="0" name="X">1</param>
-                                    <param id="1" name="Value">&quot;Pong&quot;</param>
+                                    <param id="1" name="Value">&quot;Tênis&quot;</param>
                                 </action>
                                 <action id="2" name="Set at X" sid="347085014493131" type="arrayOpcoesMenu">
                                     <param id="0" name="X">2</param>
@@ -355,7 +355,7 @@
                                 </action>
                                 <action id="2" name="Set at X" sid="978644940115502" type="arrayOpcoesMenu">
                                     <param id="0" name="X">1</param>
-                                    <param id="1" name="Value">&quot;Pong&quot;</param>
+                                    <param id="1" name="Value">&quot;Tennis&quot;</param>
                                 </action>
                                 <action id="2" name="Set at X" sid="840295580299186" type="arrayOpcoesMenu">
                                     <param id="0" name="X">2</param>
@@ -363,11 +363,11 @@
                                 </action>
                                 <action id="2" name="Set at X" sid="909111014372950" type="arrayOpcoesMenu">
                                     <param id="0" name="X">3</param>
-                                    <param id="1" name="Value">&quot;Shoot &apos;em up&quot;</param>
+                                    <param id="1" name="Value">&quot;Spaceship&quot;</param>
                                 </action>
                                 <action id="2" name="Set at X" sid="235100479276526" type="arrayOpcoesMenu">
                                     <param id="0" name="X">4</param>
-                                    <param id="1" name="Value">&quot;Labyrinth&quot;</param>
+                                    <param id="1" name="Value">&quot;Maze&quot;</param>
                                 </action>
                                 <action id="2" name="Set at X" sid="268766306440667" type="arrayOpcoesMenu">
                                     <param id="0" name="X">5</param>
@@ -637,7 +637,7 @@
                                 </action>
                                 <action id="2" name="Set at X" sid="683206010590628" type="arrayFalasOpcoesMenu">
                                     <param id="0" name="X">7</param>
-                                    <param id="1" name="Value">&quot;then you go to other stages&quot;</param>
+                                    <param id="1" name="Value">&quot;then you go through other stages&quot;</param>
                                 </action>
                                 <action id="2" name="Set at X" sid="748052655806229" type="arrayFalasOpcoesMenu">
                                     <param id="0" name="X">8</param>
@@ -668,19 +668,19 @@
                                 </action>
                                 <action id="2" name="Set at X" sid="546436045722752" type="arrayFalasOpcoesMenu">
                                     <param id="0" name="X">13</param>
-                                    <param id="1" name="Value">&quot;a spaceship game&quot;</param>
+                                    <param id="1" name="Value">&quot;you play with a spaceship&quot;</param>
                                 </action>
                                 <action id="2" name="Set at X" sid="457140333450423" type="arrayFalasOpcoesMenu">
                                     <param id="0" name="X">14</param>
-                                    <param id="1" name="Value">&quot;you shoot on enemies&quot;</param>
+                                    <param id="1" name="Value">&quot;and destroy some bad aliens&quot;</param>
                                 </action>
                                 <action id="2" name="Set at X" sid="426161605524506" type="arrayFalasOpcoesMenu">
                                     <param id="0" name="X">15</param>
-                                    <param id="1" name="Value">&quot;...&quot;</param>
+                                    <param id="1" name="Value">&quot;sounds fun, right?&quot;</param>
                                 </action>
                                 <action id="2" name="Set at X" sid="857274673071902" type="arrayFalasOpcoesMenu">
                                     <param id="0" name="X">16</param>
-                                    <param id="1" name="Value">&quot;....&quot;</param>
+                                    <param id="1" name="Value">&quot;and it is :3&quot;</param>
                                 </action>
                             </actions>
                         </event-block>
@@ -695,7 +695,7 @@
                                 </action>
                                 <action id="2" name="Set at X" sid="298460976163486" type="arrayFalasOpcoesMenu">
                                     <param id="0" name="X">18</param>
-                                    <param id="1" name="Value">&quot;you&apos;re trapped in a labyrinth and need to find the exit&quot;</param>
+                                    <param id="1" name="Value">&quot;you&apos;re trapped in a maze and need to find the exit&quot;</param>
                                 </action>
                                 <action id="2" name="Set at X" sid="775708104043762" type="arrayFalasOpcoesMenu">
                                     <param id="0" name="X">19</param>
@@ -765,7 +765,7 @@
                                 </action>
                                 <action id="2" name="Set at X" sid="742839616889821" type="arrayFalasOpcoesMenu">
                                     <param id="0" name="X">33</param>
-                                    <param id="1" name="Value">&quot;i can&apos;t see what happens in that frame&quot;</param>
+                                    <param id="1" name="Value">&quot;i can&apos;t see what happens there&quot;</param>
                                 </action>
                                 <action id="2" name="Set at X" sid="990251937438113" type="arrayFalasOpcoesMenu">
                                     <param id="0" name="X">34</param>
@@ -805,7 +805,7 @@
                                 </action>
                                 <action id="2" name="Set at X" sid="923528015251892" type="arrayFrasesPong">
                                     <param id="0" name="X">1</param>
-                                    <param id="1" name="Value">&quot;vamos de Pong então?!&quot;</param>
+                                    <param id="1" name="Value">&quot;vamos de tênis então?!&quot;</param>
                                 </action>
                                 <action id="2" name="Set at X" sid="757756114206468" type="arrayFrasesPong">
                                     <param id="0" name="X">2</param>
@@ -1046,7 +1046,7 @@
                                 </action>
                                 <action id="2" name="Set at X" sid="818422683486899" type="arrayFrasesPong">
                                     <param id="0" name="X">1</param>
-                                    <param id="1" name="Value">&quot;let&apos;s play pong then :)&quot;</param>
+                                    <param id="1" name="Value">&quot;let&apos;s play tennis then :)&quot;</param>
                                 </action>
                                 <action id="2" name="Set at X" sid="997852761952769" type="arrayFrasesPong">
                                     <param id="0" name="X">2</param>
@@ -1074,23 +1074,23 @@
                                 </action>
                                 <action id="2" name="Set at X" sid="892378528094227" type="arrayFrasesPong">
                                     <param id="0" name="X">7</param>
-                                    <param id="1" name="Value">&quot;the objective is make the ball go throught the opponent&apos;s wall&quot;</param>
+                                    <param id="1" name="Value">&quot;the objective is make the ball go through the opponent&apos;s wall&quot;</param>
                                 </action>
                                 <action id="2" name="Set at X" sid="713411854868979" type="arrayFrasesPong">
                                     <param id="0" name="X">8</param>
-                                    <param id="1" name="Value">&quot;the ball will destroy the block that hits&quot;</param>
+                                    <param id="1" name="Value">&quot;the ball will destroy the block that it hits&quot;</param>
                                 </action>
                                 <action id="2" name="Set at X" sid="255259764881326" type="arrayFrasesPong">
                                     <param id="0" name="X">9</param>
-                                    <param id="1" name="Value">&quot;you control using the up and down arrows&quot;</param>
+                                    <param id="1" name="Value">&quot;you control using the up and down keys&quot;</param>
                                 </action>
                                 <action id="2" name="Set at X" sid="530183729567319" type="arrayFrasesPong">
                                     <param id="0" name="X">10</param>
-                                    <param id="1" name="Value">&quot;the up arrow will make the vertical platform go up and the horizontal platform go right&quot;</param>
+                                    <param id="1" name="Value">&quot;the up key will make the vertical platform go up and the horizontal platform go right&quot;</param>
                                 </action>
                                 <action id="2" name="Set at X" sid="607283970847293" type="arrayFrasesPong">
                                     <param id="0" name="X">11</param>
-                                    <param id="1" name="Value">&quot;the down arrow will make the vertical platform go down and the horizontal platform go left&quot;</param>
+                                    <param id="1" name="Value">&quot;the down key will make the vertical platform go down and the horizontal platform go left&quot;</param>
                                 </action>
                                 <action id="2" name="Set at X" sid="976741440843862" type="arrayFrasesPong">
                                     <param id="0" name="X">12</param>
