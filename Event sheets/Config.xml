@@ -5,5 +5,6 @@
     <events>
         <comment>Idioma do jogo. Opções: [pt] ou [en].</comment>
         <variable constant="0" name="Idioma" sid="113904520754009" static="0" type="text">pt</variable>
+        <variable constant="0" name="VolumeGeral" sid="789739341541252" static="0" type="number">0</variable>
     </events>
 </c2eventsheet>

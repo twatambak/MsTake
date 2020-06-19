@@ -1155,5 +1155,97 @@
                 </event-block>
             </sub-events>
         </event-group>
+        <event-group description="" sid="734883153642067" title="(OPÇÕES) Inserção das frases: Textos de configuração geral">
+            <sub-events>
+                <event-block sid="908610187198831">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="452088747613746" type="System">
+                            <param id="0" name="Variable">Idioma</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">&quot;pt&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="967699929217499">
+                            <conditions>
+                                <condition id="-2" name="On start of layout" sid="175739747861606" type="System" />
+                            </conditions>
+                            <actions>
+                                <action id="1" name="Set size" sid="212688951414496" type="arrayOpcoesGerais">
+                                    <param id="0" name="Width">10</param>
+                                    <param id="1" name="Height">1</param>
+                                    <param id="2" name="Depth">1</param>
+                                </action>
+                                <action id="2" name="Set at X" sid="729336261276834" type="arrayOpcoesGerais">
+                                    <param id="0" name="X">1</param>
+                                    <param id="1" name="Value">&quot;Idioma:&quot;</param>
+                                </action>
+                                <action id="2" name="Set at X" sid="144311933259304" type="arrayOpcoesGerais">
+                                    <param id="0" name="X">2</param>
+                                    <param id="1" name="Value">&quot;Volume geral:&quot;</param>
+                                </action>
+                                <action id="2" name="Set at X" sid="453608436862278" type="arrayOpcoesGerais">
+                                    <param id="0" name="X">3</param>
+                                    <param id="1" name="Value">&quot;Voltar&quot;</param>
+                                </action>
+                                <action id="2" name="Set at X" sid="186962815372714" type="arrayOpcoesGerais">
+                                    <param id="0" name="X">4</param>
+                                    <param id="1" name="Value">&quot;Português&quot;</param>
+                                </action>
+                                <action id="2" name="Set at X" sid="898360436333425" type="arrayOpcoesGerais">
+                                    <param id="0" name="X">5</param>
+                                    <param id="1" name="Value">&quot;Inglês&quot;</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <event-block sid="337328765361477">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="970360889287722" type="System">
+                            <param id="0" name="Variable">Idioma</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">&quot;en&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="537451806980097">
+                            <conditions>
+                                <condition id="-2" name="On start of layout" sid="694696522487298" type="System" />
+                            </conditions>
+                            <actions>
+                                <action id="1" name="Set size" sid="423185585306957" type="arrayOpcoesGerais">
+                                    <param id="0" name="Width">10</param>
+                                    <param id="1" name="Height">1</param>
+                                    <param id="2" name="Depth">1</param>
+                                </action>
+                                <action id="2" name="Set at X" sid="894157010509377" type="arrayOpcoesGerais">
+                                    <param id="0" name="X">1</param>
+                                    <param id="1" name="Value">&quot;Language:&quot;</param>
+                                </action>
+                                <action id="2" name="Set at X" sid="178906263639474" type="arrayOpcoesGerais">
+                                    <param id="0" name="X">2</param>
+                                    <param id="1" name="Value">&quot;Master volume:&quot;</param>
+                                </action>
+                                <action id="2" name="Set at X" sid="262794596167902" type="arrayOpcoesGerais">
+                                    <param id="0" name="X">3</param>
+                                    <param id="1" name="Value">&quot;Back&quot;</param>
+                                </action>
+                                <action id="2" name="Set at X" sid="761498266199470" type="arrayOpcoesGerais">
+                                    <param id="0" name="X">4</param>
+                                    <param id="1" name="Value">&quot;Portuguese&quot;</param>
+                                </action>
+                                <action id="2" name="Set at X" sid="567687718777568" type="arrayOpcoesGerais">
+                                    <param id="0" name="X">5</param>
+                                    <param id="1" name="Value">&quot;English&quot;</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+            </sub-events>
+        </event-group>
     </events>
 </c2eventsheet>

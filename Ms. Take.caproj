@@ -158,6 +158,9 @@
             <object-type global="1" name="arrayOpcoesConfigPong" sid="759939751431605">
                 <plugin id="Arr" />
             </object-type>
+            <object-type global="1" name="arrayOpcoesGerais" sid="929170125972374">
+                <plugin id="Arr" />
+            </object-type>
         </object-folder>
         <object-folder name="Controles">
             <object-type name="Keyboard" sid="758708323480731">
@@ -363,6 +366,7 @@
     <families />
     <layout-folder>
         <layout>Menu.xml</layout>
+        <layout>Opções.xml</layout>
         <layout>Pong.xml</layout>
         <layout>Intro.xml</layout>
     </layout-folder>
@@ -372,6 +376,7 @@
         <event-sheet>Inserção das frases.xml</event-sheet>
         <event-sheet>Config.xml</event-sheet>
         <event-sheet>Eventos Pong.xml</event-sheet>
+        <event-sheet>Eventos Opções.xml</event-sheet>
     </event-folder>
     <global-instances>
         <global-instance type="Keyboard" uid="44" />

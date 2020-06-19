@@ -23,7 +23,7 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <property expanded="0" name="Margins" />
         <property expanded="1" name="Effects" />
     </properties>
-    <active-layer name="ExtraOpacidade" />
+    <active-layer name="TextoVitoria" />
     <layers>
         <layer locked="1" name="Background" parallax-in-editor="0" visible="1" />
         <layer locked="1" name="BordasTela" parallax-in-editor="0" visible="1" />
@@ -33,6 +33,6 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <layer locked="1" name="ExtraOpacidade" parallax-in-editor="0" visible="1" />
         <layer locked="1" name="MsTakeTutorial" parallax-in-editor="0" visible="0" />
         <layer locked="1" name="OpcoesJogo" parallax-in-editor="0" visible="1" />
-        <layer locked="0" name="TextoVitoria" parallax-in-editor="0" visible="1" />
+        <layer locked="1" name="TextoVitoria" parallax-in-editor="0" visible="0" />
     </layers>
 </c2uistate>

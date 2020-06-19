@@ -1464,6 +1464,13 @@
                 <depth>1</depth>
             </properties>
         </instance>
+        <instance type="arrayOpcoesGerais" uid="486">
+            <properties>
+                <width>10</width>
+                <height>1</height>
+                <depth>1</depth>
+            </properties>
+        </instance>
     </nonworld-instances>
     <effects>
         <effect-type name="Bulge">
