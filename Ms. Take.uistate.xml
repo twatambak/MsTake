@@ -10,18 +10,18 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <display name="HTML5" />
     </configurations>
     <open-tabs>
-        <layout order="1">Menu</layout>
-        <layout order="3">Pong</layout>
-        <layout order="5">Opções</layout>
-        <layout order="9">Idioma</layout>
-        <layout order="11">Intro</layout>
-        <event-sheet order="2">Eventos Menu</event-sheet>
-        <event-sheet order="4">Eventos Pong</event-sheet>
-        <event-sheet order="6">Eventos Opções</event-sheet>
-        <event-sheet order="7">Config</event-sheet>
-        <event-sheet active="1" order="8">Inserção das frases</event-sheet>
-        <event-sheet order="10">Eventos Idiomas</event-sheet>
-        <event-sheet order="12">Eventos Intro</event-sheet>
+        <layout active="1" order="0">Menu</layout>
+        <layout order="2">Pong</layout>
+        <layout order="4">Opções</layout>
+        <layout order="8">Idioma</layout>
+        <layout order="10">Intro</layout>
+        <event-sheet order="1">Eventos Menu</event-sheet>
+        <event-sheet order="3">Eventos Pong</event-sheet>
+        <event-sheet order="5">Eventos Opções</event-sheet>
+        <event-sheet order="6">Config</event-sheet>
+        <event-sheet order="7">Inserção das frases</event-sheet>
+        <event-sheet order="9">Eventos Idiomas</event-sheet>
+        <event-sheet order="11">Eventos Intro</event-sheet>
     </open-tabs>
     <properties>
         <property expanded="1" name="About" />
